@@ -1,7 +1,7 @@
 hasEntityComponent
 ==================
 
-ScriptingAPI::hasEntityComponent
+Script::hasEntityComponent
 
 Declaration
 -----------

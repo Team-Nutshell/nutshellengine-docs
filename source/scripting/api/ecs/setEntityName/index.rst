@@ -1,7 +1,7 @@
 setEntityName
 =============
 
-ScriptingAPI::setEntityName
+Script::setEntityName
 
 Declaration
 -----------

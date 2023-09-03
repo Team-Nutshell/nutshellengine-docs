@@ -1,7 +1,7 @@
 setEntityPersistence
 ====================
 
-ScriptingAPI::setEntityPersistence
+Script::setEntityPersistence
 
 Declaration
 -----------

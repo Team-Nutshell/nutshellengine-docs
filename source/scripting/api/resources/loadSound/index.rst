@@ -1,7 +1,7 @@
 loadSound
 =========
 
-ScriptingAPI::loadSound
+Script::loadSound
 
 Declaration
 -----------

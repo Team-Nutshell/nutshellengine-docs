@@ -1,7 +1,7 @@
 createEntity
 ============
 
-ScriptingAPI::createEntity
+Script::createEntity
 
 Declaration
 -----------

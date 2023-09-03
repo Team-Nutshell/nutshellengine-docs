@@ -1,7 +1,7 @@
 isEntityPersistent
 ==================
 
-ScriptingAPI::isEntityPersistent
+Script::isEntityPersistent
 
 Declaration
 -----------

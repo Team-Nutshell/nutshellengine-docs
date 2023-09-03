@@ -1,7 +1,7 @@
 loadFont
 ========
 
-ScriptingAPI::loadFont
+Script::loadFont
 
 Declaration
 -----------

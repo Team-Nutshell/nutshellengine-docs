@@ -1,7 +1,7 @@
 addEntityComponent
 ==================
 
-ScriptingAPI::addEntityComponent
+Script::addEntityComponent
 
 Declaration
 -----------

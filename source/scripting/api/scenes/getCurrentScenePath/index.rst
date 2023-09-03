@@ -1,7 +1,7 @@
 getCurrentScenePath
 ===================
 
-ScriptingAPI::getCurrentScenePath
+Script::getCurrentScenePath
 
 Declaration
 -----------

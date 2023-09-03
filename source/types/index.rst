@@ -11,8 +11,8 @@ Types
 	./collider_sphere/index.rst
 	./font/index.rst
 	./font_glyph/index.rst
-	./font_id
-	./gamepad_id/index.rst/index.rst
+	./font_id/index.rst
+	./gamepad_id/index.rst
 	./image/index.rst
 	./image_color_space/index.rst
 	./image_format/index.rst

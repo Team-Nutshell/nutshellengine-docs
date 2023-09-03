@@ -1,7 +1,7 @@
 destroyAllEntities
 ==================
 
-ScriptingAPI::destroyAllEntities
+Script::destroyAllEntities
 
 Declaration
 -----------

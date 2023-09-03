@@ -1,7 +1,7 @@
 goToScene
 =========
 
-ScriptingAPI::goToScene
+Script::goToScene
 
 Declaration
 -----------

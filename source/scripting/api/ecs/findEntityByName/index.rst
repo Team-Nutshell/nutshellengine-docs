@@ -1,7 +1,7 @@
 findEntityByName
 ================
 
-ScriptingAPI::findEntityByName
+Script::findEntityByName
 
 Declaration
 -----------
