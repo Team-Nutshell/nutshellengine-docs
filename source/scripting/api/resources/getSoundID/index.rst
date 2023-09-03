@@ -22,7 +22,7 @@ Parameters
 	  - Type
 	  - Description
 	* - sound
-	  - const Sound&
+	  - const :doc:`/types/sound/index`\&
 	  - Sound to load in the Audio Module.
 
 Returns

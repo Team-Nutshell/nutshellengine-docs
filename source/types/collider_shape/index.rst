@@ -25,10 +25,10 @@ Functions
 
 	* - Name
 	  - Description
-	* - :doc:`/structures/collider_shape/getType/index`
+	* - :doc:`/types/collider_shape/getType/index`
 	  - Returns the ``type`` of the collider.
 
 Notes
 -----
 
-ColliderShape contains a :doc:`/structures/collider_shape_type/index` to differentiate the different shape types.
+ColliderShape contains a :doc:`/types/collider_shape_type/index` to differentiate the different shape types.

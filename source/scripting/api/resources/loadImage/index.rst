@@ -28,6 +28,6 @@ Parameters
 Returns
 -------
 
-A pointer to an Image containing information about the loaded image.
+A pointer to an :doc:`/types/image/index` containing information about the loaded image.
 
 If the image could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this image file format), the returned pointer is **nullptr**.

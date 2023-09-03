@@ -28,6 +28,6 @@ Parameters
 Returns
 -------
 
-A pointer to a Model containing information about the loaded model.
+A pointer to a :doc:`/types/model/index` containing information about the loaded model.
 
 If the model could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this model file format), the returned pointer is **nullptr**.

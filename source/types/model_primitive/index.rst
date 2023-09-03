@@ -1,11 +1,14 @@
-Renderable
-==========
+ModelPrimitive
+==============
+
+Declaration
+-----------
 
 .. code-block:: cpp
 
-	struct Renderable {
-		Mesh* mesh = nullptr;
-		Material* material = nullptr;
+	struct ModelPrimitive {
+		Mesh mesh;
+		Material material;
 	};
 
 Variables
@@ -19,9 +22,9 @@ Variables
 	* - Name
 	  - Type
 	  - Description
-	* - type
+	* - mesh
 	  - :doc:`/types/mesh/index`
-	  - The Renderable's mesh.
-	* - type
+	  - The primitive's mesh.
+	* - material
 	  - :doc:`/types/material/index`
-	  - The Renderable's material.
+	  - The primitive's material.

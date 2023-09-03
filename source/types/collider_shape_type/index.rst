@@ -16,4 +16,4 @@ Declaration
 Notes
 -----
 
-ColliderShapeType is an enum used in :doc:`/structures/collider_shape/index` to differentiate the different shapes.
+ColliderShapeType is an enum used in :doc:`/types/collider_shape/index` to differentiate the different shapes.

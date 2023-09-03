@@ -22,7 +22,7 @@ Parameters
 	  - Type
 	  - Description
 	* - mesh
-	  - const Mesh&
+	  - const :doc:`/types/mesh/index`\&
 	  - Mesh to load in the Graphics Module.
 
 Returns

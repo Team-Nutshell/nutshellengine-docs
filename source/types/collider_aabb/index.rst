@@ -1,7 +1,7 @@
 ColliderAABB
 ============
 
-*Inherits* :doc:`/structures/collider_shape/index`.
+*Inherits* :doc:`/types/collider_shape/index`.
 
 Declaration
 -----------

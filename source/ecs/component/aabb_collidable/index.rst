@@ -22,10 +22,10 @@ Variables
 	  - Type
 	  - Description
 	* - collider
-	  - :doc:`/structures/collider_aabb/index`
+	  - :doc:`/types/collider_aabb/index`
 	  - The collider's properties.
 
 Notes
 -----
 
-The AABBCollidable contains a :doc:`/structures/collider_aabb/index` structure, which defines its boundaries.
+The AABBCollidable contains a :doc:`/types/collider_aabb/index` structure, which defines its boundaries.

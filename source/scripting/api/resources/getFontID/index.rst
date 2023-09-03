@@ -22,7 +22,7 @@ Parameters
 	  - Type
 	  - Description
 	* - font
-	  - const Font&
+	  - const :doc:`/types/font/index`\&
 	  - Font to load in the Graphics Module.
 
 Returns
