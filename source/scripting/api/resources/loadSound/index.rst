@@ -28,6 +28,6 @@ Parameters
 Returns
 -------
 
-A pointer to a Sound containing information about the loaded sound.
+A pointer to a :doc:`/types/sound/index` containing information about the loaded sound.
 
 If the sound could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this image file format), the returned pointer is **nullptr**.

@@ -22,10 +22,10 @@ Variables
 	  - Type
 	  - Description
 	* - collider
-	  - :doc:`/structures/collider_capsule/index`
+	  - :doc:`/types/collider_capsule/index`
 	  - The collider's properties.
 
 Notes
 -----
 
-The CapsuleCollidable contains a :doc:`/structures/collider_capsule/index` structure, which defines its properties.
+The CapsuleCollidable contains a :doc:`/types/collider_capsule/index` structure, which defines its properties.

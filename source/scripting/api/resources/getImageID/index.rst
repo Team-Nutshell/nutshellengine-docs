@@ -22,7 +22,7 @@ Parameters
 	  - Type
 	  - Description
 	* - image
-	  - const Image&
+	  - const :doc:`/types/image/index`\&
 	  - Image to load in the Graphics Module.
 
 Returns

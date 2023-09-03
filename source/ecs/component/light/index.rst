@@ -21,7 +21,7 @@ Variables
 	  - Type
 	  - Description
 	* - type
-	  - :doc:`/structures/light_type/index`
+	  - :doc:`/types/light_type/index`
 	  - The light's type.
 	* - color
 	  - Math::vec3

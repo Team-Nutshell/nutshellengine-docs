@@ -22,10 +22,10 @@ Variables
 	  - Type
 	  - Description
 	* - collider
-	  - :doc:`/structures/collider_sphere/index`
+	  - :doc:`/types/collider_sphere/index`
 	  - The collider's properties.
 
 Notes
 -----
 
-The SphereCollidable contains a :doc:`/structures/collider_sphere/index` structure, which defines its properties.
+The SphereCollidable contains a :doc:`/types/collider_sphere/index` structure, which defines its properties.
