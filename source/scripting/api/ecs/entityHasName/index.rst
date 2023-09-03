@@ -1,7 +1,7 @@
 entityHasName
 =============
 
-ScriptingAPI::entityHasName
+Script::entityHasName
 
 Declaration
 -----------

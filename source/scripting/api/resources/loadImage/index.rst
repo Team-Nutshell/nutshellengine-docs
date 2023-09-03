@@ -1,7 +1,7 @@
 loadImage
 =========
 
-ScriptingAPI::loadImage
+Script::loadImage
 
 Declaration
 -----------

@@ -1,7 +1,7 @@
 destroyNonPersistentEntities
 ============================
 
-ScriptingAPI::destroyNonPersistentEntities
+Script::destroyNonPersistentEntities
 
 Declaration
 -----------

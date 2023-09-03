@@ -1,7 +1,7 @@
 getEntityName
 =============
 
-ScriptingAPI::getEntityName
+Script::getEntityName
 
 Declaration
 -----------

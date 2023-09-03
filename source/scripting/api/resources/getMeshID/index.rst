@@ -1,7 +1,7 @@
 getMeshID
 =========
 
-ScriptingAPI::getMeshID
+Script::getMeshID
 
 Declaration
 -----------
@@ -28,6 +28,6 @@ Parameters
 Returns
 -------
 
-A unique identifier for the mesh.
+A unique :doc:`/types/mesh_id/index` identifier for the mesh.
 
 If the mesh could not be loaded, the returned value is ``NTSHENGN_MESH_UNKNOWN``.

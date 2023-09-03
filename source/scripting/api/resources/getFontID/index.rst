@@ -1,7 +1,7 @@
 getFontID
 =========
 
-ScriptingAPI::getFontID
+Script::getFontID
 
 Declaration
 -----------
@@ -28,6 +28,6 @@ Parameters
 Returns
 -------
 
-A unique identifier for the font.
+A unique :doc:`/types/font_id/index` identifier for the font.
 
 If the font could not be loaded, the returned value is ``NTSHENGN_FONT_UNKNOWN``.

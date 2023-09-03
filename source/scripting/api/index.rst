@@ -120,6 +120,7 @@ Functions related to the Entity-Component-System.
 	./ecs/destroyEntity/index.rst
 	./ecs/destroyAllEntities/index.rst
 	./ecs/destroyNonPersistentEntities/index.rst
+	./ecs/entityExists/index.rst
 	./ecs/setEntityName/index.rst
 	./ecs/entityHasName/index.rst
 	./ecs/getEntityName/index.rst

@@ -1,7 +1,7 @@
 entityExists
 ============
 
-ScriptingAPI::entityExists
+Script::entityExists
 
 Declaration
 -----------

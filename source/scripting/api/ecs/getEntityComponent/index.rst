@@ -1,7 +1,7 @@
 getEntityComponent
 ==================
 
-ScriptingAPI::getEntityComponent
+Script::getEntityComponent
 
 Declaration
 -----------

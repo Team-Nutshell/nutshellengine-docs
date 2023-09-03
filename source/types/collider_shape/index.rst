@@ -32,3 +32,8 @@ Notes
 -----
 
 ColliderShape contains a :doc:`/types/collider_shape_type/index` to differentiate the different shape types.
+
+.. toctree:: 
+	:hidden:
+
+	./getType/index.rst

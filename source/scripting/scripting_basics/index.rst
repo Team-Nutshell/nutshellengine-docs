@@ -10,10 +10,10 @@ In it, copy and paste this script template:
 .. code-block:: cpp
 
 	#pragma once
-	#include "../Core/scripting/ntshengn_scripting_api.h"
+	#include "../Core/scripting/ntshengn_script.h"
 
 	using namespace NtshEngn;
-	struct TemplateScript : public ScriptingAPI {
+	struct TemplateScript : public Script {
 		NTSHENGN_SCRIPT(TemplateScript);
 
 		void init() {
@@ -26,5 +26,5 @@ In it, copy and paste this script template:
 		}
 	};
 
-``ScriptingAPI`` is a structure containing the :doc:`/scripting/api/index`, allowing to call functions from NutshellEngine's systems.
+``Script`` is a structure containing the :doc:`/scripting/api/index`, allowing to call functions from NutshellEngine's systems.
 

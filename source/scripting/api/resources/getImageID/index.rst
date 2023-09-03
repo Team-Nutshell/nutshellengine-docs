@@ -1,7 +1,7 @@
 getImageID
 ==========
 
-ScriptingAPI::getImageID
+Script::getImageID
 
 Declaration
 -----------
@@ -28,6 +28,6 @@ Parameters
 Returns
 -------
 
-A unique identifier for the image.
+A unique :doc:`/types/image_id/index` identifier for the image.
 
 If the image could not be loaded, the returned value is ``NTSHENGN_IMAGE_UNKNOWN``.

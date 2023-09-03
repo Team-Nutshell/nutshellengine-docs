@@ -1,7 +1,7 @@
 removeEntityComponent
 =====================
 
-ScriptingAPI::removeEntityComponent
+Script::removeEntityComponent
 
 Declaration
 -----------
