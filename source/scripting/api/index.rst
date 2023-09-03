@@ -131,3 +131,69 @@ Functions related to the Entity-Component-System.
 	./ecs/removeEntityComponent/index.rst
 	./ecs/hasEntityComponent/index.rst
 	./ecs/getEntityComponent/index.rst
+
+Input
+-----
+
+Functions related to inputs.
+
+.. list-table::
+	:width: 100%
+	:widths: 30 70
+	:header-rows: 1
+	:class: code-table
+
+	* - Function name
+	  - Description
+	* - :doc:`/scripting/api/input/getKeyState/index`
+	  - Returns the state of a keyboard key.
+	* - :doc:`/scripting/api/input/getMouseButtonState/index`
+	  - Returns the state of a mouse button.
+	* - :doc:`/scripting/api/input/setCursorPosition/index`
+	  - Sets the mouse cursor position.
+	* - :doc:`/scripting/api/input/getCursorPositionX/index`
+	  - Returns the mouse cursor horizontal position.
+	* - :doc:`/scripting/api/input/getCursorPositionY/index`
+	  - Returns the mouse cursor vertical position.
+	* - :doc:`/scripting/api/input/getMouseScrollOffsetX/index`
+	  - Returns the horizontal mouse scroll offset between the last and current frame.
+	* - :doc:`/scripting/api/input/getMouseScrollOffsetY/index`
+	  - Returns the vertical mouse scroll offset between the last and current frame.
+	* - :doc:`/scripting/api/input/setCursorVisibility/index`
+	  - Sets the mouse cursor's visibility.
+	* - :doc:`/scripting/api/input/isCursorVisible/index`
+	  - Returns true if the mouse cursor is visible, else, returns false.
+	* - :doc:`/scripting/api/input/getConnectedGamepads/index`
+	  - Returns the list of connected gamepads.
+	* - :doc:`/scripting/api/input/getGamepadButtonState/index`
+	  - Returns the state of the gamepad with identifier gamepadID.
+	* - :doc:`/scripting/api/input/getGamepadStickAxisX/index`
+	  - Returns the value of the stick's horizontal axis, with -1.0 being left, 0.0 neutral and 1.0 right.
+	* - :doc:`/scripting/api/input/getGamepadStickAxisY/index`
+	  - Returns the value of the stick's vertical axis, with -1.0 being up, 0.0 neutral and 1.0 down.
+	* - :doc:`/scripting/api/input/getGamepadLeftTrigger/index`
+	  - Returns the value of the stick's left trigger, with 0.0 being neutral and 1.0 being fully pressed.
+	* - :doc:`/scripting/api/input/getGamepadRightTrigger/index`
+	  - Returns the value of the stick's right trigger, with 0.0 being neutral and 1.0 being fully pressed.
+	* - :doc:`/scripting/api/input/getGamepadName/index`
+	  - Returns the name of the gamepad.
+
+.. toctree::
+	:hidden:
+
+	./input/getKeyState/index.rst
+	./input/getMouseButtonState/index.rst
+	./input/setCursorPosition/index.rst
+	./input/getCursorPositionX/index.rst
+	./input/getCursorPositionY/index.rst
+	./input/getMouseScrollOffsetX/index.rst
+	./input/getMouseScrollOffsetY/index.rst
+	./input/setCursorVisibility/index.rst
+	./input/isCursorVisible/index.rst
+	./input/getConnectedGamepads/index.rst
+	./input/getGamepadButtonState/index.rst
+	./input/getGamepadStickAxisX/index.rst
+	./input/getGamepadStickAxisY/index.rst
+	./input/getGamepadLeftTrigger/index.rst
+	./input/getGamepadRightTrigger/index.rst
+	./input/getGamepadName/index.rst
