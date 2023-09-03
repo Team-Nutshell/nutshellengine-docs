@@ -15,6 +15,19 @@ Declaration
 		ColliderShapeType type = ColliderShapeType::Unknown;
 	};
 
+Functions
+---------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Description
+	* - :doc:`/structures/collider_shape/getType/index`
+	  - Returns the ``type`` of the collider.
+
 Notes
 -----
 

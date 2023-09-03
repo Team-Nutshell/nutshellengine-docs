@@ -1,6 +1,8 @@
 destroyEntity
 =============
 
+ScriptingAPI::destroyEntity
+
 Declaration
 -----------
 

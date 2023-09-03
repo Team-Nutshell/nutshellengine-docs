@@ -1,6 +1,8 @@
 getFontID
 =========
 
+ScriptingAPI::getFontID
+
 Declaration
 -----------
 

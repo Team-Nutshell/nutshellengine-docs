@@ -15,6 +15,24 @@ Declaration
 		Math::vec3 max = { 0.0f, 0.0f, 0.0f };
 	};
 
+Variables
+---------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - min
+	  - Math::vec3
+	  - The "minimal" corner, which contains the minimum x, y and z.
+	* - max
+	  - Math::vec3
+	  - The "maximal" corner, which contains the maximum x, y and z.
+
 Notes
 -----
 

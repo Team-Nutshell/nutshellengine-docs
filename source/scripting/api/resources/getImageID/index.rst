@@ -1,6 +1,8 @@
 getImageID
 ==========
 
+ScriptingAPI::getImageID
+
 Declaration
 -----------
 
