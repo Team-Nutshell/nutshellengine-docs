@@ -10,6 +10,21 @@ Declaration
 		ColliderAABB collider;
 	};
 
+Variables
+---------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - collider
+	  - :doc:`/structures/collider_aabb/index`
+	  - The collider's properties.
+
 Notes
 -----
 

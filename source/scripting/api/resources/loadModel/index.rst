@@ -1,6 +1,8 @@
 loadModel
 =========
 
+ScriptingAPI::loadModel
+
 Declaration
 -----------
 

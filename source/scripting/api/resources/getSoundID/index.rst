@@ -1,6 +1,8 @@
 getSoundID
 ==========
 
+ScriptingAPI::getSoundID
+
 Declaration
 -----------
 

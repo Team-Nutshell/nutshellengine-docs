@@ -16,6 +16,27 @@ Declaration
 		float radius = 0.0f;
 	};
 
+Variables
+---------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - base
+	  - Math::vec3
+	  - The capsule's base in **object-space**.
+	* - tip
+	  - Math::vec3
+	  - The capsule's tip in **object-space**.
+	* - radius
+	  - float
+	  - The sphere's radius.
+
 Notes
 -----
 
