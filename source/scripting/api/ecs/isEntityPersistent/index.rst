@@ -1,14 +1,14 @@
-entityExists
-============
+isEntityPersistent
+==================
 
-ScriptingAPI::entityExists
+ScriptingAPI::isEntityPersistent
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	bool entityExists(Entity entity);
+	bool isEntityPersistent(Entity entity);
 
 Parameters
 ----------
@@ -23,9 +23,9 @@ Parameters
 	  - Description
 	* - entity
 	  - :doc:`/ecs/entity/index`
-	  - The Entity to check the existence of.
+	  - The Entity to check the persistence flag of.
 
 Returns
 -------
 
-``true`` if the Entity exists, else, returns ``false``.
+``true`` if the Entity is persistent, else, returns ``false``.

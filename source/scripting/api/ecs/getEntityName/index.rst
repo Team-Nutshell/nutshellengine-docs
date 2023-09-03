@@ -1,14 +1,14 @@
-entityExists
-============
+getEntityName
+=============
 
-ScriptingAPI::entityExists
+ScriptingAPI::getEntityName
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	bool entityExists(Entity entity);
+	std::string getEntityName(Entity entity);
 
 Parameters
 ----------
@@ -23,9 +23,9 @@ Parameters
 	  - Description
 	* - entity
 	  - :doc:`/ecs/entity/index`
-	  - The Entity to check the existence of.
+	  - The Entity to get the name of.
 
 Returns
 -------
 
-``true`` if the Entity exists, else, returns ``false``.
+The name of Entity if it has one, else, returns the empty string ``""``.

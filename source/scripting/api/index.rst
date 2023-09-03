@@ -36,14 +36,14 @@ Functions related to the loading of resources.
 .. toctree::
 	:hidden:
 
-	./loadModel/index
-	./getMeshID/index
-	./loadImage/index
-	./getImageID/index
-	./loadFont/index
-	./getFontID/index
-	./loadSound/index
-	./getSoundID/index
+	./resources/loadModel/index.rst
+	./resources/getMeshID/index.rst
+	./resources/loadImage/index.rst
+	./resources/getImageID/index.rst
+	./resources/loadFont/index.rst
+	./resources/getFontID/index.rst
+	./resources/loadSound/index.rst
+	./resources/getSoundID/index.rst
 
 Scenes
 ------
@@ -66,8 +66,8 @@ Functions related to the scenes.
 .. toctree::
 	:hidden:
 
-	./goToScene/index
-	./getCurrentScenePath/index
+	./scenes/goToScene/index.rst
+	./scenes/getCurrentScenePath/index.rst
 
 Entity-Component-System
 -----------------------
@@ -102,12 +102,31 @@ Functions related to the Entity-Component-System.
 	  - Returns the :doc:`/ecs/entity/index` associated with the name.
 	* - :doc:`/scripting/api/ecs/setEntityPersistence/index`
 	  - Marks or unmarks the :doc:`/ecs/entity/index` as persistent.
+	* - :doc:`/scripting/api/ecs/isEntityPersistent/index`
+	  - Checks if an :doc:`/ecs/entity/index` is persistent.
 	* - :doc:`/scripting/api/ecs/addEntityComponent/index`
-	  - Adds a Component to an :doc:`/ecs/entity/index`.
+	  - Adds a :doc:`/ecs/component/index` to an :doc:`/ecs/entity/index`.
 	* - :doc:`/scripting/api/ecs/removeEntityComponent/index`
-	  - Removes a Component from an :doc:`/ecs/entity/index`.
+	  - Removes a :doc:`/ecs/component/index` from an :doc:`/ecs/entity/index`.
 	* - :doc:`/scripting/api/ecs/hasEntityComponent/index`
-	  - Checks if an :doc:`/ecs/entity/index` has a Component.
+	  - Checks if an :doc:`/ecs/entity/index` has a certain :doc:`/ecs/component/index`.
 	* - :doc:`/scripting/api/ecs/getEntityComponent/index`
-	  - Returns an :doc:`/ecs/entity/index`'s Component.
+	  - Returns an :doc:`/ecs/entity/index`'s :doc:`/ecs/component/index`.
 
+.. toctree::
+	:hidden:
+
+	./ecs/createEntity/index.rst
+	./ecs/destroyEntity/index.rst
+	./ecs/destroyAllEntities/index.rst
+	./ecs/destroyNonPersistentEntities/index.rst
+	./ecs/setEntityName/index.rst
+	./ecs/entityHasName/index.rst
+	./ecs/getEntityName/index.rst
+	./ecs/findEntityByName/index.rst
+	./ecs/setEntityPersistence/index.rst
+	./ecs/isEntityPersistent/index.rst
+	./ecs/addEntityComponent/index.rst
+	./ecs/removeEntityComponent/index.rst
+	./ecs/hasEntityComponent/index.rst
+	./ecs/getEntityComponent/index.rst
