@@ -1,19 +1,6 @@
 Sound
 =====
 
-Declaration
------------
-
-.. code-block:: cpp
-
-	struct Sound {
-		uint8_t channels = 0;
-		int32_t sampleRate = 0;
-		uint8_t bitsPerSample = 0;
-		size_t size = 0;
-		std::vector<uint8_t> data;
-	};
-
 Variables
 ---------
 

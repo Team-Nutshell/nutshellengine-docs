@@ -4,16 +4,6 @@ Image
 Declaration
 -----------
 
-.. code-block:: cpp
-
-	struct Image {
-		uint32_t width = 0;
-		uint32_t height = 0;
-		ImageFormat format = ImageFormat::Unknown;
-		ImageColorSpace colorSpace = ImageColorSpace::Unknown;
-		std::vector<uint8_t> data;
-	};
-
 Variables
 ---------
 
@@ -32,10 +22,10 @@ Variables
 	  - uint32_t
 	  - The image's height.
 	* - format
-	  - :doc:`/types/image_format/index`
+	  - :doc:`/types/ImageFormat/index`
 	  - The image's format detailing the layout in memory.
 	* - colorSpace
-	  - :doc:`/types/image_color_space/index`
+	  - :doc:`/types/ImageColorSpace/index`
 	  - The image's color space.
 	* - data
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<uint8_t>

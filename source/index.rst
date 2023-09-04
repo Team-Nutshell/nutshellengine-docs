@@ -12,6 +12,8 @@ NutshellEngine is a modular game engine designed to enable game and engine devel
 
 	./ecs/index.rst
 
+	./utils/index.rst
+
 	./types/index.rst
 
 Indices and tables

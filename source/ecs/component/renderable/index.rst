@@ -1,13 +1,6 @@
 Renderable
 ==========
 
-.. code-block:: cpp
-
-	struct Renderable {
-		Mesh* mesh = nullptr;
-		Material* material = nullptr;
-	};
-
 Variables
 ---------
 
@@ -20,8 +13,8 @@ Variables
 	  - Type
 	  - Description
 	* - type
-	  - :doc:`/types/mesh/index`
+	  - :doc:`/types/Mesh/index`
 	  - The Renderable's mesh.
 	* - type
-	  - :doc:`/types/material/index`
+	  - :doc:`/types/Material/index`
 	  - The Renderable's material.
