@@ -1,21 +1,6 @@
 Rigidbody
 =========
 
-Declaration
------------
-
-.. code-block:: cpp
-
-	struct Rigidbody {
-		bool isStatic = false;
-		bool isAffectedByConstants = true;
-		Math::vec3 force = { 0.0f, 0.0f, 0.0f };
-		float mass = 1.0f;
-		float restitution = 0.0f;
-		float staticFriction = 0.0f;
-		float dynamicFriction = 0.0f;
-	};
-
 Variables
 ---------
 
@@ -34,7 +19,7 @@ Variables
 	  - bool
 	  - Specifies if the :doc:`/ecs/entity/index` is affected by the Physics Module's constants (for example: gravity).
 	* - force
-	  - Math::vec3
+	  - :doc:`/utils/Math/index`::vec3
 	  - The force applied on an :doc:`/ecs/entity/index` for a single frame (does not include the Physics Module's constants).
 	* - mass
 	  - float

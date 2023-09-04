@@ -1,16 +1,6 @@
 Texture
 =======
 
-Declaration
------------
-
-.. code-block:: cpp
-
-	struct Texture {
-		Image* image = nullptr;
-		ImageSampler imageSampler;
-	};
-
 Variables
 ---------
 
@@ -23,8 +13,8 @@ Variables
 	  - Type
 	  - Description
 	* - image
-	  - :doc:`/types/image/index`\*
+	  - :doc:`/types/Image/index`\*
 	  - The texture's image.
 	* - imageSampler
-	  - :doc:`/types/image_sampler/index`\
+	  - :doc:`/types/ImageSampler/index`
 	  - The texture's image sampler.

@@ -1,15 +1,6 @@
 Model
 =====
 
-Declaration
------------
-
-.. code-block:: cpp
-
-	struct Model {
-		std::vector<ModelPrimitive> primitives;
-	};
-
 Variables
 ---------
 
@@ -22,5 +13,5 @@ Variables
 	  - Type
 	  - Description
 	* - primitives
-	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/model_primitive/index`>
+	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/ModelPrimitive/index`>
 	  - The model's primitives.

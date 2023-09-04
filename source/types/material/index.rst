@@ -1,23 +1,6 @@
 Material
 ========
 
-Declaration
------------
-
-.. code-block:: cpp
-
-	struct Material {
-		Texture diffuseTexture;
-		Texture normalTexture;
-		Texture metalnessTexture;
-		Texture roughnessTexture;
-		Texture occlusionTexture;
-		Texture emissiveTexture;
-		float emissiveFactor = 1.0f;
-		float alphaCutoff = 0.0f;
-		float indexOfRefraction = 1.0f;
-	};
-
 Variables
 ---------
 
@@ -30,22 +13,22 @@ Variables
 	  - Type
 	  - Description
 	* - diffuseTexture
-	  - :doc:`/types/texture/index`
+	  - :doc:`/types/Texture/index`
 	  - The diffuse texture.
 	* - normalTexture
-	  - :doc:`/types/texture/index`
+	  - :doc:`/types/Texture/index`
 	  - The normal texture.
 	* - metalnessTexture
-	  - :doc:`/types/texture/index`
+	  - :doc:`/types/Texture/index`
 	  - The metalness texture.
 	* - roughnessTexture
-	  - :doc:`/types/texture/index`
+	  - :doc:`/types/Texture/index`
 	  - The roughness texture.
 	* - occlusionTexture
-	  - :doc:`/types/texture/index`
+	  - :doc:`/types/Texture/index`
 	  - The occlusion texture.
 	* - emissiveTexture
-	  - :doc:`/types/texture/index`
+	  - :doc:`/types/Texture/index`
 	  - The emissive texture.
 	* - emissiveFactor
 	  - float

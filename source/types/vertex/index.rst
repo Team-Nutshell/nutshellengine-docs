@@ -1,21 +1,6 @@
 Vertex
 ======
 
-Declaration
------------
-
-.. code-block:: cpp
-
-	struct Vertex {
-		Math::vec3 position = { 0.0f, 0.0f, 0.0f };
-		Math::vec3 normal = { 0.0f, 0.0f, 0.0f };
-		Math::vec2 uv = { 0.0f, 0.0f };
-		Math::vec3 color = { 0.0f, 0.0f, 0.0f };
-		Math::vec4 tangent = { 0.0f, 0.0f, 0.0f, 0.0f };
-		Math::vec4 joints = { 0.0f, 0.0f, 0.0f, 0.0f };
-		Math::vec4 weights = { 0.0f, 0.0f, 0.0f, 0.0f };
-	};
-
 Variables
 ---------
 
