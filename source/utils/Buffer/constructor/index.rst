@@ -1,5 +1,5 @@
-Buffer()
-========
+Buffer
+======
 
 :doc:`/utils/Buffer/index`::Buffer
 
