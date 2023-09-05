@@ -195,6 +195,10 @@ html.writer-html5 .rst-content table.docutils th {
 	color: #ff5e6d;
 }
 
+.highlight .nn {
+	color: #8989FF;
+}
+
 .highlight .nt {
 	color: #8b8bfd;
 }
