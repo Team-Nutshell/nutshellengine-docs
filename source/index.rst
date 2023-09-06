@@ -20,9 +20,7 @@ NutshellEngine
 
 	./networking/index.rst
 
-	./scene_manager/index.rst
-
-	./utils/index.rst
+	./scene/index.rst
 
 	./types/index.rst
 

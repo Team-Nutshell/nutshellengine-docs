@@ -1,0 +1,54 @@
+AssetManager
+============
+
+Functions
+---------
+
+.. list-table::
+	:width: 100%
+	:widths: 30 70
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Description
+	* - :doc:`/types/AssetManager/createSound/index`
+	  - Creates an empty sound and returns its pointer.
+	* - :doc:`/types/AssetManager/loadSound/index`
+	  - Loads a sound and returns a pointer to the loaded sound.
+	* - :doc:`/types/AssetManager/createModel/index`
+	  - Creates an empty model and returns its pointer.
+	* - :doc:`/types/AssetManager/loadModel/index`
+	  - Loads a model and returns a pointer to the loaded model.
+	* - :doc:`/types/AssetManager/createImage/index`
+	  - Creates an empty image and returns its pointer.
+	* - :doc:`/types/AssetManager/loadImage/index`
+	  - Loads an image and returns a pointer to the loaded image.
+	* - :doc:`/types/AssetManager/createFont/index`
+	  - Creates an empty font and returns its pointer.
+	* - :doc:`/types/AssetManager/loadFont/index`
+	  - Loads a font and returns a pointer to the loaded font.
+	* - :doc:`/types/AssetManager/destroySound/index`
+	  - Destroys a sound.
+	* - :doc:`/types/AssetManager/destroyModel/index`
+	  - Destroys a model.
+	* - :doc:`/types/AssetManager/destroyImage/index`
+	  - Destroys an image.
+	* - :doc:`/types/AssetManager/destroyFont/index`
+	  - Destroys a font.
+
+.. toctree::
+	:hidden:
+
+	./createSound/index.rst
+	./loadSound/index.rst
+	./createModel/index.rst
+	./loadModel/index.rst
+	./createImage/index.rst
+	./loadImage/index.rst
+	./createFont/index.rst
+	./loadFont/index.rst
+	./destroySound/index.rst
+	./destroyModel/index.rst
+	./destroyImage/index.rst
+	./destroyFont/index.rst

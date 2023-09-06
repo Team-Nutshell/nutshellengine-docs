@@ -16,8 +16,8 @@ Variables
 	  - :doc:`/types/LightType/index`
 	  - The light's type.
 	* - color
-	  - :doc:`/utils/Math/index`::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The light's color.
 	* - cutoff
-	  - :doc:`/utils/Math/index`::vec2
+	  - :doc:`/types/Math/index`::vec2
 	  - Only used in spot lights. In radians.

@@ -1,7 +1,7 @@
 Scripting API
 =============
 
-The Scripting API is a set of functions that can be used in a :doc:`/scripting/script/index`.
+The Scripting API is a set of functions that can be used in a :doc:`/types/Script/index`.
 
 Resources
 ---------
@@ -16,21 +16,21 @@ Functions related to the loading of resources.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/loadModel/index`
+	* - :doc:`/types/Script/loadModel/index`
 	  - Loads a model from a file in the AssetManager and returns a pointer to the loaded model.
-	* - :doc:`/scripting/script/getMeshID/index`
+	* - :doc:`/types/Script/getMeshID/index`
 	  - Loads a model in the Graphics Module and returns a unique identifier to this model.
-	* - :doc:`/scripting/script/loadImage/index`
+	* - :doc:`/types/Script/loadImage/index`
 	  - Loads an image from a file in the AssetManager and returns a pointer to the loaded image.
-	* - :doc:`/scripting/script/getImageID/index`
+	* - :doc:`/types/Script/getImageID/index`
 	  - Loads an image in the Graphics Module and returns a unique identifier to this image.
-	* - :doc:`/scripting/script/loadFont/index`
+	* - :doc:`/types/Script/loadFont/index`
 	  - Loads a font from a file in the AssetManager and returns a pointer to the loaded font.
-	* - :doc:`/scripting/script/getFontID/index`
+	* - :doc:`/types/Script/getFontID/index`
 	  - Loads a font in the Graphics Module and returns a unique identifier to this font.
-	* - :doc:`/scripting/script/loadSound/index`
+	* - :doc:`/types/Script/loadSound/index`
 	  - Loads a sound from a file in the AssetManager and returns a pointer to the loaded sound.
-	* - :doc:`/scripting/script/getSoundID/index`
+	* - :doc:`/types/Script/getSoundID/index`
 	  - Loads a sound in the Audio Module and returns a unique identifier to this sound.
 
 Scenes
@@ -46,9 +46,9 @@ Functions related to the scenes.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/goToScene/index`
+	* - :doc:`/types/Script/goToScene/index`
 	  - Loads a scene from a file.
-	* - :doc:`/scripting/script/getCurrentScenePath/index`
+	* - :doc:`/types/Script/getCurrentScenePath/index`
 	  - Returns the current scene's path.
 
 Entity-Component-System
@@ -64,35 +64,35 @@ Functions related to the Entity-Component-System.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/createEntity/index`
+	* - :doc:`/types/Script/createEntity/index`
 	  - Creates a new :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/scripting/script/destroyEntity/index`
+	* - :doc:`/types/Script/destroyEntity/index`
 	  - Destroys an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/scripting/script/destroyAllEntities/index`
+	* - :doc:`/types/Script/destroyAllEntities/index`
 	  - Destroys all Entities.
-	* - :doc:`/scripting/script/destroyNonPersistentEntities/index`
+	* - :doc:`/types/Script/destroyNonPersistentEntities/index`
 	  - Destroys all Entities not marked as persistent.
-	* - :doc:`/scripting/script/entityExists/index`
+	* - :doc:`/types/Script/entityExists/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` exists.
-	* - :doc:`/scripting/script/setEntityName/index`
+	* - :doc:`/types/Script/setEntityName/index`
 	  - Sets a name to an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/scripting/script/entityHasName/index`
+	* - :doc:`/types/Script/entityHasName/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` has a name.
-	* - :doc:`/scripting/script/getEntityName/index`
+	* - :doc:`/types/Script/getEntityName/index`
 	  - Returns the name of the :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/scripting/script/findEntityByName/index`
+	* - :doc:`/types/Script/findEntityByName/index`
 	  - Returns the :doc:`/entity_component_system/entity/index` associated with the name.
-	* - :doc:`/scripting/script/setEntityPersistence/index`
+	* - :doc:`/types/Script/setEntityPersistence/index`
 	  - Marks or unmarks the :doc:`/entity_component_system/entity/index` as persistent.
-	* - :doc:`/scripting/script/isEntityPersistent/index`
+	* - :doc:`/types/Script/isEntityPersistent/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is persistent.
-	* - :doc:`/scripting/script/addEntityComponent/index`
+	* - :doc:`/types/Script/addEntityComponent/index`
 	  - Adds a :doc:`/entity_component_system/component/index` to an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/scripting/script/removeEntityComponent/index`
+	* - :doc:`/types/Script/removeEntityComponent/index`
 	  - Removes a :doc:`/entity_component_system/component/index` from an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/scripting/script/hasEntityComponent/index`
+	* - :doc:`/types/Script/hasEntityComponent/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` has a certain :doc:`/entity_component_system/component/index`.
-	* - :doc:`/scripting/script/getEntityComponent/index`
+	* - :doc:`/types/Script/getEntityComponent/index`
 	  - Returns an :doc:`/entity_component_system/entity/index`'s :doc:`/entity_component_system/component/index`.
 
 Input
@@ -108,37 +108,37 @@ Functions related to inputs.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/getKeyState/index`
+	* - :doc:`/types/Script/getKeyState/index`
 	  - Returns the state of a keyboard key.
-	* - :doc:`/scripting/script/getMouseButtonState/index`
+	* - :doc:`/types/Script/getMouseButtonState/index`
 	  - Returns the state of a mouse button.
-	* - :doc:`/scripting/script/setCursorPosition/index`
+	* - :doc:`/types/Script/setCursorPosition/index`
 	  - Sets the mouse cursor position.
-	* - :doc:`/scripting/script/getCursorPositionX/index`
+	* - :doc:`/types/Script/getCursorPositionX/index`
 	  - Returns the mouse cursor horizontal position.
-	* - :doc:`/scripting/script/getCursorPositionY/index`
+	* - :doc:`/types/Script/getCursorPositionY/index`
 	  - Returns the mouse cursor vertical position.
-	* - :doc:`/scripting/script/getMouseScrollOffsetX/index`
+	* - :doc:`/types/Script/getMouseScrollOffsetX/index`
 	  - Returns the horizontal mouse scroll offset between the last and current frame.
-	* - :doc:`/scripting/script/getMouseScrollOffsetY/index`
+	* - :doc:`/types/Script/getMouseScrollOffsetY/index`
 	  - Returns the vertical mouse scroll offset between the last and current frame.
-	* - :doc:`/scripting/script/setCursorVisibility/index`
+	* - :doc:`/types/Script/setCursorVisibility/index`
 	  - Sets the mouse cursor's visibility.
-	* - :doc:`/scripting/script/isCursorVisible/index`
+	* - :doc:`/types/Script/isCursorVisible/index`
 	  - Checks if the cursor is visible.
-	* - :doc:`/scripting/script/getConnectedGamepads/index`
+	* - :doc:`/types/Script/getConnectedGamepads/index`
 	  - Returns the list of connected gamepads.
-	* - :doc:`/scripting/script/getGamepadButtonState/index`
+	* - :doc:`/types/Script/getGamepadButtonState/index`
 	  - Returns the state of the gamepad with identifier gamepadID.
-	* - :doc:`/scripting/script/getGamepadStickAxisX/index`
+	* - :doc:`/types/Script/getGamepadStickAxisX/index`
 	  - Returns the value of the stick's horizontal axis, with -1.0 being left, 0.0 neutral and 1.0 right.
-	* - :doc:`/scripting/script/getGamepadStickAxisY/index`
+	* - :doc:`/types/Script/getGamepadStickAxisY/index`
 	  - Returns the value of the stick's vertical axis, with -1.0 being up, 0.0 neutral and 1.0 down.
-	* - :doc:`/scripting/script/getGamepadLeftTrigger/index`
+	* - :doc:`/types/Script/getGamepadLeftTrigger/index`
 	  - Returns the value of the stick's left trigger, with 0.0 being neutral and 1.0 being fully pressed.
-	* - :doc:`/scripting/script/getGamepadRightTrigger/index`
+	* - :doc:`/types/Script/getGamepadRightTrigger/index`
 	  - Returns the value of the stick's right trigger, with 0.0 being neutral and 1.0 being fully pressed.
-	* - :doc:`/scripting/script/getGamepadName/index`
+	* - :doc:`/types/Script/getGamepadName/index`
 	  - Returns the name of the gamepad.
 
 Windows
@@ -154,51 +154,51 @@ Functions related to windows and monitors.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/openWindow/index`
+	* - :doc:`/types/Script/openWindow/index`
 	  - Opens a new window.
-	* - :doc:`/scripting/script/isWindowOpen/index`
+	* - :doc:`/types/Script/isWindowOpen/index`
 	  - Checks if the window is opened.
-	* - :doc:`/scripting/script/closeWindow/index`
+	* - :doc:`/types/Script/closeWindow/index`
 	  - Closes the window. Closing the main window closes the application.
-	* - :doc:`/scripting/script/getMainWindowID/index`
+	* - :doc:`/types/Script/getMainWindowID/index`
 	  - Returns the unique identifier of the main window.
-	* - :doc:`/scripting/script/windowCount/index`
+	* - :doc:`/types/Script/windowCount/index`
 	  - Returns the number of opened windows.
-	* - :doc:`/scripting/script/setWindowSize/index`
+	* - :doc:`/types/Script/setWindowSize/index`
 	  - Sets the size of the window.
-	* - :doc:`/scripting/script/getWindowWidth/index`
+	* - :doc:`/types/Script/getWindowWidth/index`
 	  - Returns the width of the window.
-	* - :doc:`/scripting/script/getWindowHeight/index`
+	* - :doc:`/types/Script/getWindowHeight/index`
 	  - Returns the height of the window.
-	* - :doc:`/scripting/script/setWindowPosition/index`
+	* - :doc:`/types/Script/setWindowPosition/index`
 	  - Sets the position of the window on the screen.
-	* - :doc:`/scripting/script/getWindowPositionX/index`
+	* - :doc:`/types/Script/getWindowPositionX/index`
 	  - Returns the horizontal position of the window on the screen.
-	* - :doc:`/scripting/script/getWindowPositionY/index`
+	* - :doc:`/types/Script/getWindowPositionY/index`
 	  - Returns the vertical position of the window on the screen.
-	* - :doc:`/scripting/script/setWindowFullscreen/index`
+	* - :doc:`/types/Script/setWindowFullscreen/index`
 	  - Puts the window in fullscreen or windowed.
-	* - :doc:`/scripting/script/isWindowFullscreen/index`
+	* - :doc:`/types/Script/isWindowFullscreen/index`
 	  - Checks if the window is in fullscreen.
-	* - :doc:`/scripting/script/setWindowBorderless/index`
+	* - :doc:`/types/Script/setWindowBorderless/index`
 	  - Removes or adds the window decorations.
-	* - :doc:`/scripting/script/isWindowBorderless/index`
+	* - :doc:`/types/Script/isWindowBorderless/index`
 	  - Checks if the window decorations are shown.
-	* - :doc:`/scripting/script/setWindowResizable/index`
+	* - :doc:`/types/Script/setWindowResizable/index`
 	  - Enables or disables manual window resizing.
-	* - :doc:`/scripting/script/isWindowResizable/index`
+	* - :doc:`/types/Script/isWindowResizable/index`
 	  - Checks if the window can be manually resized.
-	* - :doc:`/scripting/script/setWindowTitle/index`
+	* - :doc:`/types/Script/setWindowTitle/index`
 	  - Sets the window's title.
-	* - :doc:`/scripting/script/setWindowIcon/index`
+	* - :doc:`/types/Script/setWindowIcon/index`
 	  - Sets the window's icon.
-	* - :doc:`/scripting/script/getMonitorWidth/index`
+	* - :doc:`/types/Script/getMonitorWidth/index`
 	  - Returns the width of the main monitor.
-	* - :doc:`/scripting/script/getMonitorHeight/index`
+	* - :doc:`/types/Script/getMonitorHeight/index`
 	  - Returns the height of the main monitor.
-	* - :doc:`/scripting/script/getMonitorRefreshRate/index`
+	* - :doc:`/types/Script/getMonitorRefreshRate/index`
 	  - Returns the refresh rate of the main monitor.
-	* - :doc:`/scripting/script/getMonitorDisplayScaling/index`
+	* - :doc:`/types/Script/getMonitorDisplayScaling/index`
 	  - Returns the display scaling of the main monitor.
 
 Physics
@@ -214,9 +214,9 @@ Functions related to physics.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/intersect/index`
+	* - :doc:`/types/Script/intersect/index`
 	  - Returns information about the intersection of two :doc:`/types/ColliderShape/index`\s.
-	* - :doc:`/scripting/script/raycast/index`
+	* - :doc:`/types/Script/raycast/index`
 	  - Casts a ray and returns information about the hit Entities.
 
 Audio
@@ -232,21 +232,21 @@ Functions related to audio.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/playSound/index`
+	* - :doc:`/types/Script/playSound/index`
 	  - Plays or resumes a sound.
-	* - :doc:`/scripting/script/pauseSound/index`
+	* - :doc:`/types/Script/pauseSound/index`
 	  - Pauses a sound.
-	* - :doc:`/scripting/script/stopSound/index`
+	* - :doc:`/types/Script/stopSound/index`
 	  - Stops a sound.
-	* - :doc:`/scripting/script/isSoundPlaying/index`
+	* - :doc:`/types/Script/isSoundPlaying/index`
 	  - Checks if a sound is currently playing.
-	* - :doc:`/scripting/script/setSoundGain/index`
+	* - :doc:`/types/Script/setSoundGain/index`
 	  - Sets the gain of a sound.
-	* - :doc:`/scripting/script/getSoundGain/index`
+	* - :doc:`/types/Script/getSoundGain/index`
 	  - Returns the gain of a sound.
-	* - :doc:`/scripting/script/setSoundPitch/index`
+	* - :doc:`/types/Script/setSoundPitch/index`
 	  - Sets the pitch of a sound.
-	* - :doc:`/scripting/script/getSoundPitch/index`
+	* - :doc:`/types/Script/getSoundPitch/index`
 	  - Returns the pitch of a sound.
 
 User Interface
@@ -262,16 +262,16 @@ Functions related to the User Interface.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/drawUIText/index`
+	* - :doc:`/types/Script/drawUIText/index`
 	  - Draws text on the User Interface.
-	* - :doc:`/scripting/script/drawUILine/index`
+	* - :doc:`/types/Script/drawUILine/index`
 	  - Draws a line on the User Interface.
-	* - :doc:`/scripting/script/drawUIRectangle/index`
+	* - :doc:`/types/Script/drawUIRectangle/index`
 	  - Draws a rectangle on the User Interface.
-	* - :doc:`/scripting/script/drawUIImage/index`
+	* - :doc:`/types/Script/drawUIImage/index`
 	  - Draws an image on the User Interface.
-	* - :doc:`/scripting/script/drawUIButton/index`
-	  - Draws a button on the User Interface and returns an :doc:`/scripting/script/UIElementState/index`.
+	* - :doc:`/types/Script/drawUIButton/index`
+	  - Draws a button on the User Interface and returns an :doc:`/types/Script/UIElementState/index`.
 
 Frame Limiter
 -------------
@@ -286,9 +286,9 @@ Functions related to maximum number of frames per second.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/setMaxFPS/index`
+	* - :doc:`/types/Script/setMaxFPS/index`
 	  - Sets the maximum number of frames per second.
-	* - :doc:`/scripting/script/getMaxFPS/index`
+	* - :doc:`/types/Script/getMaxFPS/index`
 	  - Returns the maximum number of frames per second.
 
 Job System
@@ -304,13 +304,13 @@ Functions related to multithreading.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/executeJob/index`
+	* - :doc:`/types/Script/executeJob/index`
 	  - Launches a job to be executed by a worker thread.
-	* - :doc:`/scripting/script/dispatchJob/index`
+	* - :doc:`/types/Script/dispatchJob/index`
 	  - Launches a job to be executed by multiple worker threads.
-	* - :doc:`/scripting/script/waitAllThreads/index`
+	* - :doc:`/types/Script/waitAllThreads/index`
 	  - Waits for all worker threads to finish their jobs.
-	* - :doc:`/scripting/script/getNumThreads/index`
+	* - :doc:`/types/Script/getNumThreads/index`
 	  - Returns the number of threads.
 
 Networking
@@ -326,11 +326,11 @@ Functions related to networking.
 
 	* - Name
 	  - Description
-	* - :doc:`/scripting/script/createServerSocket/index`
-	  - Creates a :doc:`/networking/ServerSocket/index`.
-	* - :doc:`/scripting/script/createClientSocket/index`
-	  - Creates a :doc:`/networking/ClientSocket/index`.
-	* - :doc:`/scripting/script/closeServerSocket/index`
-	  - Closes a :doc:`/networking/ServerSocket/index`.
-	* - :doc:`/scripting/script/closeClientSocket/index`
-	  - Closes a :doc:`/networking/ClientSocket/index`.
+	* - :doc:`/types/Script/createServerSocket/index`
+	  - Creates a :doc:`/types/ServerSocket/index`.
+	* - :doc:`/types/Script/createClientSocket/index`
+	  - Creates a :doc:`/types/ClientSocket/index`.
+	* - :doc:`/types/Script/closeServerSocket/index`
+	  - Closes a :doc:`/types/ServerSocket/index`.
+	* - :doc:`/types/Script/closeClientSocket/index`
+	  - Closes a :doc:`/types/ClientSocket/index`.

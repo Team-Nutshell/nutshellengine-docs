@@ -13,13 +13,13 @@ Variables
 	  - Type
 	  - Description
 	* - position
-	  - :doc:`/utils/Math/index`::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - A position.
 	* - rotation
-	  - :doc:`/utils/Math/index`::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - A rotation on each axis (x, y and z). Angles are specified in radians.
 	* - scale
-	  - :doc:`/utils/Math/index`::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - A scale on each axis (x, y and z).
 
 Notes

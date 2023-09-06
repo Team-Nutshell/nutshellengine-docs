@@ -1,7 +1,6 @@
 Frame Limiter
 =============
 
-.. toctree::
-	:maxdepth: 1
+The **Frame Limiter** limits the number of frames per second.
 
-	./FrameLimiter/index.rst
+For its declaration, see :doc:`/types/FrameLimiter/index`.

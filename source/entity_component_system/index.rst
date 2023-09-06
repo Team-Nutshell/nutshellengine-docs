@@ -7,5 +7,3 @@ Entity-Component-System
 	./entity/index.rst
 	./component/index.rst
 	./system/index.rst
-
-	./ecs/index.rst
