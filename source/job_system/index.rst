@@ -1,9 +1,6 @@
 Job System
 ==========
 
-.. toctree::
-	:maxdepth: 1
+The **Job System** manages threads to perform multithreaded operations.
 
-	./JobSystem/index.rst
-
-	./JobDispatchArguments/index.rst
+For its declaration, see :doc:`/types/JobSystem/index`.

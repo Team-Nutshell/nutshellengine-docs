@@ -1,12 +1,6 @@
 Networking
 ==========
 
-.. toctree::
-	:maxdepth: 1
+**Networking** allows to connect different process on the same or different machines, which can be used for multiplayer gameplay.
 
-	./Networking/index.rst
-
-	./ServerSocket/index.rst
-	./ClientSocket/index.rst
-
-	./NetworkType/index.rst
+For its declaration, see :doc:`/types/Networking/index`.

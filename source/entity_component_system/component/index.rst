@@ -1,10 +1,6 @@
 Component
 =========
 
-.. code-block:: cpp
-
-	using Component = uint8_t;
-
 .. toctree::
 
 	./Transform/index.rst

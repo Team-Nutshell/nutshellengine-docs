@@ -19,7 +19,7 @@ Variables
 	  - bool
 	  - Specifies if the :doc:`/entity_component_system/entity/index` is affected by the Physics Module's constants (for example: gravity).
 	* - force
-	  - :doc:`/utils/Math/index`::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The force applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the Physics Module's constants).
 	* - mass
 	  - float
