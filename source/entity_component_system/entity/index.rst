@@ -10,7 +10,7 @@ Creating an Entity is done using the :doc:`/entity_component_system/index`, eith
 
 These functions return an ``Entity`` which can then be used when referencing an Entity.
 
-When created, an Entity already has a :doc:`/entity_component_system/component/Transform/index` Component.
+When created, an Entity already has a :doc:`/types/Transform/index` Component.
 
 Destruction
 -----------

@@ -4,11 +4,14 @@ Types
 .. toctree::
 	:maxdepth: 1
 
+	./AABBCollidable/index.rst
 	./AssetLoaderModuleInterface/index.rst
 	./AssetManager/index.rst
 	./AudioModuleInterface/index.rst
 	./Bimap/index.rst
 	./Buffer/index.rst
+	./Camera/index.rst
+	./CapsuleCollidable/index.rst
 	./ClientSocket/index.rst
 	./ColliderAABB/index.rst
 	./ColliderCapsule/index.rst
@@ -43,6 +46,7 @@ Types
 	./JobDispatchArguments/index.rst
 	./JobSystem/index.rst
 	./JSON/index.rst
+	./Light/index.rst
 	./LightType/index.rst
 	./Material/index.rst
 	./Math/index.rst
@@ -58,13 +62,18 @@ Types
 	./Octree/index.rst
 	./PhysicsModuleInterface/index.rst
 	./RaycastInformation/index.rst
+	./Renderable/index.rst
+	./Rigidbody/index.rst
 	./SceneManager/index.rst
 	./Script/index.rst
+	./Scriptable/index.rst
 	./ServerSocket/index.rst
 	./Sound/index.rst
 	./SoundID/index.rst
+	./SphereCollidable/index.rst
 	./Texture/index.rst
 	./ThreadSafeQueue/index.rst
+	./Transform/index.rst
 	./Vertex/index.rst
 	./WindowID/index.rst
 	./WindowModuleInterface/index.rst
