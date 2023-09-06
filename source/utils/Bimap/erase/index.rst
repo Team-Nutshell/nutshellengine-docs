@@ -3,6 +3,8 @@ erase
 
 :doc:`/utils/Bimap/index`::erase
 
+Erases an element from the map.
+
 Declaration
 -----------
 

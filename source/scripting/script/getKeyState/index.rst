@@ -3,6 +3,8 @@ getKeyState
 
 :doc:`/scripting/script/index`::getKeyState
 
+Returns the state of a keyboard key.
+
 Declaration
 -----------
 

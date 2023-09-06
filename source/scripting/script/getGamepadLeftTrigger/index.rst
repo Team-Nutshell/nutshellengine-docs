@@ -3,6 +3,8 @@ getGamepadLeftTrigger
 
 :doc:`/scripting/script/index`::getGamepadLeftTrigger
 
+Returns the value of the stick's left trigger, with 0.0 being neutral and 1.0 being fully pressed.
+
 Declaration
 -----------
 

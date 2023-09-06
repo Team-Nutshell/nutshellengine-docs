@@ -3,6 +3,8 @@ insert_or_assign
 
 :doc:`/utils/Bimap/index`::insert_or_assign
 
+Inserts an element into the Bimap, according to a key. If the data already exists, its value changes.
+
 Declaration
 -----------
 

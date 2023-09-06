@@ -3,6 +3,8 @@ setEntityName
 
 :doc:`/scripting/script/index`::setEntityName
 
+Sets a name to an :doc:`/entity_component_system/entity/index`.
+
 Declaration
 -----------
 
@@ -22,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to set the name on.
 	* - name
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&

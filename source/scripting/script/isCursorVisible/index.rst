@@ -3,6 +3,8 @@ isCursorVisible
 
 :doc:`/scripting/script/index`::isCursorVisible
 
+Checks if the cursor is visible.
+
 Declaration
 -----------
 

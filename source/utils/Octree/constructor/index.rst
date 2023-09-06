@@ -3,6 +3,8 @@ Octree
 
 :doc:`/utils/Octree/index`::Octree
 
+Constructs an Octree.
+
 Declaration
 -----------
 

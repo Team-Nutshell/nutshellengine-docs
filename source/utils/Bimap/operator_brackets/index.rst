@@ -3,6 +3,8 @@ operator[]
 
 :doc:`/utils/Bimap/index`::operator[]
 
+Returns the element according to the key passed in parameters.
+
 Declaration
 -----------
 

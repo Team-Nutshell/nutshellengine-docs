@@ -3,6 +3,8 @@ getType
 
 :doc:`/utils/JSON/Node/index`::getType
 
+Returns the Node's :doc:`/utils/JSON/Type/index`.
+
 Declaration
 -----------
 

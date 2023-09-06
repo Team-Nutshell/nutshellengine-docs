@@ -3,6 +3,8 @@ getMouseScrollOffsetX
 
 :doc:`/scripting/script/index`::getMouseScrollOffsetX
 
+Returns the horizontal mouse scroll offset between the last and current frame.
+
 Declaration
 -----------
 

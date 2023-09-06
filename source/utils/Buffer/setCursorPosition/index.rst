@@ -3,6 +3,8 @@ setCursorPosition
 
 :doc:`/utils/Buffer/index`::setCursorPosition
 
+Sets the Buffer's cursor's position.
+
 Declaration
 -----------
 

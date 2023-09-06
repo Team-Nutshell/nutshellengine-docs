@@ -3,6 +3,8 @@ getMeshID
 
 :doc:`/scripting/script/index`::getMeshID
 
+Loads a model in the Graphics Module and returns a unique identifier to this model.
+
 Declaration
 -----------
 

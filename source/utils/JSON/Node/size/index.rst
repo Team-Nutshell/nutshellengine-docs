@@ -3,6 +3,8 @@ size
 
 :doc:`/utils/JSON/Node/index`::size
 
+Returns the number of elements in an Array Node or Object Node.
+
 Declaration
 -----------
 

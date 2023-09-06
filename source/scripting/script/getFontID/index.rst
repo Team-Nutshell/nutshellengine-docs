@@ -3,6 +3,8 @@ getFontID
 
 :doc:`/scripting/script/index`::getFontID
 
+Loads a font in the Graphics Module and returns a unique identifier to this font.
+
 Declaration
 -----------
 

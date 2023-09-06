@@ -3,6 +3,8 @@ operator=
 
 :doc:`/utils/Buffer/index`::operator=
 
+Constructs a Buffer.
+
 Declaration
 -----------
 

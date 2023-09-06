@@ -3,6 +3,8 @@ destroyNonPersistentEntities
 
 :doc:`/scripting/script/index`::destroyNonPersistentEntities
 
+Destroys all Entities not marked as persistent.
+
 Declaration
 -----------
 

@@ -1,7 +1,9 @@
 getMouseButtonState
 ===================
 
-:doc:`/scripting/script/index`::getKeyState
+:doc:`/scripting/script/index`::getMouseButtonState
+
+Returns the state of a mouse button.
 
 Declaration
 -----------

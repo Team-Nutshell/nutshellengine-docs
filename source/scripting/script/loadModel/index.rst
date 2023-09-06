@@ -3,6 +3,8 @@ loadModel
 
 :doc:`/scripting/script/index`::loadModel
 
+Loads a model from a file in the AssetManager and returns a pointer to the loaded model.
+
 Declaration
 -----------
 

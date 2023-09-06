@@ -3,6 +3,8 @@ setBoolean
 
 :doc:`/utils/JSON/Node/index`::setBoolean
 
+Sets the value of a Boolean Node.
+
 Declaration
 -----------
 

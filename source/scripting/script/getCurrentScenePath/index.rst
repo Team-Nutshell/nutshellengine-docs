@@ -1,7 +1,9 @@
 getCurrentScenePath
 ===================
 
-Script::getCurrentScenePath
+:doc:`/scripting/script/index`::getCurrentScenePath
+
+Returns the current scene's path.
 
 Declaration
 -----------

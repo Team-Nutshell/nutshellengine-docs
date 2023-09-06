@@ -3,6 +3,8 @@ getSoundID
 
 :doc:`/scripting/script/index`::getSoundID
 
+Loads a sound in the Audio Module and returns a unique identifier to this sound.
+
 Declaration
 -----------
 

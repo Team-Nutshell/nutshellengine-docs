@@ -3,6 +3,8 @@ directory
 
 :doc:`/utils/File/index`::directory
 
+Returns the directory the file is into.
+
 Declaration
 -----------
 

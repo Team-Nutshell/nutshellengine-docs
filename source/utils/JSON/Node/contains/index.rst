@@ -3,6 +3,8 @@ contains
 
 :doc:`/utils/JSON/Node/index`::contains
 
+Checks if the Object Node contains a certain key.
+
 Declaration
 -----------
 

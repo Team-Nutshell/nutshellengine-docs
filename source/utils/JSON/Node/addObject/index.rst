@@ -3,6 +3,8 @@ addObject
 
 :doc:`/utils/JSON/Node/index`::addObject
 
+Adds an element to an Array Node or to certain key in an Object Node.
+
 Declaration
 -----------
 

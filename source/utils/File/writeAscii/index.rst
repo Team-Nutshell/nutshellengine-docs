@@ -3,6 +3,8 @@ writeAscii
 
 :doc:`/utils/File/index`::writeAscii
 
+Writes ASCII data to a file.
+
 Declaration
 -----------
 

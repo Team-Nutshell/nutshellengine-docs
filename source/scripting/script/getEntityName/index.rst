@@ -3,6 +3,8 @@ getEntityName
 
 :doc:`/scripting/script/index`::getEntityName
 
+Returns the name of the :doc:`/entity_component_system/entity/index`.
+
 Declaration
 -----------
 
@@ -22,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to get the name of.
 
 Returns

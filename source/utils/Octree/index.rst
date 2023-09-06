@@ -14,11 +14,11 @@ Functions
 	* - Name
 	  - Description
 	* - :doc:`/utils/Octree/constructor/index`
-	  - Constructs an octree.
+	  - Constructs an Octree.
 	* - :doc:`/utils/Octree/execute/index`
-	  - Executes a function on all elements of the octree.
+	  - Executes a function on all elements of the Octree.
 	* - :doc:`/utils/Octree/insert/index`
-	  - Inserts an element in the octree.
+	  - Inserts an element in the Octree.
 
 .. toctree::
 	:hidden:

@@ -3,6 +3,8 @@ size
 
 :doc:`/utils/Bimap/index`::size
 
+Returns the number of elements in the Bimap.
+
 Declaration
 -----------
 

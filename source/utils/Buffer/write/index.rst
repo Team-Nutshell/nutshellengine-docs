@@ -3,6 +3,8 @@ write
 
 :doc:`/utils/Buffer/index`::write
 
+Writes content into a Buffer.
+
 Declaration
 -----------
 

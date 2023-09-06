@@ -1,7 +1,9 @@
 goToScene
 =========
 
-Script::goToScene
+:doc:`/scripting/script/index`::goToScene
+
+Loads a scene from a file.
 
 Declaration
 -----------

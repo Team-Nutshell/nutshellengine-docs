@@ -3,6 +3,8 @@ hasEntityComponent
 
 :doc:`/scripting/script/index`::hasEntityComponent
 
+Checks if an :doc:`/entity_component_system/entity/index` has a certain :doc:`/entity_component_system/component/index`.
+
 Declaration
 -----------
 
@@ -23,8 +25,8 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
-	  - The Entity to check the possession of the :doc:`/ecs/component/index` on.
+	  - :doc:`/entity_component_system/entity/index`
+	  - The Entity to check the possession of the :doc:`/entity_component_system/component/index` on.
 
 Returns
 -------
@@ -34,4 +36,4 @@ Returns
 Notes
 -----
 
-The type of the :doc:`/ecs/component/index` to check must be passed as a template.
+The type of the :doc:`/entity_component_system/component/index` to check must be passed as a template.

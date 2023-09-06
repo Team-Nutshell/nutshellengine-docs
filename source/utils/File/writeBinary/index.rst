@@ -3,6 +3,8 @@ writeBinary
 
 :doc:`/utils/File/index`::writeBinary
 
+Writes binary data to a file.
+
 Declaration
 -----------
 

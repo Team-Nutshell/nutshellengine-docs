@@ -3,6 +3,8 @@ destroyAllEntities
 
 :doc:`/scripting/script/index`::destroyAllEntities
 
+Destroys all Entities.
+
 Declaration
 -----------
 

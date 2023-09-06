@@ -3,6 +3,8 @@ getConnectedGamepads
 
 :doc:`/scripting/script/index`::getConnectedGamepads
 
+Returns the list of connected gamepads.
+
 Declaration
 -----------
 

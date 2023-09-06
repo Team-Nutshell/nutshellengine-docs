@@ -3,6 +3,8 @@ getImageID
 
 :doc:`/scripting/script/index`::getImageID
 
+Loads an image in the Graphics Module and returns a unique identifier to this image.
+
 Declaration
 -----------
 

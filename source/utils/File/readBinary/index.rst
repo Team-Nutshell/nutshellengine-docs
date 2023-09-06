@@ -3,6 +3,8 @@ readBinary
 
 :doc:`/utils/File/index`::readBinary
 
+Reads binary data from a file.
+
 Declaration
 -----------
 
