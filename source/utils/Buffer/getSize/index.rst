@@ -3,6 +3,8 @@ getSize
 
 :doc:`/utils/Buffer/index`::getSize
 
+Returns the size of the data.
+
 Declaration
 -----------
 

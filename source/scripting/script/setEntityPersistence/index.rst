@@ -3,6 +3,8 @@ setEntityPersistence
 
 :doc:`/scripting/script/index`::setEntityPersistence
 
+Marks or unmarks the :doc:`/entity_component_system/entity/index` as persistent.
+
 Declaration
 -----------
 
@@ -22,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to set the persistence flag on.
 	* - persistent
 	  - bool

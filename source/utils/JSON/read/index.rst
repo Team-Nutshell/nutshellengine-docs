@@ -3,6 +3,8 @@ read
 
 :doc:`/utils/JSON/index`::read
 
+Reads a JSON and returns the root :doc:`/utils/JSON/Node/index`.
+
 Declaration
 -----------
 

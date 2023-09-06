@@ -3,6 +3,8 @@ readAscii
 
 :doc:`/utils/File/index`::readAscii
 
+Reads ASCII data from a file.
+
 Declaration
 -----------
 

@@ -26,7 +26,7 @@ Functions
 	* - :doc:`/utils/JSON/Node/getBoolean/index`
 	  - Returns the boolean contained in a Boolean Node.
 	* - :doc:`/utils/JSON/Node/addObject/index`
-	  - Add an element to an Array Node or to certain key in an Object Node.
+	  - Adds an element to an Array Node or to certain key in an Object Node.
 	* - :doc:`/utils/JSON/Node/setNumber/index`
 	  - Sets the value of a Number Node.
 	* - :doc:`/utils/JSON/Node/setString/index`

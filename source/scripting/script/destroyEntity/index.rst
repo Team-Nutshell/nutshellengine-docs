@@ -3,6 +3,8 @@ destroyEntity
 
 :doc:`/scripting/script/index`::destroyEntity
 
+Destroys an :doc:`/entity_component_system/entity/index`.
+
 Declaration
 -----------
 
@@ -22,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to destroy.
 
 Returns
@@ -33,7 +35,7 @@ None.
 Notes
 -----
 
-If the Entity is self-destructing, which means that this function's parameter is the Entity's own identifier, for example:
+If the :doc:`/entity_component_system/entity/index` is self-destructing, which means that this function's parameter is the Entity's own identifier, for example:
 
 .. code-block:: cpp
 

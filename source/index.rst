@@ -1,7 +1,7 @@
 NutshellEngine
 ==============
 
-NutshellEngine is a modular game engine designed to enable game and engine developers to work together efficiently by providing easy to replace modules implementing the game engine’s principal systems such as rendering, physics and audio.
+**NutshellEngine** is a modular game engine designed to enable game and engine developers to work together efficiently by providing easy to replace modules implementing the game engine’s principal systems such as rendering, physics and audio.
 
 .. toctree::
 	:maxdepth: 2
@@ -10,7 +10,17 @@ NutshellEngine is a modular game engine designed to enable game and engine devel
 	./scripting/index.rst
 	./modules/index.rst
 
-	./ecs/index.rst
+	./entity_component_system/index.rst
+
+	./asset_manager/index.rst
+
+	./frame_limiter/index.rst
+
+	./job_system/index.rst
+
+	./networking/index.rst
+
+	./scene_manager/index.rst
 
 	./utils/index.rst
 

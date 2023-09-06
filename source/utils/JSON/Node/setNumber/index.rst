@@ -3,6 +3,8 @@ setNumber
 
 :doc:`/utils/JSON/Node/index`::setNumber
 
+Sets the value of a Number Node.
+
 Declaration
 -----------
 

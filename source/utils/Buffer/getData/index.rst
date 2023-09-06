@@ -3,6 +3,8 @@ getData
 
 :doc:`/utils/Buffer/index`::getData
 
+Returns the data.
+
 Declaration
 -----------
 

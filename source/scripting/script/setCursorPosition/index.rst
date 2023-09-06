@@ -3,6 +3,8 @@ setCursorPosition
 
 :doc:`/scripting/script/index`::setCursorPosition
 
+Sets the mouse cursor position.
+
 Declaration
 -----------
 

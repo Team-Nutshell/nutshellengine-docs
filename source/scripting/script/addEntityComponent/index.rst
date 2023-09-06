@@ -3,6 +3,8 @@ addEntityComponent
 
 :doc:`/scripting/script/index`::addEntityComponent
 
+Adds a :doc:`/entity_component_system/component/index` to an :doc:`/entity_component_system/entity/index`.
+
 Declaration
 -----------
 
@@ -23,10 +25,10 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to add the Component to.
 	* - component
-	  - *T* (:doc:`/ecs/component/index`)
+	  - *T* (:doc:`/entity_component_system/component/index`)
 	  - The component to add to the Entity.
 
 Returns

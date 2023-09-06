@@ -3,6 +3,8 @@ getEntityComponent
 
 :doc:`/scripting/script/index`::getEntityComponent
 
+Returns an :doc:`/entity_component_system/entity/index`'s :doc:`/entity_component_system/component/index`.
+
 Declaration
 -----------
 
@@ -23,8 +25,8 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
-	  - The Entity to get the :doc:`/ecs/component/index` from.
+	  - :doc:`/entity_component_system/entity/index`
+	  - The Entity to get the :doc:`/entity_component_system/component/index` from.
 
 Returns
 -------
@@ -34,4 +36,4 @@ A const reference to the Component whose type has been passed in template.
 Notes
 -----
 
-The type of the :doc:`/ecs/component/index` to get must be passed as a template.
+The type of the :doc:`/entity_component_system/component/index` to get must be passed as a template.

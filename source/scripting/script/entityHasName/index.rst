@@ -3,6 +3,8 @@ entityHasName
 
 :doc:`/scripting/script/index`::entityHasName
 
+Checks if an :doc:`/entity_component_system/entity/index` has a name.
+
 Declaration
 -----------
 
@@ -22,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to check the existence of a name of.
 
 Returns

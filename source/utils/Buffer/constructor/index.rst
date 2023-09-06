@@ -3,6 +3,8 @@ Buffer
 
 :doc:`/utils/Buffer/index`::Buffer
 
+Constructs a Buffer.
+
 Declaration
 -----------
 

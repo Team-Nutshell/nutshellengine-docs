@@ -18,9 +18,9 @@ Functions
 	* - :doc:`/utils/Buffer/operator_equals/index`
 	  - Constructs a Buffer.
 	* - :doc:`/utils/Buffer/write/index`
-	  - Writes content into a buffer.
+	  - Writes content into a Buffer.
 	* - :doc:`/utils/Buffer/read/index`
-	  - Reads content from a buffer.
+	  - Reads content from a Buffer.
 	* - :doc:`/utils/Buffer/setCursorPosition/index`
 	  - Sets the Buffer's cursor's position.
 	* - :doc:`/utils/Buffer/getData/index`

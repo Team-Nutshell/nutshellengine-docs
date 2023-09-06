@@ -3,6 +3,8 @@ getNumber
 
 :doc:`/utils/JSON/Node/index`::getNumber
 
+Returns the number contained in a Number Node.
+
 Declaration
 -----------
 

@@ -3,6 +3,8 @@ operator[]
 
 :doc:`/utils/JSON/Node/index`::operator[]
 
+Returns the element at a certain index in an Array Node or a certain key in an Object Node.
+
 Declaration
 -----------
 

@@ -3,6 +3,8 @@ getCursorPositionY
 
 :doc:`/scripting/script/index`::getCursorPositionY
 
+Returns the mouse cursor vertical position.
+
 Declaration
 -----------
 

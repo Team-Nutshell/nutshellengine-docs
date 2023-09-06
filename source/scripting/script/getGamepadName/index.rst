@@ -3,6 +3,8 @@ getGamepadName
 
 :doc:`/scripting/script/index`::getGamepadName
 
+Returns the name of the gamepad.
+
 Declaration
 -----------
 

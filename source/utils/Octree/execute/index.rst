@@ -3,6 +3,8 @@ execute
 
 :doc:`/utils/Octree/index`::execute
 
+ Executes a function on all elements of the Octree.
+
 Declaration
 -----------
 

@@ -3,6 +3,8 @@ setCursorVisibility
 
 :doc:`/scripting/script/index`::setCursorVisibility
 
+Sets the mouse cursor's visibility.
+
 Declaration
 -----------
 

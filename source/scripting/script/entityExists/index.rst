@@ -3,6 +3,8 @@ entityExists
 
 :doc:`/scripting/script/index`::entityExists
 
+Checks if an :doc:`/entity_component_system/entity/index` exists.
+
 Declaration
 -----------
 
@@ -22,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to check the existence of.
 
 Returns

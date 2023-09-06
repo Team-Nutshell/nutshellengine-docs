@@ -3,6 +3,8 @@ getType
 
 :doc:`/types/ColliderShape/index`::getType
 
+Returns the ``type`` of the collider.
+
 Declaration
 -----------
 

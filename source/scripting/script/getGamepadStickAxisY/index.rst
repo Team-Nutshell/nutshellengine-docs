@@ -3,6 +3,8 @@ getGamepadStickAxisY
 
 :doc:`/scripting/script/index`::getGamepadStickAxisY
 
+Returns the value of the stick's vertical axis, with -1.0 being up, 0.0 neutral and 1.0 down.
+
 Declaration
 -----------
 

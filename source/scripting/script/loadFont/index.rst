@@ -3,6 +3,8 @@ loadFont
 
 :doc:`/scripting/script/index`::loadFont
 
+Loads a font from a file in the AssetManager and returns a pointer to the loaded font.
+
 Declaration
 -----------
 

@@ -3,6 +3,8 @@ pop_front
 
 :doc:`/utils/ThreadSafeQueue/index`::pop_front
 
+Removes an element at the front of the queue.
+
 Declaration
 -----------
 

@@ -3,6 +3,8 @@ getGamepadButtonState
 
 :doc:`/scripting/script/index`::getGamepadButtonState
 
+Returns the state of the gamepad with identifier gamepadID.
+
 Declaration
 -----------
 

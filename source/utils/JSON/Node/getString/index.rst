@@ -3,6 +3,8 @@ getString
 
 :doc:`/utils/JSON/Node/index`::getString
 
+Returns the string contained in a String Node.
+
 Declaration
 -----------
 

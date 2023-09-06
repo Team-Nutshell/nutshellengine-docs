@@ -3,6 +3,8 @@ getBoolean
 
 :doc:`/utils/JSON/Node/index`::getBoolean
 
+Returns the boolean contained in a Boolean Node.
+
 Declaration
 -----------
 

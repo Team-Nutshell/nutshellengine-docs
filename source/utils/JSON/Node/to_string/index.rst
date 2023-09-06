@@ -3,6 +3,8 @@ to_string
 
 :doc:`/utils/JSON/Node/index`::to_string
 
+Converts the JSON to a string.
+
 Declaration
 -----------
 

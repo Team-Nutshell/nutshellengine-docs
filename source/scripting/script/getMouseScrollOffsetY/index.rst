@@ -3,6 +3,8 @@ getMouseScrollOffsetY
 
 :doc:`/scripting/script/index`::getMouseScrollOffsetY
 
+Returns the vertical mouse scroll offset between the last and current frame.
+
 Declaration
 -----------
 

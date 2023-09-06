@@ -3,6 +3,8 @@ getCursorPositionX
 
 :doc:`/scripting/script/index`::getCursorPositionX
 
+Returns the mouse cursor horizontal position.
+
 Declaration
 -----------
 

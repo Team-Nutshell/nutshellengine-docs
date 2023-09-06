@@ -3,6 +3,8 @@ push_back
 
 :doc:`/utils/ThreadSafeQueue/index`::push_back
 
+Adds an element at the back of the queue.
+
 Declaration
 -----------
 

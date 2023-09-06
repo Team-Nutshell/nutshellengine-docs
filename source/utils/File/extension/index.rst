@@ -3,6 +3,8 @@ extension
 
 :doc:`/utils/File/index`::extension
 
+Returns the file's extension.
+
 Declaration
 -----------
 

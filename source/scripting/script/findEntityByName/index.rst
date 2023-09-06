@@ -3,6 +3,8 @@ findEntityByName
 
 :doc:`/scripting/script/index`::findEntityByName
 
+Returns the :doc:`/entity_component_system/entity/index` associated with the name.
+
 Declaration
 -----------
 
@@ -28,4 +30,4 @@ Parameters
 Returns
 -------
 
-The :doc:`/ecs/entity/index` if the name is associated with an Entity, else, returns ``NTSHENGN_ENTITY_UNKNOWN``.
+The :doc:`/entity_component_system/entity/index` if the name is associated with an Entity, else, returns ``NTSHENGN_ENTITY_UNKNOWN``.

@@ -3,6 +3,8 @@ setString
 
 :doc:`/utils/JSON/Node/index`::setString
 
+Sets the value of a String Node.
+
 Declaration
 -----------
 

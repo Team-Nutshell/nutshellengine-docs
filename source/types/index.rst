@@ -36,6 +36,7 @@ Types
 	./ModelPrimitive/index.rst
 	./NativeWindowAdditionalInformation/index.rst
 	./NativeWindowHandle/index.rst
+	./RaycastInformation/index.rst
 	./Sound/index.rst
 	./SoundID/index.rst
 	./Texture/index.rst

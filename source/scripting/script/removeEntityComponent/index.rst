@@ -3,6 +3,8 @@ removeEntityComponent
 
 :doc:`/scripting/script/index`::removeEntityComponent
 
+Removes a :doc:`/entity_component_system/component/index` from an :doc:`/entity_component_system/entity/index`.
+
 Declaration
 -----------
 
@@ -23,7 +25,7 @@ Parameters
 	  - Type
 	  - Description
 	* - entity
-	  - :doc:`/ecs/entity/index`
+	  - :doc:`/entity_component_system/entity/index`
 	  - The Entity to remove the Component from.
 
 Returns
@@ -34,4 +36,4 @@ None.
 Notes
 -----
 
-The type of the :doc:`/ecs/component/index` to remove must be passed as a template.
+The type of the :doc:`/entity_component_system/component/index` to remove must be passed as a template.

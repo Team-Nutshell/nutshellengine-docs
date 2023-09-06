@@ -3,6 +3,8 @@ read
 
 :doc:`/utils/Buffer/index`::read
 
+Reads content from a Buffer.
+
 Declaration
 -----------
 

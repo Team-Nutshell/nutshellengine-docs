@@ -3,6 +3,8 @@ insert
 
 :doc:`/utils/Octree/index`::insert
 
+Inserts an element in the Octree.
+
 Declaration
 -----------
 

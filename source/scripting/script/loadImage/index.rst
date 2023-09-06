@@ -3,6 +3,8 @@ loadImage
 
 :doc:`/scripting/script/index`::loadImage
 
+Loads an image from a file in the AssetManager and returns a pointer to the loaded image.
+
 Declaration
 -----------
 

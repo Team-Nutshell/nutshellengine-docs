@@ -3,6 +3,8 @@ loadSound
 
 :doc:`/scripting/script/index`::loadSound
 
+Loads a sound from a file in the AssetManager and returns a pointer to the loaded sound.
+
 Declaration
 -----------
 

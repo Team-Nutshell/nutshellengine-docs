@@ -3,6 +3,8 @@ filename
 
 :doc:`/utils/File/index`::filename
 
+Returns the filename without the extension.
+
 Declaration
 -----------
 
