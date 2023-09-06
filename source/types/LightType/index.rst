@@ -16,4 +16,4 @@ Declaration
 Notes
 -----
 
-LightType is an enum used in :doc:`/entity_component_system/component/Light/index` to differentiate the different types of light.
+LightType is an enum used in :doc:`/types/Light/index` to differentiate the different types of light.

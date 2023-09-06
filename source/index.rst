@@ -22,6 +22,8 @@ NutshellEngine
 
 	./scene/index.rst
 
+	./file_formats/index.rst
+
 	./types/index.rst
 
 Indices and tables
