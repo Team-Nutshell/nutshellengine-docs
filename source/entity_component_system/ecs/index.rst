@@ -42,7 +42,7 @@ Functions
 	  - Checks if an :doc:`/entity_component_system/entity/index` has a certain :doc:`/entity_component_system/component/index`.
 	* - :doc:`/entity_component_system/ecs/getComponent/index`
 	  - Returns an :doc:`/entity_component_system/entity/index`'s :doc:`/entity_component_system/component/index`.
-	* - :doc:`/entity_component_system/ecs/getComponentId/index`
+	* - :doc:`/entity_component_system/ecs/getComponentID/index`
 	  - Returns a :doc:`/entity_component_system/component/index`'s identifier.
 
 .. toctree::
@@ -63,4 +63,4 @@ Functions
 	./removeComponent/index.rst
 	./hasComponent/index.rst
 	./getComponent/index.rst
-	./getComponentId/index.rst
+	./getComponentID/index.rst

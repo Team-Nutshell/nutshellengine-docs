@@ -11,7 +11,7 @@ Declaration
 .. code-block:: cpp
 
 	template <typename T>
-	Component getComponentId();
+	Component getComponentID();
 
 Parameters
 ----------
