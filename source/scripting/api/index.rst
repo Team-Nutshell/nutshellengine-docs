@@ -69,9 +69,9 @@ Functions related to the Entity-Component-System.
 	* - :doc:`/types/Script/destroyEntity/index`
 	  - Destroys an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/destroyAllEntities/index`
-	  - Destroys all Entities.
+	  - Destroys all :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/destroyNonPersistentEntities/index`
-	  - Destroys all Entities not marked as persistent.
+	  - Destroys all :doc:`Entities </entity_component_system/entity/index>` not marked as persistent.
 	* - :doc:`/types/Script/entityExists/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` exists.
 	* - :doc:`/types/Script/setEntityName/index`
@@ -217,7 +217,7 @@ Functions related to physics.
 	* - :doc:`/types/Script/intersect/index`
 	  - Returns information about the intersection of two :doc:`/types/ColliderShape/index`\s.
 	* - :doc:`/types/Script/raycast/index`
-	  - Casts a ray and returns information about the hit Entities.
+	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 
 Audio
 -----

@@ -38,4 +38,4 @@ None.
 Notes
 -----
 
-The Entity names are **unique**, which signifies that two Entities **can not** have the same name.
+The Entity names are **unique**, which signifies that two :doc:`Entities </entity_component_system/entity/index>` **can not** have the same name.

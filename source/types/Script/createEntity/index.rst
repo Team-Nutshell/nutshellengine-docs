@@ -37,4 +37,4 @@ Notes
 
 When created, an :doc:`/entity_component_system/entity/index` already has a :doc:`/types/Transform/index` Component.
 
-If ``name`` is not the empty string ``""``, the Entity names are **unique**, which signifies that two Entities **can not** have the same name.
+If ``name`` is not the empty string ``""``, the Entity names are **unique**, which signifies that two :doc:`Entities </entity_component_system/entity/index>` **can not** have the same name.

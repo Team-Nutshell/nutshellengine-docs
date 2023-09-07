@@ -16,7 +16,7 @@
 	  - Possible values
 	* - entities
 	  - Array of Objects
-	  - The scene's Entities.
+	  - The scene's :doc:`Entities </entity_component_system/entity/index>`.
 	  - .. list-table::
 			:width: 100%
 			:header-rows: 1

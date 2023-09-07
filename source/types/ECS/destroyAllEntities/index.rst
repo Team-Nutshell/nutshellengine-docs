@@ -3,7 +3,7 @@ destroyAllEntities
 
 :doc:`/types/ECS/index`::destroyAllEntities
 
-Destroys all Entities.
+Destroys all :doc:`Entities </entity_component_system/entity/index>`.
 
 Declaration
 -----------

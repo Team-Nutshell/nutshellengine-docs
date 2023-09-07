@@ -59,6 +59,12 @@ Functions
 
 	* - Name
 	  - Description
+	* - :doc:`/types/Script/init/index`
+	  - Initialization function executed once, when the :doc:`/types/Script/index` is created.
+	* - :doc:`/types/Script/update/index`
+	  - Update function executed once per frame.
+	* - :doc:`/types/Script/destroy/index`
+	  - Destruction function executed once, when the :doc:`/types/Script/index` is destroyed.
 	* - :doc:`/types/Script/loadModel/index`
 	  - Loads a model from a file in the AssetManager and returns a pointer to the loaded model.
 	* - :doc:`/types/Script/getMeshID/index`
@@ -84,9 +90,9 @@ Functions
 	* - :doc:`/types/Script/destroyEntity/index`
 	  - Destroys an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/destroyAllEntities/index`
-	  - Destroys all Entities.
+	  - Destroys all :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/destroyNonPersistentEntities/index`
-	  - Destroys all Entities not marked as persistent.
+	  - Destroys all :doc:`Entities </entity_component_system/entity/index>` not marked as persistent.
 	* - :doc:`/types/Script/entityExists/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` exists.
 	* - :doc:`/types/Script/setEntityName/index`
@@ -190,7 +196,7 @@ Functions
 	* - :doc:`/types/Script/intersect/index`
 	  - Returns information about the intersection of two :doc:`/types/ColliderShape/index`\s.
 	* - :doc:`/types/Script/raycast/index`
-	  - Casts a ray and returns information about the hit Entities.
+	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/playSound/index`
 	  - Plays or resumes a sound.
 	* - :doc:`/types/Script/pauseSound/index`
@@ -240,6 +246,10 @@ Functions
 
 .. toctree::
 	:hidden:
+
+	./init/index.rst
+	./update/index.rst
+	./destroy/index.rst
 
 	./goToScene/index.rst
 	./getCurrentScenePath/index.rst
