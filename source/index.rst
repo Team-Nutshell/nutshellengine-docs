@@ -8,7 +8,7 @@ NutshellEngine
 	:caption: Table of Contents
 
 	./scripting/index.rst
-	./modules/index.rst
+	./module/index.rst
 
 	./entity_component_system/index.rst
 

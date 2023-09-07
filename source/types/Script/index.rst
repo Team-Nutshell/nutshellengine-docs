@@ -46,7 +46,7 @@ Variables
 	  - Memory address to the :doc:`/networking/index`.
 	* - sceneManager
 	  - :doc:`/types/SceneManager/index`\*
-	  - Memory address to the manager of :doc:`/scene/index`\s.
+	  - Memory address to the manager of :doc:`Scenes </scene/index>`.
 
 Functions
 ---------
@@ -194,7 +194,7 @@ Functions
 	* - :doc:`/types/Script/getMonitorDisplayScaling/index`
 	  - Returns the display scaling of the main monitor.
 	* - :doc:`/types/Script/intersect/index`
-	  - Returns information about the intersection of two :doc:`/types/ColliderShape/index`\s.
+	  - Returns information about the intersection of two :doc:`ColliderShapes </types/ColliderShape/index>`.
 	* - :doc:`/types/Script/raycast/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/playSound/index`

@@ -3,7 +3,7 @@ intersect
 
 :doc:`/types/Script/index`::intersect
 
-Returns information about the intersection of two :doc:`/types/ColliderShape/index`\s.
+Returns information about the intersection of two :doc:`ColliderShapes </types/ColliderShape/index>`.
 
 Declaration
 -----------
