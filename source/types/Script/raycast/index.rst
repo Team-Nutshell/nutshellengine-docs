@@ -3,7 +3,7 @@ raycast
 
 :doc:`/types/Script/index`::raycast
 
-Casts a ray and returns information about the hit Entities.
+Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 
 Declaration
 -----------
@@ -39,7 +39,7 @@ Parameters
 Returns
 -------
 
-An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of :doc:`/types/RaycastInformation/index`\s containing information about the hit Entities.
+An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of :doc:`/types/RaycastInformation/index`\s containing information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 
 The returned list is sorted from the closest to the furthest object.
 
