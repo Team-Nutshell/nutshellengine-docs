@@ -19,7 +19,9 @@ Types
 	./ColliderShapeType/index.rst
 	./ColliderSphere/index.rst
 	./Component/index.rst
+	./ConnectedClient/index.rst
 	./ConnectedClientID/index.rst
+	./ConnectedServer/index.rst
 	./ECS/index.rst
 	./Entity/index.rst
 	./File/index.rst

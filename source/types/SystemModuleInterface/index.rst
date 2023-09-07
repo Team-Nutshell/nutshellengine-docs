@@ -16,16 +16,16 @@ Variables
 	  - Description
 	* - graphicsModule
 	  - :doc:`/types/GraphicsModuleInterface/index`\*
-	  - Memory address to the :doc:`/modules/graphics_module/index`.
+	  - Memory address to the :doc:`/module/graphics_module/index`.
 	* - physicsModule
 	  - :doc:`/types/PhysicsModuleInterface/index`\*
-	  - Memory address to the :doc:`/modules/physics_module/index`.
+	  - Memory address to the :doc:`/module/physics_module/index`.
 	* - windowModule
 	  - :doc:`/types/WindowModuleInterface/index`\*
-	  - Memory address to the :doc:`/modules/window_module/index`.
+	  - Memory address to the :doc:`/module/window_module/index`.
 	* - audioModule
 	  - :doc:`/types/AudioModuleInterface/index`\*
-	  - Memory address to the :doc:`/modules/audio_module/index`.
+	  - Memory address to the :doc:`/module/audio_module/index`.
 	* - ecs
 	  - :doc:`/types/ECS/index`\*
 	  - Memory address to the :doc:`/entity_component_system/index`.
