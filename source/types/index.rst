@@ -55,6 +55,8 @@ Types
 	./MeshTopology/index.rst
 	./Model/index.rst
 	./ModelPrimitive/index.rst
+	./ModuleInterface/index.rst
+	./ModuleType/index.rst
 	./NativeWindowAdditionalInformation/index.rst
 	./NativeWindowHandle/index.rst
 	./Networking/index.rst
@@ -71,6 +73,8 @@ Types
 	./Sound/index.rst
 	./SoundID/index.rst
 	./SphereCollidable/index.rst
+	./System/index.rst
+	./SystemModuleInterface/index.rst
 	./Texture/index.rst
 	./ThreadSafeQueue/index.rst
 	./Transform/index.rst

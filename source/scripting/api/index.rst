@@ -215,7 +215,7 @@ Functions related to physics.
 	* - Name
 	  - Description
 	* - :doc:`/types/Script/intersect/index`
-	  - Returns information about the intersection of two :doc:`/types/ColliderShape/index`\s.
+	  - Returns information about the intersection of two :doc:`ColliderShapes </types/ColliderShape/index>`.
 	* - :doc:`/types/Script/raycast/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 

@@ -20,6 +20,6 @@ None
 Returns
 -------
 
-An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of all connected :doc:`/types/GamepadID/index`\s.
+An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of all connected :doc:`GamepadIDs </types/GamepadID/index>`.
 
 If no gamepad is connected, the returned `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ is empty.

@@ -39,7 +39,7 @@ Parameters
 Returns
 -------
 
-An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of :doc:`/types/RaycastInformation/index`\s containing information about the hit :doc:`Entities </entity_component_system/entity/index>`.
+An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of :doc:`RaycastInformations </types/RaycastInformation/index>` containing information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 
 The returned list is sorted from the closest to the furthest object.
 

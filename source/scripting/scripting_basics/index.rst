@@ -1,7 +1,7 @@
 Scripting Basics
 ================
 
-:doc:`/types/Script/index`\s are pieces of code that give a **behaviour** to :doc:`Entities </entity_component_system/entity/index>`.
+:doc:`Scripts </types/Script/index>` are pieces of code that give a **behaviour** to :doc:`Entities </entity_component_system/entity/index>`.
 
 To create a new :doc:`/types/Script/index`, create a new file with a ``.h`` file extension in the ``scripts`` directory at the root of the project directory.
 
