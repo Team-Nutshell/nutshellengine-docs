@@ -1,7 +1,7 @@
 File Formats
 ============
 
-NutshellEngine uses different file formats for its assets. While standard formats can be read using an :doc:`/modules/asset_loader_module/index`, some formats are specific to NutshellEngine.
+NutshellEngine uses different file formats for its assets. While standard formats can be read using an :doc:`/module/asset_loader_module/index`, some formats are specific to NutshellEngine and are read using the :doc:`/asset_manager/index`.
 
 .. toctree::
 	:maxdepth: 2

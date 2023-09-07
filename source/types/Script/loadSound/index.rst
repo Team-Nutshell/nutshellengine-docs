@@ -32,4 +32,4 @@ Returns
 
 A pointer to a :doc:`/types/Sound/index` containing information about the loaded sound.
 
-If the sound could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this image file format), the returned pointer is **nullptr**.
+If the sound could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this sound file format), the returned pointer is **nullptr**.
