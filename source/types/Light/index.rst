@@ -21,3 +21,45 @@ Variables
 	* - cutoff
 	  - :doc:`/types/Math/index`::vec2
 	  - Only used in spot lights. In radians.
+
+Notes
+-----
+
+JSON for the :doc:`/file_formats/ntsn/index` scene file format:
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	  - Possible values
+	* - light
+	  - Array of Object
+	  - The :doc:`/types/Light/index` Component.
+	  - .. list-table::
+			:width: 100%
+			:header-rows: 1
+			:class: code-table
+
+			* - Name
+			  - Type
+			  - Description
+			  - Possible values
+			* - type
+			  - String
+			  - The :doc:`/types/LightType/index`.
+			  - 
+				 - "Directional"
+				 - "Point"
+				 - "Spot"
+			* - color
+			  - Array of Number
+			  - The light's color.
+			  - Any array of 3 numbers.
+			* - cutoff
+			  - Array of Number
+			  - Only used in spot lights. In degrees.
+			  - Any array of 2 numbers.

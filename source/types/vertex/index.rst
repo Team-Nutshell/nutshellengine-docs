@@ -28,7 +28,7 @@ Variables
 	  - Math::vec4
 	  - The vertex's tangent.
 	* - joints
-	  - Math::vec4
+	  - `std::array <https://en.cppreference.com/w/cpp/container/array>`_\<uint32_t, 4>
 	  - The vertex's bone indices for animation.
 	* - weights
 	  - Math::vec4
