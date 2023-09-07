@@ -35,4 +35,4 @@ Returns
 
 A pointer to a :doc:`/types/Font/index` containing information about the loaded font.
 
-If the font could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this image file format), the returned pointer is **nullptr**.
+If the font could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this font file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), the returned pointer is **nullptr**.

@@ -15,19 +15,19 @@ Functions
 	* - :doc:`/types/AssetManager/createSound/index`
 	  - Creates an empty sound and returns its pointer.
 	* - :doc:`/types/AssetManager/loadSound/index`
-	  - Loads a sound and returns a pointer to the loaded sound.
+	  - Loads a sound from a file and returns a pointer to the loaded sound.
 	* - :doc:`/types/AssetManager/createModel/index`
 	  - Creates an empty model and returns its pointer.
 	* - :doc:`/types/AssetManager/loadModel/index`
-	  - Loads a model and returns a pointer to the loaded model.
+	  - Loads a model from a file and returns a pointer to the loaded model.
 	* - :doc:`/types/AssetManager/createImage/index`
 	  - Creates an empty image and returns its pointer.
 	* - :doc:`/types/AssetManager/loadImage/index`
-	  - Loads an image and returns a pointer to the loaded image.
+	  - Loads an image from a file and returns a pointer to the loaded image.
 	* - :doc:`/types/AssetManager/createFont/index`
 	  - Creates an empty font and returns its pointer.
 	* - :doc:`/types/AssetManager/loadFont/index`
-	  - Loads a font and returns a pointer to the loaded font.
+	  - Loads a font from a file and returns a pointer to the loaded font.
 	* - :doc:`/types/AssetManager/destroySound/index`
 	  - Destroys a sound.
 	* - :doc:`/types/AssetManager/destroyModel/index`
@@ -36,6 +36,10 @@ Functions
 	  - Destroys an image.
 	* - :doc:`/types/AssetManager/destroyFont/index`
 	  - Destroys a font.
+	* - :doc:`/types/AssetManager/calculateTangents/index`
+	  - Calculate a :doc:`/types/Mesh/index`'s tangents.
+	* - :doc:`/types/AssetManager/calculateAABB/index`
+	  - Calculate a :doc:`/types/Mesh/index`'s AABB.
 
 .. toctree::
 	:hidden:
@@ -52,3 +56,5 @@ Functions
 	./destroyModel/index.rst
 	./destroyImage/index.rst
 	./destroyFont/index.rst
+	./calculateTangents/index.rst
+	./calculateAABB/index.rst
