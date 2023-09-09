@@ -1,0 +1,44 @@
+drawUILine
+==========
+
+:doc:`/types/GraphicsModuleInterface/index`::drawUILine
+
+Draws a line on the User Interface.
+
+Declaration
+-----------
+
+.. code-block:: cpp
+
+	virtual void drawUILine(const Math::vec2& start, const Math::vec2& end, const Math::vec4& color) = 0;
+
+Parameters
+----------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - start
+	  - const :doc:`/types/Math/index`::vec2&
+	  - The starting point of the line.
+	* - end
+	  - const :doc:`/types/Math/index`::vec2&
+	  - The ending point of the line.
+	* - color
+	  - const :doc:`/types/Math/index`::vec4&
+	  - The color and opacity of the line.
+
+Returns
+-------
+
+None.
+
+Notes
+-----
+
+The ``start`` and ``end`` positions are in pixels, with (0, 0) being the top-left corner of the UI.
