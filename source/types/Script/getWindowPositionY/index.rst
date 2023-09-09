@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to get the vertical position of.
+	  - The window to get the vertical position of. By default, this window will be the main window.
 
 Returns
 -------

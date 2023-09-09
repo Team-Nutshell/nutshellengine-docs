@@ -3,7 +3,7 @@ getMeshID
 
 :doc:`/types/Script/index`::getMeshID
 
-Loads a model in the Graphics Module and returns a unique identifier to this model.
+Loads a model in the :doc:`/module/graphics_module/index` and returns a unique identifier to this model.
 
 Declaration
 -----------
@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - mesh
 	  - const :doc:`/types/Mesh/index`\&
-	  - Mesh to load in the Graphics Module.
+	  - Mesh to load in the :doc:`/module/graphics_module/index`.
 
 Returns
 -------

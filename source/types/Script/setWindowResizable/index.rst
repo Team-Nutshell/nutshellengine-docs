@@ -1,4 +1,3 @@
-
 setWindowResizable
 ==================
 
@@ -29,7 +28,7 @@ Parameters
 	  - Resizable (``true``) or not resizable (``false``).
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to change the resizability of.
+	  - The window to change the resizability of. By default, this window will be the main window.
 
 Returns
 -------

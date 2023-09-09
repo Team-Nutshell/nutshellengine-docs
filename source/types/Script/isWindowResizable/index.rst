@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to check the resizability of.
+	  - The window to check the resizability of. By default, this window will be the main window.
 
 Returns
 -------

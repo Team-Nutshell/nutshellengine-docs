@@ -3,7 +3,7 @@ loadFont
 
 :doc:`/types/Script/index`::loadFont
 
-Loads a font from a file in the AssetManager and returns a pointer to the loaded font.
+Loads a font from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded font.
 
 Declaration
 -----------
@@ -35,4 +35,4 @@ Returns
 
 A pointer to a :doc:`/types/Font/index` containing information about the loaded font.
 
-If the font could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this font file format), the returned pointer is **nullptr**.
+If the font could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this font file format), the returned pointer is **nullptr**.

@@ -32,4 +32,4 @@ Returns
 
 An :doc:`/types/Image/index` containing information about the loaded image.
 
-If the image could not be loaded (for example: if the file does not exist, or the Asset Loader Module does not support this image file format), the returned :doc:`/types/Image/index` contains the structure's default information.
+If the image could not be loaded (for example: if the file does not exist, or the :doc:`/module/asset_loader_module/index` does not support this image file format), the returned :doc:`/types/Image/index` contains the structure's default information.

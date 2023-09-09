@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to close.
+	  - The window to close. By default, this window will be the main window.
 
 Returns
 -------

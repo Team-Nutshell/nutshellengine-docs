@@ -31,7 +31,7 @@ Parameters
 	  - The vertical position to set the mouse cursor to. 0 is the top edge of the window.
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to check the key state on. By default, this window will be the main window.
+	  - The window to set the position of the mouse cursor to. By default, this window will be the main window.
 
 Returns
 -------

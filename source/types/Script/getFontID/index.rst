@@ -3,7 +3,7 @@ getFontID
 
 :doc:`/types/Script/index`::getFontID
 
-Loads a font in the Graphics Module and returns a unique identifier to this font.
+Loads a font in the :doc:`/module/graphics_module/index` and returns a unique identifier to this font.
 
 Declaration
 -----------
@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - font
 	  - const :doc:`/types/Font/index`\&
-	  - Font to load in the Graphics Module.
+	  - Font to load in the :doc:`/module/graphics_module/index`.
 
 Returns
 -------
