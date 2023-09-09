@@ -25,7 +25,7 @@ Variables
 Notes
 -----
 
-RaycastInformation is returned by the :doc:`/scripting/api/index`'s :doc:`/types/Script/raycast/index` function or the Physics Module's :doc:`/types/PhysicsModuleInterface/raycast/index` function.
+RaycastInformation is returned by the :doc:`/scripting/api/index`'s :doc:`/types/Script/raycast/index` function or the :doc:`/module/physics_module/index`'s :doc:`/types/PhysicsModuleInterface/raycast/index` function.
 
 To find the position of the intersection, knowing ``rayOrigin`` the origin position of the ray in world-space and ``rayDirection`` the direction of the ray:
 

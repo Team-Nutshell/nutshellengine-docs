@@ -9,6 +9,7 @@ Types
 	./AssetManager/index.rst
 	./AudioModuleInterface/index.rst
 	./Bimap/index.rst
+	./BlockSuballocator/index.rst
 	./Buffer/index.rst
 	./Camera/index.rst
 	./CapsuleCollidable/index.rst

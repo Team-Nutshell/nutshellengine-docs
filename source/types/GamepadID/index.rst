@@ -12,4 +12,4 @@ Declaration
 Notes
 -----
 
-Unique identifier for a gamepad managed by a Window Module.
+Unique identifier for a gamepad managed by a :doc:`/module/window_module/index`.

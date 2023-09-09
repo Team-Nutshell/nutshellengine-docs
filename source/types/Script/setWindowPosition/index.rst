@@ -1,4 +1,3 @@
-
 setWindowPosition
 =================
 
@@ -32,7 +31,7 @@ Parameters
 	  - The new vertical position of the window.
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to change the size of.
+	  - The window to change the size of. By default, this window will be the main window.
 
 Returns
 -------

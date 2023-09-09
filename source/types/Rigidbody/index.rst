@@ -17,10 +17,10 @@ Variables
 	  - An :doc:`/entity_component_system/entity/index` with a static Rigidbody is not affected by forces or collisions.
 	* - isAffectedByConstants
 	  - bool
-	  - Specifies if the :doc:`/entity_component_system/entity/index` is affected by the Physics Module's constants (for example: gravity).
+	  - Specifies if the :doc:`/entity_component_system/entity/index` is affected by the :doc:`/module/physics_module/index`'s constants (for example: gravity).
 	* - force
 	  - :doc:`/types/Math/index`::vec3
-	  - The force applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the Physics Module's constants).
+	  - The force applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the :doc:`/module/physics_module/index`'s constants).
 	* - mass
 	  - float
 	  - The mass of the :doc:`/entity_component_system/entity/index`. **Must not be 0.0**.

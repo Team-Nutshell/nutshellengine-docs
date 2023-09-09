@@ -3,7 +3,7 @@ getSoundID
 
 :doc:`/types/Script/index`::getSoundID
 
-Loads a sound in the Audio Module and returns a unique identifier to this sound.
+Loads a sound in the :doc:`/module/audio_module/index` and returns a unique identifier to this sound.
 
 Declaration
 -----------
@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - sound
 	  - const :doc:`/types/Sound/index`\&
-	  - Sound to load in the Audio Module.
+	  - Sound to load in the :doc:`/module/audio_module/index`.
 
 Returns
 -------

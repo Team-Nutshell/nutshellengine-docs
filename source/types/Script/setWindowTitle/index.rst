@@ -28,7 +28,7 @@ Parameters
 	  - The new title of the window.
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to change the title of.
+	  - The window to change the title of. By default, this window will be the main window.
 
 Returns
 -------

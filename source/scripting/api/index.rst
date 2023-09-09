@@ -17,21 +17,21 @@ Functions related to the loading of resources.
 	* - Name
 	  - Description
 	* - :doc:`/types/Script/loadModel/index`
-	  - Loads a model from a file in the AssetManager and returns a pointer to the loaded model.
+	  - Loads a model from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded model.
 	* - :doc:`/types/Script/getMeshID/index`
-	  - Loads a model in the Graphics Module and returns a unique identifier to this model.
+	  - Loads a model in the :doc:`/module/graphics_module/index` and returns a unique identifier to this model.
 	* - :doc:`/types/Script/loadImage/index`
-	  - Loads an image from a file in the AssetManager and returns a pointer to the loaded image.
+	  - Loads an image from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded image.
 	* - :doc:`/types/Script/getImageID/index`
-	  - Loads an image in the Graphics Module and returns a unique identifier to this image.
+	  - Loads an image in the :doc:`/module/graphics_module/index` and returns a unique identifier to this image.
 	* - :doc:`/types/Script/loadFont/index`
-	  - Loads a font from a file in the AssetManager and returns a pointer to the loaded font.
+	  - Loads a font from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded font.
 	* - :doc:`/types/Script/getFontID/index`
-	  - Loads a font in the Graphics Module and returns a unique identifier to this font.
+	  - Loads a font in the :doc:`/module/graphics_module/index` and returns a unique identifier to this font.
 	* - :doc:`/types/Script/loadSound/index`
-	  - Loads a sound from a file in the AssetManager and returns a pointer to the loaded sound.
+	  - Loads a sound from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded sound.
 	* - :doc:`/types/Script/getSoundID/index`
-	  - Loads a sound in the Audio Module and returns a unique identifier to this sound.
+	  - Loads a sound in the :doc:`/module/audio_module/index` and returns a unique identifier to this sound.
 
 Scenes
 ------
@@ -129,7 +129,7 @@ Functions related to inputs.
 	* - :doc:`/types/Script/getConnectedGamepads/index`
 	  - Returns the list of connected gamepads.
 	* - :doc:`/types/Script/getGamepadButtonState/index`
-	  - Returns the state of the gamepad with identifier gamepadID.
+	  - Returns the state of a gamepad button.
 	* - :doc:`/types/Script/getGamepadStickAxisX/index`
 	  - Returns the value of the stick's horizontal axis, with -1.0 being left, 0.0 neutral and 1.0 right.
 	* - :doc:`/types/Script/getGamepadStickAxisY/index`

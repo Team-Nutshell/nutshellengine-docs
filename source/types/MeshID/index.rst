@@ -12,4 +12,4 @@ Declaration
 Notes
 -----
 
-Unique identifier for a :doc:`/types/Mesh/index` loaded by a Graphics Module.
+Unique identifier for a :doc:`/types/Mesh/index` loaded by a :doc:`/module/graphics_module/index`.

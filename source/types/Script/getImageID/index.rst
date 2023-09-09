@@ -3,7 +3,7 @@ getImageID
 
 :doc:`/types/Script/index`::getImageID
 
-Loads an image in the Graphics Module and returns a unique identifier to this image.
+Loads an image in the :doc:`/module/graphics_module/index` and returns a unique identifier to this image.
 
 Declaration
 -----------
@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - image
 	  - const :doc:`/types/Image/index`\&
-	  - Image to load in the Graphics Module.
+	  - Image to load in the :doc:`/module/graphics_module/index`.
 
 Returns
 -------

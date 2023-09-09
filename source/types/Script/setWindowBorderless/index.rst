@@ -1,4 +1,3 @@
-
 setWindowBorderless
 ===================
 
@@ -29,7 +28,7 @@ Parameters
 	  - Borderless (``true``) or with decorations (``false``).
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to change the decorations of.
+	  - The window to change the decorations of. By default, this window will be the main window.
 
 Returns
 -------

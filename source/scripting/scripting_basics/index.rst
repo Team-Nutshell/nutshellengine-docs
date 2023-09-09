@@ -33,3 +33,5 @@ In it, copy and paste this script template:
 :doc:`/types/Script/update/index` is a function that will be executed once per frame. The ``dt`` parameter corresponds to the **delta time**, or the time between two frames, in **milliseconds**.
 
 :doc:`/types/Script/destroy/index` is a function that will be executed once, when the Script is destroyed.
+
+The Script is then automatically added to the project the next time the CMake is re-configured and its name (for example, ``TemplateScript`` here) can be used in the :doc:`/types/Scriptable/index` Component of an :doc:`/entity_component_system/entity/index`, in the :doc:`/file_formats/ntsn/index` file format.

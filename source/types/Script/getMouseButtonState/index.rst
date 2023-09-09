@@ -23,7 +23,7 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
-	* - key
+	* - mouseButton
 	  - :doc:`/types/InputMouseButton/index`
 	  - The mouse button to check the state of.
 	* - windowID

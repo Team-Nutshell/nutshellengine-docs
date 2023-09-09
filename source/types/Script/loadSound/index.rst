@@ -3,7 +3,7 @@ loadSound
 
 :doc:`/types/Script/index`::loadSound
 
-Loads a sound from a file in the AssetManager and returns a pointer to the loaded sound.
+Loads a sound from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded sound.
 
 Declaration
 -----------
@@ -32,4 +32,4 @@ Returns
 
 A pointer to a :doc:`/types/Sound/index` containing information about the loaded sound.
 
-If the sound could not be loaded (for example: if the file does not exist, or the Asset Manager or Asset Loader Module does not support this sound file format), the returned pointer is **nullptr**.
+If the sound could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this sound file format), the returned pointer is **nullptr**.

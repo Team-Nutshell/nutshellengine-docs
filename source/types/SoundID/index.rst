@@ -12,4 +12,4 @@ Declaration
 Notes
 -----
 
-Unique identifier for a :doc:`/types/Sound/index` loaded by an Audio Module.
+Unique identifier for a :doc:`/types/Sound/index` loaded by an :doc:`/module/audio_module/index`.

@@ -28,7 +28,7 @@ Parameters
 	  - Fullscreen (``true``) or windowed (``false``).
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to change the fullscreen mode of.
+	  - The window to change the fullscreen mode of. By default, this window will be the main window.
 
 Returns
 -------

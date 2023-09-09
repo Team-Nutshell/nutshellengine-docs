@@ -12,4 +12,4 @@ Declaration
 Notes
 -----
 
-Unique identifier for an :doc:`/types/Image/index` loaded by a Graphics Module.
+Unique identifier for an :doc:`/types/Image/index` loaded by a :doc:`/module/graphics_module/index`.

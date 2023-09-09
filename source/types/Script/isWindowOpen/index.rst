@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to check.
+	  - The window to check. By default, this window will be the main window.
 
 Returns
 -------
