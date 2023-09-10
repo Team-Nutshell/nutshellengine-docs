@@ -803,13 +803,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>type</p></td>
-<td><p><a class="reference internal" href="../Mesh/index.html"><span class="doc">Mesh</span></a></p></td>
-<td><p>The Renderable’s mesh.</p></td>
+<tr class="row-even"><td><p>model</p></td>
+<td><p><a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a>*</p></td>
+<td><p>The memory address of the <a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>type</p></td>
-<td><p><a class="reference internal" href="../Material/index.html"><span class="doc">Material</span></a></p></td>
-<td><p>The Renderable’s material.</p></td>
+<tr class="row-odd"><td><p>modelPrimitiveIndex</p></td>
+<td><p>uint32_t</p></td>
+<td><p>The index of the <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitive</span></a> in <code class="docutils literal notranslate"><span class="pre">model</span></code>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -849,7 +849,7 @@
 </tr>
 </tbody>
 </table>
-<p>If the <a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a> loaded in <code class="docutils literal notranslate"><span class="pre">modelPath</span></code> contains multiple <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitives</span></a>, an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> will be created for each primitive. If a name for the base Entity was specified, the index of the <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitive</span></a> in the <a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a> will be appended at the end of the name, for each created <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>, even if the <a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a> only contained a single <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitive</span></a>.</p>
+<p>If the <a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a> loaded in <code class="docutils literal notranslate"><span class="pre">modelPath</span></code> contains multiple <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitives</span></a>, an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> will be created for each <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitive</span></a>. If a name for the base Entity was specified, the index of the <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitive</span></a> in the <a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a> will be appended at the end of the name, preceded by a “_”, for each created <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>, even if the <a class="reference internal" href="../Model/index.html"><span class="doc">Model</span></a> only contained a single <a class="reference internal" href="../ModelPrimitive/index.html"><span class="doc">ModelPrimitive</span></a>.</p>
 </section>
 </section>
 
