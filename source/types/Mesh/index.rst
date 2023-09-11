@@ -18,6 +18,9 @@ Variables
 	* - indices
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<uint32_t>
 	  - The mesh's indices.
+	* - joints
+	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/Joint/index`>
+	  - The mesh's joints.
 	* - topology
 	  - :doc:`/types/MeshTopology/index`
 	  - The mesh's topology.

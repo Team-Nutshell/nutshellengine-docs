@@ -5,6 +5,11 @@ Types
 	:maxdepth: 1
 
 	./AABBCollidable/index.rst
+	./Animation/index.rst
+	./AnimationChannel/index.rst
+	./AnimationChannelInterpolationType/index.rst
+	./AnimationChannelTransformType/index.rst
+	./AnimationKeyframe/index.rst
 	./AssetLoaderModuleInterface/index.rst
 	./AssetManager/index.rst
 	./AudioModuleInterface/index.rst
@@ -48,6 +53,7 @@ Types
 	./IntersectionInformation/index.rst
 	./JobDispatchArguments/index.rst
 	./JobSystem/index.rst
+	./Joint/index.rst
 	./JSON/index.rst
 	./Light/index.rst
 	./LightType/index.rst
