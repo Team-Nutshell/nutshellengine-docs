@@ -58,6 +58,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#physics">Physics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#audio">Audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#animation">Animation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#user-interface">User Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#frame-limiter">Frame Limiter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#job-system">Job System</a></li>
@@ -113,6 +114,28 @@
 <li class="toctree-l2"><a class="reference internal" href="../../types/AABBCollidable/index.html">AABBCollidable</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../types/AABBCollidable/index.html#variables">Variables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../types/AABBCollidable/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../types/Animation/index.html">Animation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../types/Animation/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../types/AnimationChannel/index.html">AnimationChannel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../types/AnimationChannel/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../types/AnimationChannelInterpolationType/index.html">AnimationChannelInterpolationType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../types/AnimationChannelInterpolationType/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../types/AnimationChannelInterpolationType/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../types/AnimationChannelTransformType/index.html">AnimationChannelTransformType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../types/AnimationChannelTransformType/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../types/AnimationChannelTransformType/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../types/AnimationKeyframe/index.html">AnimationKeyframe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../types/AnimationKeyframe/index.html#variables">Variables</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/index.html">AssetLoaderModuleInterface</a><ul>
@@ -332,6 +355,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/GraphicsModuleInterface/drawUILine/index.html">drawUILine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/GraphicsModuleInterface/drawUIRectangle/index.html">drawUIRectangle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/GraphicsModuleInterface/drawUIImage/index.html">drawUIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/GraphicsModuleInterface/playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/GraphicsModuleInterface/pauseAnimation/index.html">pauseAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/GraphicsModuleInterface/stopAnimation/index.html">stopAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/GraphicsModuleInterface/isAnimationPlaying/index.html">isAnimationPlaying</a></li>
 </ul>
 </li>
 </ul>
@@ -409,6 +436,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/JobSystem/getNumThreads/index.html">getNumThreads</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../types/Joint/index.html">Joint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../types/Joint/index.html#variables">Variables</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../types/JSON/index.html">JSON</a><ul>
@@ -615,6 +646,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/getSoundPitch/index.html">getSoundPitch</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/intersect/index.html">intersect</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/raycast/index.html">raycast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/Script/playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/Script/pauseAnimation/index.html">pauseAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/Script/stopAnimation/index.html">stopAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/Script/isAnimationPlaying/index.html">isAnimationPlaying</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/UIElementState/index.html">UIElementState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/drawUIText/index.html">drawUIText</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/drawUILine/index.html">drawUILine</a></li>
@@ -1131,6 +1166,35 @@
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getSoundPitch/index.html"><span class="doc">getSoundPitch</span></a></p></td>
 <td><p>Returns the pitch of a sound.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="animation">
+<h2>Animation<a class="headerlink" href="#animation" title="Link to this heading"></a></h2>
+<p>Functions related to <a class="reference internal" href="../../types/Animation/index.html"><span class="doc">Animations</span></a>.</p>
+<table class="code-table docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/playAnimation/index.html"><span class="doc">playAnimation</span></a></p></td>
+<td><p>Plays an <a class="reference internal" href="../../types/Animation/index.html"><span class="doc">Animation</span></a> on an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/pauseAnimation/index.html"><span class="doc">pauseAnimation</span></a></p></td>
+<td><p>Pauses an <a class="reference internal" href="../../types/Animation/index.html"><span class="doc">Animation</span></a> of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/stopAnimation/index.html"><span class="doc">stopAnimation</span></a></p></td>
+<td><p>Stops an <a class="reference internal" href="../../types/Animation/index.html"><span class="doc">Animation</span></a> of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/isAnimationPlaying/index.html"><span class="doc">isAnimationPlaying</span></a></p></td>
+<td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is currently playing a certain <a class="reference internal" href="../../types/Animation/index.html"><span class="doc">Animation</span></a>.</p></td>
 </tr>
 </tbody>
 </table>

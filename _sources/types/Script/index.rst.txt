@@ -213,6 +213,14 @@ Functions
 	  - Sets the pitch of a sound.
 	* - :doc:`/types/Script/getSoundPitch/index`
 	  - Returns the pitch of a sound.
+	* - :doc:`/types/Script/playAnimation/index`
+	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/pauseAnimation/index`
+	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/stopAnimation/index`
+	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/isAnimationPlaying/index`
+	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
 	* - :doc:`/types/Script/drawUIText/index`
 	  - Draws text on the User Interface.
 	* - :doc:`/types/Script/drawUILine/index`
@@ -330,6 +338,11 @@ Functions
 
 	./intersect/index.rst
 	./raycast/index.rst
+
+	./playAnimation/index.rst
+	./pauseAnimation/index.rst
+	./stopAnimation/index.rst
+	./isAnimationPlaying/index.rst
 
 	./UIElementState/index.rst
 
