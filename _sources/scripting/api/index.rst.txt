@@ -249,6 +249,28 @@ Functions related to audio.
 	* - :doc:`/types/Script/getSoundPitch/index`
 	  - Returns the pitch of a sound.
 
+Animation
+---------
+
+Functions related to :doc:`Animations </types/Animation/index>`.
+
+.. list-table::
+	:width: 100%
+	:widths: 30 70
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Description
+	* - :doc:`/types/Script/playAnimation/index`
+	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/pauseAnimation/index`
+	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/stopAnimation/index`
+	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/isAnimationPlaying/index`
+	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
+
 User Interface
 --------------
 

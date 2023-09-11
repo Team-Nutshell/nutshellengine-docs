@@ -24,6 +24,15 @@ Functions
 	  - Draws a rectangle on the User Interface.
 	* - :doc:`/types/GraphicsModuleInterface/drawUIImage/index`
 	  - Draws an image on the User Interface.
+	* - :doc:`/types/GraphicsModuleInterface/playAnimation/index`
+	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/pauseAnimation/index`
+	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/stopAnimation/index`
+	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/isAnimationPlaying/index`
+	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
+
 .. toctree::
 	:hidden:
 
@@ -32,3 +41,7 @@ Functions
 	./drawUILine/index.rst
 	./drawUIRectangle/index.rst
 	./drawUIImage/index.rst
+	./playAnimation/index.rst
+	./pauseAnimation/index.rst
+	./stopAnimation/index.rst
+	./isAnimationPlaying/index.rst
