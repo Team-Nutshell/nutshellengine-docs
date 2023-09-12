@@ -79,6 +79,7 @@ Types
 	./Script/index.rst
 	./Scriptable/index.rst
 	./ServerSocket/index.rst
+	./Skin/index.rst
 	./Sound/index.rst
 	./SoundID/index.rst
 	./SphereCollidable/index.rst
