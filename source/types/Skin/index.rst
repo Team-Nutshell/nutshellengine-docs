@@ -14,7 +14,7 @@ Variables
 	  - Description
 	* - joints
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/Joint/index`>
-	  - The skin's joint.
+	  - The skin's joints.
 	* - rootJoint
 	  - uint32_t
 	  - The skin's root :doc:`/types/Joint/index`, starting the joint hierarchy and indexed in ``joints``.
