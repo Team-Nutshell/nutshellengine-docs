@@ -15,9 +15,9 @@ Variables
 	* - inverseBindMatrix
 	  - :doc:`/types/Math/index`::mat4
 	  - The joint's inverse bind matrix. The inverse of the base pose.
-	* - baseTransform
+	* - localTransform
 	  - :doc:`/types/Math/index`::mat4
-	  - The joint's base transform.
+	  - The joint's local transform.
 	* - children
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<uint32_t>
 	  - The joint's children, indexed in the :doc:`/types/Mesh/index`'s ``joints`` list.
