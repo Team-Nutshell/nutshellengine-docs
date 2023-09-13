@@ -8,8 +8,8 @@ Types
 	./Animation/index.rst
 	./AnimationChannel/index.rst
 	./AnimationChannelInterpolationType/index.rst
+	./AnimationChannelKeyframe/index.rst
 	./AnimationChannelTransformType/index.rst
-	./AnimationKeyframe/index.rst
 	./AssetLoaderModuleInterface/index.rst
 	./AssetManager/index.rst
 	./AudioModuleInterface/index.rst

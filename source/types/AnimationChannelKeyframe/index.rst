@@ -1,5 +1,5 @@
-AnimationKeyframe
-=================
+AnimationChannelKeyframe
+========================
 
 Variables
 ---------
