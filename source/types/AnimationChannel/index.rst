@@ -19,5 +19,5 @@ Variables
 	  - :doc:`/types/AnimationChannelTransformType/index`
 	  - The channel's affected transform component (Translation, Rotation or Scale).
 	* - keyframes
-	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/AnimationKeyframe/index`>
+	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/AnimationChannelKeyframe/index`>
 	  - The channel's keyframes.
