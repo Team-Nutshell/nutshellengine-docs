@@ -27,10 +27,10 @@ Variables
 	* - restitution
 	  - float
 	  - The coefficient of restitution, generally used for collision responses.
-	* - staticFraction
+	* - staticFriction
 	  - float
 	  - The coefficient of static friction, generally used for collision responses.
-	* - dynamicFraction
+	* - dynamicFriction
 	  - float
 	  - The coefficient of dynamic friction, generally used for collision responses.
 
