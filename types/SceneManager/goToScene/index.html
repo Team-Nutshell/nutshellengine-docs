@@ -851,6 +851,15 @@
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
 <p>None.</p>
 </section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
+<p>Changing scene will destroy all non-persistent Entities, potentially including the Entity calling this function.</p>
+<p>If this is the case, the rest of the script must not reference any function or variable belonging to this Entity. It is safer to return right after calling this function:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">sceneManager</span><span class="o">-&gt;</span><span class="n">goToScene</span><span class="p">(</span><span class="s">&quot;assets/scenes/scene.ntsn&quot;</span><span class="p">);</span>
+<span class="k">return</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 

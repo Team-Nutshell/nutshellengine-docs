@@ -31,3 +31,15 @@ Returns
 -------
 
 None.
+
+Notes
+-----
+
+Changing scene will destroy all non-persistent Entities, potentially including the Entity calling this function.
+
+If this is the case, the rest of the script must not reference any function or variable belonging to this Entity. It is safer to return right after calling this function:
+
+.. code-block:: cpp
+
+	sceneManager->goToScene("assets/scenes/scene.ntsn");
+	return;
