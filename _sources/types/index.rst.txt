@@ -4,7 +4,6 @@ Types
 .. toctree::
 	:maxdepth: 1
 
-	./AABBCollidable/index.rst
 	./Animation/index.rst
 	./AnimationChannel/index.rst
 	./AnimationChannelInterpolationType/index.rst
@@ -17,8 +16,8 @@ Types
 	./BlockSuballocator/index.rst
 	./Buffer/index.rst
 	./Camera/index.rst
-	./CapsuleCollidable/index.rst
 	./ClientSocket/index.rst
+	./Collidable/index.rst
 	./ColliderAABB/index.rst
 	./ColliderCapsule/index.rst
 	./ColliderShape/index.rst
@@ -82,7 +81,6 @@ Types
 	./Skin/index.rst
 	./Sound/index.rst
 	./SoundID/index.rst
-	./SphereCollidable/index.rst
 	./System/index.rst
 	./SystemModuleInterface/index.rst
 	./Texture/index.rst
