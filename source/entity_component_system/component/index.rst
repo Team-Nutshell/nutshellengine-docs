@@ -1,7 +1,7 @@
 Component
 =========
 
-Multiple Components can be attached to an :doc:`/entity_component_system/entity/index`, which allow :doc:`Systems </entity_component_system/system/index>` to use them.
+A Component is a structure that can be attached to an :doc:`/entity_component_system/entity/index` using the :doc:`/entity_component_system/index` and tracked by :doc:`Systems </entity_component_system/system/index>`.
 
 - :doc:`/types/Collidable/index`
 - :doc:`/types/Camera/index`
