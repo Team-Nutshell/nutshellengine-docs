@@ -198,21 +198,29 @@ Functions
 	* - :doc:`/types/Script/raycast/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/playSound/index`
-	  - Plays or resumes a sound.
-	* - :doc:`/types/Script/pauseSound/index`
-	  - Pauses a sound.
-	* - :doc:`/types/Script/stopSound/index`
-	  - Stops a sound.
+	  - Plays a global sound and returns a unique identifier to this sound source.
+	* - :doc:`/types/Script/playSoundAtPosition/index`
+	  - Plays a sound at a certain position and returns a unique identifier to this sound source.
+	* - :doc:`/types/Script/resumeSoundSource/index`
+	  - Resumes a paused sound source.
+	* - :doc:`/types/Script/pauseSoundSource/index`
+	  - Pauses a playing sound source.
+	* - :doc:`/types/Script/stopSoundSource/index`
+	  - Stops a playing or paused sound.
+	* - :doc:`/types/Script/getSoundSourceState/index`
+	  - Returns the state of a sound source.
 	* - :doc:`/types/Script/isSoundPlaying/index`
-	  - Checks if a sound is currently playing.
-	* - :doc:`/types/Script/setSoundGain/index`
-	  - Sets the gain of a sound.
-	* - :doc:`/types/Script/getSoundGain/index`
-	  - Returns the gain of a sound.
-	* - :doc:`/types/Script/setSoundPitch/index`
-	  - Sets the pitch of a sound.
-	* - :doc:`/types/Script/getSoundPitch/index`
-	  - Returns the pitch of a sound.
+	  - Checks if any sound source of a certain sound is playing.
+	* - :doc:`/types/Script/setSoundSourceGain/index`
+	  - Sets the gain of a sound source.
+	* - :doc:`/types/Script/getSoundSourceGain/index`
+	  - Returns the gain of a sound source.
+	* - :doc:`/types/Script/setSoundSourcePitch/index`
+	  - Sets the pitch of a sound source.
+	* - :doc:`/types/Script/getSoundSourcePitch/index`
+	  - Returns the pitch of a sound source.
+	* - :doc:`/types/Script/setSoundListenerEntity/index`
+	  - Sets the :doc:`/entity_component_system/entity/index` that will be the sound listener.
 	* - :doc:`/types/Script/playAnimation/index`
 	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/pauseAnimation/index`
@@ -328,13 +336,17 @@ Functions
 	./getMonitorDisplayScaling/index.rst
 
 	./playSound/index.rst
-	./pauseSound/index.rst
-	./stopSound/index.rst
+	./playSoundAtPosition/index.rst
+	./resumeSoundSource/index.rst
+	./pauseSoundSource/index.rst
+	./stopSoundSource/index.rst
+	./getSoundSourceState/index.rst
 	./isSoundPlaying/index.rst
-	./setSoundGain/index.rst
-	./getSoundGain/index.rst
-	./setSoundPitch/index.rst
-	./getSoundPitch/index.rst
+	./setSoundSourceGain/index.rst
+	./getSoundSourceGain/index.rst
+	./setSoundSourcePitch/index.rst
+	./getSoundSourcePitch/index.rst
+	./setSoundListenerEntity/index.rst
 
 	./intersect/index.rst
 	./raycast/index.rst
