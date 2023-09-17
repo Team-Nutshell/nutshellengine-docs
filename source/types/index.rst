@@ -81,6 +81,8 @@ Types
 	./Skin/index.rst
 	./Sound/index.rst
 	./SoundID/index.rst
+	./SoundSourceID/index.rst
+	./SoundSourceState/index.rst
 	./System/index.rst
 	./SystemModuleInterface/index.rst
 	./Texture/index.rst

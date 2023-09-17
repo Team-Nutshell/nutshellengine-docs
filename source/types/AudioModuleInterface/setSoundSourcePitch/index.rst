@@ -1,0 +1,36 @@
+setSoundSourcePitch
+===================
+
+:doc:`/types/AudioModuleInterface/index`::setSoundSourcePitch
+
+Sets the pitch of a sound source.
+
+Declaration
+-----------
+
+.. code-block:: cpp
+
+	virtual void setSoundSourcePitch(SoundSourceID soundSourceID, float newPitch) = 0;
+
+Parameters
+----------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - soundSourceID
+	  - :doc:`/types/SoundSourceID/index`
+	  - The sound source to change the pitch of.
+	* - newPitch
+	  - float
+	  - The new pitch of the sound source.
+
+Returns
+-------
+
+None.
