@@ -167,14 +167,18 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">AudioModuleInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="load/index.html">load</a></li>
-<li class="toctree-l4"><a class="reference internal" href="play/index.html">play</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pause/index.html">pause</a></li>
-<li class="toctree-l4"><a class="reference internal" href="stop/index.html">stop</a></li>
-<li class="toctree-l4"><a class="reference internal" href="isPlaying/index.html">isPlaying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="setGain/index.html">setGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="getGain/index.html">getGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="setPitch/index.html">setPitch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="getPitch/index.html">getPitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="playSound/index.html">playSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="playSoundAtPosition/index.html">playSoundAtPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="resumeSoundSource/index.html">resumeSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pauseSoundSource/index.html">pauseSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stopSoundSource/index.html">stopSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getSoundSourceState/index.html">getSoundSourceState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="isSoundPlaying/index.html">isSoundPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setSoundSourceGain/index.html">setSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getSoundSourceGain/index.html">getSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setSoundListenerEntity/index.html">setSoundListenerEntity</a></li>
 </ul>
 </li>
 </ul>
@@ -632,13 +636,17 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/getMonitorRefreshRate/index.html">getMonitorRefreshRate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getMonitorDisplayScaling/index.html">getMonitorDisplayScaling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/playSound/index.html">playSound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/pauseSound/index.html">pauseSound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/stopSound/index.html">stopSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/playSoundAtPosition/index.html">playSoundAtPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/resumeSoundSource/index.html">resumeSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/pauseSoundSource/index.html">pauseSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/stopSoundSource/index.html">stopSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getSoundSourceState/index.html">getSoundSourceState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/isSoundPlaying/index.html">isSoundPlaying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/setSoundGain/index.html">setSoundGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/getSoundGain/index.html">getSoundGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/setSoundPitch/index.html">setSoundPitch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/getSoundPitch/index.html">getSoundPitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/setSoundSourceGain/index.html">setSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getSoundSourceGain/index.html">getSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/setSoundListenerEntity/index.html">setSoundListenerEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/intersect/index.html">intersect</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/raycast/index.html">raycast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/playAnimation/index.html">playAnimation</a></li>
@@ -692,6 +700,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../SoundID/index.html">SoundID</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../SoundID/index.html#declaration">Declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../SoundID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../SoundSourceID/index.html">SoundSourceID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../SoundSourceID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SoundSourceID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../SoundSourceState/index.html">SoundSourceState</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../SoundSourceState/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SoundSourceState/index.html#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../System/index.html">System</a><ul>
@@ -838,29 +856,41 @@
 <tr class="row-even"><td><p><a class="reference internal" href="load/index.html"><span class="doc">load</span></a></p></td>
 <td><p>Loads a sound in the <a class="reference internal" href="../../module/audio_module/index.html"><span class="doc">Audio Module</span></a> and returns a unique identifier to this sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="play/index.html"><span class="doc">play</span></a></p></td>
-<td><p>Plays or resumes a sound.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="playSound/index.html"><span class="doc">playSound</span></a></p></td>
+<td><p>Plays a global sound and returns a unique identifier to this sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pause/index.html"><span class="doc">pause</span></a></p></td>
-<td><p>Pauses a sound.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="playSoundAtPosition/index.html"><span class="doc">playSoundAtPosition</span></a></p></td>
+<td><p>Plays a sound at a certain position and returns a unique identifier to this sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="stop/index.html"><span class="doc">stop</span></a></p></td>
-<td><p>Stops a sound.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="resumeSoundSource/index.html"><span class="doc">resumeSoundSource</span></a></p></td>
+<td><p>Resumes a paused sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isPlaying/index.html"><span class="doc">isPlaying</span></a></p></td>
-<td><p>Checks if a sound is currently playing.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="pauseSoundSource/index.html"><span class="doc">pauseSoundSource</span></a></p></td>
+<td><p>Pauses a playing sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setGain/index.html"><span class="doc">setGain</span></a></p></td>
-<td><p>Sets the gain of a sound.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="stopSoundSource/index.html"><span class="doc">stopSoundSource</span></a></p></td>
+<td><p>Stops a playing or paused sound.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getGain/index.html"><span class="doc">getGain</span></a></p></td>
-<td><p>Returns the gain of a sound.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getSoundSourceState/index.html"><span class="doc">getSoundSourceState</span></a></p></td>
+<td><p>Returns the state of a sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setPitch/index.html"><span class="doc">setPitch</span></a></p></td>
-<td><p>Sets the pitch of a sound.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isSoundPlaying/index.html"><span class="doc">isSoundPlaying</span></a></p></td>
+<td><p>Checks if any sound source of a certain sound is playing.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getPitch/index.html"><span class="doc">getPitch</span></a></p></td>
-<td><p>Returns the pitch of a sound.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setSoundSourceGain/index.html"><span class="doc">setSoundSourceGain</span></a></p></td>
+<td><p>Sets the gain of a sound source.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="getSoundSourceGain/index.html"><span class="doc">getSoundSourceGain</span></a></p></td>
+<td><p>Returns the gain of a sound source.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="setSoundSourcePitch/index.html"><span class="doc">setSoundSourcePitch</span></a></p></td>
+<td><p>Sets the pitch of a sound source.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="getSoundSourcePitch/index.html"><span class="doc">getSoundSourcePitch</span></a></p></td>
+<td><p>Returns the pitch of a sound source.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="setSoundListenerEntity/index.html"><span class="doc">setSoundListenerEntity</span></a></p></td>
+<td><p>Sets the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> that will be the sound listener.</p></td>
 </tr>
 </tbody>
 </table>

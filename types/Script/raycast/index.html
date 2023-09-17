@@ -167,14 +167,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../AudioModuleInterface/index.html">AudioModuleInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../AudioModuleInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/load/index.html">load</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/play/index.html">play</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/pause/index.html">pause</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/stop/index.html">stop</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/isPlaying/index.html">isPlaying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setGain/index.html">setGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getGain/index.html">getGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setPitch/index.html">setPitch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getPitch/index.html">getPitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/playSound/index.html">playSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/playSoundAtPosition/index.html">playSoundAtPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/resumeSoundSource/index.html">resumeSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/pauseSoundSource/index.html">pauseSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/stopSoundSource/index.html">stopSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getSoundSourceState/index.html">getSoundSourceState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/isSoundPlaying/index.html">isSoundPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setSoundSourceGain/index.html">setSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getSoundSourceGain/index.html">getSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setSoundListenerEntity/index.html">setSoundListenerEntity</a></li>
 </ul>
 </li>
 </ul>
@@ -632,13 +636,17 @@
 <li class="toctree-l4"><a class="reference internal" href="../getMonitorRefreshRate/index.html">getMonitorRefreshRate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../getMonitorDisplayScaling/index.html">getMonitorDisplayScaling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../playSound/index.html">playSound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pauseSound/index.html">pauseSound</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../stopSound/index.html">stopSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../playSoundAtPosition/index.html">playSoundAtPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../resumeSoundSource/index.html">resumeSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pauseSoundSource/index.html">pauseSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stopSoundSource/index.html">stopSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getSoundSourceState/index.html">getSoundSourceState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../isSoundPlaying/index.html">isSoundPlaying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../setSoundGain/index.html">setSoundGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../getSoundGain/index.html">getSoundGain</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../setSoundPitch/index.html">setSoundPitch</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../getSoundPitch/index.html">getSoundPitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../setSoundSourceGain/index.html">setSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getSoundSourceGain/index.html">getSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../setSoundListenerEntity/index.html">setSoundListenerEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../intersect/index.html">intersect</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">raycast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../playAnimation/index.html">playAnimation</a></li>
@@ -692,6 +700,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../../SoundID/index.html">SoundID</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../SoundID/index.html#declaration">Declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../SoundID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../SoundSourceID/index.html">SoundSourceID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../SoundSourceID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../SoundSourceID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../SoundSourceState/index.html">SoundSourceState</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../SoundSourceState/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../SoundSourceState/index.html#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../System/index.html">System</a><ul>
