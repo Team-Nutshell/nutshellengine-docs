@@ -9,6 +9,7 @@ Declaration
 	enum class ColliderShapeType {
 		Sphere,
 		AABB,
+		OBB,
 		Capsule,
 		Unknown
 	};
