@@ -247,6 +247,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../ColliderCapsule/index.html#notes">Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../ColliderOBB/index.html">ColliderOBB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ColliderOBB/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ColliderOBB/index.html#notes">Notes</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ColliderShape/index.html">ColliderShape</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ColliderShape/index.html#declaration">Declaration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ColliderShape/index.html#functions">Functions</a></li>
@@ -887,13 +892,14 @@
 <td><ul class="simple">
 <li><p>“Sphere”</p></li>
 <li><p>“AABB”</p></li>
+<li><p>“OBB”</p></li>
 <li><p>“Capsule”</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><p>center</p></td>
 <td><p>Array of Number</p></td>
-<td><p>The sphere’s center, in <strong>object-space</strong>. (if <code class="docutils literal notranslate"><span class="pre">type</span></code> is “Sphere”).</p></td>
+<td><p>The sphere or OBB’s center, in <strong>object-space</strong>. (if <code class="docutils literal notranslate"><span class="pre">type</span></code> is “Sphere” or “OBB”).</p></td>
 <td><p>Any array of 3 numbers.</p></td>
 </tr>
 <tr class="row-even"><td><p>radius</p></td>
@@ -909,6 +915,16 @@
 <tr class="row-even"><td><p>max</p></td>
 <td><p>Array of Number</p></td>
 <td><p>The AABB’s maximum corner, in <strong>object-space</strong>. (if <code class="docutils literal notranslate"><span class="pre">type</span></code> is “AABB”).</p></td>
+<td><p>Any array of 3 numbers.</p></td>
+</tr>
+<tr class="row-odd"><td><p>halfExtent</p></td>
+<td><p>Array of Number</p></td>
+<td><p>The OBB’s half size. (if <code class="docutils literal notranslate"><span class="pre">type</span></code> is “OBB”).</p></td>
+<td><p>Any array of 3 numbers.</p></td>
+</tr>
+<tr class="row-even"><td><p>rotation</p></td>
+<td><p>Array of Number</p></td>
+<td><p>The OBB’s rotation on each axis, in <strong>degrees</strong>. (if <code class="docutils literal notranslate"><span class="pre">type</span></code> is “OBB”).</p></td>
 <td><p>Any array of 3 numbers.</p></td>
 </tr>
 <tr class="row-odd"><td><p>base</p></td>

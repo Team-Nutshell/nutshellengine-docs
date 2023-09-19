@@ -15,10 +15,10 @@ Variables
 	  - Type
 	  - Description
 	* - min
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The "minimal" corner, which contains the minimum x, y and z.
 	* - max
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The "maximal" corner, which contains the maximum x, y and z.
 
 Notes
