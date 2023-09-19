@@ -15,7 +15,7 @@ Variables
 	  - Type
 	  - Description
 	* - center
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The sphere's center in **object-space**.
 	* - radius
 	  - float

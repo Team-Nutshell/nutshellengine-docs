@@ -15,10 +15,10 @@ Variables
 	  - Type
 	  - Description
 	* - base
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The capsule's base in **object-space**.
 	* - tip
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The capsule's tip in **object-space**.
 	* - radius
 	  - float
