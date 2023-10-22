@@ -56,6 +56,8 @@ Functions
 	./stopSoundSource/index.rst
 	./getSoundSourceState/index.rst
 	./isSoundPlaying/index.rst
+	./setSoundSourcePosition/index.rst
+	./getSoundSourcePosition/index.rst
 	./setSoundSourceGain/index.rst
 	./getSoundSourceGain/index.rst
 	./setSoundSourcePitch/index.rst
