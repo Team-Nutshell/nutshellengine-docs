@@ -241,8 +241,6 @@ Functions
 	  - Draws a rectangle on the User Interface.
 	* - :doc:`/types/Script/drawUIImage/index`
 	  - Draws an image on the User Interface.
-	* - :doc:`/types/Script/drawUIButton/index`
-	  - Draws a button on the User Interface and returns an :doc:`/types/Script/UIElementState/index`.
 	* - :doc:`/types/Script/setMaxFPS/index`
 	  - Sets the maximum number of frames per second.
 	* - :doc:`/types/Script/getMaxFPS/index`
@@ -362,13 +360,10 @@ Functions
 	./stopAnimation/index.rst
 	./isAnimationPlaying/index.rst
 
-	./UIElementState/index.rst
-
 	./drawUIText/index.rst
 	./drawUILine/index.rst
 	./drawUIRectangle/index.rst
 	./drawUIImage/index.rst
-	./drawUIButton/index.rst
 
 	./setMaxFPS/index.rst
 	./getMaxFPS/index.rst
