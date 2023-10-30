@@ -304,8 +304,6 @@ Functions related to the User Interface.
 	  - Draws a rectangle on the User Interface.
 	* - :doc:`/types/Script/drawUIImage/index`
 	  - Draws an image on the User Interface.
-	* - :doc:`/types/Script/drawUIButton/index`
-	  - Draws a button on the User Interface and returns an :doc:`/types/Script/UIElementState/index`.
 
 Frame Limiter
 -------------
