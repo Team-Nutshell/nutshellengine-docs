@@ -35,7 +35,7 @@ Variables
 	  - The emissive factor to multiply the emissive texture with.
 	* - alphaCutoff
 	  - float
-	  - The alpha cutoff value to compare with the diffuse texture.
+	  - The alpha cutoff value to compare with the diffuse texture's alpha channel.
 	* - indexOfRefraction
 	  - float
 	  - The index of refraction.
