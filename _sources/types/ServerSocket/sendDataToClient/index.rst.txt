@@ -1,7 +1,7 @@
-sendDataToServer
+sendDataToClient
 ================
 
-:doc:`/types/ServerSocket/index`::sendDataToServer
+:doc:`/types/ServerSocket/index`::sendDataToClient
 
 Sends data to a client.
 
