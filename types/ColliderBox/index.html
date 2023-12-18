@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ColliderOBB &mdash; NutshellEngine 0.0.1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  <title>ColliderBox &mdash; NutshellEngine 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=6d66d286" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -20,8 +22,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ColliderShape" href="../ColliderShape/index.html" />
-    <link rel="prev" title="ColliderCapsule" href="../ColliderCapsule/index.html" /> 
+    <link rel="next" title="ColliderCapsule" href="../ColliderCapsule/index.html" />
+    <link rel="prev" title="Collidable" href="../Collidable/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -239,19 +241,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../Collidable/index.html#notes">Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../ColliderAABB/index.html">ColliderAABB</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../ColliderAABB/index.html#variables">Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ColliderAABB/index.html#notes">Notes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ColliderBox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ColliderCapsule/index.html">ColliderCapsule</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ColliderCapsule/index.html#variables">Variables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ColliderCapsule/index.html#notes">Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ColliderOBB</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ColliderShape/index.html">ColliderShape</a><ul>
@@ -834,9 +831,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Types</a></li>
-      <li class="breadcrumb-item active">ColliderOBB</li>
+      <li class="breadcrumb-item active">ColliderBox</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/types/ColliderOBB/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/types/ColliderBox/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -844,8 +841,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="colliderobb">
-<h1>ColliderOBB<a class="headerlink" href="#colliderobb" title="Link to this heading"></a></h1>
+  <section id="colliderbox">
+<h1>ColliderBox<a class="headerlink" href="#colliderbox" title="Link to this heading"></a></h1>
 <p><em>Inherits</em> <a class="reference internal" href="../ColliderShape/index.html"><span class="doc">ColliderShape</span></a>.</p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading"></a></h2>
@@ -859,23 +856,23 @@
 <tbody>
 <tr class="row-even"><td><p>center</p></td>
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3</p></td>
-<td><p>The OOB’s center in <strong>object-space</strong>.</p></td>
+<td><p>The box’s center in <strong>object-space</strong>.</p></td>
 </tr>
 <tr class="row-odd"><td><p>halfExtent</p></td>
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3</p></td>
-<td><p>The half of the OBB’s size on each axis (x, y and z).</p></td>
+<td><p>The half of the box’s size on each axis (x, y and z).</p></td>
 </tr>
 <tr class="row-even"><td><p>rotation</p></td>
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3</p></td>
-<td><p>The OBB’s rotation on each axis (x, y and z) in radians.</p></td>
+<td><p>The box’s rotation on each axis (x, y and z) in radians.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
-<img alt="../../_images/collider_obb.png" src="../../_images/collider_obb.png" />
-<p>ColliderOBB defines an <strong>Oriented Bounding Box</strong> collider using a center defined in <strong>object-space</strong>, the half of each axis extent (half the size of the OBB) and the rotation on each axis.</p>
+<img alt="../../_images/collider_box.png" src="../../_images/collider_box.png" />
+<p>ColliderBox defines an <strong>Oriented Bounding Box</strong> collider using a center defined in <strong>object-space</strong>, the half of each axis extent (half the size of the box) and the rotation on each axis.</p>
 </section>
 </section>
 
@@ -883,8 +880,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../ColliderCapsule/index.html" class="btn btn-neutral float-left" title="ColliderCapsule" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../ColliderShape/index.html" class="btn btn-neutral float-right" title="ColliderShape" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../Collidable/index.html" class="btn btn-neutral float-left" title="Collidable" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ColliderCapsule/index.html" class="btn btn-neutral float-right" title="ColliderCapsule" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
