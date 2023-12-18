@@ -18,12 +18,12 @@ Variables
 	* - isAffectedByConstants
 	  - bool
 	  - Specifies if the :doc:`/entity_component_system/entity/index` is affected by the :doc:`/module/physics_module/index`'s constants (for example: gravity).
-	* - force
-	  - :doc:`/types/Math/index`::vec3
-	  - The force applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the :doc:`/module/physics_module/index`'s constants).
 	* - mass
 	  - float
 	  - The mass of the :doc:`/entity_component_system/entity/index`. **Must not be 0.0**.
+	* - inertia
+	  - float
+	  - The inertia of the :doc:`/entity_component_system/entity/index`. **Must not be 0.0**.
 	* - restitution
 	  - float
 	  - The coefficient of restitution, generally used for collision responses.
@@ -33,6 +33,12 @@ Variables
 	* - dynamicFriction
 	  - float
 	  - The coefficient of dynamic friction, generally used for collision responses.
+	* - force
+	  - :doc:`/types/Math/index`::vec3
+	  - The force (linear) applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the :doc:`/module/physics_module/index`'s constants).
+	* - torque
+	  - :doc:`/types/Math/index`::vec3
+	  - The torque (rotational) applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the :doc:`/module/physics_module/index`'s constants).
 
 Notes
 -----
