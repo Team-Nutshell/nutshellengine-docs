@@ -16,8 +16,11 @@ Variables
 	  - bool
 	  - ``true`` when the two objects collided.
 	* - intersectionNormal
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The intersection normal from the second collider to the first.
 	* - intersectionDepth
 	  - float
 	  - The penetration depth of the two collided objects.
+	* - intersectionPoints
+	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/Math/index`::vec3>
+	  - The intersection points of the two collided objects, in **world-space**.

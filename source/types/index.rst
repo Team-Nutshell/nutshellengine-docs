@@ -18,9 +18,8 @@ Types
 	./Camera/index.rst
 	./ClientSocket/index.rst
 	./Collidable/index.rst
-	./ColliderAABB/index.rst
+	./ColliderBox/index.rst
 	./ColliderCapsule/index.rst
-	./ColliderOBB/index.rst
 	./ColliderShape/index.rst
 	./ColliderShapeType/index.rst
 	./ColliderSphere/index.rst

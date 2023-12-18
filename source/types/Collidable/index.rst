@@ -48,33 +48,24 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - String
 			  - The :doc:`/types/ColliderShapeType/index`.
 			  -  
+				 - "Box"
 				 - "Sphere"
-				 - "AABB"
-				 - "OBB"
 				 - "Capsule"
 			* - center
 			  - Array of Number
-			  - The sphere or OBB's center, in **object-space**. (if ``type`` is "Sphere" or "OBB").
+			  - The sphere or box's center, in **object-space**. (if ``type`` is "Box" or "Sphere").
 			  - Any array of 3 numbers.
 			* - radius
 			  - Number
 			  - The sphere or capsule's radius. (if ``type`` is "Sphere" or "Capsule").
 			  - Any number.
-			* - min
-			  - Array of Number
-			  - The AABB's minimum corner, in **object-space**. (if ``type`` is "AABB").
-			  - Any array of 3 numbers.
-			* - max
-			  - Array of Number
-			  - The AABB's maximum corner, in **object-space**. (if ``type`` is "AABB").
-			  - Any array of 3 numbers.
 			* - halfExtent
 			  - Array of Number
-			  - The OBB's half size. (if ``type`` is "OBB").
+			  - The OBB's half size. (if ``type`` is "Box").
 			  - Any array of 3 numbers.
 			* - rotation
 			  - Array of Number
-			  - The OBB's rotation on each axis, in **degrees**. (if ``type`` is "OBB").
+			  - The OBB's rotation on each axis, in **degrees**. (if ``type`` is "Box").
 			  - Any array of 3 numbers.
 			* - base
 			  - Array of Number
