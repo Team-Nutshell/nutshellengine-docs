@@ -7,9 +7,8 @@ Declaration
 .. code-block:: cpp
 
 	enum class ColliderShapeType {
+		Box,
 		Sphere,
-		AABB,
-		OBB,
 		Capsule,
 		Unknown
 	};
