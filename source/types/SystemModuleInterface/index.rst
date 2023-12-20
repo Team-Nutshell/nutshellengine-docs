@@ -56,11 +56,6 @@ Functions
 	* - :doc:`/types/SystemModuleInterface/getComponentMask/index`
 	  - Returns the tracked :doc:`Components </types/Component/index>`.
 
-Notes
------
-
-``entities`` is the list of :doc:`Entities </types/Entity/index>` that have **at least** one of the :doc:`Components </types/Component/index>` tracked by this system.
-
 .. toctree::
 	:hidden:
 

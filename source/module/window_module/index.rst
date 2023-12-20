@@ -3,7 +3,7 @@ Window Module
 
 Represented by :doc:`/types/WindowModuleInterface/index`.
 
-The Window Module is a :doc:`/module/index` that take care of window-related functions, such as opening and closing windows, and getting keyboard, mouse and gamepad inputs.
+The Window Module is a :doc:`/module/index` that takes care of window-related functions, such as opening and closing windows, and getting keyboard, mouse and gamepad inputs.
 
 ====
 
