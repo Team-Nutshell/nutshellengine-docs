@@ -864,9 +864,9 @@
 <td><p>float</p></td>
 <td><p>The penetration depth of the two collided objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p>points</p></td>
-<td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a>&lt;<a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3&gt;</p></td>
-<td><p>The intersection points of the two collided objects, in <strong>world-space</strong>.</p></td>
+<tr class="row-odd"><td><p>relativePoints</p></td>
+<td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a>&lt;<a class="reference external" href="https://en.cppreference.com/w/cpp/utility/pair">std::pair</a>&lt;<a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3&gt;&gt;</p></td>
+<td><p>The pairs of relative intersection points of the two collided objects, in <strong>local-space</strong>. The first element of the pair is the intersection point relative to the first object’s center and the second element of the pair is the intersection point relative to the second object’s center.</p></td>
 </tr>
 </tbody>
 </table>
