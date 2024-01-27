@@ -18,6 +18,9 @@ Variables
 	* - isAffectedByConstants
 	  - bool
 	  - Specifies if the :doc:`/entity_component_system/entity/index` is affected by the :doc:`/module/physics_module/index`'s constants (for example: gravity).
+	* - lockRotation
+	  - bool
+	  - Controls whether the :doc:`/entity_component_system/entity/index`'s :doc:`/types/Transform/index`'s rotation is affected by torque and collisions.
 	* - mass
 	  - float
 	  - The mass of the :doc:`/entity_component_system/entity/index`. **Must not be 0.0**.
