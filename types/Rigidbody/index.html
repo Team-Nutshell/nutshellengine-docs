@@ -860,31 +860,35 @@
 <td><p>bool</p></td>
 <td><p>Specifies if the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is affected by the <a class="reference internal" href="../../module/physics_module/index.html"><span class="doc">Physics Module</span></a>’s constants (for example: gravity).</p></td>
 </tr>
-<tr class="row-even"><td><p>mass</p></td>
+<tr class="row-even"><td><p>lockRotation</p></td>
+<td><p>bool</p></td>
+<td><p>Controls whether the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Transform/index.html"><span class="doc">Transform</span></a>’s rotation is affected by torque and collisions.</p></td>
+</tr>
+<tr class="row-odd"><td><p>mass</p></td>
 <td><p>float</p></td>
 <td><p>The mass of the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>. <strong>Must not be 0.0</strong>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>inertia</p></td>
+<tr class="row-even"><td><p>inertia</p></td>
 <td><p>float</p></td>
 <td><p>The inertia of the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>. <strong>Must not be 0.0</strong>.</p></td>
 </tr>
-<tr class="row-even"><td><p>restitution</p></td>
+<tr class="row-odd"><td><p>restitution</p></td>
 <td><p>float</p></td>
 <td><p>The coefficient of restitution, generally used for collision responses.</p></td>
 </tr>
-<tr class="row-odd"><td><p>staticFriction</p></td>
+<tr class="row-even"><td><p>staticFriction</p></td>
 <td><p>float</p></td>
 <td><p>The coefficient of static friction, generally used for collision responses.</p></td>
 </tr>
-<tr class="row-even"><td><p>dynamicFriction</p></td>
+<tr class="row-odd"><td><p>dynamicFriction</p></td>
 <td><p>float</p></td>
 <td><p>The coefficient of dynamic friction, generally used for collision responses.</p></td>
 </tr>
-<tr class="row-odd"><td><p>force</p></td>
+<tr class="row-even"><td><p>force</p></td>
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3</p></td>
 <td><p>The force (linear) applied on an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> for a single frame (does not include the <a class="reference internal" href="../../module/physics_module/index.html"><span class="doc">Physics Module</span></a>’s constants).</p></td>
 </tr>
-<tr class="row-even"><td><p>torque</p></td>
+<tr class="row-odd"><td><p>torque</p></td>
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3</p></td>
 <td><p>The torque (rotational) applied on an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> for a single frame (does not include the <a class="reference internal" href="../../module/physics_module/index.html"><span class="doc">Physics Module</span></a>’s constants).</p></td>
 </tr>
