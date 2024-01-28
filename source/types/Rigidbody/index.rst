@@ -39,9 +39,21 @@ Variables
 	* - force
 	  - :doc:`/types/Math/index`::vec3
 	  - The force (linear) applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the :doc:`/module/physics_module/index`'s constants).
+	* - linearAcceleration
+	  - :doc:`/types/Math/index`::vec3
+	  - The linear acceleration of an :doc:`/entity_component_system/entity/index`.
+	* - linearVelocity
+	  - :doc:`/types/Math/index`::vec3
+	  - The linear velocity of an :doc:`/entity_component_system/entity/index`.
 	* - torque
 	  - :doc:`/types/Math/index`::vec3
 	  - The torque (rotational) applied on an :doc:`/entity_component_system/entity/index` for a single frame (does not include the :doc:`/module/physics_module/index`'s constants).
+	* - angularAcceleration
+	  - :doc:`/types/Math/index`::vec3
+	  - The angular acceleration of an :doc:`/entity_component_system/entity/index`.
+	* - angularVelocity
+	  - :doc:`/types/Math/index`::vec3
+	  - The angular velocity of an :doc:`/entity_component_system/entity/index`.
 
 Notes
 -----
