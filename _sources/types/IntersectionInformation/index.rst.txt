@@ -17,7 +17,7 @@ Variables
 	  - ``true`` when the two objects collided.
 	* - normal
 	  - :doc:`/types/Math/index`::vec3
-	  - The intersection normal from the second collider to the first.
+	  - The intersection normal from the first collider to the second.
 	* - depth
 	  - float
 	  - The penetration depth of the two collided objects.
