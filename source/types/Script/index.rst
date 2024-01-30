@@ -263,6 +263,8 @@ Functions
 	  - Closes a :doc:`/types/ServerSocket/index`.
 	* - :doc:`/types/Script/closeClientSocket/index`
 	  - Closes a :doc:`/types/ClientSocket/index`.
+	* - :doc:`/types/Script/createScript/index`
+	  - Creates a new :doc:`/types/Script/index` for a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index`.
 
 .. toctree::
 	:hidden:
@@ -379,3 +381,5 @@ Functions
 	./createClientSocket/index
 	./closeServerSocket/index
 	./closeClientSocket/index
+
+	./createScript/index
