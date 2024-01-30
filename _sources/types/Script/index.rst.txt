@@ -1,6 +1,8 @@
 Script
 ======
 
+*Inherits* :doc:`/types/ScriptBase/index`.
+
 For a version of this page but split by categories, see :doc:`/scripting/api/index`.
 
 Variables

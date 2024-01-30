@@ -25,7 +25,7 @@ None.
 Notes
 -----
 
-This function will destroy the calling Entity. The rest of the script **must not** reference any function or variable belonging to this Entity. It is safer to ``return`` right after calling this function:
+This function will destroy the calling :doc:`/entity_component_system/entity/index`. The rest of the script **must not** reference any function or variable belonging to this Entity. It is safer to ``return`` right after calling this function:
 
 .. code-block:: cpp
 
