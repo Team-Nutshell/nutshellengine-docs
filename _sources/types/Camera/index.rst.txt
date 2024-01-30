@@ -38,7 +38,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 	  - Possible values
 	* - camera
 	  - Array of Object
-	  - The :doc:`/types/Camera/index` Component.
+	  - The :doc:`/types/Camera/index` :doc:`/entity_component_system/component/index`.
 	  - .. list-table::
 			:width: 100%
 			:header-rows: 1

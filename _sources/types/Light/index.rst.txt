@@ -38,7 +38,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 	  - Possible values
 	* - light
 	  - Array of Object
-	  - The :doc:`/types/Light/index` Component.
+	  - The :doc:`/types/Light/index` :doc:`/entity_component_system/component/index`.
 	  - .. list-table::
 			:width: 100%
 			:header-rows: 1
