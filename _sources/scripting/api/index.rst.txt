@@ -366,3 +366,19 @@ Functions related to networking.
 	  - Closes a :doc:`/types/ServerSocket/index`.
 	* - :doc:`/types/Script/closeClientSocket/index`
 	  - Closes a :doc:`/types/ClientSocket/index`.
+
+Scripting
+---------
+
+Functions related to scripting.
+
+.. list-table::
+	:width: 100%
+	:widths: 30 70
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Description
+	* - :doc:`/types/Script/createScript/index`
+	  - Creates a new :doc:`/types/Script/index` for a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index`.
