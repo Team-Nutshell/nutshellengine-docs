@@ -23,6 +23,7 @@ Types
 	./ColliderShape/index.rst
 	./ColliderShapeType/index.rst
 	./ColliderSphere/index.rst
+	./CollisionInfo/index.rst
 	./Component/index.rst
 	./ConnectedClient/index.rst
 	./ConnectedClientID/index.rst
@@ -77,6 +78,7 @@ Types
 	./SceneManager/index.rst
 	./Script/index.rst
 	./Scriptable/index.rst
+	./ScriptBase/index.rst
 	./ServerSocket/index.rst
 	./Skin/index.rst
 	./Sound/index.rst
