@@ -13,7 +13,7 @@ Variables
 	  - Type
 	  - Description
 	* - script
-	  - `std::unique_ptr <https://en.cppreference.com/w/cpp/memory/unique_ptr>`_\<ScriptBase>
+	  - :doc:`/types/ScriptBase/index`*
 	  - The script to use.
 
 Notes
@@ -32,7 +32,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 	  - Possible values
 	* - scriptable
 	  - Array of Object
-	  - The :doc:`/types/Scriptable/index` Component.
+	  - The :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index`.
 	  - .. list-table::
 			:width: 100%
 			:header-rows: 1
@@ -46,3 +46,5 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - String
 			  - The name of the :doc:`/types/Script/index`.
 			  - Any existing :doc:`/types/Script/index`'s name.
+
+When creating a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index` from a :doc:`/types/Script/index`, it is recommended to use the :doc:`/types/Script/index`'s :doc:`/types/Script/createScript/index` function.
