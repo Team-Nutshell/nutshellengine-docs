@@ -12,12 +12,12 @@ Variables
 	* - Name
 	  - Type
 	  - Description
-	* - model
-	  - :doc:`/types/Model/index`\*
-	  - The memory address of the :doc:`/types/Model/index`.
-	* - modelPrimitiveIndex
-	  - uint32_t
-	  - The index of the :doc:`/types/ModelPrimitive/index` in ``model``.
+	* - mesh
+	  - :doc:`/types/Mesh/index`\*
+	  - The memory address of the :doc:`/types/Mesh/index`.
+	* - material
+	  - :doc:`/types/Material/index`
+	  - The :doc:`/types/Material/index` to use.
 
 Notes
 -----

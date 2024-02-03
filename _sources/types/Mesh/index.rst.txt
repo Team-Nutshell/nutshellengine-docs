@@ -18,9 +18,12 @@ Variables
 	* - indices
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<uint32_t>
 	  - The mesh's indices.
-	* - mesh
+	* - skin
 	  - :doc:`/types/Skin/index`
 	  - The mesh's :doc:`/types/Skin/index` for animation.
+	* - animations
+	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/Animation/index`>
+	  - The mesh's animations.
 	* - topology
 	  - :doc:`/types/MeshTopology/index`
 	  - The mesh's topology.
