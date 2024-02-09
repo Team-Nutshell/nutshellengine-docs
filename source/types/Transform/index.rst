@@ -58,7 +58,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Any array of 3 numbers.
 			* - rotation
 			  - Array of Number
-			  - A rotation on each axis (x, y and z). Angles are specified in radians.
+			  - A rotation on each axis (x, y and z). Angles are specified in degrees.
 			  - Any array of 3 numbers.
 			* - scale
 			  - Array of Number

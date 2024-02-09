@@ -12,9 +12,15 @@ Variables
 	* - Name
 	  - Type
 	  - Description
+	* - forward
+	  - :doc:`/types/Math/index`::vec3
+	  - The camera's forward vector.
+	* - up
+	  - :doc:`/types/Math/index`::vec3
+	  - The camera's up vector.
 	* - fov
 	  - float
-	  - The camera's field of view.
+	  - The camera's field of view. In radians.
 	* - nearPlane
 	  - float
 	  - The camera's near plane, which corresponds to the nearest distance from the camera's position where things are shown.
@@ -48,9 +54,17 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Type
 			  - Description
 			  - Possible values
+			* - forward
+			  - Array of Number
+			  - The camera's forward vector.
+			  - Any array of 3 numbers.
+			* - up
+			  - Array of Number
+			  - The camera's up vector.
+			  - Any array of 3 numbers.
 			* - fov
 			  - Number
-			  - The camera's field of view, in degrees.
+			  - The camera's field of view. In degrees.
 			  - Any number.
 			* - nearPlane
 			  - Number

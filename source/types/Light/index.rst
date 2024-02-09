@@ -18,6 +18,9 @@ Variables
 	* - color
 	  - :doc:`/types/Math/index`::vec3
 	  - The light's color.
+	* - direction
+	  - :doc:`/types/Math/index`::vec3
+	  - The light's base direction vector.
 	* - cutoff
 	  - :doc:`/types/Math/index`::vec2
 	  - Only used in spot lights. In radians.
@@ -58,6 +61,10 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			* - color
 			  - Array of Number
 			  - The light's color.
+			  - Any array of 3 numbers.
+			* - direction
+			  - Array of Number
+			  - The light's base direction vector.
 			  - Any array of 3 numbers.
 			* - cutoff
 			  - Array of Number
