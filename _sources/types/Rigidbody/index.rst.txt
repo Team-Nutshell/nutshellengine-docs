@@ -89,6 +89,10 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - bool
 			  - Specifies if the :doc:`/entity_component_system/entity/index` is affected by the Physics Module's constants (for example: gravity).
 			  - Any boolean (``true`` or ``false``).
+			* - lockRotation
+			  - bool
+			  - Controls whether the :doc:`/entity_component_system/entity/index`'s :doc:`/types/Transform/index`'s rotation is affected by torque and collisions.
+			  - Any boolean (``true`` or ``false``).
 			* - mass
 			  - Number
 			  - The mass of the :doc:`/entity_component_system/entity/index`. **Must not be 0.0**.
