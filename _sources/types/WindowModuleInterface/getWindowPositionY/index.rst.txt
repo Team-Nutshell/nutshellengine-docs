@@ -35,8 +35,6 @@ The vertical position of the window on the screen.
 Notes
 -----
 
-The main window will be used if ``windowID`` is equal to ``NTSHENGN_WINDOW_UNKNOWN``.
-
 The position's origin on the window is the top-left corner of the window.
 
 The position's origin (0, 0) on the screen is the top-left corner of the main monitor.

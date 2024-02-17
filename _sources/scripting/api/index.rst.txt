@@ -188,6 +188,8 @@ Functions related to windows and monitors.
 	  - Enables or disables manual window resizing.
 	* - :doc:`/types/Script/isWindowResizable/index`
 	  - Checks if the window can be manually resized.
+	* - :doc:`/types/Script/getWindowDroppedFiles/index`
+	  - Returns the path to the files dropped on the window.
 	* - :doc:`/types/Script/setWindowTitle/index`
 	  - Sets the window's title.
 	* - :doc:`/types/Script/setWindowIcon/index`

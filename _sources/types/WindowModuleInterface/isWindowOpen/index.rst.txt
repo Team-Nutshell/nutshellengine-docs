@@ -31,8 +31,3 @@ Returns
 -------
 
 None.
-
-Notes
------
-
-The main window will be used if ``windowID`` is equal to ``NTSHENGN_WINDOW_UNKNOWN``.

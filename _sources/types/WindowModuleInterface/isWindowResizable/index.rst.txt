@@ -35,6 +35,4 @@ Returns
 Notes
 -----
 
-The main window will be used if ``windowID`` is equal to ``NTSHENGN_WINDOW_UNKNOWN``.
-
 This function will only lock the user's ability to manually resize the window. The window will still be resizable with :doc:`/types/Script/setWindowSize/index`.
