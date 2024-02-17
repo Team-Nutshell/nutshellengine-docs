@@ -41,6 +41,4 @@ None.
 Notes
 -----
 
-The main window will be used if ``windowID`` is equal to ``NTSHENGN_WINDOW_UNKNOWN``.
-
 The position's origin (0, 0) is the top-left corner of the main monitor.

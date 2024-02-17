@@ -31,8 +31,3 @@ Returns
 -------
 
 ``true`` if the window is in fullscreen, else, returns ``false``.
-
-Notes
------
-
-The main window will be used if ``windowID`` is equal to ``NTSHENGN_WINDOW_UNKNOWN``.
