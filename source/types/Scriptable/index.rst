@@ -13,7 +13,7 @@ Variables
 	  - Type
 	  - Description
 	* - script
-	  - :doc:`/types/ScriptBase/index`*
+	  - :doc:`/types/ScriptBase/index`\*
 	  - The script to use.
 
 Notes

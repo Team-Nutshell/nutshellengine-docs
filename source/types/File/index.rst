@@ -1,7 +1,7 @@
 File
 ====
 
-File is a list of functions that can be used to retreive some information about files.
+File is a list of functions that can be used to retrieve some information about files.
 
 Functions
 ---------
