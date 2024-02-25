@@ -51,4 +51,3 @@ Functions
 	./setNumber/index.rst
 	./setString/index.rst
 	./setBoolean/index.rst
-	./to_string/index.rst

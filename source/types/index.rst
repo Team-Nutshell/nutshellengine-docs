@@ -72,6 +72,7 @@ Types
 	./NetworkType/index.rst
 	./Octree/index.rst
 	./PhysicsModuleInterface/index.rst
+	./Profiler/index.rst
 	./RaycastInformation/index.rst
 	./Renderable/index.rst
 	./Rigidbody/index.rst

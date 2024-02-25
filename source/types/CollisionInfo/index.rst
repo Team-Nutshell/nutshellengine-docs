@@ -22,6 +22,5 @@ Variables
 	  - float
 	  - The depth of the intersection.
 	* - relativePoints
-	  - float
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/Math/index`::vec3>
 	  - The list of intersection points relative to the current :doc:`/entity_component_system/entity/index`, in **local-space**.
