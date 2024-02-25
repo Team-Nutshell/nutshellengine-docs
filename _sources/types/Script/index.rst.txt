@@ -267,6 +267,16 @@ Functions
 	  - Closes a :doc:`/types/ClientSocket/index`.
 	* - :doc:`/types/Script/createScript/index`
 	  - Creates a new :doc:`/types/Script/index` for a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index`.
+	* - :doc:`/types/Script/startProfiling/index`
+	  - Starts a profiling session.
+	* - :doc:`/types/Script/endProfiling/index`
+	  - Ends a profiling session and returns the result.
+	* - :doc:`/types/Script/isProfilerRunning/index`
+	  - Checks if the profiler is running.
+	* - :doc:`/types/Script/startProfilingBlock/index`
+	  - Starts a profiling block.
+	* - :doc:`/types/Script/endProfilingBlock/index`
+	  - Ends a profiling block.
 
 .. toctree::
 	:hidden:
@@ -386,3 +396,9 @@ Functions
 	./closeClientSocket/index
 
 	./createScript/index
+
+	./startProfiling/index
+	./endProfiling/index
+	./isProfilerRunning/index
+	./startProfilingBlock/index
+	./endProfilingBlock/index
