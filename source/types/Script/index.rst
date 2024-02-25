@@ -269,6 +269,8 @@ Functions
 	  - Creates a new :doc:`/types/Script/index` for a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index`.
 	* - :doc:`/types/Script/startProfiling/index`
 	  - Starts a profiling session.
+	* - :doc:`/types/Script/getProfilingResults/index`
+	  - Returns the result of the profiling.
 	* - :doc:`/types/Script/endProfiling/index`
 	  - Ends a profiling session and returns the result.
 	* - :doc:`/types/Script/isProfilerRunning/index`
@@ -398,6 +400,7 @@ Functions
 	./createScript/index
 
 	./startProfiling/index
+	./getProfilingResults/index
 	./endProfiling/index
 	./isProfilerRunning/index
 	./startProfilingBlock/index

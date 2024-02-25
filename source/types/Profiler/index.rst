@@ -13,6 +13,8 @@ Functions
 	  - Description
 	* - :doc:`/types/Profiler/start/index`
 	  - Starts a profiling session.
+	* - :doc:`/types/Profiler/getResults/index`
+	  - Returns the result of the profiling.
 	* - :doc:`/types/Profiler/end/index`
 	  - Ends a profiling session and returns the result.
 	* - :doc:`/types/Profiler/isRunning/index`
@@ -39,6 +41,7 @@ Static Functions
 	:hidden:
 
 	./start/index.rst
+	./getResults/index.rst
 	./end/index.rst
 	./isRunning/index.rst
 	./startBlock/index.rst
