@@ -19,6 +19,8 @@ Functions
 	  - Returns the number of elements in an Array Node or Object Node.
 	* - :doc:`/types/JSON/Node/operator_brackets/index`
 	  - Returns the element at a certain index in an Array Node or a certain key in an Object Node.
+	* - :doc:`/types/JSON/Node/getKeys/index`
+	  - Returns all keys of an Object Node.
 	* - :doc:`/types/JSON/Node/getNumber/index`
 	  - Returns the number contained in a Number Node.
 	* - :doc:`/types/JSON/Node/getString/index`
@@ -33,8 +35,6 @@ Functions
 	  - Sets the value of a String Node.
 	* - :doc:`/types/JSON/Node/setBoolean/index`
 	  - Sets the value of a Boolean Node.
-	* - :doc:`/types/JSON/Node/to_string/index`
-	  - Converts the JSON to a string.
 
 .. toctree::
 	:hidden:
@@ -43,6 +43,7 @@ Functions
 	./contains/index.rst
 	./size/index.rst
 	./operator_brackets/index.rst
+	./getKeys/index.rst
 	./getNumber/index.rst
 	./getString/index.rst
 	./getBoolean/index.rst

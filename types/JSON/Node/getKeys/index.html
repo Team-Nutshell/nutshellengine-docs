@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>to_string &mdash; NutshellEngine 0.0.1 documentation</title>
+  <title>getKeys &mdash; NutshellEngine 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=6d66d286" />
@@ -22,8 +22,8 @@
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="JSON::Type" href="../../Type/index.html" />
-    <link rel="prev" title="setBoolean" href="../setBoolean/index.html" /> 
+    <link rel="next" title="getNumber" href="../getNumber/index.html" />
+    <link rel="prev" title="operator[]" href="../operator_brackets/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -451,8 +451,10 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../index.html">JSON</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="../../index.html#functions">Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../index.html#functions">Functions</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../index.html#static-functions">Static Functions</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="../../read/index.html">read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../to_string/index.html">to_string</a></li>
 <li class="toctree-l4 current"><a class="reference internal" href="../index.html">JSON::Node</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Type/index.html">JSON::Type</a></li>
 </ul>
@@ -849,9 +851,9 @@
           <li class="breadcrumb-item"><a href="../../../index.html">Types</a></li>
           <li class="breadcrumb-item"><a href="../../index.html">JSON</a></li>
           <li class="breadcrumb-item"><a href="../index.html">JSON::Node</a></li>
-      <li class="breadcrumb-item active">to_string</li>
+      <li class="breadcrumb-item active">getKeys</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../_sources/types/JSON/Node/to_string/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/types/JSON/Node/getKeys/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -859,13 +861,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="to-string">
-<h1>to_string<a class="headerlink" href="#to-string" title="Link to this heading"></a></h1>
-<p><a class="reference internal" href="../index.html"><span class="doc">JSON::Node</span></a>::to_string</p>
-<p>Converts the JSON to a string.</p>
+  <section id="getkeys">
+<h1>getKeys<a class="headerlink" href="#getkeys" title="Link to this heading"></a></h1>
+<p><a class="reference internal" href="../index.html"><span class="doc">JSON::Node</span></a>::getKeys</p>
+<p>Returns all keys of an Object Node.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">to_string</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">getKeys</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -875,7 +877,11 @@
 </section>
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
-<p>The JSON string for the whole hierarchy, with this <a class="reference internal" href="../index.html"><span class="doc">JSON::Node</span></a> as root.</p>
+<p>An <a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a> containing all keys of an Object <a class="reference internal" href="../index.html"><span class="doc">JSON::Node</span></a>.</p>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
+<p>This function can only be called on a <a class="reference internal" href="../index.html"><span class="doc">JSON::Node</span></a> with the Object <a class="reference internal" href="../../Type/index.html"><span class="doc">JSON::Type</span></a>.</p>
 </section>
 </section>
 
@@ -883,8 +889,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../setBoolean/index.html" class="btn btn-neutral float-left" title="setBoolean" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../Type/index.html" class="btn btn-neutral float-right" title="JSON::Type" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../operator_brackets/index.html" class="btn btn-neutral float-left" title="operator[]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../getNumber/index.html" class="btn btn-neutral float-right" title="getNumber" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
