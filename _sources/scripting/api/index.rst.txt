@@ -400,6 +400,8 @@ Functions related to profiling.
 	  - Description
 	* - :doc:`/types/Script/startProfiling/index`
 	  - Starts a profiling session.
+	* - :doc:`/types/Script/getProfilingResults/index`
+	  - Returns the result of the profiling.
 	* - :doc:`/types/Script/endProfiling/index`
 	  - Ends a profiling session and returns the result.
 	* - :doc:`/types/Script/isProfilerRunning/index`
