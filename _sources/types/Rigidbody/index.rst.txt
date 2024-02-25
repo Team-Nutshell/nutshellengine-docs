@@ -82,15 +82,15 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Description
 			  - Possible values
 			* - isStatic
-			  - bool
+			  - Boolean
 			  - An :doc:`/entity_component_system/entity/index` with a static Rigidbody is not affected by forces or collisions.
 			  - Any boolean (``true`` or ``false``).
 			* - isAffectedByConstants
-			  - bool
+			  - Boolean
 			  - Specifies if the :doc:`/entity_component_system/entity/index` is affected by the Physics Module's constants (for example: gravity).
 			  - Any boolean (``true`` or ``false``).
 			* - lockRotation
-			  - bool
+			  - Boolean
 			  - Controls whether the :doc:`/entity_component_system/entity/index`'s :doc:`/types/Transform/index`'s rotation is affected by torque and collisions.
 			  - Any boolean (``true`` or ``false``).
 			* - mass

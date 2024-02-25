@@ -30,3 +30,7 @@
 	  - String
 	  - The path to the application's first scene (:doc:`/file_formats/ntsn/index`).
 	  - A path to a scene file.
+	* - startProfiling
+	  - Boolean
+	  - Specifies if profiling will start with the application.
+	  - Any boolean (``true`` or ``false``).
