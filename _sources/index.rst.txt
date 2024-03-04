@@ -1,6 +1,8 @@
 NutshellEngine
 ==============
 
+.. image:: /assets/nutshell_engine_logo_dark_theme.png
+
 **NutshellEngine** is a modular game engine designed to enable game and engine developers to work together efficiently by providing easy to replace modules implementing the game engine’s principal systems such as rendering, physics and audio.
 
 .. toctree::
