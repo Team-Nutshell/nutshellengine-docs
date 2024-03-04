@@ -24,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - sessionName
-	  - `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - The profiling session's name.
 
 Returns
