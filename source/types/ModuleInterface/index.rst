@@ -1,6 +1,20 @@
 ModuleInterface
 ===============
 
+Variables
+---------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	  - :doc:`/types/Profiler/index`\*
+	  - Memory address to the :doc:`/Profiler/index`.
+
 Functions
 ---------
 

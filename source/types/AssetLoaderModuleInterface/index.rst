@@ -3,6 +3,20 @@ AssetLoaderModuleInterface
 
 *Inherits* :doc:`/types/ModuleInterface/index`.
 
+Variables
+---------
+
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	  - :doc:`/types/AssetManager/index`\*
+	  - Memory address to the :doc:`/asset_manager/index`.
+
 Functions
 ---------
 
@@ -22,8 +36,6 @@ Functions
 	  - Loads an image from a file.
 	* - :doc:`/types/AssetLoaderModuleInterface/loadFont/index`
 	  - Loads a font from a file.
-	* - :doc:`/types/AssetLoaderModuleInterface/calculateTangents/index`
-	  - Calculate a :doc:`/types/Mesh/index`'s tangents.
 
 .. toctree::
 	:hidden:
