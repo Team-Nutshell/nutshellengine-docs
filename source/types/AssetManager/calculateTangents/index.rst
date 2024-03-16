@@ -31,8 +31,3 @@ Returns
 -------
 
 None.
-
-Notes
------
-
-If no :doc:`/module/asset_loader_module/index` is used, the :doc:`/types/Mesh/index`'s tangents will not change.
