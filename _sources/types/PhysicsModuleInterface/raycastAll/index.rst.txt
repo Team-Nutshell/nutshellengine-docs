@@ -1,7 +1,7 @@
 raycastAll
 ==========
 
-:doc:`/types/Script/index`::raycastAll
+:doc:`/types/PhysicsModuleInterface/index`::raycastAll
 
 Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 
@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	std::vector<std::pair<Entity, RaycastInformation>> raycastAll(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, float tMin = 0.0001f, float tMax = 1000000.0f);
+	virtual std::vector<std::pair<Entity, RaycastInformation>> raycastAll(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, float tMin, float tMax) = 0;
 
 Parameters
 ----------
