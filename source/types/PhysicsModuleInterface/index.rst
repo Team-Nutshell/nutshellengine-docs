@@ -17,6 +17,8 @@ Functions
 	* - :doc:`/types/PhysicsModuleInterface/intersect/index`
 	  - Returns information about the intersection of two :doc:`ColliderShapes </types/ColliderShape/index>`.
 	* - :doc:`/types/PhysicsModuleInterface/raycast/index`
+	  - Casts a ray and returns information about the intersection between the ray and the :doc:`/types/ColliderShape/index`.
+	* - :doc:`/types/PhysicsModuleInterface/raycastAll/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 
 .. toctree::
@@ -24,3 +26,4 @@ Functions
 
 	./intersect/index.rst
 	./raycast/index.rst
+	./raycastAll/index.rst

@@ -3,14 +3,14 @@ raycast
 
 :doc:`/types/PhysicsModuleInterface/index`::raycast
 
-Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
+Casts a ray and returns information about the intersection between the ray and the :doc:`/types/ColliderShape/index`.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	virtual std::vector<RaycastInformation> raycast(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, float tMin, float tMax) = 0;
+	virtual RaycastInformation raycast(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, float tMin, float tMax, const ColliderShape* shape) = 0;
 
 Parameters
 ----------
@@ -35,12 +35,11 @@ Parameters
 	* - tMax
 	  - float
 	  - The maximum distance to check.
+	* - shape
+	  - const :doc:`/types/ColliderShape/index`\*
+	  - The shape to test the ray intersection on.
 
 Returns
 -------
 
-An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of :doc:`RaycastInformations </types/RaycastInformation/index>` containing information about the hit :doc:`Entities </entity_component_system/entity/index>`.
-
-The returned list is sorted from the closest to the furthest object.
-
-If no :doc:`/entity_component_system/entity/index` has been hit, the returned list is empty.
+A :doc:`/types/RaycastInformation/index` containing information about the intersection. If there is no intersection between the ray and the shape, ``RaycastInformation::hasIntersected`` will be ``false``.

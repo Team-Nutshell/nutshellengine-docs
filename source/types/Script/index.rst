@@ -200,6 +200,8 @@ Functions
 	* - :doc:`/types/Script/intersect/index`
 	  - Returns information about the intersection of two :doc:`ColliderShapes </types/ColliderShape/index>`.
 	* - :doc:`/types/Script/raycast/index`
+	  - Casts a ray and returns information about the intersection between the ray and the :doc:`/types/ColliderShape/index`.
+	* - :doc:`/types/Script/raycastAll/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/playSound/index`
 	  - Plays a global sound and returns a unique identifier to this sound source.
@@ -373,6 +375,7 @@ Functions
 
 	./intersect/index.rst
 	./raycast/index.rst
+	./raycastAll/index.rst
 
 	./playAnimation/index.rst
 	./pauseAnimation/index.rst
