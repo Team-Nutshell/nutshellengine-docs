@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	bool isAnimationPlaying(Entity entity, uint32_t animationIndex);
+	virtual bool isAnimationPlaying(Entity entity, uint32_t animationIndex) = 0;
 
 Parameters
 ----------
