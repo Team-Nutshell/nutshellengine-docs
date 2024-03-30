@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void pauseAnimation(Entity entity);
+	virtual void pauseAnimation(Entity entity) = 0;
 
 Parameters
 ----------

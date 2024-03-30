@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void playAnimation(Entity entity, uint32_t animationIndex);
+	virtual void playAnimation(Entity entity, uint32_t animationIndex) = 0;
 
 Parameters
 ----------

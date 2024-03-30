@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void stopAnimation(Entity entity);
+	virtual void stopAnimation(Entity entity) = 0;
 
 Parameters
 ----------

@@ -203,6 +203,22 @@ Functions related to windows and monitors.
 	* - :doc:`/types/Script/getMonitorDisplayScaling/index`
 	  - Returns the display scaling of the main monitor.
 
+Graphics
+--------
+
+Function related to graphics.
+
+.. list-table::
+	:width: 100%
+	:widths: 30 70
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Description
+	* - :doc:`/types/Script/setBackgroundColor/index`
+	  - Sets the color of the background.
+
 Physics
 -------
 

@@ -58,6 +58,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../scripting/api/index.html#entity-component-system">Entity-Component-System</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../scripting/api/index.html#input">Input</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../scripting/api/index.html#windows">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../scripting/api/index.html#graphics">Graphics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../scripting/api/index.html#physics">Physics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../scripting/api/index.html#audio">Audio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../scripting/api/index.html#animation">Animation</a></li>
@@ -361,6 +362,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">GraphicsModuleInterface</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html#functions">Functions</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="../load/index.html">load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../setBackgroundColor/index.html">setBackgroundColor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../drawUIText/index.html">drawUIText</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../drawUILine/index.html">drawUILine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../drawUIRectangle/index.html">drawUIRectangle</a></li>
@@ -666,6 +668,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getMonitorHeight/index.html">getMonitorHeight</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getMonitorRefreshRate/index.html">getMonitorRefreshRate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getMonitorDisplayScaling/index.html">getMonitorDisplayScaling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/setBackgroundColor/index.html">setBackgroundColor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/playSound/index.html">playSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/playSoundAtPosition/index.html">playSoundAtPosition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/resumeSoundSource/index.html">resumeSoundSource</a></li>
@@ -892,7 +895,7 @@
 <p>Pauses an <a class="reference internal" href="../../Animation/index.html"><span class="doc">Animation</span></a> of an <a class="reference internal" href="../../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">pauseAnimation</span><span class="p">(</span><span class="n">Entity</span><span class="w"> </span><span class="n">entity</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">pauseAnimation</span><span class="p">(</span><span class="n">Entity</span><span class="w"> </span><span class="n">entity</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>

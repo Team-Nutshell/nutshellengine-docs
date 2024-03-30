@@ -197,6 +197,8 @@ Functions
 	  - Returns the refresh rate of the main monitor.
 	* - :doc:`/types/Script/getMonitorDisplayScaling/index`
 	  - Returns the display scaling of the main monitor.
+	* - :doc:`/types/Script/setBackgroundColor/index`
+	  - Sets the color of the background.
 	* - :doc:`/types/Script/intersect/index`
 	  - Returns information about the intersection of two :doc:`ColliderShapes </types/ColliderShape/index>`.
 	* - :doc:`/types/Script/raycast/index`
@@ -357,6 +359,8 @@ Functions
 	./getMonitorHeight/index.rst
 	./getMonitorRefreshRate/index.rst
 	./getMonitorDisplayScaling/index.rst
+
+	./setBackgroundColor/index.rst
 
 	./playSound/index.rst
 	./playSoundAtPosition/index.rst

@@ -58,6 +58,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#entity-component-system">Entity-Component-System</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#input">Input</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#windows">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#graphics">Graphics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#physics">Physics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#audio">Audio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#animation">Animation</a></li>
@@ -361,6 +362,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">GraphicsModuleInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="load/index.html">load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="setBackgroundColor/index.html">setBackgroundColor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawUIText/index.html">drawUIText</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawUILine/index.html">drawUILine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="drawUIRectangle/index.html">drawUIRectangle</a></li>
@@ -666,6 +668,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/getMonitorHeight/index.html">getMonitorHeight</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getMonitorRefreshRate/index.html">getMonitorRefreshRate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getMonitorDisplayScaling/index.html">getMonitorDisplayScaling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/setBackgroundColor/index.html">setBackgroundColor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/playSound/index.html">playSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/playSoundAtPosition/index.html">playSoundAtPosition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/resumeSoundSource/index.html">resumeSoundSource</a></li>
@@ -904,28 +907,31 @@
 <tr class="row-even"><td><p><a class="reference internal" href="load/index.html"><span class="doc">load</span></a></p></td>
 <td><p>Loads a mesh, an image or a font in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this resource.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="drawUIText/index.html"><span class="doc">drawUIText</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setBackgroundColor/index.html"><span class="doc">setBackgroundColor</span></a></p></td>
+<td><p>Sets the color of the background.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="drawUIText/index.html"><span class="doc">drawUIText</span></a></p></td>
 <td><p>Draws text on the User Interface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="drawUILine/index.html"><span class="doc">drawUILine</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="drawUILine/index.html"><span class="doc">drawUILine</span></a></p></td>
 <td><p>Draws a line on the User Interface.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="drawUIRectangle/index.html"><span class="doc">drawUIRectangle</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="drawUIRectangle/index.html"><span class="doc">drawUIRectangle</span></a></p></td>
 <td><p>Draws a rectangle on the User Interface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="drawUIImage/index.html"><span class="doc">drawUIImage</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="drawUIImage/index.html"><span class="doc">drawUIImage</span></a></p></td>
 <td><p>Draws an image on the User Interface.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="playAnimation/index.html"><span class="doc">playAnimation</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="playAnimation/index.html"><span class="doc">playAnimation</span></a></p></td>
 <td><p>Plays an <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a> on an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pauseAnimation/index.html"><span class="doc">pauseAnimation</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="pauseAnimation/index.html"><span class="doc">pauseAnimation</span></a></p></td>
 <td><p>Pauses an <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a> of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="stopAnimation/index.html"><span class="doc">stopAnimation</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="stopAnimation/index.html"><span class="doc">stopAnimation</span></a></p></td>
 <td><p>Stops an <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a> of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isAnimationPlaying/index.html"><span class="doc">isAnimationPlaying</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isAnimationPlaying/index.html"><span class="doc">isAnimationPlaying</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is currently playing a certain <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a>.</p></td>
 </tr>
 </tbody>

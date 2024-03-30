@@ -16,6 +16,8 @@ Functions
 	  - Description
 	* - :doc:`/types/GraphicsModuleInterface/load/index`
 	  - Loads a mesh, an image or a font in the :doc:`/module/graphics_module/index` and returns a unique identifier to this resource.
+	* - :doc:`/types/GraphicsModuleInterface/setBackgroundColor/index`
+	  - Sets the color of the background.
 	* - :doc:`/types/GraphicsModuleInterface/drawUIText/index`
 	  - Draws text on the User Interface.
 	* - :doc:`/types/GraphicsModuleInterface/drawUILine/index`
@@ -37,6 +39,7 @@ Functions
 	:hidden:
 
 	./load/index.rst
+	./setBackgroundColor/index.rst
 	./drawUIText/index.rst
 	./drawUILine/index.rst
 	./drawUIRectangle/index.rst
