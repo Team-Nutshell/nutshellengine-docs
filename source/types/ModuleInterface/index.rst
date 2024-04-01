@@ -12,6 +12,7 @@ Variables
 	* - Name
 	  - Type
 	  - Description
+	* - profiler
 	  - :doc:`/types/Profiler/index`\*
 	  - Memory address to the :doc:`/Profiler/index`.
 

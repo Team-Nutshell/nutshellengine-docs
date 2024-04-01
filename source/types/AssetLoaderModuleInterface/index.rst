@@ -14,6 +14,7 @@ Variables
 	* - Name
 	  - Type
 	  - Description
+	* - assetManager
 	  - :doc:`/types/AssetManager/index`\*
 	  - Memory address to the :doc:`/asset_manager/index`.
 
