@@ -183,6 +183,10 @@ Functions
 	  - Enables or disables manual window resizing.
 	* - :doc:`/types/Script/isWindowResizable/index`
 	  - Checks if the window can be manually resized.
+	* - :doc:`/types/Script/setWindowOpacity/index`
+	  - Sets the window's opacity.
+	* - :doc:`/types/Script/getWindowOpacity/index`
+	  - Returns the window's opacity.
 	* - :doc:`/types/Script/getWindowDroppedFiles/index`
 	  - Returns the path to the files dropped on the window.
 	* - :doc:`/types/Script/setWindowTitle/index`
@@ -352,6 +356,8 @@ Functions
 	./isWindowBorderless/index.rst
 	./setWindowResizable/index.rst
 	./isWindowResizable/index.rst
+	./setWindowOpacity/index.rst
+	./getWindowOpacity/index.rst
 	./getWindowDroppedFiles/index.rst
 	./setWindowTitle/index.rst
 	./setWindowIcon/index.rst
