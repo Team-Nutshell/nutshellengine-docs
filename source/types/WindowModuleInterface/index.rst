@@ -48,6 +48,10 @@ Functions
 	  - Enables or disables manual window resizing.
 	* - :doc:`/types/WindowModuleInterface/isWindowResizable/index`
 	  - Checks if the window can be manually resized.
+	* - :doc:`/types/WindowModuleInterface/setWindowOpacity/index`
+	  - Sets the window's opacity.
+	* - :doc:`/types/WindowModuleInterface/getWindowOpacity/index`
+	  - Returns the window's opacity.
 	* - :doc:`/types/WindowModuleInterface/getWindowDroppedFiles/index`
 	  - Returns the path to the files dropped on the window.
 	* - :doc:`/types/WindowModuleInterface/pollEvents/index`
@@ -119,6 +123,8 @@ Functions
 	./isWindowBorderless/index.rst
 	./setWindowResizable/index.rst
 	./isWindowResizable/index.rst
+	./setWindowOpacity/index.rst
+	./getWindowOpacity/index.rst
 	./getWindowDroppedFiles/index.rst
 	./pollEvents/index.rst
 	./setWindowTitle/index.rst
