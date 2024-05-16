@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	ClientSocket* createClientSocket(NetworkType networkType = NetworkType::UDP);
+	ClientSocketInterface* createClientSocket(NetworkType networkType = NetworkType::UDP);
 
 Parameters
 ----------

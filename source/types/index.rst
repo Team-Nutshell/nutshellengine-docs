@@ -11,12 +11,14 @@ Types
 	./AnimationChannelTransformType/index.rst
 	./AssetLoaderModuleInterface/index.rst
 	./AssetManager/index.rst
+	./AssetManagerInterface/index.rst
 	./AudioModuleInterface/index.rst
 	./Bimap/index.rst
 	./BlockSuballocator/index.rst
 	./Buffer/index.rst
 	./Camera/index.rst
 	./ClientSocket/index.rst
+	./ClientSocketInterface/index.rst
 	./Collidable/index.rst
 	./ColliderBox/index.rst
 	./ColliderCapsule/index.rst
@@ -29,12 +31,14 @@ Types
 	./ConnectedClientID/index.rst
 	./ConnectedServer/index.rst
 	./ECS/index.rst
+	./ECSInterface/index.rst
 	./Entity/index.rst
 	./File/index.rst
 	./Font/index.rst
 	./FontGlyph/index.rst
 	./FontID/index.rst
 	./FrameLimiter/index.rst
+	./FrameLimiterInterface/index.rst
 	./GamepadID/index.rst
 	./GraphicsModuleInterface/index.rst
 	./Image/index.rst
@@ -53,6 +57,7 @@ Types
 	./IntersectionInformation/index.rst
 	./JobDispatchArguments/index.rst
 	./JobSystem/index.rst
+	./JobSystemInterface/index.rst
 	./Joint/index.rst
 	./JSON/index.rst
 	./Light/index.rst
@@ -69,19 +74,25 @@ Types
 	./NativeWindowAdditionalInformation/index.rst
 	./NativeWindowHandle/index.rst
 	./Networking/index.rst
+	./NetworkingInterface/index.rst
 	./NetworkType/index.rst
 	./Octree/index.rst
 	./PhysicsModuleInterface/index.rst
 	./Profiler/index.rst
+	./ProfilerInterface/index.rst
+	./ProfilerResultNode/index.rst
 	./RaycastInformation/index.rst
 	./Renderable/index.rst
 	./Rigidbody/index.rst
 	./SceneManager/index.rst
+	./SceneManagerInterface/index.rst
 	./Script/index.rst
 	./Scriptable/index.rst
 	./ScriptBase/index.rst
 	./ServerSocket/index.rst
+	./ServerSocketInterface/index.rst
 	./Skin/index.rst
+	./Socket/index.rst
 	./Sound/index.rst
 	./SoundID/index.rst
 	./SoundSourceID/index.rst

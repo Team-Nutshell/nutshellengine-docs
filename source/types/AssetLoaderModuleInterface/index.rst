@@ -15,7 +15,7 @@ Variables
 	  - Type
 	  - Description
 	* - assetManager
-	  - :doc:`/types/AssetManager/index`\*
+	  - :doc:`/types/AssetManagerInterface/index`\*
 	  - Memory address to the :doc:`/asset_manager/index`.
 
 Functions

@@ -32,22 +32,22 @@ Variables
 	  - :doc:`/types/AudioModuleInterface/index`\*
 	  - Memory address to the :doc:`/module/audio_module/index`.
 	* - ecs
-	  - :doc:`/types/ECS/index`\*
+	  - :doc:`/types/ECSInterface/index`\*
 	  - Memory address to the :doc:`/entity_component_system/index`.
 	* - assetManager
-	  - :doc:`/types/AssetManager/index`\*
+	  - :doc:`/types/AssetManagerInterface/index`\*
 	  - Memory address to the :doc:`/asset_manager/index`.
 	* - frameLimiter
-	  - :doc:`/types/FrameLimiter/index`\*
+	  - :doc:`/types/FrameLimiterInterface/index`\*
 	  - Memory address to the :doc:`/frame_limiter/index`.
 	* - jobSystem
-	  - :doc:`/types/JobSystem/index`\*
+	  - :doc:`/types/JobSystemInterface/index`\*
 	  - Memory address to the :doc:`/job_system/index`.
 	* - networking
-	  - :doc:`/types/Networking/index`\*
+	  - :doc:`/types/NetworkingInterface/index`\*
 	  - Memory address to the :doc:`/networking/index`.
 	* - sceneManager
-	  - :doc:`/types/SceneManager/index`\*
+	  - :doc:`/types/SceneManagerInterface/index`\*
 	  - Memory address to the manager of :doc:`Scenes </scene/index>`.
 
 Functions

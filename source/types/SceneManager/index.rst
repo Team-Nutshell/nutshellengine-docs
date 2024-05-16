@@ -1,6 +1,8 @@
 SceneManager
 ============
 
+*Inherits* :doc:`/types/SceneManagerInterface/index`.
+
 Functions
 ---------
 

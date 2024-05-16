@@ -1,6 +1,8 @@
 Profiler
 ========
 
+*Inherits* :doc:`/types/ProfilerInterface/index`.
+
 Functions
 ---------
 
@@ -24,19 +26,6 @@ Functions
 	* - :doc:`/types/Profiler/endBlock/index`
 	  - Ends a profiling block.
 
-Static Functions
-----------------
-
-.. list-table::
-	:width: 100%
-	:header-rows: 1
-	:class: code-table
-
-	* - Name
-	  - Description
-	* - :doc:`/types/Profiler/to_string/index`
-	  - Converts the profiler results to a string.
-
 .. toctree::
 	:hidden:
 
@@ -46,7 +35,3 @@ Static Functions
 	./isRunning/index.rst
 	./startBlock/index.rst
 	./endBlock/index.rst
-
-	./to_string/index.rst
-
-	./ResultNode/index.rst

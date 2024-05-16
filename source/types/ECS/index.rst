@@ -1,6 +1,8 @@
 ECS
 ===
 
+*Inherits* :doc:`/types/ECSInterface/index`.
+
 Functions
 ---------
 
@@ -34,16 +36,6 @@ Functions
 	  - Marks or unmarks the :doc:`/entity_component_system/entity/index` as persistent.
 	* - :doc:`/types/ECS/isEntityPersistent/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is persistent.
-	* - :doc:`/types/ECS/addComponent/index`
-	  - Adds a :doc:`/entity_component_system/component/index` to an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/types/ECS/removeComponent/index`
-	  - Removes a :doc:`/entity_component_system/component/index` from an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/types/ECS/hasComponent/index`
-	  - Checks if an :doc:`/entity_component_system/entity/index` has a certain :doc:`/entity_component_system/component/index`.
-	* - :doc:`/types/ECS/getComponent/index`
-	  - Returns an :doc:`/entity_component_system/entity/index`'s :doc:`/entity_component_system/component/index`.
-	* - :doc:`/types/ECS/getComponentID/index`
-	  - Returns a :doc:`/entity_component_system/component/index`'s identifier.
 
 .. toctree::
 	:hidden:
@@ -59,8 +51,3 @@ Functions
 	./findEntityByName/index.rst
 	./setEntityPersistence/index.rst
 	./isEntityPersistent/index.rst
-	./addComponent/index.rst
-	./removeComponent/index.rst
-	./hasComponent/index.rst
-	./getComponent/index.rst
-	./getComponentID/index.rst

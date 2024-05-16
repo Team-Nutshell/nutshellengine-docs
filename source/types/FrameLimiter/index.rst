@@ -1,6 +1,8 @@
 FrameLimiter
 ============
 
+*Inherits* :doc:`/types/FrameLimiterInterface/index`.
+
 Functions
 ---------
 

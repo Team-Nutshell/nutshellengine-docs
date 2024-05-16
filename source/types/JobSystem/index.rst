@@ -1,6 +1,8 @@
 JobSystem
 =========
 
+*Inherits* :doc:`/types/JobSystemInterface/index`.
+
 Functions
 ---------
 

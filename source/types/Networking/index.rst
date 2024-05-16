@@ -1,6 +1,8 @@
 Networking
 ==========
 
+*Inherits* :doc:`/types/NetworkingInterface/index`.
+
 Functions
 ---------
 
