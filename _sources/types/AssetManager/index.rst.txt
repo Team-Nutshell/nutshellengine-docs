@@ -1,6 +1,8 @@
 AssetManager
 ============
 
+*Inherits* :doc:`/types/AssetManagerInterface/index`.
+
 Functions
 ---------
 

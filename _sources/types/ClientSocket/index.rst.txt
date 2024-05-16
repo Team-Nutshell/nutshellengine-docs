@@ -1,6 +1,8 @@
 ClientSocket
 ============
 
+*Inherits* :doc:`/types/ClientSocketInterface/index`.
+
 Functions
 ---------
 

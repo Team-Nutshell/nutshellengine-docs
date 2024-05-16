@@ -27,13 +27,13 @@ Variables
 	  - :doc:`/types/AudioModuleInterface/index`\*
 	  - Memory address to the :doc:`/module/audio_module/index`.
 	* - ecs
-	  - :doc:`/types/ECS/index`\*
+	  - :doc:`/types/ECSInterface/index`\*
 	  - Memory address to the :doc:`/entity_component_system/index`.
 	* - assetManager
-	  - :doc:`/types/AssetManager/index`\*
+	  - :doc:`/types/AssetManagerInterface/index`\*
 	  - Memory address to the :doc:`/asset_manager/index`.
 	* - jobSystem
-	  - :doc:`/types/JobSystem/index`\*
+	  - :doc:`/types/JobSystemInterface/index`\*
 	  - Memory address to the :doc:`/job_system/index`.
 
 Functions

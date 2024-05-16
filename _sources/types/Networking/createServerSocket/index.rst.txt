@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	ServerSocket* createServerSocket(uint16_t port, NetworkType networkType = NetworkType::UDP);
+	ServerSocketInterface* createServerSocket(uint16_t port, NetworkType networkType = NetworkType::UDP);
 
 Parameters
 ----------

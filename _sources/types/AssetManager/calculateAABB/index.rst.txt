@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	std::array<Math::vec3, 2> calculateAABB(const Mesh& mesh)
+	std::array<Math::vec3, 2> calculateAABB(const Mesh& mesh);
 
 Parameters
 ----------

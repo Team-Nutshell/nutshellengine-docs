@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void closeServerSocket(ServerSocket* serverSocket);
+	void closeServerSocket(ServerSocketInterface* serverSocket);
 
 Parameters
 ----------
@@ -24,7 +24,7 @@ Parameters
 	  - Type
 	  - Description
 	* - serverSocket
-	  - :doc:`/types/ServerSocket/index`\*
+	  - :doc:`/types/ServerSocketInterface/index`\*
 	  - The memory address to the :doc:`/types/ServerSocket/index` to close.
 
 Returns
