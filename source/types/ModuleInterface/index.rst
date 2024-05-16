@@ -14,7 +14,7 @@ Variables
 	  - Description
 	* - profiler
 	  - :doc:`/types/ProfilerInterface/index`\*
-	  - Memory address to the :doc:`/Profiler/index`.
+	  - Memory address to the :doc:`/types/Profiler/index`.
 
 Functions
 ---------
