@@ -10,7 +10,7 @@ In it, copy and paste this script template:
 .. code-block:: cpp
 
 	#pragma once
-	#include "../Core/scripting/ntshengn_script.h"
+	#include "../Common/script/ntshengn_script.h"
 
 	using namespace NtshEngn;
 	struct TemplateScript : public Script {
