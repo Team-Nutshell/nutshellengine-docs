@@ -33,4 +33,4 @@ Parameters
 Returns
 -------
 
-A :doc:`/types/InputMouseButton/index` containing the state of the mouse button.
+An :doc:`/types/InputState/index` containing the state of the mouse button.

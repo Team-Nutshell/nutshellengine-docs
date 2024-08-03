@@ -33,4 +33,4 @@ Parameters
 Returns
 -------
 
-A :doc:`/types/InputKeyboardKey/index` containing the state of the keyboard key.
+An :doc:`/types/InputState/index` containing the state of the keyboard key.
