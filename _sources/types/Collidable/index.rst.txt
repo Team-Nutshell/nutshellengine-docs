@@ -76,10 +76,8 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - The capsule's tip, in **object-space**. (if ``type`` is "Capsule").
 			  - Any array of 3 numbers.
 
-If the only information specified in the scene file is the :doc:`/types/Collidable/index`'s type, the shape will either be defined with default values, which are:
+If the only information specified in the scene file is the :doc:`/types/Collidable/index`'s type, the shape will be defined with default values, which are:
 
 * "Box": A box with an half extent of 0.5 on each axis, which gives it a size of 1.
 * "Sphere": A sphere with a radius of 0.5, which gives it a diameter of 1.
 * "Capsule": A capsule with a segment length of 0.5 and a radius of 0.25.
-
-or, if the :doc:`/entity_component_system/entity/index` also has a :doc:`/types/Renderable/index` :doc:`/entity_component_system/component/index`, the shape will be defined using the :doc:`/types/Renderable/index`'s :doc:`/types/Mesh/index` vertices.
