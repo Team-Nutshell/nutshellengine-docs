@@ -8,4 +8,5 @@ Declaration
 
 .. code-block:: cpp
 
-	using Entity = uint32_t;
+	typedef uint32_t Entity;
+	#define NTSHENGN_ENTITY_UNKNOWN 0xFFFFFFFF
