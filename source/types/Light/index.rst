@@ -58,6 +58,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 				 - "Directional"
 				 - "Point"
 				 - "Spot"
+				 - "Ambient"
 			* - color
 			  - Array of Number
 			  - The light's color.

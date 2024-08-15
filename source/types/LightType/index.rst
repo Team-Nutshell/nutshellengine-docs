@@ -10,6 +10,7 @@ Declaration
 		Directional,
 		Point,
 		Spot,
+		Ambient,
 		Unknown
 	};
 
