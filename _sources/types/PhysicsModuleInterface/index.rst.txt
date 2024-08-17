@@ -20,6 +20,10 @@ Functions
 	  - Casts a ray and returns information about the intersection between the ray and the :doc:`/types/ColliderShape/index`.
 	* - :doc:`/types/PhysicsModuleInterface/raycastAll/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
+	* - :doc:`/types/PhysicsModuleInterface/setConstantForces/index`
+	  - Sets the constant forces.
+	* - :doc:`/types/PhysicsModuleInterface/getConstantForces/index`
+	  - Returns the constant forces.
 
 .. toctree::
 	:hidden:
@@ -27,3 +31,5 @@ Functions
 	./intersect/index.rst
 	./raycast/index.rst
 	./raycastAll/index.rst
+	./setConstantForces/index.rst
+	./getConstantForces/index.rst

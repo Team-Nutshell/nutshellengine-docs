@@ -54,6 +54,7 @@ Declaration
 		Num7, // Numpad 7
 		Num8, // Numpad 8
 		Num9, // Numpad 9
+		NumDot, // Numpad .
 		NumPlus, // Numpad +
 		NumMinus, // Numpad -
 		NumTimes, // Numpad *

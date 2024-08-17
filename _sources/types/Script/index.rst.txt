@@ -209,6 +209,10 @@ Functions
 	  - Casts a ray and returns information about the intersection between the ray and the :doc:`/types/ColliderShape/index`.
 	* - :doc:`/types/Script/raycastAll/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
+	* - :doc:`/types/Script/setConstantForces/index`
+	  - Sets the constant forces.
+	* - :doc:`/types/Script/getConstantForces/index`
+	  - Returns the constant forces.
 	* - :doc:`/types/Script/playSound/index`
 	  - Plays a global sound and returns a unique identifier to this sound source.
 	* - :doc:`/types/Script/playSoundAtPosition/index`
@@ -386,6 +390,8 @@ Functions
 	./intersect/index.rst
 	./raycast/index.rst
 	./raycastAll/index.rst
+	./setConstantForces/index.rst
+	./getConstantForces/index.rst
 
 	./playAnimation/index.rst
 	./pauseAnimation/index.rst

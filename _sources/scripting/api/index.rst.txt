@@ -242,6 +242,10 @@ Functions related to physics.
 	  - Casts a ray and returns information about the intersection between the ray and the :doc:`/types/ColliderShape/index`.
 	* - :doc:`/types/Script/raycastAll/index`
 	  - Casts a ray and returns information about the hit :doc:`Entities </entity_component_system/entity/index>`.
+	* - :doc:`/types/Script/setConstantForces/index`
+	  - Sets the constant forces.
+	* - :doc:`/types/Script/getConstantForces/index`
+	  - Returns the constant forces.
 
 Audio
 -----
