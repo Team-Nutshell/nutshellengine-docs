@@ -110,6 +110,11 @@ a:visited {
 	color: #c286db;
 }
 
+.rst-content .highlighted {
+	background: #0a6a80;
+	box-shadow: 0 0 0 2px #0a6a80;
+}
+
 .rst-content code.literal, .rst-content tt.literal {
 	color: #999999;
 	font-weight: bold;
