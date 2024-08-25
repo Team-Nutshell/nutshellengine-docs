@@ -56,12 +56,15 @@ Functions
 	./loadSound/index.rst
 	./createModel/index.rst
 	./loadModel/index.rst
+	./createMaterial/index.rst
+	./loadMaterial/index.rst
 	./createImage/index.rst
 	./loadImage/index.rst
 	./createFont/index.rst
 	./loadFont/index.rst
 	./destroySound/index.rst
 	./destroyModel/index.rst
+	./destroyMaterial/index.rst
 	./destroyImage/index.rst
 	./destroyFont/index.rst
 	./calculateTangents/index.rst
