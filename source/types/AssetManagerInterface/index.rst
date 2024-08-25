@@ -20,6 +20,10 @@ Functions
 	  - Creates an empty model and returns its pointer.
 	* - :doc:`/types/AssetManagerInterface/loadModel/index`
 	  - Loads a model from a file and returns a pointer to the loaded model.
+	* - :doc:`/types/AssetManagerInterface/createMaterial/index`
+	  - Creates an empty material and returns its pointer.
+	* - :doc:`/types/AssetManagerInterface/loadMaterial/index`
+	  - Loads a material from a file and returns a pointer to the loaded material.
 	* - :doc:`/types/AssetManagerInterface/createImage/index`
 	  - Creates an empty image and returns its pointer.
 	* - :doc:`/types/AssetManagerInterface/loadImage/index`
@@ -32,6 +36,8 @@ Functions
 	  - Destroys a sound.
 	* - :doc:`/types/AssetManagerInterface/destroyModel/index`
 	  - Destroys a model.
+	* - :doc:`/types/AssetManagerInterface/destroyMaterial/index`
+	  - Destroys a material.
 	* - :doc:`/types/AssetManagerInterface/destroyImage/index`
 	  - Destroys an image.
 	* - :doc:`/types/AssetManagerInterface/destroyFont/index`
@@ -50,10 +56,13 @@ Functions
 	./loadModel/index.rst
 	./createImage/index.rst
 	./loadImage/index.rst
+	./createMaterial/index.rst
+	./loadMaterial/index.rst
 	./createFont/index.rst
 	./loadFont/index.rst
 	./destroySound/index.rst
 	./destroyModel/index.rst
+	./destroyMaterial/index.rst
 	./destroyImage/index.rst
 	./destroyFont/index.rst
 	./calculateTangents/index.rst
