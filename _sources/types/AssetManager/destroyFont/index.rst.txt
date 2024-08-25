@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - font
 	  - :doc:`/types/Font/index`\*
-	  - The address memory of the :doc:`/types/Font/index` to destroy.
+	  - The memory address of the :doc:`/types/Font/index` to destroy.
 
 Returns
 -------

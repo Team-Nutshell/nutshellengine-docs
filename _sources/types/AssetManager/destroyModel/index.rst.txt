@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - model
 	  - :doc:`/types/Model/index`\*
-	  - The address memory of the :doc:`/types/Model/index` to destroy.
+	  - The memory address of the :doc:`/types/Model/index` to destroy.
 
 Returns
 -------

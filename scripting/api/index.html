@@ -143,9 +143,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadSound/index.html">loadSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadModel/index.html">loadModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadImage/index.html">loadImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadFont/index.html">loadFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/calculateTangents/index.html">calculateTangents</a></li>
 </ul>
 </li>
 </ul>
@@ -178,10 +178,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadModel/index.html">loadModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/createImage/index.html">createImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadImage/index.html">loadImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/createMaterial/index.html">createMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/createFont/index.html">createFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadFont/index.html">loadFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/destroySound/index.html">destroySound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/destroyModel/index.html">destroyModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/destroyMaterial/index.html">destroyMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/destroyImage/index.html">destroyImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/destroyFont/index.html">destroyFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/calculateTangents/index.html">calculateTangents</a></li>
@@ -726,6 +729,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/getEntityComponent/index.html">getEntityComponent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/loadModel/index.html">loadModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/getMeshID/index.html">getMeshID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/Script/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/loadImage/index.html">loadImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/getImageID/index.html">getImageID</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/loadFont/index.html">loadFont</a></li>
@@ -1034,24 +1038,27 @@
 <td><p>Loads a model from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded model.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getMeshID/index.html"><span class="doc">getMeshID</span></a></p></td>
-<td><p>Loads a model in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this model.</p></td>
+<td><p>Loads a mesh in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this mesh.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/loadImage/index.html"><span class="doc">loadImage</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/loadMaterial/index.html"><span class="doc">loadMaterial</span></a></p></td>
+<td><p>Loads a material from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded material.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/loadImage/index.html"><span class="doc">loadImage</span></a></p></td>
 <td><p>Loads an image from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded image.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getImageID/index.html"><span class="doc">getImageID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/getImageID/index.html"><span class="doc">getImageID</span></a></p></td>
 <td><p>Loads an image in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this image.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/loadFont/index.html"><span class="doc">loadFont</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/loadFont/index.html"><span class="doc">loadFont</span></a></p></td>
 <td><p>Loads a font from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded font.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getFontID/index.html"><span class="doc">getFontID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/getFontID/index.html"><span class="doc">getFontID</span></a></p></td>
 <td><p>Loads a font in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this font.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/loadSound/index.html"><span class="doc">loadSound</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/loadSound/index.html"><span class="doc">loadSound</span></a></p></td>
 <td><p>Loads a sound from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getSoundID/index.html"><span class="doc">getSoundID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/getSoundID/index.html"><span class="doc">getSoundID</span></a></p></td>
 <td><p>Loads a sound in the <a class="reference internal" href="../../module/audio_module/index.html"><span class="doc">Audio Module</span></a> and returns a unique identifier to this sound.</p></td>
 </tr>
 </tbody>

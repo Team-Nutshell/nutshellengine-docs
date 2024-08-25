@@ -33,6 +33,8 @@ Functions
 	  - Loads a sound from a file.
 	* - :doc:`/types/AssetLoaderModuleInterface/loadModel/index`
 	  - Loads a model from a file.
+	* - :doc:`/types/AssetLoaderModuleInterface/loadMaterial/index`
+	  - Loads a material from a file.
 	* - :doc:`/types/AssetLoaderModuleInterface/loadImage/index`
 	  - Loads an image from a file.
 	* - :doc:`/types/AssetLoaderModuleInterface/loadFont/index`
@@ -43,6 +45,6 @@ Functions
 
 	./loadSound/index.rst
 	./loadModel/index.rst
+	./loadMaterial/index.rst
 	./loadImage/index.rst
 	./loadFont/index.rst
-	./calculateTangents/index.rst

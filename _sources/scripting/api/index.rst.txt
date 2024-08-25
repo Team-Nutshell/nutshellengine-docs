@@ -19,7 +19,9 @@ Functions related to the loading of resources.
 	* - :doc:`/types/Script/loadModel/index`
 	  - Loads a model from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded model.
 	* - :doc:`/types/Script/getMeshID/index`
-	  - Loads a model in the :doc:`/module/graphics_module/index` and returns a unique identifier to this model.
+	  - Loads a mesh in the :doc:`/module/graphics_module/index` and returns a unique identifier to this mesh.
+	* - :doc:`/types/Script/loadMaterial/index`
+	  - Loads a material from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded material.
 	* - :doc:`/types/Script/loadImage/index`
 	  - Loads an image from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded image.
 	* - :doc:`/types/Script/getImageID/index`

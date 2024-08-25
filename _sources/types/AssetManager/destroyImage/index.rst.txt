@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - image
 	  - :doc:`/types/Image/index`\*
-	  - The address memory of the :doc:`/types/Image/index` to destroy.
+	  - The memory address of the :doc:`/types/Image/index` to destroy.
 
 Returns
 -------

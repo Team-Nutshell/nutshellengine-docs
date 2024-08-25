@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - sound
 	  - :doc:`/types/Sound/index`\*
-	  - The address memory of the :doc:`/types/Sound/index` to destroy.
+	  - The memory address of the :doc:`/types/Sound/index` to destroy.
 
 Returns
 -------

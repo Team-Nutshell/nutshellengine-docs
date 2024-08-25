@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="createSound" href="createSound/index.html" />
-    <link rel="prev" title="calculateTangents" href="../AssetLoaderModuleInterface/calculateTangents/index.html" /> 
+    <link rel="prev" title="loadFont" href="../AssetLoaderModuleInterface/loadFont/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -143,9 +143,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../AssetLoaderModuleInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../AssetLoaderModuleInterface/loadSound/index.html">loadSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetLoaderModuleInterface/loadModel/index.html">loadModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AssetLoaderModuleInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetLoaderModuleInterface/loadImage/index.html">loadImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetLoaderModuleInterface/loadFont/index.html">loadFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../AssetLoaderModuleInterface/calculateTangents/index.html">calculateTangents</a></li>
 </ul>
 </li>
 </ul>
@@ -178,10 +178,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/loadModel/index.html">loadModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/createImage/index.html">createImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/loadImage/index.html">loadImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/createMaterial/index.html">createMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/createFont/index.html">createFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/loadFont/index.html">loadFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/destroySound/index.html">destroySound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/destroyModel/index.html">destroyModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/destroyMaterial/index.html">destroyMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/destroyImage/index.html">destroyImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/destroyFont/index.html">destroyFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AssetManagerInterface/calculateTangents/index.html">calculateTangents</a></li>
@@ -726,6 +729,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/getEntityComponent/index.html">getEntityComponent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/loadModel/index.html">loadModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getMeshID/index.html">getMeshID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/loadImage/index.html">loadImage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getImageID/index.html">getImageID</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/loadFont/index.html">loadFont</a></li>
@@ -1041,6 +1045,12 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="loadModel/index.html"><span class="doc">loadModel</span></a></p></td>
 <td><p>Loads a model from a file and returns a pointer to the loaded model.</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="createMaterial/index.html"><span class="doc">createMaterial</span></a></p></td>
+<td><p>Creates an empty material and returns its pointer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="loadMaterial/index.html"><span class="doc">loadMaterial</span></a></p></td>
+<td><p>Loads a material from a file and returns a pointer to the loaded material.</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="createImage/index.html"><span class="doc">createImage</span></a></p></td>
 <td><p>Creates an empty image and returns its pointer.</p></td>
 </tr>
@@ -1059,16 +1069,19 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="destroyModel/index.html"><span class="doc">destroyModel</span></a></p></td>
 <td><p>Destroys a model.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="destroyImage/index.html"><span class="doc">destroyImage</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="destroyMaterial/index.html"><span class="doc">destroyMaterial</span></a></p></td>
+<td><p>Destroys a material.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroyImage/index.html"><span class="doc">destroyImage</span></a></p></td>
 <td><p>Destroys an image.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="destroyFont/index.html"><span class="doc">destroyFont</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="destroyFont/index.html"><span class="doc">destroyFont</span></a></p></td>
 <td><p>Destroys a font.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="calculateTangents/index.html"><span class="doc">calculateTangents</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="calculateTangents/index.html"><span class="doc">calculateTangents</span></a></p></td>
 <td><p>Calculate a <a class="reference internal" href="../Mesh/index.html"><span class="doc">Mesh</span></a>’s tangents.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="calculateAABB/index.html"><span class="doc">calculateAABB</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="calculateAABB/index.html"><span class="doc">calculateAABB</span></a></p></td>
 <td><p>Calculate a <a class="reference internal" href="../Mesh/index.html"><span class="doc">Mesh</span></a>’s AABB.</p></td>
 </tr>
 </tbody>
@@ -1082,7 +1095,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../AssetLoaderModuleInterface/calculateTangents/index.html" class="btn btn-neutral float-left" title="calculateTangents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../AssetLoaderModuleInterface/loadFont/index.html" class="btn btn-neutral float-left" title="loadFont" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="createSound/index.html" class="btn btn-neutral float-right" title="createSound" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
