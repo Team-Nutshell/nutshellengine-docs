@@ -53,3 +53,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Number
 			  - The primitive index in the model.
 			  - Any number.
+			* - materialPath
+			  - String
+			  - The path to the material.
+			  - Any path to a material.
