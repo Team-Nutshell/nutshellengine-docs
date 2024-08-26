@@ -30,4 +30,4 @@ Parameters
 Returns
 -------
 
-The window's title as a `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`.
+The window's title as a `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_.
