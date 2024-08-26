@@ -58,6 +58,8 @@ Functions
 	  - Polls the window system events.
 	* - :doc:`/types/WindowModuleInterface/setWindowTitle/index`
 	  - Sets the window's title.
+	* - :doc:`/types/WindowModuleInterface/getWindowTitle/index`
+	  - Returns the window's title.
 	* - :doc:`/types/WindowModuleInterface/setWindowIcon/index`
 	  - Sets the window's icon.
 	* - :doc:`/types/WindowModuleInterface/getKeyState/index`
@@ -128,6 +130,7 @@ Functions
 	./getWindowDroppedFiles/index.rst
 	./pollEvents/index.rst
 	./setWindowTitle/index.rst
+	./getWindowTitle/index.rst
 	./setWindowIcon/index.rst
 	./getKeyState/index.rst
 	./getMouseButtonState/index.rst

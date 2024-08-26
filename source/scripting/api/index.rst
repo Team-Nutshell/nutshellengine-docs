@@ -198,6 +198,8 @@ Functions related to windows and monitors.
 	  - Returns the path to the files dropped on the window.
 	* - :doc:`/types/Script/setWindowTitle/index`
 	  - Sets the window's title.
+	* - :doc:`/types/Script/getWindowTitle/index`
+	  - Returns the window's title.
 	* - :doc:`/types/Script/setWindowIcon/index`
 	  - Sets the window's icon.
 	* - :doc:`/types/Script/getMonitorWidth/index`

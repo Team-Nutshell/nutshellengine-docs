@@ -193,6 +193,8 @@ Functions
 	  - Returns the path to the files dropped on the window.
 	* - :doc:`/types/Script/setWindowTitle/index`
 	  - Sets the window's title.
+	* - :doc:`/types/Script/getWindowTitle/index`
+	  - Returns the window's title.
 	* - :doc:`/types/Script/setWindowIcon/index`
 	  - Sets the window's icon.
 	* - :doc:`/types/Script/getMonitorWidth/index`
@@ -367,6 +369,7 @@ Functions
 	./getWindowOpacity/index.rst
 	./getWindowDroppedFiles/index.rst
 	./setWindowTitle/index.rst
+	./getWindowTitle/index.rst
 	./setWindowIcon/index.rst
 	./getMonitorWidth/index.rst
 	./getMonitorHeight/index.rst
