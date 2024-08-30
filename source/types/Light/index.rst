@@ -18,6 +18,9 @@ Variables
 	* - color
 	  - :doc:`/types/Math/index`::vec3
 	  - The light's color.
+	* - intensity
+	  - float
+	  - The light's intensity, it is multiplied with the color.
 	* - direction
 	  - :doc:`/types/Math/index`::vec3
 	  - The light's base direction vector.
@@ -63,6 +66,10 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Array of Number
 			  - The light's color.
 			  - Any array of 3 numbers.
+			* - intensity
+			  - Number
+			  - The light's intensity.
+			  - Any number.
 			* - direction
 			  - Array of Number
 			  - The light's base direction vector.
