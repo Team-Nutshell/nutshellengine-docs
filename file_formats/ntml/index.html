@@ -1035,9 +1035,21 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>diffuseTexture</p></td>
+<tr class="row-even"><td><p>diffuse</p></td>
 <td><p>Object</p></td>
-<td><p>The diffuse texture.</p></td>
+<td><p>The diffuse parameter.</p></td>
+<td><table class="code-table docutils align-default" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>texture</p></td>
+<td><p>Object</p></td>
+<td><p>The image and image sampler to use.</p></td>
 <td><table class="code-table docutils align-default" style="width: 100%">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1061,9 +1073,23 @@
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><p>normalTexture</p></td>
+<tr class="row-odd"><td><p>color</p></td>
+<td><p>Array of Number</p></td>
+<td><p>The diffuse color. The 4th component is the material opacity. Is used if no texture is specified.</p></td>
+<td><p>Any array of 4 numbers, between 0.0 and 1.0.</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><p>normal</p></td>
 <td><p>Object</p></td>
-<td><p>The normal texture.</p></td>
+<td><p>The normal paramater.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>metalness</p></td>
+<td><p>Object</p></td>
+<td><p>The metalness parameter.</p></td>
 <td><table class="code-table docutils align-default" style="width: 100%">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1073,23 +1099,9 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>imagePath</p></td>
-<td><p>String</p></td>
-<td><p>The path to the normal texture.</p></td>
-<td><p>A path to an image.</p></td>
-</tr>
-<tr class="row-odd"><td><p>imageSamplerPath</p></td>
-<td><p>String</p></td>
-<td><p>The path to the <a class="reference internal" href="../ntsp/index.html"><span class="doc">.ntsp - Image Sampler</span></a>.</p></td>
-<td><p>A path to an image sampler.</p></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><p>metalnessTexture</p></td>
+<tr class="row-even"><td><p>texture</p></td>
 <td><p>Object</p></td>
-<td><p>The metalness texture.</p></td>
+<td><p>The image and image sampler to use.</p></td>
 <td><table class="code-table docutils align-default" style="width: 100%">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1113,9 +1125,30 @@
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><p>roughnessTexture</p></td>
+<tr class="row-odd"><td><p>value</p></td>
+<td><p>Number</p></td>
+<td><p>The metalness value. Is used if no texture is specified.</p></td>
+<td><p>Any number.</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><p>roughness</p></td>
 <td><p>Object</p></td>
-<td><p>The roughness texture.</p></td>
+<td><p>The roughness parameter.</p></td>
+<td><table class="code-table docutils align-default" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>texture</p></td>
+<td><p>Object</p></td>
+<td><p>The image and image sampler to use.</p></td>
 <td><table class="code-table docutils align-default" style="width: 100%">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1139,9 +1172,30 @@
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><p>occlusionTexture</p></td>
+<tr class="row-odd"><td><p>value</p></td>
+<td><p>Number</p></td>
+<td><p>The roughness value. Is used if no texture is specified.</p></td>
+<td><p>Any number.</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><p>occlusion</p></td>
 <td><p>Object</p></td>
-<td><p>The occlusion texture.</p></td>
+<td><p>The occlusion parameter.</p></td>
+<td><table class="code-table docutils align-default" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>texture</p></td>
+<td><p>Object</p></td>
+<td><p>The image and image sampler to use.</p></td>
 <td><table class="code-table docutils align-default" style="width: 100%">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1165,9 +1219,30 @@
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><p>emissiveTexture</p></td>
+<tr class="row-odd"><td><p>value</p></td>
+<td><p>Number</p></td>
+<td><p>The occlusion value. Is used if no texture is specified.</p></td>
+<td><p>Any number.</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><p>emissive</p></td>
 <td><p>Object</p></td>
-<td><p>The emissive texture.</p></td>
+<td><p>The emissive parameter.</p></td>
+<td><table class="code-table docutils align-default" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Possible values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>texture</p></td>
+<td><p>Object</p></td>
+<td><p>The image and image sampler to use.</p></td>
 <td><table class="code-table docutils align-default" style="width: 100%">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -1191,17 +1266,26 @@
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><p>emissiveFactor</p></td>
+<tr class="row-odd"><td><p>color</p></td>
+<td><p>Array of Number</p></td>
+<td><p>The emissive color.</p></td>
+<td><p>Any array of 3 numbers, between 0.0 and 1.0. Is used if no texture is specified.</p></td>
+</tr>
+<tr class="row-even"><td><p>factor</p></td>
 <td><p>Number</p></td>
-<td><p>The emissive factor, used to be multiplied with the emissive texture.</p></td>
+<td><p>The emissive factor, used to be multiplied with the emissive texture or emissive color.</p></td>
 <td><p>Any number.</p></td>
 </tr>
-<tr class="row-odd"><td><p>alphaCutoff</p></td>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><p>alphaCutoff</p></td>
 <td><p>Number</p></td>
 <td><p>The alpha cutoff, used to be compared against the diffuse texture.</p></td>
 <td><p>Any number between 0.0 and 1.0.</p></td>
 </tr>
-<tr class="row-even"><td><p>indexOfRefraction</p></td>
+<tr class="row-odd"><td><p>indexOfRefraction</p></td>
 <td><p>Number</p></td>
 <td><p>The index of refraction, used to calculate refraction of a transparent object.</p></td>
 <td><p>Any number.</p></td>
