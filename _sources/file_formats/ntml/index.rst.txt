@@ -65,23 +65,23 @@
 			* - texture
 			  - Object
 			  - The image and image sampler to use.
-				- .. list-table::
-						:width: 100%
-						:header-rows: 1
-						:class: code-table
+			  - .. list-table::
+					:width: 100%
+					:header-rows: 1
+					:class: code-table
 
-						* - Name
-						  - Type
-						  - Description
-						  - Possible values
-						* - imagePath
-						  - String
-						  - The path to the normal texture.
-						  - A path to an image.
-						* - imageSamplerPath
-						  - String
-						  - The path to the :doc:`/file_formats/ntsp/index`.
-						  - A path to an image sampler.
+					* - Name
+					  - Type
+					  - Description
+					  - Possible values
+					* - imagePath
+					  - String
+					  - The path to the normal texture.
+					  - A path to an image.
+					* - imageSamplerPath
+					  - String
+					  - The path to the :doc:`/file_formats/ntsp/index`.
+					  - A path to an image sampler.
 	* - metalness
 	  - Object
 	  - The metalness parameter.
