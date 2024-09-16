@@ -46,5 +46,9 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - String
 			  - The name of the :doc:`/types/Script/index`.
 			  - Any existing :doc:`/types/Script/index`'s name.
+			* - editableVariables
+			  - Array of Object
+			  - The list of the script's editable variables.
+			  - Any editable variables in the script.
 
 When creating a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index` from a :doc:`/types/Script/index`, it is recommended to use the :doc:`/types/Script/index`'s :doc:`/types/Script/createScript/index` function.
