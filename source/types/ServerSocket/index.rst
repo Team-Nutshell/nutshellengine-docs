@@ -19,6 +19,8 @@ Functions
 	  - Sets the function that will be called when a client disconnects from the server.
 	* - :doc:`/types/ServerSocket/setDataReceivedCallback/index`
 	  - Sets the function that will be called when data is received from any client.
+	* - :doc:`/types/ServerSocket/getPort/index`
+	  - Returns the server's port.
 	* - :doc:`/types/ServerSocket/getConnectedClients/index`
 	  - Returns information about all the clients connected to the server.
 
