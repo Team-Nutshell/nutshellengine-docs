@@ -9,6 +9,8 @@ NutshellEngine
 	:maxdepth: 2
 	:caption: Table of Contents
 
+	./starting/index.rst
+
 	./scripting/index.rst
 	./module/index.rst
 

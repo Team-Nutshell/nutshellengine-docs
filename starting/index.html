@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starting with NutshellEngine &mdash; NutshellEngine 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=11b553de" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=01f34227"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scripting" href="../scripting/index.html" />
+    <link rel="prev" title="NutshellEngine" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            NutshellEngine
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Starting with NutshellEngine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#as-a-game-developer">As a game developer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#if-you-don-t-use-windows-or-linux">If you don’t use Windows or Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#as-an-engine-developer">As an engine developer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#contribute-to-nutshellengine">Contribute to NutshellEngine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developing-your-own-modules">Developing your own modules</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/index.html">Scripting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/scripting_basics/index.html">Scripting Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/api/index.html">Scripting API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#resources">Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#scenes">Scenes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#entity-component-system">Entity-Component-System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#input">Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#windows">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#graphics">Graphics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#physics">Physics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#audio">Audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#animation">Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#user-interface">User Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#frame-limiter">Frame Limiter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#job-system">Job System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#networking">Networking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#scripting">Scripting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripting/api/index.html#profiling">Profiling</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../module/index.html">Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../module/index.html#asset-loader-module">Asset Loader Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module/index.html#audio-module">Audio Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module/index.html#graphics-module">Graphics Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module/index.html#physics-module">Physics Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../module/index.html#window-module">Window Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../module/asset_loader_module/index.html">Asset Loader Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../module/audio_module/index.html">Audio Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../module/graphics_module/index.html">Graphics Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../module/physics_module/index.html">Physics Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../module/window_module/index.html">Window Module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../entity_component_system/index.html">Entity-Component-System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../entity_component_system/entity/index.html">Entity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../entity_component_system/entity/index.html#creation">Creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../entity_component_system/entity/index.html#destruction">Destruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../entity_component_system/entity/index.html#name">Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../entity_component_system/entity/index.html#persistence">Persistence</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../entity_component_system/component/index.html">Component</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../entity_component_system/system/index.html">System</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../asset_manager/index.html">Asset Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame_limiter/index.html">Frame Limiter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job_system/index.html">Job System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../networking/index.html">Networking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scene/index.html">Scene</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../file_formats/index.html">File Formats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntim/index.html">.ntim - Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntmh/index.html">.ntmh - Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntsp/index.html">.ntsp - Image Sampler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntml/index.html">.ntml - Material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntmd/index.html">.ntmd - Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntsd/index.html">.ntsd - Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntop/index.html">.ntop - Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_formats/ntsn/index.html">.ntsn - Scene</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../types/index.html">Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../types/Animation/index.html">Animation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Animation/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AnimationChannel/index.html">AnimationChannel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AnimationChannel/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AnimationChannelInterpolationType/index.html">AnimationChannelInterpolationType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AnimationChannelInterpolationType/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/AnimationChannelInterpolationType/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AnimationChannelKeyframe/index.html">AnimationChannelKeyframe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AnimationChannelKeyframe/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AnimationChannelTransformType/index.html">AnimationChannelTransformType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AnimationChannelTransformType/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/AnimationChannelTransformType/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AssetLoaderModuleInterface/index.html">AssetLoaderModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AssetLoaderModuleInterface/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/AssetLoaderModuleInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetLoaderModuleInterface/loadSound/index.html">loadSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetLoaderModuleInterface/loadModel/index.html">loadModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetLoaderModuleInterface/loadMaterial/index.html">loadMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetLoaderModuleInterface/loadImage/index.html">loadImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetLoaderModuleInterface/loadFont/index.html">loadFont</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AssetManager/index.html">AssetManager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AssetManager/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/createSound/index.html">createSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/loadSound/index.html">loadSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/createModel/index.html">createModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/loadModel/index.html">loadModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/createMaterial/index.html">createMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/loadMaterial/index.html">loadMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/createImage/index.html">createImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/loadImage/index.html">loadImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/createFont/index.html">createFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/destroySound/index.html">destroySound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/destroyModel/index.html">destroyModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/destroyMaterial/index.html">destroyMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/destroyImage/index.html">destroyImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/destroyFont/index.html">destroyFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/calculateTangents/index.html">calculateTangents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManager/calculateAABB/index.html">calculateAABB</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AssetManagerInterface/index.html">AssetManagerInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AssetManagerInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/createSound/index.html">createSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/loadSound/index.html">loadSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/createModel/index.html">createModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/loadModel/index.html">loadModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/createImage/index.html">createImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/loadImage/index.html">loadImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/createMaterial/index.html">createMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/loadMaterial/index.html">loadMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/createFont/index.html">createFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/destroySound/index.html">destroySound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/destroyModel/index.html">destroyModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/destroyMaterial/index.html">destroyMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/destroyImage/index.html">destroyImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/destroyFont/index.html">destroyFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/calculateTangents/index.html">calculateTangents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AssetManagerInterface/calculateAABB/index.html">calculateAABB</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/AudioModuleInterface/index.html">AudioModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/AudioModuleInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/load/index.html">load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/playSound/index.html">playSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/playSoundAtPosition/index.html">playSoundAtPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/resumeSoundSource/index.html">resumeSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/pauseSoundSource/index.html">pauseSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/stopSoundSource/index.html">stopSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/getSoundSourceState/index.html">getSoundSourceState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/isSoundPlaying/index.html">isSoundPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/setSoundSourcePosition/index.html">setSoundSourcePosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/getSoundSourcePosition/index.html">getSoundSourcePosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/setSoundSourceGain/index.html">setSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/getSoundSourceGain/index.html">getSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/AudioModuleInterface/setSoundListenerEntity/index.html">setSoundListenerEntity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Bimap/index.html">Bimap</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Bimap/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/Bimap/erase/index.html">erase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Bimap/exist/index.html">exist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Bimap/insert_or_assign/index.html">insert_or_assign</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Bimap/operator_brackets/index.html">operator[]</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Bimap/size/index.html">size</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/BlockSuballocator/index.html">BlockSuballocator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/BlockSuballocator/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/BlockSuballocator/constructor/index.html">BlockSuballocator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/BlockSuballocator/addBlock/index.html">addBlock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/BlockSuballocator/freeBlock/index.html">freeBlock</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Buffer/index.html">Buffer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Buffer/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/Buffer/constructor/index.html">Buffer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Buffer/operator_equals/index.html">operator=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Buffer/write/index.html">write</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Buffer/read/index.html">read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Buffer/setCursorPosition/index.html">setCursorPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Buffer/getData/index.html">getData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Buffer/getSize/index.html">getSize</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Camera/index.html">Camera</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Camera/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Camera/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ClientSocket/index.html">ClientSocket</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ClientSocket/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocket/connectToServer/index.html">connectToServer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocket/sendDataToServer/index.html">sendDataToServer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocket/setServerDisconnectCallback/index.html">setServerDisconnectCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocket/setDataReceivedCallback/index.html">setDataReceivedCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocket/getConnectedServer/index.html">getConnectedServer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ClientSocketInterface/index.html">ClientSocketInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ClientSocketInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocketInterface/connectToServer/index.html">connectToServer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocketInterface/sendDataToServer/index.html">sendDataToServer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocketInterface/setServerDisconnectCallback/index.html">setServerDisconnectCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocketInterface/setDataReceivedCallback/index.html">setDataReceivedCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ClientSocketInterface/getConnectedServer/index.html">getConnectedServer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Collidable/index.html">Collidable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Collidable/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Collidable/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ColliderBox/index.html">ColliderBox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderBox/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderBox/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ColliderCapsule/index.html">ColliderCapsule</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderCapsule/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderCapsule/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ColliderShape/index.html">ColliderShape</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderShape/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderShape/index.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderShape/index.html#notes">Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ColliderShape/getType/index.html">getType</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ColliderShapeType/index.html">ColliderShapeType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderShapeType/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderShapeType/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ColliderSphere/index.html">ColliderSphere</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderSphere/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ColliderSphere/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/CollisionInfo/index.html">CollisionInfo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/CollisionInfo/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Component/index.html">Component</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Component/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ConnectedClient/index.html">ConnectedClient</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ConnectedClient/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ConnectedClientID/index.html">ConnectedClientID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ConnectedClientID/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ConnectedServer/index.html">ConnectedServer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ConnectedServer/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ECS/index.html">ECS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ECS/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/createEntity/index.html">createEntity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/destroyEntity/index.html">destroyEntity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/destroyAllEntities/index.html">destroyAllEntities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/setEntityName/index.html">setEntityName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/entityHasName/index.html">entityHasName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/getEntityName/index.html">getEntityName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/findEntityByName/index.html">findEntityByName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/setEntityPersistence/index.html">setEntityPersistence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECS/isEntityPersistent/index.html">isEntityPersistent</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ECSInterface/index.html">ECSInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ECSInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/createEntity/index.html">createEntity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/destroyEntity/index.html">destroyEntity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/destroyAllEntities/index.html">destroyAllEntities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/setEntityName/index.html">setEntityName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/entityHasName/index.html">entityHasName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/getEntityName/index.html">getEntityName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/findEntityByName/index.html">findEntityByName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/setEntityPersistence/index.html">setEntityPersistence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/isEntityPersistent/index.html">isEntityPersistent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/addComponent/index.html">addComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/removeComponent/index.html">removeComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/hasComponent/index.html">hasComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/getComponent/index.html">getComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ECSInterface/getComponentID/index.html">getComponentID</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Entity/index.html">Entity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Entity/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/File/index.html">File</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/File/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/File/readAscii/index.html">readAscii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/File/readBinary/index.html">readBinary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/File/writeAscii/index.html">writeAscii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/File/writeBinary/index.html">writeBinary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/File/filename/index.html">filename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/File/extension/index.html">extension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/File/directory/index.html">directory</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Font/index.html">Font</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Font/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/FontGlyph/index.html">FontGlyph</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/FontGlyph/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/FontID/index.html">FontID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/FontID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/FontID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/FrameLimiter/index.html">FrameLimiter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/FrameLimiter/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/FrameLimiter/getMaxFPS/index.html">getMaxFPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/FrameLimiter/setMaxFPS/index.html">setMaxFPS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/FrameLimiterInterface/index.html">FrameLimiterInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/FrameLimiterInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/FrameLimiterInterface/getMaxFPS/index.html">getMaxFPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/FrameLimiterInterface/setMaxFPS/index.html">setMaxFPS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/GamepadID/index.html">GamepadID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/GamepadID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/GamepadID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/GraphicsModuleInterface/index.html">GraphicsModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/GraphicsModuleInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/load/index.html">load</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/setBackgroundColor/index.html">setBackgroundColor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/drawUIText/index.html">drawUIText</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/drawUILine/index.html">drawUILine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/drawUIRectangle/index.html">drawUIRectangle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/drawUIImage/index.html">drawUIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/pauseAnimation/index.html">pauseAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/stopAnimation/index.html">stopAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/GraphicsModuleInterface/isAnimationPlaying/index.html">isAnimationPlaying</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Image/index.html">Image</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Image/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Image/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ImageColorSpace/index.html">ImageColorSpace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageColorSpace/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ImageFormat/index.html">ImageFormat</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageFormat/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ImageID/index.html">ImageID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ImageSampler/index.html">ImageSampler</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageSampler/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ImageSamplerAddressMode/index.html">ImageSamplerAddressMode</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageSamplerAddressMode/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ImageSamplerBorderColor/index.html">ImageSamplerBorderColor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageSamplerBorderColor/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ImageSamplerFilter/index.html">ImageSamplerFilter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ImageSamplerFilter/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputGamepadButton/index.html">InputGamepadButton</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/InputGamepadButton/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/InputGamepadButton/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputGamepadStick/index.html">InputGamepadStick</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/InputGamepadStick/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputKeyboardKey/index.html">InputKeyboardKey</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/InputKeyboardKey/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMouseButton/index.html">InputMouseButton</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/InputMouseButton/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputState/index.html">InputState</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/InputState/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/InputState/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/IntersectionInformation/index.html">IntersectionInformation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/IntersectionInformation/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/JobDispatchArguments/index.html">JobDispatchArguments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/JobDispatchArguments/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/JobSystem/index.html">JobSystem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/JobSystem/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystem/execute/index.html">execute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystem/dispatch/index.html">dispatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystem/isBusy/index.html">isBusy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystem/wait/index.html">wait</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystem/getNumThreads/index.html">getNumThreads</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/JobSystemInterface/index.html">JobSystemInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/JobSystemInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystemInterface/execute/index.html">execute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystemInterface/dispatch/index.html">dispatch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystemInterface/isBusy/index.html">isBusy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystemInterface/wait/index.html">wait</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JobSystemInterface/getNumThreads/index.html">getNumThreads</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Joint/index.html">Joint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Joint/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/JSON/index.html">JSON</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/JSON/index.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/JSON/index.html#static-functions">Static Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/JSON/read/index.html">read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JSON/to_string/index.html">to_string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JSON/Node/index.html">JSON::Node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/JSON/Type/index.html">JSON::Type</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Light/index.html">Light</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Light/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Light/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/LightType/index.html">LightType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/LightType/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/LightType/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Material/index.html">Material</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Material/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Math/index.html">Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Mesh/index.html">Mesh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Mesh/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/MeshID/index.html">MeshID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/MeshID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/MeshID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/MeshTopology/index.html">MeshTopology</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/MeshTopology/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Model/index.html">Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Model/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ModelPrimitive/index.html">ModelPrimitive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ModelPrimitive/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ModuleInterface/index.html">ModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ModuleInterface/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ModuleInterface/index.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ModuleInterface/index.html#notes">Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ModuleInterface/constructor/index.html">ModuleInterface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ModuleInterface/getType/index.html">getType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ModuleInterface/getName/index.html">getName</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ModuleType/index.html">ModuleType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ModuleType/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/NativeWindowAdditionalInformation/index.html">NativeWindowAdditionalInformation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/NativeWindowAdditionalInformation/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/NativeWindowAdditionalInformation/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/NativeWindowHandle/index.html">NativeWindowHandle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/NativeWindowHandle/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/NativeWindowHandle/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Networking/index.html">Networking</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Networking/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/Networking/createServerSocket/index.html">createServerSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Networking/createClientSocket/index.html">createClientSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Networking/closeServerSocket/index.html">closeServerSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Networking/closeClientSocket/index.html">closeClientSocket</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/NetworkingInterface/index.html">NetworkingInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/NetworkingInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/NetworkingInterface/createServerSocket/index.html">createServerSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/NetworkingInterface/createClientSocket/index.html">createClientSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/NetworkingInterface/closeServerSocket/index.html">closeServerSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/NetworkingInterface/closeClientSocket/index.html">closeClientSocket</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/NetworkType/index.html">NetworkType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/NetworkType/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Octree/index.html">Octree</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Octree/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/Octree/constructor/index.html">Octree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Octree/execute/index.html">execute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Octree/insert/index.html">insert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Octree/Entry/index.html">Octree::Entry</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/PhysicsModuleInterface/index.html">PhysicsModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/PhysicsModuleInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/PhysicsModuleInterface/intersect/index.html">intersect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/PhysicsModuleInterface/raycast/index.html">raycast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/PhysicsModuleInterface/raycastAll/index.html">raycastAll</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/PhysicsModuleInterface/setConstantForces/index.html">setConstantForces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/PhysicsModuleInterface/getConstantForces/index.html">getConstantForces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Profiler/index.html">Profiler</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Profiler/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/Profiler/start/index.html">start</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Profiler/getResults/index.html">getResults</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Profiler/end/index.html">end</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Profiler/isRunning/index.html">isRunning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Profiler/startBlock/index.html">startBlock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Profiler/endBlock/index.html">endBlock</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ProfilerInterface/index.html">ProfilerInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ProfilerInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ProfilerInterface/start/index.html">start</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ProfilerInterface/getResults/index.html">getResults</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ProfilerInterface/end/index.html">end</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ProfilerInterface/isRunning/index.html">isRunning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ProfilerInterface/startBlock/index.html">startBlock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ProfilerInterface/endBlock/index.html">endBlock</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ProfilerResultNode/index.html">ProfilerResultNode</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ProfilerResultNode/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/ProfilerResultNode/index.html#static-functions">Static Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ProfilerResultNode/to_string/index.html">to_string</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/RaycastInformation/index.html">RaycastInformation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/RaycastInformation/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/RaycastInformation/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Renderable/index.html">Renderable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Renderable/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Renderable/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Rigidbody/index.html">Rigidbody</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Rigidbody/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Rigidbody/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/SceneManager/index.html">SceneManager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/SceneManager/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/SceneManager/goToScene/index.html">goToScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/SceneManager/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/SceneManagerInterface/index.html">SceneManagerInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/SceneManagerInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/SceneManagerInterface/goToScene/index.html">goToScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/SceneManagerInterface/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Script/index.html">Script</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Script/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Script/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/init/index.html">init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/update/index.html">update</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/destroy/index.html">destroy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/goToScene/index.html">goToScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/createEntity/index.html">createEntity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/destroyEntity/index.html">destroyEntity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/destroyAllEntities/index.html">destroyAllEntities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setEntityName/index.html">setEntityName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/entityHasName/index.html">entityHasName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getEntityName/index.html">getEntityName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/findEntityByName/index.html">findEntityByName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setEntityPersistence/index.html">setEntityPersistence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isEntityPersistent/index.html">isEntityPersistent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/addEntityComponent/index.html">addEntityComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/removeEntityComponent/index.html">removeEntityComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/hasEntityComponent/index.html">hasEntityComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getEntityComponent/index.html">getEntityComponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/loadModel/index.html">loadModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMeshID/index.html">getMeshID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/loadMaterial/index.html">loadMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/loadImage/index.html">loadImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getImageID/index.html">getImageID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getFontID/index.html">getFontID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/loadSound/index.html">loadSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getSoundID/index.html">getSoundID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getKeyState/index.html">getKeyState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMouseButtonState/index.html">getMouseButtonState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setCursorPosition/index.html">setCursorPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getCursorPositionX/index.html">getCursorPositionX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getCursorPositionY/index.html">getCursorPositionY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMouseScrollOffsetX/index.html">getMouseScrollOffsetX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMouseScrollOffsetY/index.html">getMouseScrollOffsetY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setCursorVisibility/index.html">setCursorVisibility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isCursorVisible/index.html">isCursorVisible</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getConnectedGamepads/index.html">getConnectedGamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getGamepadButtonState/index.html">getGamepadButtonState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getGamepadStickAxisX/index.html">getGamepadStickAxisX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getGamepadStickAxisY/index.html">getGamepadStickAxisY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getGamepadLeftTrigger/index.html">getGamepadLeftTrigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getGamepadRightTrigger/index.html">getGamepadRightTrigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getGamepadName/index.html">getGamepadName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/openWindow/index.html">openWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isWindowOpen/index.html">isWindowOpen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/closeWindow/index.html">closeWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMainWindowID/index.html">getMainWindowID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/windowCount/index.html">windowCount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowSize/index.html">setWindowSize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getWindowWidth/index.html">getWindowWidth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getWindowHeight/index.html">getWindowHeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowPosition/index.html">setWindowPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getWindowPositionX/index.html">getWindowPositionX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getWindowPositionY/index.html">getWindowPositionY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowFullscreen/index.html">setWindowFullscreen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isWindowFullscreen/index.html">isWindowFullscreen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowBorderless/index.html">setWindowBorderless</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isWindowBorderless/index.html">isWindowBorderless</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowResizable/index.html">setWindowResizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isWindowResizable/index.html">isWindowResizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowOpacity/index.html">setWindowOpacity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getWindowOpacity/index.html">getWindowOpacity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getWindowDroppedFiles/index.html">getWindowDroppedFiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowTitle/index.html">setWindowTitle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getWindowTitle/index.html">getWindowTitle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setWindowIcon/index.html">setWindowIcon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMonitorWidth/index.html">getMonitorWidth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMonitorHeight/index.html">getMonitorHeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMonitorRefreshRate/index.html">getMonitorRefreshRate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMonitorDisplayScaling/index.html">getMonitorDisplayScaling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setBackgroundColor/index.html">setBackgroundColor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/playSound/index.html">playSound</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/playSoundAtPosition/index.html">playSoundAtPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/resumeSoundSource/index.html">resumeSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/pauseSoundSource/index.html">pauseSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/stopSoundSource/index.html">stopSoundSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getSoundSourceState/index.html">getSoundSourceState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isSoundPlaying/index.html">isSoundPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setSoundSourcePosition/index.html">setSoundSourcePosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getSoundSourcePosition/index.html">getSoundSourcePosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setSoundSourceGain/index.html">setSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getSoundSourceGain/index.html">getSoundSourceGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setSoundListenerEntity/index.html">setSoundListenerEntity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/intersect/index.html">intersect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/raycast/index.html">raycast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/raycastAll/index.html">raycastAll</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setConstantForces/index.html">setConstantForces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getConstantForces/index.html">getConstantForces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/pauseAnimation/index.html">pauseAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/stopAnimation/index.html">stopAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isAnimationPlaying/index.html">isAnimationPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/drawUIText/index.html">drawUIText</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/drawUILine/index.html">drawUILine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/drawUIRectangle/index.html">drawUIRectangle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/drawUIImage/index.html">drawUIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/setMaxFPS/index.html">setMaxFPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getMaxFPS/index.html">getMaxFPS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/executeJob/index.html">executeJob</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/dispatchJob/index.html">dispatchJob</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/waitAllThreads/index.html">waitAllThreads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getNumThreads/index.html">getNumThreads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/createServerSocket/index.html">createServerSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/createClientSocket/index.html">createClientSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/closeServerSocket/index.html">closeServerSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/closeClientSocket/index.html">closeClientSocket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/createScript/index.html">createScript</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/startProfiling/index.html">startProfiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/getProfilingResults/index.html">getProfilingResults</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/endProfiling/index.html">endProfiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/isProfilerRunning/index.html">isProfilerRunning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/startProfilingBlock/index.html">startProfilingBlock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/Script/endProfilingBlock/index.html">endProfilingBlock</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Scriptable/index.html">Scriptable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Scriptable/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Scriptable/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ScriptBase/index.html">ScriptBase</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ScriptBase/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ScriptBase/onCollisionEnter/index.html">onCollisionEnter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ScriptBase/onCollisionStill/index.html">onCollisionStill</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ScriptBase/onCollisionExit/index.html">onCollisionExit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ServerSocket/index.html">ServerSocket</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ServerSocket/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocket/sendDataToClient/index.html">sendDataToClient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocket/setClientConnectCallback/index.html">setClientConnectCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocket/setClientDisconnectCallback/index.html">setClientDisconnectCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocket/setDataReceivedCallback/index.html">setDataReceivedCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocket/getPort/index.html">getPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocket/getConnectedClients/index.html">getConnectedClients</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ServerSocketInterface/index.html">ServerSocketInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ServerSocketInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocketInterface/sendDataToClient/index.html">sendDataToClient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocketInterface/setClientConnectCallback/index.html">setClientConnectCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocketInterface/setClientDisconnectCallback/index.html">setClientDisconnectCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocketInterface/setDataReceivedCallback/index.html">setDataReceivedCallback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocketInterface/getPort/index.html">getPort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ServerSocketInterface/getConnectedClients/index.html">getConnectedClients</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Skin/index.html">Skin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Skin/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Socket/index.html">Socket</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Socket/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Sound/index.html">Sound</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Sound/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/SoundID/index.html">SoundID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/SoundID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/SoundID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/SoundSourceID/index.html">SoundSourceID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/SoundSourceID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/SoundSourceID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/SoundSourceState/index.html">SoundSourceState</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/SoundSourceState/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/SoundSourceState/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/System/index.html">System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/System/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/System/index.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/System/index.html#notes">Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/System/onEntityComponentAdded/index.html">onEntityComponentAdded</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/System/onEntityComponentRemoved/index.html">onEntityComponentRemoved</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/SystemModuleInterface/index.html">SystemModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/SystemModuleInterface/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/SystemModuleInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/SystemModuleInterface/init/index.html">init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/SystemModuleInterface/update/index.html">update</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/SystemModuleInterface/destroy/index.html">destroy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/SystemModuleInterface/getComponentMask/index.html">getComponentMask</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Texture/index.html">Texture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Texture/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ThreadSafeQueue/index.html">ThreadSafeQueue</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/ThreadSafeQueue/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/ThreadSafeQueue/push_back/index.html">push_back</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/ThreadSafeQueue/pop_front/index.html">pop_front</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Transform/index.html">Transform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Transform/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/Transform/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/Vertex/index.html">Vertex</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/Vertex/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/WindowID/index.html">WindowID</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/WindowID/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../types/WindowID/index.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../types/WindowModuleInterface/index.html">WindowModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../types/WindowModuleInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/openWindow/index.html">openWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/isWindowOpen/index.html">isWindowOpen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/closeWindow/index.html">closeWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMainWindowID/index.html">getMainWindowID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/windowCount/index.html">windowCount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowSize/index.html">setWindowSize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowWidth/index.html">getWindowWidth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowHeight/index.html">getWindowHeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowPosition/index.html">setWindowPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowPositionX/index.html">getWindowPositionX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowPositionY/index.html">getWindowPositionY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowFullscreen/index.html">setWindowFullscreen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/isWindowFullscreen/index.html">isWindowFullscreen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowBorderless/index.html">setWindowBorderless</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/isWindowBorderless/index.html">isWindowBorderless</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowResizable/index.html">setWindowResizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/isWindowResizable/index.html">isWindowResizable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowOpacity/index.html">setWindowOpacity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowOpacity/index.html">getWindowOpacity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowDroppedFiles/index.html">getWindowDroppedFiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/pollEvents/index.html">pollEvents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowTitle/index.html">setWindowTitle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowTitle/index.html">getWindowTitle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setWindowIcon/index.html">setWindowIcon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getKeyState/index.html">getKeyState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMouseButtonState/index.html">getMouseButtonState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setCursorPosition/index.html">setCursorPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getCursorPositionX/index.html">getCursorPositionX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getCursorPositionY/index.html">getCursorPositionY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMouseScrollOffsetX/index.html">getMouseScrollOffsetX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMouseScrollOffsetY/index.html">getMouseScrollOffsetY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/setCursorVisibility/index.html">setCursorVisibility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/isCursorVisible/index.html">isCursorVisible</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getConnectedGamepads/index.html">getConnectedGamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getGamepadButtonState/index.html">getGamepadButtonState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getGamepadStickAxisX/index.html">getGamepadStickAxisX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getGamepadStickAxisY/index.html">getGamepadStickAxisY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getGamepadLeftTrigger/index.html">getGamepadLeftTrigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getGamepadRightTrigger/index.html">getGamepadRightTrigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getGamepadName/index.html">getGamepadName</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMonitorWidth/index.html">getMonitorWidth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMonitorHeight/index.html">getMonitorHeight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMonitorRefreshRate/index.html">getMonitorRefreshRate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getMonitorDisplayScaling/index.html">getMonitorDisplayScaling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowNativeHandle/index.html">getWindowNativeHandle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../types/WindowModuleInterface/getWindowNativeAdditionalInformation/index.html">getWindowNativeAdditionalInformation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NutshellEngine</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Starting with NutshellEngine</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/starting/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="starting-with-nutshellengine">
+<h1>Starting with NutshellEngine<a class="headerlink" href="#starting-with-nutshellengine" title="Link to this heading"></a></h1>
+<section id="as-a-game-developer">
+<h2>As a game developer<a class="headerlink" href="#as-a-game-developer" title="Link to this heading"></a></h2>
+<p>As a game developer, you must start by <a class="reference external" href="https://team-nutshell.itch.io/nutshellengine">downloading NutshellEngine from itch.io</a>. This will give you access to the <strong>editor</strong>, the <strong>engine’s core</strong> and a set of <strong>already made modules</strong>.</p>
+<p>The <strong>editor</strong> is the interface you can use to create your game, it allows you to easily create your scenes, define your entities and give them components.</p>
+<p>The <strong>engine’s core</strong> is the <strong>executable</strong> file. It is the <strong>same</strong> for all games made with NutshellEngine and is the central piece to the modularity of NutshellEngine. Its role is to load all modules, including the script module that will be created when you want to build and run your game.</p>
+<p>The <strong>modules</strong> are the different systems of NutshellEngine, like window system and inputs, graphics, physics and audio. NutshellEngine is a <strong>modular game engine</strong>, so all these systems aren’t part of the <strong>executable</strong>, instead, they are <strong>dynamic libraries</strong> files that you can swap to change how your game runs, sounds or looks, <strong>without recompiling the engine or your game</strong>. NutshellEngine comes with a set of selected modules, for all types of modules.</p>
+<p>When starting NutshellEngine for the first time and creating a new project, you might want to go into <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">&gt;</span> <span class="pre">Open</span> <span class="pre">Editor</span> <span class="pre">Parameters</span></code> in the menu bar to change some parameters, like the inputs (by default, the keys assume you are using a <em>QWERTY</em> keyboard, which may not be adapted to your keyboard) or the code editor you use, which is used when opening and editing scripts.</p>
+<section id="if-you-don-t-use-windows-or-linux">
+<h3>If you don’t use Windows or Linux<a class="headerlink" href="#if-you-don-t-use-windows-or-linux" title="Link to this heading"></a></h3>
+<p>NutshellEngine is supported, tested and provided on both Windows and Linux, with an x64 architecture. If you don’t use this configuration, you can try to compile each part of NutshellEngine’s yourself, or add an issue in <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine">NutshellEngine’s main repository</a> so the support for the system you use can be studied and potentially added.</p>
+</section>
+</section>
+<section id="as-an-engine-developer">
+<h2>As an engine developer<a class="headerlink" href="#as-an-engine-developer" title="Link to this heading"></a></h2>
+<section id="contribute-to-nutshellengine">
+<h3>Contribute to NutshellEngine<a class="headerlink" href="#contribute-to-nutshellengine" title="Link to this heading"></a></h3>
+<p>If you want to contribute to NutshellEngine, you can open issues and pull requests in the adapted repository. For example, if you experience an issue or have an idea for NutshellEngine’s core or in general, please refer to the <a class="reference external" href="https://github.com/Team-Nutshell">main repository</a>, if it concerns graphics, please refer to the <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-GraphicsModule">GraphicsModule repository</a>, if it’s related to the editor, please refer to the <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-Editor">Editor repository</a>, etc.</p>
+</section>
+<section id="developing-your-own-modules">
+<h3>Developing your own modules<a class="headerlink" href="#developing-your-own-modules" title="Link to this heading"></a></h3>
+<p>If you want to develop your own modules, please refer to each module’s repository (<a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-GraphicsModule/tree/main">GraphicsModule</a>, <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-PhysicsModule/tree/main">PhysicsModule</a>, <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-Windowodule/tree/main">WindowModule</a>, <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-AudioModule/tree/main">AudioModule</a>, <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-AssetLoaderModule/tree/main">AssetLoaderModule</a>).</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of each repository contains the <strong>empty base</strong> for each module, where you can start from, but <strong>you can also use any other branch as a base to expand from</strong>.</p>
+<p>A module follows an <strong>interface</strong>, you can find each interface in this documentation (<a class="reference internal" href="../types/GraphicsModuleInterface/index.html"><span class="doc">GraphicsModuleInterface</span></a>, <a class="reference internal" href="../types/PhysicsModuleInterface/index.html"><span class="doc">PhysicsModuleInterface</span></a>, <a class="reference internal" href="../types/WindowModuleInterface/index.html"><span class="doc">WindowModuleInterface</span></a>, <a class="reference internal" href="../types/AudioModuleInterface/index.html"><span class="doc">AudioModuleInterface</span></a>, <a class="reference internal" href="../types/AssetLoaderModuleInterface/index.html"><span class="doc">AssetLoaderModuleInterface</span></a>). You don’t have to implement all functions, if the function is not implemented, you can add the <code class="docutils literal notranslate"><span class="pre">NTSHENGN_MODULE_FUNCTION_NOT_IMPLEMENTED()</span></code> macro in the function, which will display a message in the console when the function gets called.</p>
+<p>To <strong>debug your module</strong> (place breakpoints, read values, etc.), you will need to build NutshellEngine’s core, available in the <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine">main repository</a>, put your module inside a <code class="docutils literal notranslate"><span class="pre">modules</span></code> directory next to NutshellEngine’s executable, and refer to your IDE or compiler’s instructions on how to debug dynamic libraries. You can add <code class="docutils literal notranslate"><span class="pre">-DNTSHENGN_INSTALL_MODULE_PATH=&lt;path/to/nutshellengine/modules&gt;</span></code> when <strong>running the CMake</strong> to install your modules directly in the <code class="docutils literal notranslate"><span class="pre">modules</span></code> directory next to NutshellEngine’s executable.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="NutshellEngine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../scripting/index.html" class="btn btn-neutral float-right" title="Scripting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2024, Team Nutshell.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

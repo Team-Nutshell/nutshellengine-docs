@@ -31,4 +31,5 @@ Functions
 	./setClientConnectCallback/index.rst
 	./setClientDisconnectCallback/index.rst
 	./setDataReceivedCallback/index.rst
+	./getPort/index.rst
 	./getConnectedClients/index.rst
