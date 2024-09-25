@@ -290,8 +290,6 @@ Functions related to audio.
 	  - Sets the pitch of a sound source.
 	* - :doc:`/types/Script/getSoundSourcePitch/index`
 	  - Returns the pitch of a sound source.
-	* - :doc:`/types/Script/setSoundListenerEntity/index`
-	  - Sets the :doc:`/entity_component_system/entity/index` that will be the sound listener.
 
 Animation
 ---------

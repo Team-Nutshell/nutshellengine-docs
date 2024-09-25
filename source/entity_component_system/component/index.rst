@@ -9,4 +9,5 @@ A Component is a structure that can be attached to an :doc:`/entity_component_sy
 - :doc:`/types/Renderable/index`
 - :doc:`/types/Rigidbody/index`
 - :doc:`/types/Scriptable/index`
+- :doc:`/types/SoundListener/index`
 - :doc:`/types/Transform/index`
