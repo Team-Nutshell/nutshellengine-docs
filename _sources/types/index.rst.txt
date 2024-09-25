@@ -95,6 +95,7 @@ Types
 	./Socket/index.rst
 	./Sound/index.rst
 	./SoundID/index.rst
+	./SoundListener/index.rst
 	./SoundSourceID/index.rst
 	./SoundSourceState/index.rst
 	./System/index.rst

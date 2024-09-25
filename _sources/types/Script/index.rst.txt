@@ -243,8 +243,6 @@ Functions
 	  - Sets the pitch of a sound source.
 	* - :doc:`/types/Script/getSoundSourcePitch/index`
 	  - Returns the pitch of a sound source.
-	* - :doc:`/types/Script/setSoundListenerEntity/index`
-	  - Sets the :doc:`/entity_component_system/entity/index` that will be the sound listener.
 	* - :doc:`/types/Script/playAnimation/index`
 	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/pauseAnimation/index`
@@ -391,7 +389,6 @@ Functions
 	./getSoundSourceGain/index.rst
 	./setSoundSourcePitch/index.rst
 	./getSoundSourcePitch/index.rst
-	./setSoundListenerEntity/index.rst
 
 	./intersect/index.rst
 	./raycast/index.rst

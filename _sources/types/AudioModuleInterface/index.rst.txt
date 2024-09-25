@@ -42,8 +42,6 @@ Functions
 	  - Sets the pitch of a sound source.
 	* - :doc:`/types/AudioModuleInterface/getSoundSourcePitch/index`
 	  - Returns the pitch of a sound source.
-	* - :doc:`/types/AudioModuleInterface/setSoundListenerEntity/index`
-	  - Sets the :doc:`/entity_component_system/entity/index` that will be the sound listener.
 
 .. toctree::
 	:hidden:
@@ -62,4 +60,3 @@ Functions
 	./getSoundSourceGain/index.rst
 	./setSoundSourcePitch/index.rst
 	./getSoundSourcePitch/index.rst
-	./setSoundListenerEntity/index.rst
