@@ -77,6 +77,7 @@ Types
 	./NetworkingInterface/index.rst
 	./NetworkType/index.rst
 	./Octree/index.rst
+	./ParticleEmitter/index.rst
 	./PhysicsModuleInterface/index.rst
 	./Profiler/index.rst
 	./ProfilerInterface/index.rst

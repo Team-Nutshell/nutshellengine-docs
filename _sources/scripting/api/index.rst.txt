@@ -226,6 +226,8 @@ Function related to graphics.
 	  - Description
 	* - :doc:`/types/Script/setBackgroundColor/index`
 	  - Sets the color of the background.
+	* - :doc:`/types/Script/emitParticles/index`
+	  - Emits particles described by a :doc:`/types/ParticleEmitter/index`.
 
 Physics
 -------

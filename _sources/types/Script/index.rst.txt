@@ -207,6 +207,8 @@ Functions
 	  - Returns the display scaling of the main monitor.
 	* - :doc:`/types/Script/setBackgroundColor/index`
 	  - Sets the color of the background.
+	* - :doc:`/types/Script/emitParticles/index`
+	  - Emits particles described by a :doc:`/types/ParticleEmitter/index`.
 	* - :doc:`/types/Script/intersect/index`
 	  - Returns information about the intersection of two :doc:`ColliderShapes </types/ColliderShape/index>`.
 	* - :doc:`/types/Script/raycast/index`
@@ -375,6 +377,7 @@ Functions
 	./getMonitorDisplayScaling/index.rst
 
 	./setBackgroundColor/index.rst
+	./emitParticles/index.rst
 
 	./playSound/index.rst
 	./playSoundAtPosition/index.rst
