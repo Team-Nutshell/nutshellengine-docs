@@ -19,7 +19,7 @@ In it, copy and paste this script template:
 		void init() {
 		}
 
-		void update(double dt) {
+		void update(float dt) {
 		}
 
 		void destroy() {
@@ -30,7 +30,7 @@ In it, copy and paste this script template:
 
 :doc:`/types/Script/init/index` is a function that will be executed once, when the Script is created.
 
-:doc:`/types/Script/update/index` is a function that will be executed once per frame. The ``dt`` parameter corresponds to the **delta time**, or the time between two frames, in **milliseconds**.
+:doc:`/types/Script/update/index` is a function that will be executed once per frame. The ``dt`` parameter corresponds to the **delta time**, or the time between two frames, in **seconds**.
 
 :doc:`/types/Script/destroy/index` is a function that will be executed once, when the Script is destroyed.
 
