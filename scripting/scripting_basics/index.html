@@ -1062,7 +1062,7 @@
 <span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="p">}</span>
 
-<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">dt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="p">}</span>
 
 <span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">destroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -1072,7 +1072,7 @@
 </div>
 <p><a class="reference internal" href="../../types/Script/index.html"><span class="doc">Script</span></a> is a structure containing the <a class="reference internal" href="../api/index.html"><span class="doc">Scripting API</span></a>, allowing to call functions from NutshellEngine’s systems.</p>
 <p><a class="reference internal" href="../../types/Script/init/index.html"><span class="doc">init</span></a> is a function that will be executed once, when the Script is created.</p>
-<p><a class="reference internal" href="../../types/Script/update/index.html"><span class="doc">update</span></a> is a function that will be executed once per frame. The <code class="docutils literal notranslate"><span class="pre">dt</span></code> parameter corresponds to the <strong>delta time</strong>, or the time between two frames, in <strong>milliseconds</strong>.</p>
+<p><a class="reference internal" href="../../types/Script/update/index.html"><span class="doc">update</span></a> is a function that will be executed once per frame. The <code class="docutils literal notranslate"><span class="pre">dt</span></code> parameter corresponds to the <strong>delta time</strong>, or the time between two frames, in <strong>seconds</strong>.</p>
 <p><a class="reference internal" href="../../types/Script/destroy/index.html"><span class="doc">destroy</span></a> is a function that will be executed once, when the Script is destroyed.</p>
 <p>The Script is then automatically added to the project the next time the CMake is re-configured and its name (for example, <code class="docutils literal notranslate"><span class="pre">TemplateScript</span></code> here) can be used in the <a class="reference internal" href="../../types/Scriptable/index.html"><span class="doc">Scriptable</span></a> Component of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>, in the <a class="reference internal" href="../../file_formats/ntsn/index.html"><span class="doc">.ntsn - Scene</span></a> file format.</p>
 </section>

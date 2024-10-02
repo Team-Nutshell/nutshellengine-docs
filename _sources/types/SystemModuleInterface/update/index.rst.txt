@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void update(double dt) = 0;
+	virtual void update(float dt) = 0;
 
 Parameters
 ----------
@@ -24,8 +24,8 @@ Parameters
 	  - Type
 	  - Description
 	* - dt
-	  - double
-	  - The **delta time**, which corresponds to the time between two frames, in **milliseconds**.
+	  - float
+	  - The **delta time**, which corresponds to the time between two frames, in **seconds**.
 
 Returns
 -------
