@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Camera &mdash; NutshellEngine 0.1.6 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=11b553de" />
 
@@ -20,7 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ClientSocket" href="../ClientSocket/index.html" />
+    <link rel="next" title="CameraProjectionType" href="../CameraProjectionType/index.html" />
     <link rel="prev" title="getSize" href="../Buffer/getSize/index.html" /> 
 </head>
 
@@ -261,6 +261,11 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Camera</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#variables">Variables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../CameraProjectionType/index.html">CameraProjectionType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../CameraProjectionType/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CameraProjectionType/index.html#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ClientSocket/index.html">ClientSocket</a><ul>
@@ -1062,15 +1067,35 @@
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3</p></td>
 <td><p>The camera’s up vector.</p></td>
 </tr>
-<tr class="row-even"><td><p>fov</p></td>
-<td><p>float</p></td>
-<td><p>The camera’s field of view. In radians.</p></td>
+<tr class="row-even"><td><p>projectionType</p></td>
+<td><p><a class="reference internal" href="../CameraProjectionType/index.html"><span class="doc">CameraProjectionType</span></a></p></td>
+<td><p>The camera’s projection type.</p></td>
 </tr>
-<tr class="row-odd"><td><p>nearPlane</p></td>
+<tr class="row-odd"><td><p>fov</p></td>
+<td><p>float</p></td>
+<td><p>The camera’s field of view. Only used by perspective projection cameras. In radians.</p></td>
+</tr>
+<tr class="row-even"><td><p>left</p></td>
+<td><p>float</p></td>
+<td><p>The camera’s left border. Only used by orthographic projection cameras.</p></td>
+</tr>
+<tr class="row-odd"><td><p>right</p></td>
+<td><p>float</p></td>
+<td><p>The camera’s right border. Only used by orthographic projection cameras.</p></td>
+</tr>
+<tr class="row-even"><td><p>bottom</p></td>
+<td><p>float</p></td>
+<td><p>The camera’s bottom border. Only used by orthographic projection cameras.</p></td>
+</tr>
+<tr class="row-odd"><td><p>top</p></td>
+<td><p>float</p></td>
+<td><p>The camera’s top border. Only used by orthographic projection cameras.</p></td>
+</tr>
+<tr class="row-even"><td><p>nearPlane</p></td>
 <td><p>float</p></td>
 <td><p>The camera’s near plane, which corresponds to the nearest distance from the camera’s position where things are shown.</p></td>
 </tr>
-<tr class="row-even"><td><p>farPlane</p></td>
+<tr class="row-odd"><td><p>farPlane</p></td>
 <td><p>float</p></td>
 <td><p>The camera’s far plane, which corresponds to the furthest distance from the camera’s position where things are shown.</p></td>
 </tr>
@@ -1092,43 +1117,7 @@
 <tr class="row-even"><td><p>camera</p></td>
 <td><p>Array of Object</p></td>
 <td><p>The <a class="reference internal" href="#"><span class="doc">Camera</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
-<td><table class="code-table docutils align-default" style="width: 100%">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Possible values</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>forward</p></td>
-<td><p>Array of Number</p></td>
-<td><p>The camera’s forward vector.</p></td>
-<td><p>Any array of 3 numbers.</p></td>
-</tr>
-<tr class="row-odd"><td><p>up</p></td>
-<td><p>Array of Number</p></td>
-<td><p>The camera’s up vector.</p></td>
-<td><p>Any array of 3 numbers.</p></td>
-</tr>
-<tr class="row-even"><td><p>fov</p></td>
-<td><p>Number</p></td>
-<td><p>The camera’s field of view. In degrees.</p></td>
-<td><p>Any number.</p></td>
-</tr>
-<tr class="row-odd"><td><p>nearPlane</p></td>
-<td><p>Number</p></td>
-<td><p>The camera’s near plane.</p></td>
-<td><p>Any number.</p></td>
-</tr>
-<tr class="row-even"><td><p>farPlane</p></td>
-<td><p>Number</p></td>
-<td><p>The camera’s far plane.</p></td>
-<td><p>Any number.</p></td>
-</tr>
-</tbody>
-</table>
-</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -1140,7 +1129,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../Buffer/getSize/index.html" class="btn btn-neutral float-left" title="getSize" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../ClientSocket/index.html" class="btn btn-neutral float-right" title="ClientSocket" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../CameraProjectionType/index.html" class="btn btn-neutral float-right" title="CameraProjectionType" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
