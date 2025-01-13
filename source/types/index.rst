@@ -17,6 +17,7 @@ Types
 	./BlockSuballocator/index.rst
 	./Buffer/index.rst
 	./Camera/index.rst
+	./CameraProjectionType/index.rst
 	./ClientSocket/index.rst
 	./ClientSocketInterface/index.rst
 	./Collidable/index.rst

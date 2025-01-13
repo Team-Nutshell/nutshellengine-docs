@@ -26,7 +26,7 @@ Variables
 	  - The light's base direction vector.
 	* - cutoff
 	  - :doc:`/types/Math/index`::vec2
-	  - Only used in spot lights. In radians.
+	  - The light's cutoff values. Only used by spot lights. In radians.
 
 Notes
 -----
@@ -76,5 +76,5 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Any array of 3 numbers.
 			* - cutoff
 			  - Array of Number
-			  - Only used in spot lights. In degrees.
+			  - Only used by spot lights. In degrees.
 			  - Any array of 2 numbers.
