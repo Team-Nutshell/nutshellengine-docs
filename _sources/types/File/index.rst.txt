@@ -15,6 +15,8 @@ Functions
 	  - Description
 	* - :doc:`/types/File/readAscii/index`
 	  - Reads ASCII data from a file.
+	* - :doc:`/types/File/readUtf8/index`
+	  - Reads UTF-8 data from a file.
 	* - :doc:`/types/File/readBinary/index`
 	  - Reads binary data from a file.
 	* - :doc:`/types/File/writeAscii/index`
@@ -32,6 +34,7 @@ Functions
 	:hidden:
 
 	./readAscii/index.rst
+	./readUtf8/index.rst
 	./readBinary/index.rst
 	./writeAscii/index.rst
 	./writeBinary/index.rst
