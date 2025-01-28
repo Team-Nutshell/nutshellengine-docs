@@ -25,7 +25,7 @@ As an engine developer
 Contribute to NutshellEngine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to contribute to NutshellEngine, you can open issues and pull requests in the adapted repository. For example, if you experience an issue or have an idea for NutshellEngine's core or in general, please refer to the `main repository <https://github.com/Team-Nutshell>`_, if it concerns graphics, please refer to the `GraphicsModule repository <https://github.com/Team-Nutshell/NutshellEngine-GraphicsModule>`_, if it's related to the editor, please refer to the `Editor repository <https://github.com/Team-Nutshell/NutshellEngine-Editor>`_, etc.
+If you want to contribute to NutshellEngine, you can open issues and pull requests in the adapted repository. For example, if you experience an issue or have an idea for NutshellEngine's core or in general, please refer to the `main repository <https://github.com/Team-Nutshell/NutshellEngine>`_, if it concerns graphics, please refer to the `GraphicsModule repository <https://github.com/Team-Nutshell/NutshellEngine-GraphicsModule>`_, if it's related to the editor, please refer to the `Editor repository <https://github.com/Team-Nutshell/NutshellEngine-Editor>`_, etc.
 
 Developing your own modules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
