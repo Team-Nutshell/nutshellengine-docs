@@ -78,6 +78,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - The camera's up vector.
 			  - Any array of 3 numbers.
 			* - projectionType
+			  - String
 			  - The :doc:`/types/CameraProjectionType/index`.
 			  - 
 				 - "Perspective"
@@ -87,19 +88,19 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - The camera's field of view. Only used by perspective projection cameras. In degrees.
 			  - Any number.
 			* - left
-			  - float
+			  - Number
 			  - The camera's left border. Only used by orthographic projection cameras.
 			  - Any number.
 			* - right
-			  - float
+			  - Number
 			  - The camera's right border. Only used by orthographic projection cameras.
 			  - Any number.
 			* - bottom
-			  - float
+			  - Number
 			  - The camera's bottom border. Only used by orthographic projection cameras.
 			  - Any number.
 			* - top
-			  - float
+			  - Number
 			  - The camera's top border. Only used by orthographic projection cameras.
 			  - Any number.
 			* - nearPlane
