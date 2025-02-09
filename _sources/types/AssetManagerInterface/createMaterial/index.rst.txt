@@ -10,12 +10,22 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual Material* createMaterial() = 0;
+	virtual Material* createMaterial(const std::string& materialName) = 0;
 
 Parameters
 ----------
 
-None.
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - materialName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - A unique name for the new :doc:`/types/Material/index`.
 
 Returns
 -------

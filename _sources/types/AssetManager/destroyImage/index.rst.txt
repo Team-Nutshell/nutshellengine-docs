@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void destroyImage(Image* image);
+	void destroyImage(const std::string& imageName);
 
 Parameters
 ----------
@@ -23,9 +23,9 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
-	* - image
-	  - :doc:`/types/Image/index`\*
-	  - The memory address of the :doc:`/types/Image/index` to destroy.
+	* - imageName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - The name of the :doc:`/types/Image/index` to destroy.
 
 Returns
 -------

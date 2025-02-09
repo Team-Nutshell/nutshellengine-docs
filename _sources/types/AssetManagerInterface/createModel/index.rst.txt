@@ -10,12 +10,22 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual Model* createModel() = 0;
+	virtual Model* createModel(const std::string& modelName) = 0;
 
 Parameters
 ----------
 
-None.
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - modelName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - A unique name for the new :doc:`/types/Model/index`.
 
 Returns
 -------

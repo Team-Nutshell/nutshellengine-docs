@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void destroySound(Sound* sound) = 0;
+	virtual void destroySound(const std::string& soundName) = 0;
 
 Parameters
 ----------
@@ -23,9 +23,9 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
-	* - sound
-	  - :doc:`/types/Sound/index`\*
-	  - The address memory of the :doc:`/types/Sound/index` to destroy.
+	* - soundName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - The name of the :doc:`/types/Sound/index` to destroy.
 
 Returns
 -------
