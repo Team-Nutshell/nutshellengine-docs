@@ -10,12 +10,22 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual Font* createFont() = 0;
+	virtual Font* createFont(const std::string& fontName) = 0;
 
 Parameters
 ----------
 
-None.
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - fontName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - A unique name for the new :doc:`/types/Font/index`.
 
 Returns
 -------

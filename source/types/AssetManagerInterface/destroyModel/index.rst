@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void destroyModel(Model* model) = 0;
+	virtual void destroyModel(const std::string& modelName) = 0;
 
 Parameters
 ----------
@@ -23,9 +23,9 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
-	* - model
-	  - :doc:`/types/Model/index`\*
-	  - The address memory of the :doc:`/types/Model/index` to destroy.
+	* - materialName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - The name of the :doc:`/types/Model/index` to destroy.
 
 Returns
 -------

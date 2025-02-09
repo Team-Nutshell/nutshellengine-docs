@@ -10,12 +10,22 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual Image* createImage() = 0;
+	virtual Image* createImage(const std::string& imageName) = 0;
 
 Parameters
 ----------
 
-None.
+.. list-table::
+	:width: 100%
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Type
+	  - Description
+	* - imageName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - A unique name for the new :doc:`/types/Image/index`.
 
 Returns
 -------

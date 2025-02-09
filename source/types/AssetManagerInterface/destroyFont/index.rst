@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void destroyFont(Font* font) = 0;
+	virtual void destroyFont(const std::string& fontName) = 0;
 
 Parameters
 ----------
@@ -23,9 +23,9 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
-	* - font
-	  - :doc:`/types/Font/index`\*
-	  - The address memory of the :doc:`/types/Font/index` to destroy.
+	* - fontName
+	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
+	  - The name of the :doc:`/types/Font/index` to destroy.
 
 Returns
 -------

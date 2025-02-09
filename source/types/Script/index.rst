@@ -67,24 +67,64 @@ Functions
 	  - Update function executed once per frame.
 	* - :doc:`/types/Script/destroy/index`
 	  - Destruction function executed once, when the :doc:`/types/Script/index` is destroyed.
+	* - :doc:`/types/Script/createModel/index`
+	  - Creates an empty model and returns its pointer.
 	* - :doc:`/types/Script/loadModel/index`
 	  - Loads a model from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded model.
 	* - :doc:`/types/Script/getMeshID/index`
 	  - Loads a mesh in the :doc:`/module/graphics_module/index` and returns a unique identifier to this mesh.
+	* - :doc:`/types/Script/destroyModel/index`
+	  - Destroys a model.
+	* - :doc:`/types/Script/findModelByName/index`
+	  - Returns the model associated with the name.
+	* - :doc:`/types/Script/getModelName/index`
+	  - Returns the name of the model.
+	* - :doc:`/types/Script/createMaterial/index`
+	  - Creates an empty material and returns its pointer.
 	* - :doc:`/types/Script/loadMaterial/index`
 	  - Loads a material from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded material.
+	* - :doc:`/types/Script/destroyMaterial/index`
+	  - Destroys a material.
+	* - :doc:`/types/Script/findMaterialByName/index`
+	  - Returns the material associated with the name.
+	* - :doc:`/types/Script/getMaterialName/index`
+	  - Returns the name of the material.
+	* - :doc:`/types/Script/createImage/index`
+	  - Creates an empty image and returns its pointer.
 	* - :doc:`/types/Script/loadImage/index`
 	  - Loads an image from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded image.
 	* - :doc:`/types/Script/getImageID/index`
 	  - Loads an image in the :doc:`/module/graphics_module/index` and returns a unique identifier to this image.
+	* - :doc:`/types/Script/destroyImage/index`
+	  - Destroys an image.
+	* - :doc:`/types/Script/findImageByName/index`
+	  - Returns the image associated with the name.
+	* - :doc:`/types/Script/getImageName/index`
+	  - Returns the name of the image.
+	* - :doc:`/types/Script/createFont/index`
+	  - Creates an empty font and returns its pointer.
 	* - :doc:`/types/Script/loadFont/index`
 	  - Loads a font from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded font.
 	* - :doc:`/types/Script/getFontID/index`
 	  - Loads a font in the :doc:`/module/graphics_module/index` and returns a unique identifier to this font.
+	* - :doc:`/types/Script/destroyFont/index`
+	  - Destroys a font.
+	* - :doc:`/types/Script/findFontByName/index`
+	  - Returns the font associated with the name.
+	* - :doc:`/types/Script/getFontName/index`
+	  - Returns the name of the font.
+	* - :doc:`/types/Script/createSound/index`
+	  - Creates an empty sound and returns its pointer.
 	* - :doc:`/types/Script/loadSound/index`
 	  - Loads a sound from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded sound.
 	* - :doc:`/types/Script/getSoundID/index`
 	  - Loads a sound in the :doc:`/module/audio_module/index` and returns a unique identifier to this sound.
+	* - :doc:`/types/Script/destroySound/index`
+	  - Destroys a sound.
+	* - :doc:`/types/Script/findSoundByName/index`
+	  - Returns the sound associated with the name.
+	* - :doc:`/types/Script/getSoundName/index`
+	  - Returns the name of the sound.
 	* - :doc:`/types/Script/goToScene/index`
 	  - Loads a scene from a file.
 	* - :doc:`/types/Script/getCurrentScenePath/index`
@@ -321,15 +361,36 @@ Functions
 	./removeEntityComponent/index.rst
 	./hasEntityComponent/index.rst
 	./getEntityComponent/index.rst
+	
+	./createModel/index.rst
 	./loadModel/index.rst
 	./getMeshID/index.rst
+	./destroyModel/index.rst
+	./findModelByName/index.rst
+	./getModelName/index.rst
+	./createMaterial/index.rst
 	./loadMaterial/index.rst
+	./destroyMaterial/index.rst
+	./findMaterialByName/index.rst
+	./getMaterialName/index.rst
+	./createImage/index.rst
 	./loadImage/index.rst
 	./getImageID/index.rst
+	./destroyImage/index.rst
+	./findImageByName/index.rst
+	./getImageName/index.rst
+	./createFont/index.rst
 	./loadFont/index.rst
 	./getFontID/index.rst
+	./destroyFont/index.rst
+	./findFontByName/index.rst
+	./getFontName/index.rst
+	./createSound/index.rst
 	./loadSound/index.rst
 	./getSoundID/index.rst
+	./destroySound/index.rst
+	./findSoundByName/index.rst
+	./getSoundName/index.rst
 
 	./getKeyState/index.rst
 	./getMouseButtonState/index.rst
