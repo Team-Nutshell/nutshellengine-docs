@@ -39,3 +39,6 @@ Variables
 	* - sizeRange
 	  - `std::array <https://en.cppreference.com/w/cpp/container/array>`_\<float, 2>
 	  - The range of size, per particle.
+	* - rotationRange
+	  - `std::array <https://en.cppreference.com/w/cpp/container/array>`_\<float, 2>
+	  - The range of rotation, per particle. In radians.
