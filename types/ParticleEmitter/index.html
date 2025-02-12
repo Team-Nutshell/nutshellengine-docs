@@ -1116,19 +1116,23 @@
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3</p></td>
 <td><p>The base direction.</p></td>
 </tr>
-<tr class="row-even"><td><p>rotationRange</p></td>
+<tr class="row-even"><td><p>directionAnglesRange</p></td>
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/array">std::array</a>&lt;<a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec3, 2&gt;</p></td>
-<td><p>The range of rotation, from the base direction, per particle.</p></td>
+<td><p>The range of direction, from the base direction, per particle. Per axis, in radians.</p></td>
 </tr>
 <tr class="row-odd"><td><p>speedRange</p></td>
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/array">std::array</a>&lt;float, 2&gt;</p></td>
 <td><p>The range of speed, per particle.</p></td>
 </tr>
-<tr class="row-even"><td><p>colorRange</p></td>
-<td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/array">std::array</a>&lt;<a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec4, 2&gt;</p></td>
-<td><p>The range of color per particle.</p></td>
+<tr class="row-even"><td><p>image</p></td>
+<td><p>:doc:<a href="#id4"><span class="problematic" id="id5">`</span></a>/types/Image/index`*</p></td>
+<td><p>The texture of the particles.</p></td>
 </tr>
-<tr class="row-odd"><td><p>sizeRange</p></td>
+<tr class="row-odd"><td><p>colorRange</p></td>
+<td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/array">std::array</a>&lt;<a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::vec4, 2&gt;</p></td>
+<td><p>The range of color per particle. If <code class="docutils literal notranslate"><span class="pre">image</span></code> is not <code class="docutils literal notranslate"><span class="pre">null</span></code>, the color is multiplied to the image.</p></td>
+</tr>
+<tr class="row-even"><td><p>sizeRange</p></td>
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/array">std::array</a>&lt;float, 2&gt;</p></td>
 <td><p>The range of size, per particle.</p></td>
 </tr>
