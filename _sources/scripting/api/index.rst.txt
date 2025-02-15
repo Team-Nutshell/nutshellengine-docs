@@ -268,6 +268,8 @@ Function related to graphics.
 	  - Sets the color of the background.
 	* - :doc:`/types/Script/emitParticles/index`
 	  - Emits particles described by a :doc:`/types/ParticleEmitter/index`.
+	* - :doc:`/types/Script/destroyParticles/index`
+	  - Destroys all particles.
 
 Physics
 -------
