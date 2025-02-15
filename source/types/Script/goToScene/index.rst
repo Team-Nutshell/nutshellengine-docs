@@ -43,3 +43,5 @@ If this is the case, the rest of the script must not reference any function or v
 
 	goToScene("assets/scenes/scene.ntsn");
 	return;
+
+All particles will also be destroyed.

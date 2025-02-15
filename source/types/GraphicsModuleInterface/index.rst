@@ -28,6 +28,8 @@ Functions
 	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
 	* - :doc:`/types/GraphicsModuleInterface/emitParticles/index`
 	  - Emits particles described by a :doc:`/types/ParticleEmitter/index`.
+	* - :doc:`/types/GraphicsModuleInterface/destroyParticles/index`
+	  - Destroys all particles.
 	* - :doc:`/types/GraphicsModuleInterface/drawUIText/index`
 	  - Draws text on the User Interface.
 	* - :doc:`/types/GraphicsModuleInterface/drawUILine/index`
@@ -47,6 +49,7 @@ Functions
 	./stopAnimation/index.rst
 	./isAnimationPlaying/index.rst
 	./emitParticles/index.rst
+	./destroyParticles/index.rst
 	./drawUIText/index.rst
 	./drawUILine/index.rst
 	./drawUIRectangle/index.rst
