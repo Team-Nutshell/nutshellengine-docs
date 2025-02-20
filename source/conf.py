@@ -9,8 +9,8 @@
 project = 'NutshellEngine'
 copyright = '2022-2025, Team Nutshell'
 author = 'Team Nutshell'
-release = '0.1.9'
-version = '0.1.9'
+release = '0.1.10'
+version = '0.1.10'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
