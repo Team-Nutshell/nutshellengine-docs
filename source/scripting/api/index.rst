@@ -354,6 +354,8 @@ Functions related to :doc:`Animations </types/Animation/index>`.
 	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/stopAnimation/index`
 	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/setAnimationCurrentTime/index`
+	  - Sets the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/isAnimationPlaying/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
 
