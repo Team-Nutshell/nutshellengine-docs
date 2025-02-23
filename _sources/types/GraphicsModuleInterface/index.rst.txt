@@ -24,6 +24,8 @@ Functions
 	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/GraphicsModuleInterface/stopAnimation/index`
 	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/setAnimationCurrentTime/index`
+	  - Sets the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/GraphicsModuleInterface/isAnimationPlaying/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
 	* - :doc:`/types/GraphicsModuleInterface/emitParticles/index`
@@ -47,6 +49,7 @@ Functions
 	./playAnimation/index.rst
 	./pauseAnimation/index.rst
 	./stopAnimation/index.rst
+	./setAnimationCurrentTime/index.rst
 	./isAnimationPlaying/index.rst
 	./emitParticles/index.rst
 	./destroyParticles/index.rst

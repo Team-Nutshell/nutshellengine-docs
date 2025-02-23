@@ -293,6 +293,8 @@ Functions
 	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/stopAnimation/index`
 	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/setAnimationCurrentTime/index`
+	  - Sets the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/isAnimationPlaying/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
 	* - :doc:`/types/Script/drawUIText/index`
@@ -466,6 +468,7 @@ Functions
 	./playAnimation/index.rst
 	./pauseAnimation/index.rst
 	./stopAnimation/index.rst
+	./setAnimationCurrentTime/index.rst
 	./isAnimationPlaying/index.rst
 
 	./drawUIText/index.rst
