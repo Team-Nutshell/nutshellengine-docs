@@ -38,7 +38,7 @@ None.
 Notes
 -----
 
-If another :doc:`/types/Animation/index` of ``entity`` is being played, it is getting replaces by the new one.
+If another :doc:`/types/Animation/index` of ``entity`` is being played, it is getting replaced by the new one.
 
 If the :doc:`/types/Animation/index` is already playing, this function does nothing.
 
