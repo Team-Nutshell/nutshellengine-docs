@@ -128,6 +128,18 @@ Functions related to the Entity-Component-System.
 	  - Marks or unmarks the :doc:`/entity_component_system/entity/index` as persistent.
 	* - :doc:`/types/Script/isEntityPersistent/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is persistent.
+	* - :doc:`/types/Script/addEntityToEntityGroup/index`
+	  - Adds an :doc:`/entity_component_system/entity/index` to an Entity Group.
+	* - :doc:`/types/Script/removeEntityFromEntityGroup/index`
+	  - Removes an :doc:`/entity_component_system/entity/index` from an Entity Group.
+	* - :doc:`/types/Script/entityGroupExists/index`
+	  - Checks if an Entity Group exists.
+	* - :doc:`/types/Script/isEntityInEntityGroup/index`
+	  - Checks if an :doc:`/entity_component_system/entity/index` is in an Entity Group.
+	* - :doc:`/types/Script/getEntitiesInEntityGroup/index`
+	  - Returns the :doc:`Entities </entity_component_system/entity/index>` in an Entity Group.
+	* - :doc:`/types/Script/getEntityGroupsOfEntity/index`
+	  - Returns the Entity Groups of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/addEntityComponent/index`
 	  - Adds a :doc:`/entity_component_system/component/index` to an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/removeEntityComponent/index`
