@@ -34,6 +34,18 @@ Functions
 	  - Marks or unmarks the :doc:`/entity_component_system/entity/index` as persistent.
 	* - :doc:`/types/ECSInterface/isEntityPersistent/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is persistent.
+	* - :doc:`/types/ECSInterface/addEntityToEntityGroup/index`
+	  - Adds an :doc:`/entity_component_system/entity/index` to an Entity Group.
+	* - :doc:`/types/ECSInterface/removeEntityFromEntityGroup/index`
+	  - Removes an :doc:`/entity_component_system/entity/index` from an Entity Group.
+	* - :doc:`/types/ECSInterface/entityGroupExists/index`
+	  - Checks if an Entity Group exists.
+	* - :doc:`/types/ECSInterface/isEntityInEntityGroup/index`
+	  - Checks if an :doc:`/entity_component_system/entity/index` is in an Entity Group.
+	* - :doc:`/types/ECSInterface/getEntitiesInEntityGroup/index`
+	  - Returns the :doc:`Entities </entity_component_system/entity/index>` in an Entity Group.
+	* - :doc:`/types/ECSInterface/getEntityGroupsOfEntity/index`
+	  - Returns the Entity Groups of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/ECSInterface/addComponent/index`
 	  - Adds a :doc:`/entity_component_system/component/index` to an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/ECSInterface/removeComponent/index`
@@ -59,6 +71,12 @@ Functions
 	./findEntityByName/index.rst
 	./setEntityPersistence/index.rst
 	./isEntityPersistent/index.rst
+	./addEntityToEntityGroup/index.rst
+	./removeEntityFromEntityGroup/index.rst
+	./entityGroupExists/index.rst
+	./isEntityInEntityGroup/index.rst
+	./getEntitiesInEntityGroup/index.rst
+	./getEntityGroupsOfEntity/index.rst
 	./addComponent/index.rst
 	./removeComponent/index.rst
 	./hasComponent/index.rst

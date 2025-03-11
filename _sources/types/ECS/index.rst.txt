@@ -36,6 +36,18 @@ Functions
 	  - Marks or unmarks the :doc:`/entity_component_system/entity/index` as persistent.
 	* - :doc:`/types/ECS/isEntityPersistent/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is persistent.
+	* - :doc:`/types/ECS/addEntityToEntityGroup/index`
+	  - Adds an :doc:`/entity_component_system/entity/index` to an Entity Group.
+	* - :doc:`/types/ECS/removeEntityFromEntityGroup/index`
+	  - Removes an :doc:`/entity_component_system/entity/index` from an Entity Group.
+	* - :doc:`/types/ECS/entityGroupExists/index`
+	  - Checks if an Entity Group exists.
+	* - :doc:`/types/ECS/isEntityInEntityGroup/index`
+	  - Checks if an :doc:`/entity_component_system/entity/index` is in an Entity Group.
+	* - :doc:`/types/ECS/getEntitiesInEntityGroup/index`
+	  - Returns the :doc:`Entities </entity_component_system/entity/index>` in an Entity Group.
+	* - :doc:`/types/ECS/getEntityGroupsOfEntity/index`
+	  - Returns the Entity Groups of an :doc:`/entity_component_system/entity/index`.
 
 .. toctree::
 	:hidden:
@@ -51,3 +63,9 @@ Functions
 	./findEntityByName/index.rst
 	./setEntityPersistence/index.rst
 	./isEntityPersistent/index.rst
+	./addEntityToEntityGroup/index.rst
+	./removeEntityFromEntityGroup/index.rst
+	./entityGroupExists/index.rst
+	./isEntityInEntityGroup/index.rst
+	./getEntitiesInEntityGroup/index.rst
+	./getEntityGroupsOfEntity/index.rst

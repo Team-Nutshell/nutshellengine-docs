@@ -377,6 +377,12 @@
 <li class="toctree-l4"><a class="reference internal" href="findEntityByName/index.html">findEntityByName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setEntityPersistence/index.html">setEntityPersistence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="isEntityPersistent/index.html">isEntityPersistent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="addEntityToEntityGroup/index.html">addEntityToEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="removeEntityFromEntityGroup/index.html">removeEntityFromEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="entityGroupExists/index.html">entityGroupExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="isEntityInEntityGroup/index.html">isEntityInEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getEntitiesInEntityGroup/index.html">getEntitiesInEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getEntityGroupsOfEntity/index.html">getEntityGroupsOfEntity</a></li>
 </ul>
 </li>
 </ul>
@@ -394,6 +400,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/findEntityByName/index.html">findEntityByName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/setEntityPersistence/index.html">setEntityPersistence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/isEntityPersistent/index.html">isEntityPersistent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECSInterface/addEntityToEntityGroup/index.html">addEntityToEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECSInterface/removeEntityFromEntityGroup/index.html">removeEntityFromEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECSInterface/entityGroupExists/index.html">entityGroupExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECSInterface/isEntityInEntityGroup/index.html">isEntityInEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECSInterface/getEntitiesInEntityGroup/index.html">getEntitiesInEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECSInterface/getEntityGroupsOfEntity/index.html">getEntityGroupsOfEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/addComponent/index.html">addComponent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/removeComponent/index.html">removeComponent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/hasComponent/index.html">hasComponent</a></li>
@@ -767,6 +779,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/findEntityByName/index.html">findEntityByName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/setEntityPersistence/index.html">setEntityPersistence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/isEntityPersistent/index.html">isEntityPersistent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/addEntityToEntityGroup/index.html">addEntityToEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/removeEntityFromEntityGroup/index.html">removeEntityFromEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/entityGroupExists/index.html">entityGroupExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/isEntityInEntityGroup/index.html">isEntityInEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getEntitiesInEntityGroup/index.html">getEntitiesInEntityGroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getEntityGroupsOfEntity/index.html">getEntityGroupsOfEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/addEntityComponent/index.html">addEntityComponent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/removeEntityComponent/index.html">removeEntityComponent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/hasEntityComponent/index.html">hasEntityComponent</a></li>
@@ -1140,6 +1158,24 @@
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="isEntityPersistent/index.html"><span class="doc">isEntityPersistent</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is persistent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="addEntityToEntityGroup/index.html"><span class="doc">addEntityToEntityGroup</span></a></p></td>
+<td><p>Adds an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> to an Entity Group.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="removeEntityFromEntityGroup/index.html"><span class="doc">removeEntityFromEntityGroup</span></a></p></td>
+<td><p>Removes an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> from an Entity Group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="entityGroupExists/index.html"><span class="doc">entityGroupExists</span></a></p></td>
+<td><p>Checks if an Entity Group exists.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="isEntityInEntityGroup/index.html"><span class="doc">isEntityInEntityGroup</span></a></p></td>
+<td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is in an Entity Group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="getEntitiesInEntityGroup/index.html"><span class="doc">getEntitiesInEntityGroup</span></a></p></td>
+<td><p>Returns the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a> in an Entity Group.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="getEntityGroupsOfEntity/index.html"><span class="doc">getEntityGroupsOfEntity</span></a></p></td>
+<td><p>Returns the Entity Groups of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
 </tbody>
 </table>
