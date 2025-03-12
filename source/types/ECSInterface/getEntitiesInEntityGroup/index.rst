@@ -30,4 +30,4 @@ Parameters
 Returns
 -------
 
-The :doc:`Entities </entity_component_system/entity/index>` that belong to the Entity Group with name ``entityGroupName``. If the Entity Group does not exist, the returned `std::set <https://en.cppreference.com/w/cpp/container/set>`_\<`std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_> is empty.
+The :doc:`Entities </entity_component_system/entity/index>` that belong to the Entity Group with name ``entityGroupName``. If the Entity Group does not exist, the returned `std::set <https://en.cppreference.com/w/cpp/container/set>`_\<:doc:`/entity_component_system/entity/index`> is empty.
