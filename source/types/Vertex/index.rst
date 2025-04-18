@@ -13,23 +13,23 @@ Variables
 	  - Type
 	  - Description
 	* - position
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The vertex's position in **model-space**.
 	* - normal
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The vertex's normal in **model-space**.
 	* - uv
-	  - Math::vec2
+	  - :doc:`/types/Math/index`::vec2
 	  - The vertex's texture coordinates.
 	* - color
-	  - Math::vec3
+	  - :doc:`/types/Math/index`::vec3
 	  - The vertex's color.
 	* - tangent
-	  - Math::vec4
+	  - :doc:`/types/Math/index`::vec4
 	  - The vertex's tangent.
 	* - joints
 	  - `std::array <https://en.cppreference.com/w/cpp/container/array>`_\<uint32_t, 4>
 	  - The vertex's bone indices for animation.
 	* - weights
-	  - Math::vec4
+	  - :doc:`/types/Math/index`::vec4
 	  - The vertex's bone weights for animation.

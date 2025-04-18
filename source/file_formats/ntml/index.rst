@@ -238,3 +238,15 @@
 	  - Number
 	  - The index of refraction, used to calculate refraction of a transparent object.
 	  - Any number.
+	* - useTriplanarMapping
+	  - Boolean
+	  - If ``true``, the :doc:`/types/Mesh/index`'s ``uv`` are ignored and the world position is used as texture coordinates.
+	  - Any boolean (``true`` or ``false``).
+	* - scaleUV
+	  - Array of Number
+	  - The texture coordinates' scale.
+	  - Any array of 2 numbers.
+	* - offsetUV
+	  - Array of Number
+	  - The texture coordinates' offset.
+	  - Any array of 2 numbers.

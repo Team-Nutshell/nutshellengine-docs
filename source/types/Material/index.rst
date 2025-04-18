@@ -39,3 +39,12 @@ Variables
 	* - indexOfRefraction
 	  - float
 	  - The index of refraction.
+	* - useTriplanarMapping
+	  - bool
+	  - If ``true``, the :doc:`/types/Mesh/index`'s ``uv`` are ignored and the world position is used as texture coordinates.
+	* - scaleUV
+	  - :doc:`/types/Math/index`::vec2
+	  - The texture coordinates' scale.
+	* - offsetUV
+	  - :doc:`/types/Math/index`::vec2
+	  - The texture coordinates' offset.
