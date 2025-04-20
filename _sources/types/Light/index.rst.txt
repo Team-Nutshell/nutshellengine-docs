@@ -23,10 +23,13 @@ Variables
 	  - The light's intensity, it is multiplied with the color.
 	* - direction
 	  - :doc:`/types/Math/index`::vec3
-	  - The light's base direction vector.
+	  - The light's base direction vector. Only used by directional lights and spot lights.
 	* - cutoff
 	  - :doc:`/types/Math/index`::vec2
 	  - The light's cutoff values. Only used by spot lights. In radians.
+	* - distance
+	  - float
+	  - The light's distance. Only used by point lights and spot lights.
 
 Notes
 -----
@@ -68,13 +71,17 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Any array of 3 numbers.
 			* - intensity
 			  - Number
-			  - The light's intensity.
+			  - The light's intensity, it is multiplied with the color.
 			  - Any number.
 			* - direction
 			  - Array of Number
-			  - The light's base direction vector.
+			  - The light's base direction vector. Only used by directional lights and spot lights.
 			  - Any array of 3 numbers.
 			* - cutoff
 			  - Array of Number
-			  - Only used by spot lights. In degrees.
+			  - The light's cutoff values. Only used by spot lights. In degrees.
 			  - Any array of 2 numbers.
+			* - distance
+			  - Number
+			  - The light's distance. Only used by point lights and spot lights.
+			  - Any number.
