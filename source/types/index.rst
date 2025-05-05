@@ -42,6 +42,7 @@ Types
 	./FrameLimiterInterface/index.rst
 	./GamepadID/index.rst
 	./GraphicsModuleInterface/index.rst
+	./IDPool/index.rst
 	./Image/index.rst
 	./ImageColorSpace/index.rst
 	./ImageFormat/index.rst
