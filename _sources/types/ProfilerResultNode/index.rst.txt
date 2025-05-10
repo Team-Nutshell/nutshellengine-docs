@@ -15,15 +15,18 @@ Variables
 	* - name
 	  - `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_
 	  - The block's name.
-	* - times
-	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<double>
-	  - The block's times of execution, in milliseconds.
+	* - count
+	  - uint32_t
+	  - The number of times the block has been executed.
 	* - totalTime
 	  - double
 	  - The block's total execution time, in milliseconds.
 	* - meanTime
 	  - double
 	  - The block's mean execution time, in milliseconds.
+	* - medianTime
+	  - double
+	  - The block's median execution time, in milliseconds.
 	* - minTimeIndex
 	  - uint32_t
 	  - The index of the lowest execution time in ``times``.

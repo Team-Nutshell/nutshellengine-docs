@@ -1134,9 +1134,9 @@
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/string/basic_string">std::string</a></p></td>
 <td><p>The block’s name.</p></td>
 </tr>
-<tr class="row-odd"><td><p>times</p></td>
-<td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a>&lt;double&gt;</p></td>
-<td><p>The block’s times of execution, in milliseconds.</p></td>
+<tr class="row-odd"><td><p>count</p></td>
+<td><p>uint32_t</p></td>
+<td><p>The number of times the block has been executed.</p></td>
 </tr>
 <tr class="row-even"><td><p>totalTime</p></td>
 <td><p>double</p></td>
@@ -1146,23 +1146,27 @@
 <td><p>double</p></td>
 <td><p>The block’s mean execution time, in milliseconds.</p></td>
 </tr>
-<tr class="row-even"><td><p>minTimeIndex</p></td>
+<tr class="row-even"><td><p>medianTime</p></td>
+<td><p>double</p></td>
+<td><p>The block’s median execution time, in milliseconds.</p></td>
+</tr>
+<tr class="row-odd"><td><p>minTimeIndex</p></td>
 <td><p>uint32_t</p></td>
 <td><p>The index of the lowest execution time in <code class="docutils literal notranslate"><span class="pre">times</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>minTime</p></td>
+<tr class="row-even"><td><p>minTime</p></td>
 <td><p>double</p></td>
 <td><p>The block’s lowest execution time, in milliseconds.</p></td>
 </tr>
-<tr class="row-even"><td><p>maxTimeIndex</p></td>
+<tr class="row-odd"><td><p>maxTimeIndex</p></td>
 <td><p>uint32_t</p></td>
 <td><p>The index of the highest execution time in <code class="docutils literal notranslate"><span class="pre">times</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>maxTime</p></td>
+<tr class="row-even"><td><p>maxTime</p></td>
 <td><p>double</p></td>
 <td><p>The block’s highest execution time, in milliseconds.</p></td>
 </tr>
-<tr class="row-even"><td><p>children</p></td>
+<tr class="row-odd"><td><p>children</p></td>
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a>&lt;<a class="reference internal" href="#"><span class="doc">ProfilerResultNode</span></a>&gt;</p></td>
 <td><p>The block’s children.</p></td>
 </tr>
