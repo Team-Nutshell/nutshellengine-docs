@@ -371,6 +371,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../ECS/destroyAllEntities/index.html">destroyAllEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECS/getEntities/index.html">getEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/setEntityName/index.html">setEntityName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/entityHasName/index.html">entityHasName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/getEntityName/index.html">getEntityName</a></li>
@@ -394,6 +395,7 @@
 <li class="toctree-l4"><a class="reference internal" href="destroyAllEntities/index.html">destroyAllEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getEntities/index.html">getEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setEntityName/index.html">setEntityName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="entityHasName/index.html">entityHasName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="getEntityName/index.html">getEntityName</a></li>
@@ -781,6 +783,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/destroyAllEntities/index.html">destroyAllEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getEntities/index.html">getEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/setEntityName/index.html">setEntityName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/entityHasName/index.html">entityHasName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getEntityName/index.html">getEntityName</a></li>
@@ -927,6 +930,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ScriptBase/index.html">ScriptBase</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ScriptBase/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ScriptBase/onSceneEnter/index.html">onSceneEnter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ScriptBase/onSceneExit/index.html">onSceneExit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ScriptBase/onCollisionEnter/index.html">onCollisionEnter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ScriptBase/onCollisionStill/index.html">onCollisionStill</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ScriptBase/onCollisionExit/index.html">onCollisionExit</a></li>
@@ -1148,55 +1153,58 @@
 <tr class="row-even"><td><p><a class="reference internal" href="entityExists/index.html"><span class="doc">entityExists</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> exists.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setEntityName/index.html"><span class="doc">setEntityName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getEntities/index.html"><span class="doc">getEntities</span></a></p></td>
+<td><p>Returns all the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="setEntityName/index.html"><span class="doc">setEntityName</span></a></p></td>
 <td><p>Sets a name to an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="entityHasName/index.html"><span class="doc">entityHasName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="entityHasName/index.html"><span class="doc">entityHasName</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> has a name.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getEntityName/index.html"><span class="doc">getEntityName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getEntityName/index.html"><span class="doc">getEntityName</span></a></p></td>
 <td><p>Returns the name of the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="findEntityByName/index.html"><span class="doc">findEntityByName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="findEntityByName/index.html"><span class="doc">findEntityByName</span></a></p></td>
 <td><p>Returns the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> associated with the name.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setEntityPersistence/index.html"><span class="doc">setEntityPersistence</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setEntityPersistence/index.html"><span class="doc">setEntityPersistence</span></a></p></td>
 <td><p>Marks or unmarks the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> as persistent.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isEntityPersistent/index.html"><span class="doc">isEntityPersistent</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isEntityPersistent/index.html"><span class="doc">isEntityPersistent</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is persistent.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="addEntityToEntityGroup/index.html"><span class="doc">addEntityToEntityGroup</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="addEntityToEntityGroup/index.html"><span class="doc">addEntityToEntityGroup</span></a></p></td>
 <td><p>Adds an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> to an Entity Group.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="removeEntityFromEntityGroup/index.html"><span class="doc">removeEntityFromEntityGroup</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="removeEntityFromEntityGroup/index.html"><span class="doc">removeEntityFromEntityGroup</span></a></p></td>
 <td><p>Removes an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> from an Entity Group.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="entityGroupExists/index.html"><span class="doc">entityGroupExists</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="entityGroupExists/index.html"><span class="doc">entityGroupExists</span></a></p></td>
 <td><p>Checks if an Entity Group exists.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isEntityInEntityGroup/index.html"><span class="doc">isEntityInEntityGroup</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isEntityInEntityGroup/index.html"><span class="doc">isEntityInEntityGroup</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is in an Entity Group.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getEntitiesInEntityGroup/index.html"><span class="doc">getEntitiesInEntityGroup</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getEntitiesInEntityGroup/index.html"><span class="doc">getEntitiesInEntityGroup</span></a></p></td>
 <td><p>Returns the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a> in an Entity Group.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getEntityGroupsOfEntity/index.html"><span class="doc">getEntityGroupsOfEntity</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getEntityGroupsOfEntity/index.html"><span class="doc">getEntityGroupsOfEntity</span></a></p></td>
 <td><p>Returns the Entity Groups of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="addComponent/index.html"><span class="doc">addComponent</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="addComponent/index.html"><span class="doc">addComponent</span></a></p></td>
 <td><p>Adds a <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> to an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="removeComponent/index.html"><span class="doc">removeComponent</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="removeComponent/index.html"><span class="doc">removeComponent</span></a></p></td>
 <td><p>Removes a <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> from an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="hasComponent/index.html"><span class="doc">hasComponent</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="hasComponent/index.html"><span class="doc">hasComponent</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> has a certain <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getComponent/index.html"><span class="doc">getComponent</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getComponent/index.html"><span class="doc">getComponent</span></a></p></td>
 <td><p>Returns an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getComponentID/index.html"><span class="doc">getComponentID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getComponentID/index.html"><span class="doc">getComponentID</span></a></p></td>
 <td><p>Returns a <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>’s identifier.</p></td>
 </tr>
 </tbody>

@@ -114,6 +114,8 @@ Functions related to the Entity-Component-System.
 	  - Destroys all :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/destroyNonPersistentEntities/index`
 	  - Destroys all :doc:`Entities </entity_component_system/entity/index>` not marked as persistent.
+	* - :doc:`/types/Script/getEntities/index`
+	  - Returns all the :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/Script/entityExists/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` exists.
 	* - :doc:`/types/Script/setEntityName/index`

@@ -20,7 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="onCollisionEnter" href="onCollisionEnter/index.html" />
+    <link rel="next" title="onSceneEnter" href="onSceneEnter/index.html" />
     <link rel="prev" title="Scriptable" href="../Scriptable/index.html" /> 
 </head>
 
@@ -371,6 +371,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../ECS/destroyAllEntities/index.html">destroyAllEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECS/getEntities/index.html">getEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/setEntityName/index.html">setEntityName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/entityHasName/index.html">entityHasName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECS/getEntityName/index.html">getEntityName</a></li>
@@ -394,6 +395,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/destroyAllEntities/index.html">destroyAllEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ECSInterface/getEntities/index.html">getEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/setEntityName/index.html">setEntityName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/entityHasName/index.html">entityHasName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../ECSInterface/getEntityName/index.html">getEntityName</a></li>
@@ -781,6 +783,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/destroyAllEntities/index.html">destroyAllEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/destroyNonPersistentEntities/index.html">destroyNonPersistentEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/entityExists/index.html">entityExists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getEntities/index.html">getEntities</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/setEntityName/index.html">setEntityName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/entityHasName/index.html">entityHasName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getEntityName/index.html">getEntityName</a></li>
@@ -927,6 +930,8 @@
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ScriptBase</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="onSceneEnter/index.html">onSceneEnter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="onSceneExit/index.html">onSceneExit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="onCollisionEnter/index.html">onCollisionEnter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="onCollisionStill/index.html">onCollisionStill</a></li>
 <li class="toctree-l4"><a class="reference internal" href="onCollisionExit/index.html">onCollisionExit</a></li>
@@ -1133,6 +1138,12 @@
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="onSceneEnter/index.html"><span class="doc">onSceneEnter</span></a></p></td>
+<td><p>Is executed after a new scene is loaded.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="onSceneExit/index.html"><span class="doc">onSceneExit</span></a></p></td>
+<td><p>Is executed before a new scene is loaded.</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="onCollisionEnter/index.html"><span class="doc">onCollisionEnter</span></a></p></td>
 <td><p>Is executed the frame an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> collides with another’s <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
@@ -1154,7 +1165,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../Scriptable/index.html" class="btn btn-neutral float-left" title="Scriptable" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="onCollisionEnter/index.html" class="btn btn-neutral float-right" title="onCollisionEnter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="onSceneEnter/index.html" class="btn btn-neutral float-right" title="onSceneEnter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

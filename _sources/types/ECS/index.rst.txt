@@ -24,6 +24,8 @@ Functions
 	  - Destroys all :doc:`Entities </entity_component_system/entity/index>` not marked as persistent.
 	* - :doc:`/types/ECS/entityExists/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` exists.
+	* - :doc:`/types/ECS/getEntities/index`
+	  - Returns all the :doc:`Entities </entity_component_system/entity/index>`.
 	* - :doc:`/types/ECS/setEntityName/index`
 	  - Sets a name to an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/ECS/entityHasName/index`
@@ -57,6 +59,7 @@ Functions
 	./destroyAllEntities/index.rst
 	./destroyNonPersistentEntities/index.rst
 	./entityExists/index.rst
+	./getEntities/index.rst
 	./setEntityName/index.rst
 	./entityHasName/index.rst
 	./getEntityName/index.rst
