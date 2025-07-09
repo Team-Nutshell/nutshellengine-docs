@@ -37,8 +37,10 @@ Functions
 	  - Loads a material from a file.
 	* - :doc:`/types/AssetLoaderModuleInterface/loadImage/index`
 	  - Loads an image from a file.
-	* - :doc:`/types/AssetLoaderModuleInterface/loadFont/index`
-	  - Loads a font from a file.
+	* - :doc:`/types/AssetLoaderModuleInterface/loadFontBitmap/index`
+	  - Loads a bitmap font from a file and returns a pointer to the loaded font.
+	* - :doc:`/types/AssetLoaderModuleInterface/loadFontSDF/index`
+	  - Loads a SDF font from a file and returns a pointer to the loaded font.
 
 .. toctree::
 	:hidden:
@@ -47,4 +49,5 @@ Functions
 	./loadModel/index.rst
 	./loadMaterial/index.rst
 	./loadImage/index.rst
-	./loadFont/index.rst
+	./loadFontBitmap/index.rst
+	./loadFontSDF/index.rst
