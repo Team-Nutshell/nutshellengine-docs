@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void drawUIText(FontID fontID, const std::wstring& text, const Math::vec2& position, const Math::vec4& color) = 0;
+	virtual void drawUIText(FontID fontID, const std::wstring& text, const Math::vec2& position, const Math::vec2& scale, const Math::vec4& color) = 0;
 
 Parameters
 ----------
@@ -32,6 +32,9 @@ Parameters
 	* - position
 	  - const :doc:`/types/Math/index`::vec2&
 	  - The position where the text will start to draw.
+	* - scale
+	  - const :doc:`/types/Math/index`::vec2&
+	  - The scale of the text.
 	* - color
 	  - const :doc:`/types/Math/index`::vec4&
 	  - The color and opacity of the text.

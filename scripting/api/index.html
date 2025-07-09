@@ -154,7 +154,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadModel/index.html">loadModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadImage/index.html">loadImage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetLoaderModuleInterface/loadFontSDF/index.html">loadFontSDF</a></li>
 </ul>
 </li>
 </ul>
@@ -168,7 +169,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/createMaterial/index.html">createMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/createFont/index.html">createFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/loadFontSDF/index.html">loadFontSDF</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/createSound/index.html">createSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/loadSound/index.html">loadSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManager/destroyModel/index.html">destroyModel</a></li>
@@ -201,7 +203,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/createMaterial/index.html">createMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/createFont/index.html">createFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadFontSDF/index.html">loadFontSDF</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/createSound/index.html">createSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/loadSound/index.html">loadSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/AssetManagerInterface/destroyModel/index.html">destroyModel</a></li>
@@ -818,7 +821,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/findImageByName/index.html">findImageByName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/getImageName/index.html">getImageName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/createFont/index.html">createFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../types/Script/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/Script/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../types/Script/loadFontSDF/index.html">loadFontSDF</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/getFontID/index.html">getFontID</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/destroyFont/index.html">destroyFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../types/Script/findFontByName/index.html">findFontByName</a></li>
@@ -1194,37 +1198,40 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/createFont/index.html"><span class="doc">createFont</span></a></p></td>
 <td><p>Creates an empty font and returns its pointer.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/loadFont/index.html"><span class="doc">loadFont</span></a></p></td>
-<td><p>Loads a font from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded font.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/loadFontBitmap/index.html"><span class="doc">loadFontBitmap</span></a></p></td>
+<td><p>Loads a bitmap font from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded font.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getFontID/index.html"><span class="doc">getFontID</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/loadFontSDF/index.html"><span class="doc">loadFontSDF</span></a></p></td>
+<td><p>Loads a SDF font from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded font.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/getFontID/index.html"><span class="doc">getFontID</span></a></p></td>
 <td><p>Loads a font in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this font.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/destroyFont/index.html"><span class="doc">destroyFont</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/destroyFont/index.html"><span class="doc">destroyFont</span></a></p></td>
 <td><p>Destroys a font.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/findFontByName/index.html"><span class="doc">findFontByName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/findFontByName/index.html"><span class="doc">findFontByName</span></a></p></td>
 <td><p>Returns the font associated with the name.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/getFontName/index.html"><span class="doc">getFontName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getFontName/index.html"><span class="doc">getFontName</span></a></p></td>
 <td><p>Returns the name of the font.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/createSound/index.html"><span class="doc">createSound</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/createSound/index.html"><span class="doc">createSound</span></a></p></td>
 <td><p>Creates an empty sound and returns its pointer.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/loadSound/index.html"><span class="doc">loadSound</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/loadSound/index.html"><span class="doc">loadSound</span></a></p></td>
 <td><p>Loads a sound from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getSoundID/index.html"><span class="doc">getSoundID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/getSoundID/index.html"><span class="doc">getSoundID</span></a></p></td>
 <td><p>Loads a sound in the <a class="reference internal" href="../../module/audio_module/index.html"><span class="doc">Audio Module</span></a> and returns a unique identifier to this sound.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/destroySound/index.html"><span class="doc">destroySound</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/destroySound/index.html"><span class="doc">destroySound</span></a></p></td>
 <td><p>Destroys a sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/findSoundByName/index.html"><span class="doc">findSoundByName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/findSoundByName/index.html"><span class="doc">findSoundByName</span></a></p></td>
 <td><p>Returns the sound associated with the name.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../../types/Script/getSoundName/index.html"><span class="doc">getSoundName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/Script/getSoundName/index.html"><span class="doc">getSoundName</span></a></p></td>
 <td><p>Returns the name of the sound.</p></td>
 </tr>
 </tbody>

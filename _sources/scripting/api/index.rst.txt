@@ -52,8 +52,10 @@ Functions related to the creation, destruction and loading of resources.
 	  - Returns the name of the image.
 	* - :doc:`/types/Script/createFont/index`
 	  - Creates an empty font and returns its pointer.
-	* - :doc:`/types/Script/loadFont/index`
-	  - Loads a font from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded font.
+	* - :doc:`/types/Script/loadFontBitmap/index`
+	  - Loads a bitmap font from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded font.
+	* - :doc:`/types/Script/loadFontSDF/index`
+	  - Loads a SDF font from a file in the :doc:`/asset_manager/index` and returns a pointer to the loaded font.
 	* - :doc:`/types/Script/getFontID/index`
 	  - Loads a font in the :doc:`/module/graphics_module/index` and returns a unique identifier to this font.
 	* - :doc:`/types/Script/destroyFont/index`

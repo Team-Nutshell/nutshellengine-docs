@@ -154,7 +154,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../AssetLoaderModuleInterface/loadModel/index.html">loadModel</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetLoaderModuleInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetLoaderModuleInterface/loadImage/index.html">loadImage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AssetLoaderModuleInterface/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AssetLoaderModuleInterface/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AssetLoaderModuleInterface/loadFontSDF/index.html">loadFontSDF</a></li>
 </ul>
 </li>
 </ul>
@@ -168,7 +169,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManager/createMaterial/index.html">createMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManager/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManager/createFont/index.html">createFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AssetManager/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AssetManager/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AssetManager/loadFontSDF/index.html">loadFontSDF</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManager/createSound/index.html">createSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManager/loadSound/index.html">loadSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManager/destroyModel/index.html">destroyModel</a></li>
@@ -201,7 +203,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/createMaterial/index.html">createMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/loadMaterial/index.html">loadMaterial</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/createFont/index.html">createFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/loadFontSDF/index.html">loadFontSDF</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/createSound/index.html">createSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/loadSound/index.html">loadSound</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AssetManagerInterface/destroyModel/index.html">destroyModel</a></li>
@@ -818,7 +821,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Script/findImageByName/index.html">findImageByName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getImageName/index.html">getImageName</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/createFont/index.html">createFont</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../Script/loadFont/index.html">loadFont</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/loadFontBitmap/index.html">loadFontBitmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/loadFontSDF/index.html">loadFontSDF</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getFontID/index.html">getFontID</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/destroyFont/index.html">destroyFont</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/findFontByName/index.html">findFontByName</a></li>
@@ -1130,7 +1134,7 @@
 <p>Draws text on the User Interface.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIText</span><span class="p">(</span><span class="n">FontID</span><span class="w"> </span><span class="n">fontID</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">wstring</span><span class="o">&amp;</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIText</span><span class="p">(</span><span class="n">FontID</span><span class="w"> </span><span class="n">fontID</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">wstring</span><span class="o">&amp;</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">scale</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -1156,7 +1160,11 @@
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec2&amp;</p></td>
 <td><p>The position where the text will start to draw.</p></td>
 </tr>
-<tr class="row-odd"><td><p>color</p></td>
+<tr class="row-odd"><td><p>scale</p></td>
+<td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec2&amp;</p></td>
+<td><p>The scale of the text.</p></td>
+</tr>
+<tr class="row-even"><td><p>color</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec4&amp;</p></td>
 <td><p>The color and opacity of the text.</p></td>
 </tr>

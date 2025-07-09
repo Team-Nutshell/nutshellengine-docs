@@ -26,8 +26,10 @@ Functions
 	  - Loads an image from a file and returns a pointer to the loaded image.
 	* - :doc:`/types/AssetManagerInterface/createFont/index`
 	  - Creates an empty font and returns its pointer.
-	* - :doc:`/types/AssetManagerInterface/loadFont/index`
-	  - Loads a font from a file and returns a pointer to the loaded font.
+	* - :doc:`/types/AssetManagerInterface/loadFontBitmap/index`
+	  - Loads a bitmap font from a file and returns a pointer to the loaded font.
+	* - :doc:`/types/AssetManagerInterface/loadFontSDF/index`
+	  - Loads a SDF font from a file and returns a pointer to the loaded font.
 	* - :doc:`/types/AssetManagerInterface/createSound/index`
 	  - Creates an empty sound and returns its pointer.
 	* - :doc:`/types/AssetManagerInterface/loadSound/index`
@@ -77,7 +79,8 @@ Functions
 	./createMaterial/index.rst
 	./loadMaterial/index.rst
 	./createFont/index.rst
-	./loadFont/index.rst
+	./loadFontBitmap/index.rst
+	./loadFontSDF/index.rst
 	./createSound/index.rst
 	./loadSound/index.rst
 	./destroyModel/index.rst
