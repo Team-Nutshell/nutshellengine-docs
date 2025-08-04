@@ -54,6 +54,10 @@ Functions
 	  - Returns the window's opacity.
 	* - :doc:`/types/WindowModuleInterface/getWindowDroppedFiles/index`
 	  - Returns the path to the files dropped on the window.
+	* - :doc:`/types/WindowModuleInterface/setWindowFocus/index`
+	  - Focuses the window.
+	* - :doc:`/types/WindowModuleInterface/isWindowFocused/index`
+	  - Checks if the window is focused.
 	* - :doc:`/types/WindowModuleInterface/pollEvents/index`
 	  - Polls the window system events.
 	* - :doc:`/types/WindowModuleInterface/setWindowTitle/index`
@@ -128,6 +132,8 @@ Functions
 	./setWindowOpacity/index.rst
 	./getWindowOpacity/index.rst
 	./getWindowDroppedFiles/index.rst
+	./setWindowFocus/index.rst
+	./isWindowFocused/index.rst
 	./pollEvents/index.rst
 	./setWindowTitle/index.rst
 	./getWindowTitle/index.rst

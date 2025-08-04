@@ -30,7 +30,7 @@ Parameters
 Returns
 -------
 
-None.
+``true`` if the window is open, else, returns ``false``.
 
 Notes
 -----

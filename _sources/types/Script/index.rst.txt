@@ -247,6 +247,10 @@ Functions
 	  - Returns the window's opacity.
 	* - :doc:`/types/Script/getWindowDroppedFiles/index`
 	  - Returns the path to the files dropped on the window.
+	* - :doc:`/types/Script/setWindowFocus/index`
+	  - Focuses the window.
+	* - :doc:`/types/Script/isWindowFocused/index`
+	  - Checks if the window is focused.
 	* - :doc:`/types/Script/setWindowTitle/index`
 	  - Sets the window's title.
 	* - :doc:`/types/Script/getWindowTitle/index`
@@ -457,6 +461,8 @@ Functions
 	./setWindowOpacity/index.rst
 	./getWindowOpacity/index.rst
 	./getWindowDroppedFiles/index.rst
+	./setWindowFocus/index.rst
+	./isWindowFocused/index.rst
 	./setWindowTitle/index.rst
 	./getWindowTitle/index.rst
 	./setWindowIcon/index.rst
