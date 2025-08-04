@@ -1,16 +1,16 @@
-isWindowOpen
-============
+isWindowFocused
+===============
 
-:doc:`/types/WindowModuleInterface/index`::isWindowOpen
+:doc:`/types/WindowModuleInterface/index`::isWindowFocused
 
-Checks if the window is opened.
+Checks if the window is focused.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	virtual bool isWindowOpen(WindowID windowID) = 0;
+	virtual bool isWindowFocused(WindowID windowID) = 0;
 
 Parameters
 ----------
@@ -30,4 +30,4 @@ Parameters
 Returns
 -------
 
-``true`` if the window is open, else, returns ``false``.
+``true`` if the window is focused, else, returns ``false``.

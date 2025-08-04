@@ -1,16 +1,16 @@
-isWindowOpen
-============
+isWindowFocused
+===============
 
-:doc:`/types/Script/index`::isWindowOpen
+:doc:`/types/Script/index`::isWindowFocused
 
-Checks if the window is opened.
+Checks if the window is focused.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	bool isWindowOpen(WindowID windowID = NTSHENGN_WINDOW_UNKNOWN);
+	bool isWindowFocused(WindowID windowID = NTSHENGN_WINDOW_UNKNOWN);
 
 Parameters
 ----------
@@ -30,7 +30,7 @@ Parameters
 Returns
 -------
 
-``true`` if the window is open, else, returns ``false``.
+``true`` if the window is focused, else, returns ``false``.
 
 Notes
 -----

@@ -252,6 +252,10 @@ Functions related to windows and monitors.
 	  - Returns the window's opacity.
 	* - :doc:`/types/Script/getWindowDroppedFiles/index`
 	  - Returns the path to the files dropped on the window.
+	* - :doc:`/types/Script/setWindowFocus/index`
+	  - Focuses the window.
+	* - :doc:`/types/Script/isWindowFocused/index`
+	  - Checks if the window is focused.
 	* - :doc:`/types/Script/setWindowTitle/index`
 	  - Sets the window's title.
 	* - :doc:`/types/Script/getWindowTitle/index`

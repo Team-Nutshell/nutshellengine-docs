@@ -1,16 +1,16 @@
-isWindowOpen
-============
+setWindowFullscreen
+===================
 
-:doc:`/types/Script/index`::isWindowOpen
+:doc:`/types/Script/index`::setWindowFocus
 
-Checks if the window is opened.
+Focuses the window.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	bool isWindowOpen(WindowID windowID = NTSHENGN_WINDOW_UNKNOWN);
+	void setWindowFocus(WindowID windowID = NTSHENGN_WINDOW_UNKNOWN);
 
 Parameters
 ----------
@@ -25,12 +25,12 @@ Parameters
 	  - Description
 	* - windowID
 	  - :doc:`/types/WindowID/index`
-	  - The window to check. By default, this window will be the main window.
+	  - The window to focus. By default, this window will be the main window.
 
 Returns
 -------
 
-``true`` if the window is open, else, returns ``false``.
+None.
 
 Notes
 -----
