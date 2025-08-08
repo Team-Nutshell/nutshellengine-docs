@@ -21,9 +21,6 @@ Variables
 	* - bitsPerSample
 	  - uint8_t
 	  - The number of bits per sample.
-	* - size
-	  - size_t
-	  - The sound's size.
 	* - data
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<uint8_t>
 	  - The sound's content.

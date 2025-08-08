@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	SoundSourceID playSoundAtPosition(SoundID soundID, const Math::vec3& position, float gain, float pitch);
+	SoundSourceID playSoundAtPosition(SoundID soundID, const Math::vec3& position, float gain = 1.0f, float pitch = 1.0f, bool looping = false);
 
 Parameters
 ----------
@@ -35,6 +35,9 @@ Parameters
 	* - pitch
 	  - float
 	  - The initial sound source pitch.
+	* - looping
+	  - bool
+	  - Whether the sound is looping or not.
 
 Returns
 -------

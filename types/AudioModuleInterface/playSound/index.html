@@ -244,6 +244,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../getSoundSourceGain/index.html">getSoundSourceGain</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../setSoundSourceLooping/index.html">setSoundSourceLooping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../isSoundSourceLooping/index.html">isSoundSourceLooping</a></li>
 </ul>
 </li>
 </ul>
@@ -894,6 +896,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getSoundSourceGain/index.html">getSoundSourceGain</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/setSoundSourcePitch/index.html">setSoundSourcePitch</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getSoundSourcePitch/index.html">getSoundSourcePitch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/setSoundSourceLooping/index.html">setSoundSourceLooping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/isSoundSourceLooping/index.html">isSoundSourceLooping</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/intersect/index.html">intersect</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/raycast/index.html">raycast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/raycastAll/index.html">raycastAll</a></li>
@@ -1138,7 +1142,7 @@
 <p>Plays a global sound and returns a unique identifier to this sound source.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="n">SoundSourceID</span><span class="w"> </span><span class="nf">playSound</span><span class="p">(</span><span class="n">SoundID</span><span class="w"> </span><span class="n">soundID</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">gain</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">pitch</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="n">SoundSourceID</span><span class="w"> </span><span class="nf">playSound</span><span class="p">(</span><span class="n">SoundID</span><span class="w"> </span><span class="n">soundID</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">gain</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">pitch</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">looping</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -1163,6 +1167,10 @@
 <tr class="row-even"><td><p>pitch</p></td>
 <td><p>float</p></td>
 <td><p>The initial sound source pitch.</p></td>
+</tr>
+<tr class="row-odd"><td><p>looping</p></td>
+<td><p>bool</p></td>
+<td><p>Whether the sound is looping or not.</p></td>
 </tr>
 </tbody>
 </table>

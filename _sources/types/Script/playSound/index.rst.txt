@@ -1,7 +1,7 @@
 playSound
 =========
 
-:doc:`/types/AudioModuleInterface/index`::playSound
+:doc:`/types/Script/index`::playSound
 
 Plays a global sound and returns a unique identifier to this sound source.
 
@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual SoundSourceID playSound(SoundID soundID, float gain, float pitch) = 0;
+	SoundSourceID playSound(SoundID soundID, float gain = 1.0f, float pitch = 1.0f, bool looping = false);
 
 Parameters
 ----------
@@ -32,6 +32,9 @@ Parameters
 	* - pitch
 	  - float
 	  - The initial sound source pitch.
+	* - looping
+	  - bool
+	  - Whether the sound is looping or not.
 
 Returns
 -------
