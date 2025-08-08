@@ -307,6 +307,10 @@ Functions
 	  - Sets the pitch of a sound source.
 	* - :doc:`/types/Script/getSoundSourcePitch/index`
 	  - Returns the pitch of a sound source.
+	* - :doc:`/types/Script/setSoundSourceLooping/index`
+	  - Enables or disables looping on a sound source.
+	* - :doc:`/types/Script/isSoundSourceLooping/index`
+	  - Checks if a sound source is looping.
 	* - :doc:`/types/Script/playAnimation/index`
 	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/pauseAnimation/index`
@@ -488,6 +492,8 @@ Functions
 	./getSoundSourceGain/index.rst
 	./setSoundSourcePitch/index.rst
 	./getSoundSourcePitch/index.rst
+	./setSoundSourceLooping/index.rst
+	./isSoundSourceLooping/index.rst
 
 	./intersect/index.rst
 	./raycast/index.rst

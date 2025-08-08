@@ -26,10 +26,6 @@
 	  - Number
 	  - The number of bits per sample.
 	  - Any integer number.
-	* - size
-	  - Number
-	  - The sound's size.
-	  - Any integer number.
 	* - data
 	  - Array of Numbers
 	  - The content of the sound.

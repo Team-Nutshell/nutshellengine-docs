@@ -42,6 +42,10 @@ Functions
 	  - Sets the pitch of a sound source.
 	* - :doc:`/types/AudioModuleInterface/getSoundSourcePitch/index`
 	  - Returns the pitch of a sound source.
+	* - :doc:`/types/AudioModuleInterface/setSoundSourceLooping/index`
+	  - Enables or disables looping on a sound source.
+	* - :doc:`/types/AudioModuleInterface/isSoundSourceLooping/index`
+	  - Checks if a sound source is looping.
 
 .. toctree::
 	:hidden:
@@ -60,3 +64,5 @@ Functions
 	./getSoundSourceGain/index.rst
 	./setSoundSourcePitch/index.rst
 	./getSoundSourcePitch/index.rst
+	./setSoundSourceLooping/index.rst
+	./isSoundSourceLooping/index.rst
