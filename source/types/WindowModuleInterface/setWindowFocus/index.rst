@@ -1,5 +1,5 @@
-setWindowFullscreen
-===================
+setWindowFocus
+==============
 
 :doc:`/types/WindowModuleInterface/index`::setWindowFocus
 
