@@ -1,5 +1,5 @@
-setWindowFullscreen
-===================
+setWindowFocus
+==============
 
 :doc:`/types/Script/index`::setWindowFocus
 
