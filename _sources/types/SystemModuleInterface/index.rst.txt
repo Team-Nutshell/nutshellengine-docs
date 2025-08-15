@@ -26,6 +26,9 @@ Variables
 	* - audioModule
 	  - :doc:`/types/AudioModuleInterface/index`\*
 	  - Memory address to the :doc:`/module/audio_module/index`.
+	* - platformModule
+	  - :doc:`/types/PlatformModuleInterface/index`\*
+	  - Memory address to the :doc:`/module/platform_module/index`.
 	* - ecs
 	  - :doc:`/types/ECSInterface/index`\*
 	  - Memory address to the :doc:`/entity_component_system/index`.

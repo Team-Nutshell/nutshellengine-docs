@@ -72,6 +72,7 @@
 <li class="toctree-l3"><a class="reference internal" href="scripting/api/index.html#audio">Audio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scripting/api/index.html#animation">Animation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scripting/api/index.html#user-interface">User Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scripting/api/index.html#platform">Platform</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scripting/api/index.html#frame-limiter">Frame Limiter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scripting/api/index.html#job-system">Job System</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scripting/api/index.html#networking">Networking</a></li>
@@ -86,11 +87,13 @@
 <li class="toctree-l2"><a class="reference internal" href="module/index.html#audio-module">Audio Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module/index.html#graphics-module">Graphics Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module/index.html#physics-module">Physics Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module/index.html#platform-module">Platform Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module/index.html#window-module">Window Module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="module/asset_loader_module/index.html">Asset Loader Module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="module/audio_module/index.html">Audio Module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="module/graphics_module/index.html">Graphics Module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="module/physics_module/index.html">Physics Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="module/platform_module/index.html">Platform Module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="module/window_module/index.html">Window Module</a></li>
 </ul>
 </li>
@@ -715,6 +718,29 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="types/PlatformModuleInterface/index.html">PlatformModuleInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="types/PlatformModuleInterface/index.html#variables">Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/PlatformModuleInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="types/PlatformModuleInterface/getUserInfo/index.html">getUserInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/PlatformModuleInterface/getUserFriendsInfo/index.html">getUserFriendsInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/PlatformModuleInterface/unlockAchievement/index.html">unlockAchievement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/PlatformModuleInterface/lockAchievement/index.html">lockAchievement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/PlatformModuleInterface/isAchievementUnlocked/index.html">isAchievementUnlocked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/PlatformModuleInterface/showOverlay/index.html">showOverlay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/PlatformModuleInterface/isOverlayVisible/index.html">isOverlayVisible</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="types/PlatformUserInfo/index.html">PlatformUserInfo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="types/PlatformUserInfo/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="types/PlatformUserState/index.html">PlatformUserState</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="types/PlatformUserState/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/PlatformUserState/index.html#notes">Notes</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="types/Profiler/index.html">Profiler</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="types/Profiler/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="types/Profiler/start/index.html">start</a></li>
@@ -915,6 +941,13 @@
 <li class="toctree-l4"><a class="reference internal" href="types/Script/drawUILine/index.html">drawUILine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="types/Script/drawUIRectangle/index.html">drawUIRectangle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="types/Script/drawUIImage/index.html">drawUIImage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/Script/getPlatformUserInfo/index.html">getPlatformUserInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/Script/getPlatformUserFriendsInfo/index.html">getPlatformUserFriendsInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/Script/unlockPlatformAchievement/index.html">unlockPlatformAchievement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/Script/lockPlatformAchievement/index.html">lockPlatformAchievement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/Script/isPlatformAchievementUnlocked/index.html">isPlatformAchievementUnlocked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/Script/showPlatformOverlay/index.html">showPlatformOverlay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="types/Script/isPlatformOverlayVisible/index.html">isPlatformOverlayVisible</a></li>
 <li class="toctree-l4"><a class="reference internal" href="types/Script/setMaxFPS/index.html">setMaxFPS</a></li>
 <li class="toctree-l4"><a class="reference internal" href="types/Script/getMaxFPS/index.html">getMaxFPS</a></li>
 <li class="toctree-l4"><a class="reference internal" href="types/Script/executeJob/index.html">executeJob</a></li>

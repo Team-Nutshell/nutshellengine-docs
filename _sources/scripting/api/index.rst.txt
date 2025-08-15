@@ -401,6 +401,32 @@ Functions related to the User Interface.
 	* - :doc:`/types/Script/drawUIImage/index`
 	  - Draws an image on the User Interface.
 
+Platform
+--------
+
+Functions related to the platform.
+
+.. list-table::
+	:width: 100%
+	:widths: 30 70
+	:header-rows: 1
+	:class: code-table
+
+	* - :doc:`/types/Script/getPlatformUserInfo/index`
+	  - Returns the user's information on the platform.
+	* - :doc:`/types/Script/getPlatformUserFriendsInfo/index`
+	  - Returns the list of the user's friends on the platform.
+	* - :doc:`/types/Script/unlockPlatformAchievement/index`
+	  - Unlocks an achievement.
+	* - :doc:`/types/Script/lockPlatformAchievement/index`
+	  - Locks an achievement.
+	* - :doc:`/types/Script/isPlatformAchievementUnlocked/index`
+	  - Checks if an achievement has been unlocked.
+	* - :doc:`/types/Script/showPlatformOverlay/index`
+	  - Show the platform's overlay.
+	* - :doc:`/types/Script/isPlatformOverlayVisible/index`
+	  - Checks if the platform's overlay is visible.
+
 Frame Limiter
 -------------
 
