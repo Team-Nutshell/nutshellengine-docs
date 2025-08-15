@@ -1,7 +1,7 @@
 init
 ====
 
-:doc:`/types/Script/index`::init
+:doc:`/types/ModuleInterface/index`::init
 
 Initialization function executed once, at program's launch.
 
@@ -25,4 +25,4 @@ None.
 Notes
 -----
 
-This function must be overloaded when creating a :doc:`/types/SystemModuleInterface/index` and is executed once, when the program launches.
+This function must be overloaded when creating a :doc:`/types/ModuleInterface/index` and is executed once, when the program launches.

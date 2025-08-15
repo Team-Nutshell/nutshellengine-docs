@@ -47,19 +47,10 @@ Functions
 
 	* - Name
 	  - Description
-	* - :doc:`/types/SystemModuleInterface/init/index`
-	  - Initialization function executed once, at program's launch.
-	* - :doc:`/types/SystemModuleInterface/update/index`
-	  - Update function executed once per frame.
-	* - :doc:`/types/SystemModuleInterface/destroy/index`
-	  - Destruction function executed once, at program's end.
 	* - :doc:`/types/SystemModuleInterface/getComponentMask/index`
 	  - Returns the tracked :doc:`Components </types/Component/index>`.
 
 .. toctree::
 	:hidden:
 
-	./init/index.rst
-	./update/index.rst
-	./destroy/index.rst
 	./getComponentMask/index.rst

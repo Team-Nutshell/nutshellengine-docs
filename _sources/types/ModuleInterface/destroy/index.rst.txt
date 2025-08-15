@@ -1,7 +1,7 @@
 destroy
 =======
 
-:doc:`/types/SystemModuleInterface/index`::destroy
+:doc:`/types/ModuleInterface/index`::destroy
 
 Destruction function executed once, at program's end.
 
@@ -25,4 +25,4 @@ None.
 Notes
 -----
 
-This function must be overloaded when creating a :doc:`/types/Script/index` and is executed once, at program's end.
+This function must be overloaded when creating a :doc:`/types/ModuleInterface/index` and is executed once, at program's end.

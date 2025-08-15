@@ -33,6 +33,12 @@ Functions
 	  - Returns the :doc:`/module/index`'s :doc:`/types/ModuleType/index`.
 	* - :doc:`/types/ModuleInterface/getName/index`
 	  - Returns the :doc:`/module/index`'s name.
+	* - :doc:`/types/SystemModuleInterface/init/index`
+	  - Initialization function executed once, at program's launch.
+	* - :doc:`/types/SystemModuleInterface/update/index`
+	  - Update function executed once per frame.
+	* - :doc:`/types/SystemModuleInterface/destroy/index`
+	  - Destruction function executed once, at program's end.
 
 Notes
 -----
@@ -45,3 +51,6 @@ ModuleInterface is the base class of all :doc:`Modules </module/index>`.
 	./constructor/index.rst
 	./getType/index.rst
 	./getName/index.rst
+	./init/index.rst
+	./update/index.rst
+	./destroy/index.rst
