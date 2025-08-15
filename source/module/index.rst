@@ -31,6 +31,13 @@ See :doc:`/module/physics_module/index`.
 
 Implements the **physics engine and collision detection system**.
 
+Platform Module
+---------------
+
+See :doc:`/module/platform_module/index`.
+
+Implements the **interface with the distribution platform**.
+
 Window Module
 -------------
 
@@ -45,4 +52,5 @@ Implements the **window and input systems**.
 	./audio_module/index.rst
 	./graphics_module/index.rst
 	./physics_module/index.rst
+	./platform_module/index.rst
 	./window_module/index.rst

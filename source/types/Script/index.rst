@@ -31,6 +31,9 @@ Variables
 	* - audioModule
 	  - :doc:`/types/AudioModuleInterface/index`\*
 	  - Memory address to the :doc:`/module/audio_module/index`.
+	* - platformModule
+	  - :doc:`/types/PlatformModuleInterface/index`\*
+	  - Memory address to the :doc:`/module/platform_module/index`.
 	* - ecs
 	  - :doc:`/types/ECSInterface/index`\*
 	  - Memory address to the :doc:`/entity_component_system/index`.
@@ -329,6 +332,20 @@ Functions
 	  - Draws a rectangle on the User Interface.
 	* - :doc:`/types/Script/drawUIImage/index`
 	  - Draws an image on the User Interface.
+	* - :doc:`/types/Script/getPlatformUserInfo/index`
+	  - Returns the user's information on the platform.
+	* - :doc:`/types/Script/getPlatformUserFriendsInfo/index`
+	  - Returns the list of the user's friends on the platform.
+	* - :doc:`/types/Script/unlockPlatformAchievement/index`
+	  - Unlocks an achievement.
+	* - :doc:`/types/Script/lockPlatformAchievement/index`
+	  - Locks an achievement.
+	* - :doc:`/types/Script/isPlatformAchievementUnlocked/index`
+	  - Checks if an achievement has been unlocked.
+	* - :doc:`/types/Script/showPlatformOverlay/index`
+	  - Show the platform's overlay.
+	* - :doc:`/types/Script/isPlatformOverlayVisible/index`
+	  - Checks if the platform's overlay is visible.
 	* - :doc:`/types/Script/setMaxFPS/index`
 	  - Sets the maximum number of frames per second.
 	* - :doc:`/types/Script/getMaxFPS/index`
@@ -511,6 +528,14 @@ Functions
 	./drawUILine/index.rst
 	./drawUIRectangle/index.rst
 	./drawUIImage/index.rst
+
+	./getPlatformUserInfo/index.rst
+	./getPlatformUserFriendsInfo/index.rst
+	./unlockPlatformAchievement/index.rst
+	./lockPlatformAchievement/index.rst
+	./isPlatformAchievementUnlocked/index.rst
+	./showPlatformOverlay/index.rst
+	./isPlatformOverlayVisible/index.rst
 
 	./setMaxFPS/index.rst
 	./getMaxFPS/index.rst

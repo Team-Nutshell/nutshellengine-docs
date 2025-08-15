@@ -81,6 +81,9 @@ Types
 	./Octree/index.rst
 	./ParticleEmitter/index.rst
 	./PhysicsModuleInterface/index.rst
+	./PlatformModuleInterface/index.rst
+	./PlatformUserInfo/index.rst
+	./PlatformUserState/index.rst
 	./Profiler/index.rst
 	./ProfilerInterface/index.rst
 	./ProfilerResultNode/index.rst
