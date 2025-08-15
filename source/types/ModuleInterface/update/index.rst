@@ -1,7 +1,7 @@
 update
 ======
 
-:doc:`/types/SystemModuleInterface/index`::update
+:doc:`/types/ModuleInterface/index`::update
 
 Update function executed once per frame.
 
@@ -35,4 +35,4 @@ None.
 Notes
 -----
 
-This function must be overloaded when creating a :doc:`/types/SystemModuleInterface/index` and is executed once per frame.
+This function must be overloaded when creating a :doc:`/types/ModuleInterface/index` and is executed once per frame.
