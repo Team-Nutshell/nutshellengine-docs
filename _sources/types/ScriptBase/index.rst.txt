@@ -16,6 +16,8 @@ Functions
 	  - Is executed after a new scene is loaded.
 	* - :doc:`/types/ScriptBase/onSceneExit/index`
 	  - Is executed before a new scene is loaded.
+	* - :doc:`/types/ScriptBase/physicsUpdate/index`
+	  - Is executed each time the :doc:`/module/physics_module/index` does a physics iteration.
 	* - :doc:`/types/ScriptBase/onCollisionEnter/index`
 	  - Is executed the frame an :doc:`/entity_component_system/entity/index`'s :doc:`/types/Collidable/index` :doc:`/entity_component_system/component/index` collides with another's :doc:`/entity_component_system/entity/index`'s :doc:`/types/Collidable/index` :doc:`/entity_component_system/component/index`.
 	* - :doc:`/types/ScriptBase/onCollisionStill/index`
@@ -28,6 +30,7 @@ Functions
 
 	./onSceneEnter/index.rst
 	./onSceneExit/index.rst
+	./physicsUpdate/index.rst
 	./onCollisionEnter/index.rst
 	./onCollisionStill/index.rst
 	./onCollisionExit/index.rst
