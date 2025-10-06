@@ -70,6 +70,8 @@ Functions
 	  - Update function executed once per frame.
 	* - :doc:`/types/Script/destroy/index`
 	  - Destruction function executed once, when the :doc:`/types/Script/index` is destroyed.
+	* - :doc:`/types/Script/getCommandLine/index`
+	  - Returns the parsed command line.
 	* - :doc:`/types/Script/createModel/index`
 	  - Creates an empty model and returns its pointer.
 	* - :doc:`/types/Script/loadModel/index`
@@ -387,6 +389,8 @@ Functions
 	./init/index.rst
 	./update/index.rst
 	./destroy/index.rst
+	
+	./getCommandLine/index.rst
 
 	./goToScene/index.rst
 	./getCurrentScenePath/index.rst

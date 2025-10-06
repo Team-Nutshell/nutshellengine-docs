@@ -62,6 +62,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../scripting/index.html">Scripting</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../scripting/scripting_basics/index.html">Scripting Basics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../scripting/api/index.html">Scripting API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#command-line">Command Line</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#resources">Resources</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#scenes">Scenes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../scripting/api/index.html#entity-component-system">Entity-Component-System</a></li>
@@ -810,6 +811,7 @@
 <li class="toctree-l4"><a class="reference internal" href="init/index.html">init</a></li>
 <li class="toctree-l4"><a class="reference internal" href="update/index.html">update</a></li>
 <li class="toctree-l4"><a class="reference internal" href="destroy/index.html">destroy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getCommandLine/index.html">getCommandLine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="goToScene/index.html">goToScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="getCurrentScenePath/index.html">getCurrentScenePath</a></li>
 <li class="toctree-l4"><a class="reference internal" href="createEntity/index.html">createEntity</a></li>
@@ -1256,469 +1258,472 @@
 <tr class="row-even"><td><p><a class="reference internal" href="destroy/index.html"><span class="doc">destroy</span></a></p></td>
 <td><p>Destruction function executed once, when the <a class="reference internal" href="#"><span class="doc">Script</span></a> is destroyed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="createModel/index.html"><span class="doc">createModel</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getCommandLine/index.html"><span class="doc">getCommandLine</span></a></p></td>
+<td><p>Returns the parsed command line.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="createModel/index.html"><span class="doc">createModel</span></a></p></td>
 <td><p>Creates an empty model and returns its pointer.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="loadModel/index.html"><span class="doc">loadModel</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="loadModel/index.html"><span class="doc">loadModel</span></a></p></td>
 <td><p>Loads a model from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded model.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getMeshID/index.html"><span class="doc">getMeshID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getMeshID/index.html"><span class="doc">getMeshID</span></a></p></td>
 <td><p>Loads a mesh in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this mesh.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="destroyModel/index.html"><span class="doc">destroyModel</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroyModel/index.html"><span class="doc">destroyModel</span></a></p></td>
 <td><p>Destroys a model.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="findModelByName/index.html"><span class="doc">findModelByName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="findModelByName/index.html"><span class="doc">findModelByName</span></a></p></td>
 <td><p>Returns the model associated with the name.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getModelName/index.html"><span class="doc">getModelName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getModelName/index.html"><span class="doc">getModelName</span></a></p></td>
 <td><p>Returns the name of the model.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="createMaterial/index.html"><span class="doc">createMaterial</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="createMaterial/index.html"><span class="doc">createMaterial</span></a></p></td>
 <td><p>Creates an empty material and returns its pointer.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="loadMaterial/index.html"><span class="doc">loadMaterial</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="loadMaterial/index.html"><span class="doc">loadMaterial</span></a></p></td>
 <td><p>Loads a material from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded material.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="destroyMaterial/index.html"><span class="doc">destroyMaterial</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="destroyMaterial/index.html"><span class="doc">destroyMaterial</span></a></p></td>
 <td><p>Destroys a material.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="findMaterialByName/index.html"><span class="doc">findMaterialByName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="findMaterialByName/index.html"><span class="doc">findMaterialByName</span></a></p></td>
 <td><p>Returns the material associated with the name.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getMaterialName/index.html"><span class="doc">getMaterialName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getMaterialName/index.html"><span class="doc">getMaterialName</span></a></p></td>
 <td><p>Returns the name of the material.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="createImage/index.html"><span class="doc">createImage</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="createImage/index.html"><span class="doc">createImage</span></a></p></td>
 <td><p>Creates an empty image and returns its pointer.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="loadImage/index.html"><span class="doc">loadImage</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="loadImage/index.html"><span class="doc">loadImage</span></a></p></td>
 <td><p>Loads an image from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded image.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getImageID/index.html"><span class="doc">getImageID</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getImageID/index.html"><span class="doc">getImageID</span></a></p></td>
 <td><p>Loads an image in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this image.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="destroyImage/index.html"><span class="doc">destroyImage</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="destroyImage/index.html"><span class="doc">destroyImage</span></a></p></td>
 <td><p>Destroys an image.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="findImageByName/index.html"><span class="doc">findImageByName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="findImageByName/index.html"><span class="doc">findImageByName</span></a></p></td>
 <td><p>Returns the image associated with the name.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getImageName/index.html"><span class="doc">getImageName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getImageName/index.html"><span class="doc">getImageName</span></a></p></td>
 <td><p>Returns the name of the image.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="createFont/index.html"><span class="doc">createFont</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="createFont/index.html"><span class="doc">createFont</span></a></p></td>
 <td><p>Creates an empty font and returns its pointer.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="loadFontBitmap/index.html"><span class="doc">loadFontBitmap</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="loadFontBitmap/index.html"><span class="doc">loadFontBitmap</span></a></p></td>
 <td><p>Loads a bitmap font from a file and returns a pointer to the loaded font.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="loadFontSDF/index.html"><span class="doc">loadFontSDF</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="loadFontSDF/index.html"><span class="doc">loadFontSDF</span></a></p></td>
 <td><p>Loads a SDF font from a file and returns a pointer to the loaded font.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getFontID/index.html"><span class="doc">getFontID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getFontID/index.html"><span class="doc">getFontID</span></a></p></td>
 <td><p>Loads a font in the <a class="reference internal" href="../../module/graphics_module/index.html"><span class="doc">Graphics Module</span></a> and returns a unique identifier to this font.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="destroyFont/index.html"><span class="doc">destroyFont</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroyFont/index.html"><span class="doc">destroyFont</span></a></p></td>
 <td><p>Destroys a font.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="findFontByName/index.html"><span class="doc">findFontByName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="findFontByName/index.html"><span class="doc">findFontByName</span></a></p></td>
 <td><p>Returns the font associated with the name.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getFontName/index.html"><span class="doc">getFontName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getFontName/index.html"><span class="doc">getFontName</span></a></p></td>
 <td><p>Returns the name of the font.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="createSound/index.html"><span class="doc">createSound</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="createSound/index.html"><span class="doc">createSound</span></a></p></td>
 <td><p>Creates an empty sound and returns its pointer.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="loadSound/index.html"><span class="doc">loadSound</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="loadSound/index.html"><span class="doc">loadSound</span></a></p></td>
 <td><p>Loads a sound from a file in the <a class="reference internal" href="../../asset_manager/index.html"><span class="doc">Asset Manager</span></a> and returns a pointer to the loaded sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getSoundID/index.html"><span class="doc">getSoundID</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getSoundID/index.html"><span class="doc">getSoundID</span></a></p></td>
 <td><p>Loads a sound in the <a class="reference internal" href="../../module/audio_module/index.html"><span class="doc">Audio Module</span></a> and returns a unique identifier to this sound.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="destroySound/index.html"><span class="doc">destroySound</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroySound/index.html"><span class="doc">destroySound</span></a></p></td>
 <td><p>Destroys a sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="findSoundByName/index.html"><span class="doc">findSoundByName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="findSoundByName/index.html"><span class="doc">findSoundByName</span></a></p></td>
 <td><p>Returns the sound associated with the name.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getSoundName/index.html"><span class="doc">getSoundName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getSoundName/index.html"><span class="doc">getSoundName</span></a></p></td>
 <td><p>Returns the name of the sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="goToScene/index.html"><span class="doc">goToScene</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="goToScene/index.html"><span class="doc">goToScene</span></a></p></td>
 <td><p>Loads a scene from a file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getCurrentScenePath/index.html"><span class="doc">getCurrentScenePath</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getCurrentScenePath/index.html"><span class="doc">getCurrentScenePath</span></a></p></td>
 <td><p>Returns the current scene’s path.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="createEntity/index.html"><span class="doc">createEntity</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="createEntity/index.html"><span class="doc">createEntity</span></a></p></td>
 <td><p>Creates a new <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="destroyEntity/index.html"><span class="doc">destroyEntity</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroyEntity/index.html"><span class="doc">destroyEntity</span></a></p></td>
 <td><p>Destroys an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="destroyAllEntities/index.html"><span class="doc">destroyAllEntities</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="destroyAllEntities/index.html"><span class="doc">destroyAllEntities</span></a></p></td>
 <td><p>Destroys all <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="destroyNonPersistentEntities/index.html"><span class="doc">destroyNonPersistentEntities</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroyNonPersistentEntities/index.html"><span class="doc">destroyNonPersistentEntities</span></a></p></td>
 <td><p>Destroys all <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a> not marked as persistent.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="entityExists/index.html"><span class="doc">entityExists</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="entityExists/index.html"><span class="doc">entityExists</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> exists.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getEntities/index.html"><span class="doc">getEntities</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getEntities/index.html"><span class="doc">getEntities</span></a></p></td>
 <td><p>Returns all the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setEntityName/index.html"><span class="doc">setEntityName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setEntityName/index.html"><span class="doc">setEntityName</span></a></p></td>
 <td><p>Sets a name to an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="entityHasName/index.html"><span class="doc">entityHasName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="entityHasName/index.html"><span class="doc">entityHasName</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> has a name.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getEntityName/index.html"><span class="doc">getEntityName</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getEntityName/index.html"><span class="doc">getEntityName</span></a></p></td>
 <td><p>Returns the name of the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="findEntityByName/index.html"><span class="doc">findEntityByName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="findEntityByName/index.html"><span class="doc">findEntityByName</span></a></p></td>
 <td><p>Returns the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> associated with the name.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setEntityPersistence/index.html"><span class="doc">setEntityPersistence</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setEntityPersistence/index.html"><span class="doc">setEntityPersistence</span></a></p></td>
 <td><p>Marks or unmarks the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> as persistent.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isEntityPersistent/index.html"><span class="doc">isEntityPersistent</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isEntityPersistent/index.html"><span class="doc">isEntityPersistent</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is persistent.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="addEntityToEntityGroup/index.html"><span class="doc">addEntityToEntityGroup</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="addEntityToEntityGroup/index.html"><span class="doc">addEntityToEntityGroup</span></a></p></td>
 <td><p>Adds an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> to an Entity Group.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="removeEntityFromEntityGroup/index.html"><span class="doc">removeEntityFromEntityGroup</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="removeEntityFromEntityGroup/index.html"><span class="doc">removeEntityFromEntityGroup</span></a></p></td>
 <td><p>Removes an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> from an Entity Group.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="entityGroupExists/index.html"><span class="doc">entityGroupExists</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="entityGroupExists/index.html"><span class="doc">entityGroupExists</span></a></p></td>
 <td><p>Checks if an Entity Group exists.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isEntityInEntityGroup/index.html"><span class="doc">isEntityInEntityGroup</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isEntityInEntityGroup/index.html"><span class="doc">isEntityInEntityGroup</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is in an Entity Group.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getEntitiesInEntityGroup/index.html"><span class="doc">getEntitiesInEntityGroup</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getEntitiesInEntityGroup/index.html"><span class="doc">getEntitiesInEntityGroup</span></a></p></td>
 <td><p>Returns the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a> in an Entity Group.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getEntityGroupsOfEntity/index.html"><span class="doc">getEntityGroupsOfEntity</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getEntityGroupsOfEntity/index.html"><span class="doc">getEntityGroupsOfEntity</span></a></p></td>
 <td><p>Returns the Entity Groups of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="addEntityComponent/index.html"><span class="doc">addEntityComponent</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="addEntityComponent/index.html"><span class="doc">addEntityComponent</span></a></p></td>
 <td><p>Adds a <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> to an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="removeEntityComponent/index.html"><span class="doc">removeEntityComponent</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="removeEntityComponent/index.html"><span class="doc">removeEntityComponent</span></a></p></td>
 <td><p>Removes a <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> from an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="hasEntityComponent/index.html"><span class="doc">hasEntityComponent</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="hasEntityComponent/index.html"><span class="doc">hasEntityComponent</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> has a certain <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getEntityComponent/index.html"><span class="doc">getEntityComponent</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getEntityComponent/index.html"><span class="doc">getEntityComponent</span></a></p></td>
 <td><p>Returns an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getKeyState/index.html"><span class="doc">getKeyState</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getKeyState/index.html"><span class="doc">getKeyState</span></a></p></td>
 <td><p>Returns the state of a keyboard key.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getMouseButtonState/index.html"><span class="doc">getMouseButtonState</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getMouseButtonState/index.html"><span class="doc">getMouseButtonState</span></a></p></td>
 <td><p>Returns the state of a mouse button.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setCursorPosition/index.html"><span class="doc">setCursorPosition</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setCursorPosition/index.html"><span class="doc">setCursorPosition</span></a></p></td>
 <td><p>Sets the mouse cursor position.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getCursorPositionX/index.html"><span class="doc">getCursorPositionX</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getCursorPositionX/index.html"><span class="doc">getCursorPositionX</span></a></p></td>
 <td><p>Returns the mouse cursor horizontal position.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getCursorPositionY/index.html"><span class="doc">getCursorPositionY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getCursorPositionY/index.html"><span class="doc">getCursorPositionY</span></a></p></td>
 <td><p>Returns the mouse cursor vertical position.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getMouseScrollOffsetX/index.html"><span class="doc">getMouseScrollOffsetX</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getMouseScrollOffsetX/index.html"><span class="doc">getMouseScrollOffsetX</span></a></p></td>
 <td><p>Returns the horizontal mouse scroll offset between the last and current frame.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getMouseScrollOffsetY/index.html"><span class="doc">getMouseScrollOffsetY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getMouseScrollOffsetY/index.html"><span class="doc">getMouseScrollOffsetY</span></a></p></td>
 <td><p>Returns the vertical mouse scroll offset between the last and current frame.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setCursorVisibility/index.html"><span class="doc">setCursorVisibility</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setCursorVisibility/index.html"><span class="doc">setCursorVisibility</span></a></p></td>
 <td><p>Sets the mouse cursor’s visibility.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="isCursorVisible/index.html"><span class="doc">isCursorVisible</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="isCursorVisible/index.html"><span class="doc">isCursorVisible</span></a></p></td>
 <td><p>Checks if the cursor is visible.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getConnectedGamepads/index.html"><span class="doc">getConnectedGamepads</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getConnectedGamepads/index.html"><span class="doc">getConnectedGamepads</span></a></p></td>
 <td><p>Returns the list of connected gamepads.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getGamepadButtonState/index.html"><span class="doc">getGamepadButtonState</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getGamepadButtonState/index.html"><span class="doc">getGamepadButtonState</span></a></p></td>
 <td><p>Returns the state of a gamepad button.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getGamepadStickAxisX/index.html"><span class="doc">getGamepadStickAxisX</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getGamepadStickAxisX/index.html"><span class="doc">getGamepadStickAxisX</span></a></p></td>
 <td><p>Returns the value of the stick’s horizontal axis, with -1.0 being left, 0.0 neutral and 1.0 right.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getGamepadStickAxisY/index.html"><span class="doc">getGamepadStickAxisY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getGamepadStickAxisY/index.html"><span class="doc">getGamepadStickAxisY</span></a></p></td>
 <td><p>Returns the value of the stick’s vertical axis, with -1.0 being up, 0.0 neutral and 1.0 down.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getGamepadLeftTrigger/index.html"><span class="doc">getGamepadLeftTrigger</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getGamepadLeftTrigger/index.html"><span class="doc">getGamepadLeftTrigger</span></a></p></td>
 <td><p>Returns the value of the stick’s left trigger, with 0.0 being neutral and 1.0 being fully pressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getGamepadRightTrigger/index.html"><span class="doc">getGamepadRightTrigger</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getGamepadRightTrigger/index.html"><span class="doc">getGamepadRightTrigger</span></a></p></td>
 <td><p>Returns the value of the stick’s right trigger, with 0.0 being neutral and 1.0 being fully pressed.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getGamepadName/index.html"><span class="doc">getGamepadName</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getGamepadName/index.html"><span class="doc">getGamepadName</span></a></p></td>
 <td><p>Returns the name of the gamepad.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="openWindow/index.html"><span class="doc">openWindow</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="openWindow/index.html"><span class="doc">openWindow</span></a></p></td>
 <td><p>Opens a new window.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isWindowOpen/index.html"><span class="doc">isWindowOpen</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isWindowOpen/index.html"><span class="doc">isWindowOpen</span></a></p></td>
 <td><p>Checks if the window is opened.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="closeWindow/index.html"><span class="doc">closeWindow</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="closeWindow/index.html"><span class="doc">closeWindow</span></a></p></td>
 <td><p>Closes the window. Closing the main window closes the application.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getMainWindowID/index.html"><span class="doc">getMainWindowID</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getMainWindowID/index.html"><span class="doc">getMainWindowID</span></a></p></td>
 <td><p>Returns the unique identifier of the main window.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="windowCount/index.html"><span class="doc">windowCount</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="windowCount/index.html"><span class="doc">windowCount</span></a></p></td>
 <td><p>Returns the number of opened windows.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setWindowSize/index.html"><span class="doc">setWindowSize</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setWindowSize/index.html"><span class="doc">setWindowSize</span></a></p></td>
 <td><p>Sets the size of the window.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getWindowWidth/index.html"><span class="doc">getWindowWidth</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getWindowWidth/index.html"><span class="doc">getWindowWidth</span></a></p></td>
 <td><p>Returns the width of the window.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getWindowHeight/index.html"><span class="doc">getWindowHeight</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getWindowHeight/index.html"><span class="doc">getWindowHeight</span></a></p></td>
 <td><p>Returns the height of the window.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setWindowPosition/index.html"><span class="doc">setWindowPosition</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setWindowPosition/index.html"><span class="doc">setWindowPosition</span></a></p></td>
 <td><p>Sets the position of the window on the screen.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getWindowPositionX/index.html"><span class="doc">getWindowPositionX</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getWindowPositionX/index.html"><span class="doc">getWindowPositionX</span></a></p></td>
 <td><p>Returns the horizontal position of the window on the screen.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getWindowPositionY/index.html"><span class="doc">getWindowPositionY</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getWindowPositionY/index.html"><span class="doc">getWindowPositionY</span></a></p></td>
 <td><p>Returns the vertical position of the window on the screen.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setWindowFullscreen/index.html"><span class="doc">setWindowFullscreen</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setWindowFullscreen/index.html"><span class="doc">setWindowFullscreen</span></a></p></td>
 <td><p>Puts the window in fullscreen or windowed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="isWindowFullscreen/index.html"><span class="doc">isWindowFullscreen</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="isWindowFullscreen/index.html"><span class="doc">isWindowFullscreen</span></a></p></td>
 <td><p>Checks if the window is in fullscreen.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setWindowBorderless/index.html"><span class="doc">setWindowBorderless</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setWindowBorderless/index.html"><span class="doc">setWindowBorderless</span></a></p></td>
 <td><p>Removes or adds the window decorations.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="isWindowBorderless/index.html"><span class="doc">isWindowBorderless</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="isWindowBorderless/index.html"><span class="doc">isWindowBorderless</span></a></p></td>
 <td><p>Checks if the window decorations are shown.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setWindowResizable/index.html"><span class="doc">setWindowResizable</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setWindowResizable/index.html"><span class="doc">setWindowResizable</span></a></p></td>
 <td><p>Enables or disables manual window resizing.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="isWindowResizable/index.html"><span class="doc">isWindowResizable</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="isWindowResizable/index.html"><span class="doc">isWindowResizable</span></a></p></td>
 <td><p>Checks if the window can be manually resized.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setWindowOpacity/index.html"><span class="doc">setWindowOpacity</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setWindowOpacity/index.html"><span class="doc">setWindowOpacity</span></a></p></td>
 <td><p>Sets the window’s opacity.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getWindowOpacity/index.html"><span class="doc">getWindowOpacity</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getWindowOpacity/index.html"><span class="doc">getWindowOpacity</span></a></p></td>
 <td><p>Returns the window’s opacity.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getWindowDroppedFiles/index.html"><span class="doc">getWindowDroppedFiles</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getWindowDroppedFiles/index.html"><span class="doc">getWindowDroppedFiles</span></a></p></td>
 <td><p>Returns the path to the files dropped on the window.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setWindowFocus/index.html"><span class="doc">setWindowFocus</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setWindowFocus/index.html"><span class="doc">setWindowFocus</span></a></p></td>
 <td><p>Focuses the window.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isWindowFocused/index.html"><span class="doc">isWindowFocused</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isWindowFocused/index.html"><span class="doc">isWindowFocused</span></a></p></td>
 <td><p>Checks if the window is focused.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setWindowTitle/index.html"><span class="doc">setWindowTitle</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setWindowTitle/index.html"><span class="doc">setWindowTitle</span></a></p></td>
 <td><p>Sets the window’s title.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getWindowTitle/index.html"><span class="doc">getWindowTitle</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getWindowTitle/index.html"><span class="doc">getWindowTitle</span></a></p></td>
 <td><p>Returns the window’s title.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setWindowIcon/index.html"><span class="doc">setWindowIcon</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setWindowIcon/index.html"><span class="doc">setWindowIcon</span></a></p></td>
 <td><p>Sets the window’s icon.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getMonitorWidth/index.html"><span class="doc">getMonitorWidth</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getMonitorWidth/index.html"><span class="doc">getMonitorWidth</span></a></p></td>
 <td><p>Returns the width of the main monitor.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getMonitorHeight/index.html"><span class="doc">getMonitorHeight</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getMonitorHeight/index.html"><span class="doc">getMonitorHeight</span></a></p></td>
 <td><p>Returns the height of the main monitor.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getMonitorRefreshRate/index.html"><span class="doc">getMonitorRefreshRate</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getMonitorRefreshRate/index.html"><span class="doc">getMonitorRefreshRate</span></a></p></td>
 <td><p>Returns the refresh rate of the main monitor.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getMonitorDisplayScaling/index.html"><span class="doc">getMonitorDisplayScaling</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getMonitorDisplayScaling/index.html"><span class="doc">getMonitorDisplayScaling</span></a></p></td>
 <td><p>Returns the display scaling of the main monitor.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setBackgroundColor/index.html"><span class="doc">setBackgroundColor</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setBackgroundColor/index.html"><span class="doc">setBackgroundColor</span></a></p></td>
 <td><p>Sets the color of the background.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="emitParticles/index.html"><span class="doc">emitParticles</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="emitParticles/index.html"><span class="doc">emitParticles</span></a></p></td>
 <td><p>Emits particles described by a <a class="reference internal" href="../ParticleEmitter/index.html"><span class="doc">ParticleEmitter</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="destroyParticles/index.html"><span class="doc">destroyParticles</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroyParticles/index.html"><span class="doc">destroyParticles</span></a></p></td>
 <td><p>Destroys all particles.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="intersect/index.html"><span class="doc">intersect</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="intersect/index.html"><span class="doc">intersect</span></a></p></td>
 <td><p>Returns information about the intersection of two <a class="reference internal" href="../ColliderShape/index.html"><span class="doc">ColliderShapes</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="raycast/index.html"><span class="doc">raycast</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="raycast/index.html"><span class="doc">raycast</span></a></p></td>
 <td><p>Casts a ray and returns information about the intersection between the ray and the <a class="reference internal" href="../ColliderShape/index.html"><span class="doc">ColliderShape</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="raycastAll/index.html"><span class="doc">raycastAll</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="raycastAll/index.html"><span class="doc">raycastAll</span></a></p></td>
 <td><p>Casts a ray and returns information about the hit <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entities</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setConstantForces/index.html"><span class="doc">setConstantForces</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setConstantForces/index.html"><span class="doc">setConstantForces</span></a></p></td>
 <td><p>Sets the constant forces.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getConstantForces/index.html"><span class="doc">getConstantForces</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getConstantForces/index.html"><span class="doc">getConstantForces</span></a></p></td>
 <td><p>Returns the constant forces.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="playSound/index.html"><span class="doc">playSound</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="playSound/index.html"><span class="doc">playSound</span></a></p></td>
 <td><p>Plays a global sound and returns a unique identifier to this sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="playSoundAtPosition/index.html"><span class="doc">playSoundAtPosition</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="playSoundAtPosition/index.html"><span class="doc">playSoundAtPosition</span></a></p></td>
 <td><p>Plays a sound at a certain position and returns a unique identifier to this sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="resumeSoundSource/index.html"><span class="doc">resumeSoundSource</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="resumeSoundSource/index.html"><span class="doc">resumeSoundSource</span></a></p></td>
 <td><p>Resumes a paused sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pauseSoundSource/index.html"><span class="doc">pauseSoundSource</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="pauseSoundSource/index.html"><span class="doc">pauseSoundSource</span></a></p></td>
 <td><p>Pauses a playing sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="stopSoundSource/index.html"><span class="doc">stopSoundSource</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="stopSoundSource/index.html"><span class="doc">stopSoundSource</span></a></p></td>
 <td><p>Stops a playing or paused sound.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getSoundSourceState/index.html"><span class="doc">getSoundSourceState</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getSoundSourceState/index.html"><span class="doc">getSoundSourceState</span></a></p></td>
 <td><p>Returns the state of a sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isSoundPlaying/index.html"><span class="doc">isSoundPlaying</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isSoundPlaying/index.html"><span class="doc">isSoundPlaying</span></a></p></td>
 <td><p>Checks if any sound source of a certain sound is playing.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setSoundSourcePosition/index.html"><span class="doc">setSoundSourcePosition</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setSoundSourcePosition/index.html"><span class="doc">setSoundSourcePosition</span></a></p></td>
 <td><p>Sets the position of a sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getSoundSourcePosition/index.html"><span class="doc">getSoundSourcePosition</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getSoundSourcePosition/index.html"><span class="doc">getSoundSourcePosition</span></a></p></td>
 <td><p>Returns the position of a sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setSoundSourceGain/index.html"><span class="doc">setSoundSourceGain</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setSoundSourceGain/index.html"><span class="doc">setSoundSourceGain</span></a></p></td>
 <td><p>Sets the gain of a sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getSoundSourceGain/index.html"><span class="doc">getSoundSourceGain</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getSoundSourceGain/index.html"><span class="doc">getSoundSourceGain</span></a></p></td>
 <td><p>Returns the gain of a sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setSoundSourcePitch/index.html"><span class="doc">setSoundSourcePitch</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setSoundSourcePitch/index.html"><span class="doc">setSoundSourcePitch</span></a></p></td>
 <td><p>Sets the pitch of a sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getSoundSourcePitch/index.html"><span class="doc">getSoundSourcePitch</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getSoundSourcePitch/index.html"><span class="doc">getSoundSourcePitch</span></a></p></td>
 <td><p>Returns the pitch of a sound source.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setSoundSourceLooping/index.html"><span class="doc">setSoundSourceLooping</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setSoundSourceLooping/index.html"><span class="doc">setSoundSourceLooping</span></a></p></td>
 <td><p>Enables or disables looping on a sound source.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isSoundSourceLooping/index.html"><span class="doc">isSoundSourceLooping</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isSoundSourceLooping/index.html"><span class="doc">isSoundSourceLooping</span></a></p></td>
 <td><p>Checks if a sound source is looping.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="playAnimation/index.html"><span class="doc">playAnimation</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="playAnimation/index.html"><span class="doc">playAnimation</span></a></p></td>
 <td><p>Plays an <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a> on an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="pauseAnimation/index.html"><span class="doc">pauseAnimation</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="pauseAnimation/index.html"><span class="doc">pauseAnimation</span></a></p></td>
 <td><p>Pauses an <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a> of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="stopAnimation/index.html"><span class="doc">stopAnimation</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="stopAnimation/index.html"><span class="doc">stopAnimation</span></a></p></td>
 <td><p>Stops an <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a> of an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="setAnimationCurrentTime/index.html"><span class="doc">setAnimationCurrentTime</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="setAnimationCurrentTime/index.html"><span class="doc">setAnimationCurrentTime</span></a></p></td>
 <td><p>Sets the current playing time of an <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a> played by an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="isAnimationPlaying/index.html"><span class="doc">isAnimationPlaying</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="isAnimationPlaying/index.html"><span class="doc">isAnimationPlaying</span></a></p></td>
 <td><p>Checks if an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is currently playing a certain <a class="reference internal" href="../Animation/index.html"><span class="doc">Animation</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="drawUIText/index.html"><span class="doc">drawUIText</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="drawUIText/index.html"><span class="doc">drawUIText</span></a></p></td>
 <td><p>Draws text on the User Interface.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="drawUILine/index.html"><span class="doc">drawUILine</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="drawUILine/index.html"><span class="doc">drawUILine</span></a></p></td>
 <td><p>Draws a line on the User Interface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="drawUIRectangle/index.html"><span class="doc">drawUIRectangle</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="drawUIRectangle/index.html"><span class="doc">drawUIRectangle</span></a></p></td>
 <td><p>Draws a rectangle on the User Interface.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="drawUIImage/index.html"><span class="doc">drawUIImage</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="drawUIImage/index.html"><span class="doc">drawUIImage</span></a></p></td>
 <td><p>Draws an image on the User Interface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getPlatformUserInfo/index.html"><span class="doc">getPlatformUserInfo</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getPlatformUserInfo/index.html"><span class="doc">getPlatformUserInfo</span></a></p></td>
 <td><p>Returns the user’s information on the platform.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getPlatformUserFriendsInfo/index.html"><span class="doc">getPlatformUserFriendsInfo</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getPlatformUserFriendsInfo/index.html"><span class="doc">getPlatformUserFriendsInfo</span></a></p></td>
 <td><p>Returns the list of the user’s friends on the platform.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="unlockPlatformAchievement/index.html"><span class="doc">unlockPlatformAchievement</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="unlockPlatformAchievement/index.html"><span class="doc">unlockPlatformAchievement</span></a></p></td>
 <td><p>Unlocks an achievement.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="lockPlatformAchievement/index.html"><span class="doc">lockPlatformAchievement</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="lockPlatformAchievement/index.html"><span class="doc">lockPlatformAchievement</span></a></p></td>
 <td><p>Locks an achievement.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isPlatformAchievementUnlocked/index.html"><span class="doc">isPlatformAchievementUnlocked</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isPlatformAchievementUnlocked/index.html"><span class="doc">isPlatformAchievementUnlocked</span></a></p></td>
 <td><p>Checks if an achievement has been unlocked.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="showPlatformOverlay/index.html"><span class="doc">showPlatformOverlay</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="showPlatformOverlay/index.html"><span class="doc">showPlatformOverlay</span></a></p></td>
 <td><p>Show the platform’s overlay.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="isPlatformOverlayVisible/index.html"><span class="doc">isPlatformOverlayVisible</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="isPlatformOverlayVisible/index.html"><span class="doc">isPlatformOverlayVisible</span></a></p></td>
 <td><p>Checks if the platform’s overlay is visible.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="setMaxFPS/index.html"><span class="doc">setMaxFPS</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="setMaxFPS/index.html"><span class="doc">setMaxFPS</span></a></p></td>
 <td><p>Sets the maximum number of frames per second.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getMaxFPS/index.html"><span class="doc">getMaxFPS</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getMaxFPS/index.html"><span class="doc">getMaxFPS</span></a></p></td>
 <td><p>Returns the maximum number of frames per second.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="executeJob/index.html"><span class="doc">executeJob</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="executeJob/index.html"><span class="doc">executeJob</span></a></p></td>
 <td><p>Launches a job to be executed by a worker thread.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="dispatchJob/index.html"><span class="doc">dispatchJob</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="dispatchJob/index.html"><span class="doc">dispatchJob</span></a></p></td>
 <td><p>Launches a job to be executed by multiple worker threads.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="waitAllThreads/index.html"><span class="doc">waitAllThreads</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="waitAllThreads/index.html"><span class="doc">waitAllThreads</span></a></p></td>
 <td><p>Waits for all worker threads to finish their jobs.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="getNumThreads/index.html"><span class="doc">getNumThreads</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="getNumThreads/index.html"><span class="doc">getNumThreads</span></a></p></td>
 <td><p>Returns the number of threads.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="createServerSocket/index.html"><span class="doc">createServerSocket</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="createServerSocket/index.html"><span class="doc">createServerSocket</span></a></p></td>
 <td><p>Creates a <a class="reference internal" href="../ServerSocket/index.html"><span class="doc">ServerSocket</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="createClientSocket/index.html"><span class="doc">createClientSocket</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="createClientSocket/index.html"><span class="doc">createClientSocket</span></a></p></td>
 <td><p>Creates a <a class="reference internal" href="../ClientSocket/index.html"><span class="doc">ClientSocket</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="closeServerSocket/index.html"><span class="doc">closeServerSocket</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="closeServerSocket/index.html"><span class="doc">closeServerSocket</span></a></p></td>
 <td><p>Closes a <a class="reference internal" href="../ServerSocket/index.html"><span class="doc">ServerSocket</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="closeClientSocket/index.html"><span class="doc">closeClientSocket</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="closeClientSocket/index.html"><span class="doc">closeClientSocket</span></a></p></td>
 <td><p>Closes a <a class="reference internal" href="../ClientSocket/index.html"><span class="doc">ClientSocket</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="createScript/index.html"><span class="doc">createScript</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="createScript/index.html"><span class="doc">createScript</span></a></p></td>
 <td><p>Creates a new <a class="reference internal" href="#"><span class="doc">Script</span></a> for a <a class="reference internal" href="../Scriptable/index.html"><span class="doc">Scriptable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="startProfiling/index.html"><span class="doc">startProfiling</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="startProfiling/index.html"><span class="doc">startProfiling</span></a></p></td>
 <td><p>Starts a profiling session.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="getProfilingResults/index.html"><span class="doc">getProfilingResults</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="getProfilingResults/index.html"><span class="doc">getProfilingResults</span></a></p></td>
 <td><p>Returns the result of the profiling.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="endProfiling/index.html"><span class="doc">endProfiling</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="endProfiling/index.html"><span class="doc">endProfiling</span></a></p></td>
 <td><p>Ends a profiling session and returns the result.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="isProfilerRunning/index.html"><span class="doc">isProfilerRunning</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="isProfilerRunning/index.html"><span class="doc">isProfilerRunning</span></a></p></td>
 <td><p>Checks if the profiler is running.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="startProfilingBlock/index.html"><span class="doc">startProfilingBlock</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="startProfilingBlock/index.html"><span class="doc">startProfilingBlock</span></a></p></td>
 <td><p>Starts a profiling block.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="endProfilingBlock/index.html"><span class="doc">endProfilingBlock</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="endProfilingBlock/index.html"><span class="doc">endProfilingBlock</span></a></p></td>
 <td><p>Ends a profiling block.</p></td>
 </tr>
 </tbody>

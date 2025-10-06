@@ -3,6 +3,22 @@ Scripting API
 
 The Scripting API is a set of functions that can be used in a :doc:`/types/Script/index`.
 
+Command Line
+------------
+
+Function related to the launch command line.
+
+.. list-table::
+	:width: 100%
+	:widths: 30 70
+	:header-rows: 1
+	:class: code-table
+
+	* - Name
+	  - Description
+	* - :doc:`/types/Script/getCommandLine/index`
+	  - Returns the parsed command line.
+
 Resources
 ---------
 
