@@ -27,6 +27,8 @@ Types
 	./ColliderShapeType/index.rst
 	./ColliderSphere/index.rst
 	./CollisionInfo/index.rst
+	./CommandLine/index.rst
+	./CommandLineInterface/index.rst
 	./Component/index.rst
 	./ConnectedClient/index.rst
 	./ConnectedClientID/index.rst
