@@ -38,7 +38,7 @@ Will return:
 	* - Key
 	  - Values
 	* - ./NutshellEngine
-      - **
+      - *Empty*
 	* - -test1
 	  - a b
 	* - -test2
