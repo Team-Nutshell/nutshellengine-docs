@@ -370,6 +370,10 @@ Functions related to audio.
 	  - Sets the pitch of a sound source.
 	* - :doc:`/types/Script/getSoundSourcePitch/index`
 	  - Returns the pitch of a sound source.
+	* - :doc:`/types/Script/setMasterGain/index`
+	  - Sets the master gain.
+	* - :doc:`/types/Script/getMasterGain/index`
+	  - Returns the master gain.
 
 Animation
 ---------

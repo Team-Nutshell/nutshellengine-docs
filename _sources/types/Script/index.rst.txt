@@ -316,6 +316,10 @@ Functions
 	  - Enables or disables looping on a sound source.
 	* - :doc:`/types/Script/isSoundSourceLooping/index`
 	  - Checks if a sound source is looping.
+	* - :doc:`/types/Script/setMasterGain/index`
+	  - Sets the master gain.
+	* - :doc:`/types/Script/getMasterGain/index`
+	  - Returns the master gain.
 	* - :doc:`/types/Script/playAnimation/index`
 	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/pauseAnimation/index`
@@ -515,6 +519,8 @@ Functions
 	./getSoundSourcePitch/index.rst
 	./setSoundSourceLooping/index.rst
 	./isSoundSourceLooping/index.rst
+	./setMasterGain/index.rst
+	./getMasterGain/index.rst
 
 	./intersect/index.rst
 	./raycast/index.rst

@@ -46,6 +46,10 @@ Functions
 	  - Enables or disables looping on a sound source.
 	* - :doc:`/types/AudioModuleInterface/isSoundSourceLooping/index`
 	  - Checks if a sound source is looping.
+	* - :doc:`/types/AudioModuleInterface/setMasterGain/index`
+	  - Sets the master gain.
+	* - :doc:`/types/AudioModuleInterface/getMasterGain/index`
+	  - Returns the master gain.
 
 .. toctree::
 	:hidden:
@@ -66,3 +70,5 @@ Functions
 	./getSoundSourcePitch/index.rst
 	./setSoundSourceLooping/index.rst
 	./isSoundSourceLooping/index.rst
+	./setMasterGain/index.rst
+	./getMasterGain/index.rst
