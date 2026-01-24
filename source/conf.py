@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'NutshellEngine'
-copyright = '2022-2025, Team Nutshell'
+copyright = '2022-2026, Team Nutshell'
 author = 'Team Nutshell'
 release = '0.2.2'
 version = '0.2.2'
