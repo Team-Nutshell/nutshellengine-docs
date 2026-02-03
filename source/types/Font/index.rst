@@ -18,6 +18,9 @@ Variables
 	* - imageSamplerFilter
 	  - :doc:`/types/ImageSamplerFilter/index`
 	  - The sampler filter to use when drawing a text with this font.
+	* - height
+	  - float
+	  - The pixel height of the font.
 	* - glyphs
 	  - `std::unordered_map <https://en.cppreference.com/w/cpp/container/unordered_map>`_\<char, :doc:`/types/FontGlyph/index`>
 	  - A map containing information about each glyph.
