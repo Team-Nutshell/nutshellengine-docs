@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void drawUILine(const Math::vec2& start, const Math::vec2& end, const Math::vec4& color = Math::vec4(1.0f, 1.0f, 1.0f, 1.0f));
+	void drawUILine(CoordinateType coordinateType, const Math::vec2& start, const Math::vec2& end, const Math::vec4& color = Math::vec4(1.0f, 1.0f, 1.0f, 1.0f));
 
 Parameters
 ----------
@@ -23,6 +23,9 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
+	* - coordinateType
+	  - :doc:`/types/CoordinateType/index`
+	  - The coordinate type used by ``start`` and ``end``.
 	* - start
 	  - const :doc:`/types/Math/index`::vec2&
 	  - The starting point of the line.
@@ -37,8 +40,3 @@ Returns
 -------
 
 None.
-
-Notes
------
-
-The ``start`` and ``end`` positions are in pixels, with (0, 0) being the top-left corner of the UI.

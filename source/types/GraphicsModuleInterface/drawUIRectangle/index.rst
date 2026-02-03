@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void drawUIRectangle(const Math::vec2& position, const Math::vec2& size, const Math::vec4& color) = 0;
+	virtual void drawUIRectangle(CoordinateType coordinateType, const Math::vec2& position, const Math::vec2& size, const Math::vec4& color) = 0;
 
 Parameters
 ----------
@@ -23,6 +23,9 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
+	* - coordinateType
+	  - :doc:`/types/CoordinateType/index`
+	  - The coordinate type used by ``position`` and ``size``.
 	* - position
 	  - const :doc:`/types/Math/index`::vec2&
 	  - The position of the top-left corner of the rectangle.
@@ -37,10 +40,3 @@ Returns
 -------
 
 None.
-
-Notes
------
-
-The ``position`` is in pixels, with (0, 0) being the top-left corner of the UI.
-
-The ``size`` is in pixels.

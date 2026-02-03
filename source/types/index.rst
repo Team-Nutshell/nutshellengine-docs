@@ -4,6 +4,7 @@ Types
 .. toctree::
 	:maxdepth: 1
 
+	./AnchorPoint/index.rst
 	./Animation/index.rst
 	./AnimationChannel/index.rst
 	./AnimationChannelInterpolationType/index.rst
@@ -33,6 +34,7 @@ Types
 	./ConnectedClient/index.rst
 	./ConnectedClientID/index.rst
 	./ConnectedServer/index.rst
+	./CoordinateType/index.rst
 	./ECS/index.rst
 	./ECSInterface/index.rst
 	./Entity/index.rst
