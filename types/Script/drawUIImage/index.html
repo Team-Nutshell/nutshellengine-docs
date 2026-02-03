@@ -129,6 +129,10 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Types</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../AnchorPoint/index.html">AnchorPoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../AnchorPoint/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Animation/index.html">Animation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Animation/index.html#variables">Variables</a></li>
 </ul>
@@ -387,6 +391,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ConnectedServer/index.html">ConnectedServer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../ConnectedServer/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../CoordinateType/index.html">CoordinateType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../CoordinateType/index.html#declaration">Declaration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ECS/index.html">ECS</a><ul>
@@ -1196,7 +1204,7 @@
 <p>Draws an image on the User Interface.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIImage</span><span class="p">(</span><span class="n">ImageID</span><span class="w"> </span><span class="n">imageID</span><span class="p">,</span><span class="w"> </span><span class="n">ImageSamplerFilter</span><span class="w"> </span><span class="n">imageSamplerFilter</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">rotation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">),</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">));</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIImage</span><span class="p">(</span><span class="n">ImageID</span><span class="w"> </span><span class="n">imageID</span><span class="p">,</span><span class="w"> </span><span class="n">ImageSamplerFilter</span><span class="w"> </span><span class="n">imageSamplerFilter</span><span class="p">,</span><span class="w"> </span><span class="n">AnchorPoint</span><span class="w"> </span><span class="n">anchorPoint</span><span class="p">,</span><span class="w"> </span><span class="n">CoordinateType</span><span class="w"> </span><span class="n">coordinateType</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">rotation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">),</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">));</span>
 </pre></div>
 </div>
 </section>
@@ -1217,6 +1225,14 @@
 <tr class="row-odd"><td><p>imageSamplerFilter</p></td>
 <td><p><a class="reference internal" href="../../ImageSamplerFilter/index.html"><span class="doc">ImageSamplerFilter</span></a></p></td>
 <td><p>The image sampler filter to use for the image.</p></td>
+</tr>
+<tr class="row-even"><td><p>anchorPoint</p></td>
+<td><p><a class="reference internal" href="../../AnchorPoint/index.html"><span class="doc">AnchorPoint</span></a></p></td>
+<td><p>The anchor point of the image.</p></td>
+</tr>
+<tr class="row-odd"><td><p>coordinateType</p></td>
+<td><p><a class="reference internal" href="../../CoordinateType/index.html"><span class="doc">CoordinateType</span></a></p></td>
+<td><p>The coordinate type used by <code class="docutils literal notranslate"><span class="pre">position</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td><p>position</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec2&amp;</p></td>
@@ -1243,8 +1259,7 @@
 </section>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">position</span></code> is in pixels, with (0, 0) being the top-left corner of the UI.</p>
-<p>If a <code class="docutils literal notranslate"><span class="pre">scale</span></code>’s axis (x or y) is negative, the image will be flipped. For example, if <code class="docutils literal notranslate"><span class="pre">scale</span></code> is equal to <code class="docutils literal notranslate"><span class="pre">Math::vec2(-1.0f,</span> <span class="pre">1.0f)</span></code>, the image will have its original proportion but will be flipped horizontally.</p>
+<p>If a <code class="docutils literal notranslate"><span class="pre">scale</span></code>’s axis (<em>x</em> or <em>y</em>) is negative, the image will be flipped. For example, if <code class="docutils literal notranslate"><span class="pre">scale</span></code> is equal to <code class="docutils literal notranslate"><span class="pre">Math::vec2(-1.0f,</span> <span class="pre">1.0f)</span></code>, the image will have its original proportion but will be flipped horizontally.</p>
 </section>
 </section>
 

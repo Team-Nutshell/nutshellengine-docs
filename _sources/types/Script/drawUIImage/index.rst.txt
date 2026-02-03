@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void drawUIImage(ImageID imageID, ImageSamplerFilter imageSamplerFilter, const Math::vec2& position, float rotation = 0.0f, const Math::vec2& scale = Math::vec2(1.0f, 1.0f), const Math::vec4& color = Math::vec4(1.0f, 1.0f, 1.0f, 1.0f));
+	void drawUIImage(ImageID imageID, ImageSamplerFilter imageSamplerFilter, AnchorPoint anchorPoint, CoordinateType coordinateType, const Math::vec2& position, float rotation = 0.0f, const Math::vec2& scale = Math::vec2(1.0f, 1.0f), const Math::vec4& color = Math::vec4(1.0f, 1.0f, 1.0f, 1.0f));
 
 Parameters
 ----------
@@ -29,6 +29,12 @@ Parameters
 	* - imageSamplerFilter
 	  - :doc:`/types/ImageSamplerFilter/index`
 	  - The image sampler filter to use for the image.
+	* - anchorPoint
+	  - :doc:`/types/AnchorPoint/index`
+	  - The anchor point of the image.
+	* - coordinateType
+	  - :doc:`/types/CoordinateType/index`
+	  - The coordinate type used by ``position``.
 	* - position
 	  - const :doc:`/types/Math/index`::vec2&
 	  - The position of the image. The origin of the image is as its center.
@@ -50,6 +56,4 @@ None.
 Notes
 -----
 
-The ``position`` is in pixels, with (0, 0) being the top-left corner of the UI.
-
-If a ``scale``'s axis (x or y) is negative, the image will be flipped. For example, if ``scale`` is equal to ``Math::vec2(-1.0f, 1.0f)``, the image will have its original proportion but will be flipped horizontally.
+If a ``scale``'s axis (*x* or *y*) is negative, the image will be flipped. For example, if ``scale`` is equal to ``Math::vec2(-1.0f, 1.0f)``, the image will have its original proportion but will be flipped horizontally.

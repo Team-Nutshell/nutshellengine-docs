@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void drawUIText(FontID fontID, const std::wstring& text, const Math::vec2& position, const Math::vec2& scale, const Math::vec4& color) = 0;
+	virtual void drawUIText(FontID fontID, const std::wstring& text, AnchorPoint anchorPoint, CoordinateType coordinateType, const Math::vec2& position, const Math::vec2& scale, const Math::vec4& color) = 0;
 
 Parameters
 ----------
@@ -29,6 +29,12 @@ Parameters
 	* - text
 	  - const `std::wstring <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - The text to draw.
+	* - anchorPoint
+	  - :doc:`/types/AnchorPoint/index`
+	  - The anchor point of the text.
+	* - coordinateType
+	  - :doc:`/types/CoordinateType/index`
+	  - The coordinate type used by ``position``.
 	* - position
 	  - const :doc:`/types/Math/index`::vec2&
 	  - The position where the text will start to draw.
@@ -48,5 +54,3 @@ Notes
 -----
 
 If ``text`` is directly written on the source code, the string literal "*L*" must be used, for example: *L"NutshellEngine"*.
-
-The ``position`` is in pixels, with (0, 0) being the top-left corner of the UI.

@@ -129,6 +129,10 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Types</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../AnchorPoint/index.html">AnchorPoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../AnchorPoint/index.html#declaration">Declaration</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../Animation/index.html">Animation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../Animation/index.html#variables">Variables</a></li>
 </ul>
@@ -387,6 +391,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ConnectedServer/index.html">ConnectedServer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../ConnectedServer/index.html#variables">Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../CoordinateType/index.html">CoordinateType</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../CoordinateType/index.html#declaration">Declaration</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ECS/index.html">ECS</a><ul>
@@ -1196,7 +1204,7 @@
 <p>Draws a rectangle on the User Interface.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIRectangle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">));</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIRectangle</span><span class="p">(</span><span class="n">CoordinateType</span><span class="w"> </span><span class="n">coordinateType</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">));</span>
 </pre></div>
 </div>
 </section>
@@ -1210,15 +1218,19 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>position</p></td>
+<tr class="row-even"><td><p>coordinateType</p></td>
+<td><p><a class="reference internal" href="../../CoordinateType/index.html"><span class="doc">CoordinateType</span></a></p></td>
+<td><p>The coordinate type used by <code class="docutils literal notranslate"><span class="pre">position</span></code> and <code class="docutils literal notranslate"><span class="pre">size</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>position</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec2&amp;</p></td>
 <td><p>The position of the top-left corner of the rectangle.</p></td>
 </tr>
-<tr class="row-odd"><td><p>size</p></td>
+<tr class="row-even"><td><p>size</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec2&amp;</p></td>
 <td><p>The size of the rectangle.</p></td>
 </tr>
-<tr class="row-even"><td><p>color</p></td>
+<tr class="row-odd"><td><p>color</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec4&amp;</p></td>
 <td><p>The color and opacity of the rectangle.</p></td>
 </tr>
@@ -1228,11 +1240,6 @@
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
 <p>None.</p>
-</section>
-<section id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">position</span></code> is in pixels, with (0, 0) being the top-left corner of the UI.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">size</span></code> is in pixels.</p>
 </section>
 </section>
 
