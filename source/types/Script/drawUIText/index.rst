@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void drawUIText(FontID fontID, const std::wstring& text, AnchorPoint anchorPoint, CoordinateType coordinateType, const Math::vec2& position, const Math::vec2& scale = Math::vec2(1.0f, 1.0f), const Math::vec4& color = Math::vec4(0.0f, 0.0f, 0.0f, 1.0f));
+	void drawUIText(FontID fontID, const std::wstring& text, AnchorPoint anchorPoint, CoordinateType coordinateType, const Math::vec2& position, float rotation = 0.0f, const Math::vec2& scale = Math::vec2(1.0f, 1.0f), const Math::vec4& color = Math::vec4(0.0f, 0.0f, 0.0f, 1.0f));
 
 Parameters
 ----------
@@ -37,7 +37,10 @@ Parameters
 	  - The coordinate type used by ``position``.
 	* - position
 	  - const :doc:`/types/Math/index`::vec2&
-	  - The position where the text will start to draw.
+	  - The position where the text will be drawn.
+	* - rotation
+	  - float
+	  - The rotation of the text.
 	* - scale
 	  - const :doc:`/types/Math/index`::vec2&
 	  - The scale of the text.
@@ -55,6 +58,8 @@ Notes
 
 If ``text`` is directly written on the source code, the string literal "*L*" must be used, for example: *L"NutshellEngine"*.
 
+If a ``scale``'s axis (*x* or *y*) is negative, the text will be flipped. For example, if ``scale`` is equal to ``Math::vec2(-1.0f, 1.0f)``, the text will have its original proportion but will be flipped horizontally.
+
 ====
 
 Draws text on the User Interface.
@@ -64,7 +69,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void drawUIText(FontID fontID, const std::string& text, AnchorPoint anchorPoint, CoordinateType coordinateType, const Math::vec2& position, const Math::vec2& scale = Math::vec2(1.0f, 1.0f), const Math::vec4& color = Math::vec4(0.0f, 0.0f, 0.0f, 1.0f));
+	void drawUIText(FontID fontID, const std::string& text, AnchorPoint anchorPoint, CoordinateType coordinateType, const Math::vec2& position, float rotation = 0.0f, const Math::vec2& scale = Math::vec2(1.0f, 1.0f), const Math::vec4& color = Math::vec4(0.0f, 0.0f, 0.0f, 1.0f));
 
 Parameters
 ----------
@@ -91,7 +96,10 @@ Parameters
 	  - The coordinate type used by ``position``.
 	* - position
 	  - const :doc:`/types/Math/index`::vec2&
-	  - The position where the text will start to draw.
+	  - The position where the text will be drawn.
+	* - rotation
+	  - float
+	  - The rotation of the text.
 	* - scale
 	  - const :doc:`/types/Math/index`::vec2&
 	  - The scale of the text.
@@ -103,3 +111,8 @@ Returns
 -------
 
 None.
+
+Notes
+-----
+
+If a ``scale``'s axis (*x* or *y*) is negative, the text will be flipped. For example, if ``scale`` is equal to ``Math::vec2(-1.0f, 1.0f)``, the text will have its original proportion but will be flipped horizontally.
