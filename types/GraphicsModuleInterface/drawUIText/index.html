@@ -1204,7 +1204,7 @@
 <p>Draws text on the User Interface.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIText</span><span class="p">(</span><span class="n">FontID</span><span class="w"> </span><span class="n">fontID</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">wstring</span><span class="o">&amp;</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">AnchorPoint</span><span class="w"> </span><span class="n">anchorPoint</span><span class="p">,</span><span class="w"> </span><span class="n">CoordinateType</span><span class="w"> </span><span class="n">coordinateType</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">scale</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">drawUIText</span><span class="p">(</span><span class="n">FontID</span><span class="w"> </span><span class="n">fontID</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">wstring</span><span class="o">&amp;</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">AnchorPoint</span><span class="w"> </span><span class="n">anchorPoint</span><span class="p">,</span><span class="w"> </span><span class="n">CoordinateType</span><span class="w"> </span><span class="n">coordinateType</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">rotation</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec2</span><span class="o">&amp;</span><span class="w"> </span><span class="n">scale</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">Math</span><span class="o">::</span><span class="n">vec4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">color</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -1236,13 +1236,17 @@
 </tr>
 <tr class="row-even"><td><p>position</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec2&amp;</p></td>
-<td><p>The position where the text will start to draw.</p></td>
+<td><p>The position where the text will be drawn.</p></td>
 </tr>
-<tr class="row-odd"><td><p>scale</p></td>
+<tr class="row-odd"><td><p>rotation</p></td>
+<td><p>float</p></td>
+<td><p>The rotation of the text.</p></td>
+</tr>
+<tr class="row-even"><td><p>scale</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec2&amp;</p></td>
 <td><p>The scale of the text.</p></td>
 </tr>
-<tr class="row-even"><td><p>color</p></td>
+<tr class="row-odd"><td><p>color</p></td>
 <td><p>const <a class="reference internal" href="../../Math/index.html"><span class="doc">Math</span></a>::vec4&amp;</p></td>
 <td><p>The color and opacity of the text.</p></td>
 </tr>
@@ -1256,6 +1260,7 @@
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
 <p>If <code class="docutils literal notranslate"><span class="pre">text</span></code> is directly written on the source code, the string literal “<em>L</em>” must be used, for example: <em>L”NutshellEngine”</em>.</p>
+<p>If a <code class="docutils literal notranslate"><span class="pre">scale</span></code>’s axis (<em>x</em> or <em>y</em>) is negative, the text will be flipped. For example, if <code class="docutils literal notranslate"><span class="pre">scale</span></code> is equal to <code class="docutils literal notranslate"><span class="pre">Math::vec2(-1.0f,</span> <span class="pre">1.0f)</span></code>, the text will have its original proportion but will be flipped horizontally.</p>
 </section>
 </section>
 
