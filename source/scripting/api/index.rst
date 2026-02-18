@@ -358,6 +358,12 @@ Functions related to audio.
 	  - Returns the state of a sound source.
 	* - :doc:`/types/Script/isSoundPlaying/index`
 	  - Checks if any sound source of a certain sound is playing.
+	* - :doc:`/types/Script/getSoundLength/index`
+	  - Returns the length of a sound.
+	* - :doc:`/types/Script/setSoundSourceTime/index`
+	  - Sets the current time of a sound source.
+	* - :doc:`/types/Script/getSoundSourceTime/index`
+	  - Returns the current time of a sound source.
 	* - :doc:`/types/Script/setSoundSourcePosition/index`
 	  - Sets the position of a sound source.
 	* - :doc:`/types/Script/getSoundSourcePosition/index`

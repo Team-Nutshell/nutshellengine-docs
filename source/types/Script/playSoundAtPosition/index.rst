@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	SoundSourceID playSoundAtPosition(SoundID soundID, const Math::vec3& position, float gain = 1.0f, float pitch = 1.0f, bool looping = false);
+	SoundSourceID playSoundAtPosition(SoundID soundID, const Math::vec3& position, float gain = 1.0f, float pitch = 1.0f, bool looping = false, float startTime = 0.0f);
 
 Parameters
 ----------
@@ -38,6 +38,9 @@ Parameters
 	* - looping
 	  - bool
 	  - Whether the sound is looping or not.
+	* - startTime
+	  - float
+	  - The start time of the sound.
 
 Returns
 -------
@@ -48,5 +51,7 @@ Notes
 -----
 
 Each time this function is called, a new sound source will be played and a new :doc:`/types/SoundSourceID/index` will be returned.
+
+If ``startTime`` is superior to the length of the sound, if ``looping`` is ``false``, the sound will stop directly, else, if ``looping`` is ``true``, the sound will start at ``startTime`` modulo the length of the sound.
 
 If no listener :doc:`/types/Entity/index` has been set, the sound will be played globally.
