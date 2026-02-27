@@ -246,7 +246,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../AudioModuleInterface/stopSoundSource/index.html">stopSoundSource</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AudioModuleInterface/getSoundSourceState/index.html">getSoundSourceState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AudioModuleInterface/isSoundPlaying/index.html">isSoundPlaying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../AudioModuleInterface/getSoundLength/index.html">getSoundLength</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AudioModuleInterface/setSoundSourceTime/index.html">setSoundSourceTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AudioModuleInterface/getSoundSourceTime/index.html">getSoundSourceTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../AudioModuleInterface/setSoundSourcePosition/index.html">setSoundSourcePosition</a></li>
@@ -948,7 +947,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/stopSoundSource/index.html">stopSoundSource</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getSoundSourceState/index.html">getSoundSourceState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/isSoundPlaying/index.html">isSoundPlaying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/getSoundLength/index.html">getSoundLength</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/setSoundSourceTime/index.html">setSoundSourceTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getSoundSourceTime/index.html">getSoundSourceTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/setSoundSourcePosition/index.html">setSoundSourcePosition</a></li>
@@ -1227,7 +1225,11 @@
 <td><p>uint8_t</p></td>
 <td><p>The number of bits per sample.</p></td>
 </tr>
-<tr class="row-odd"><td><p>data</p></td>
+<tr class="row-odd"><td><p>length</p></td>
+<td><p>float</p></td>
+<td><p>The length of the sound, <strong>in seconds</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p>data</p></td>
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a>&lt;uint8_t&gt;</p></td>
 <td><p>The sound’s content.</p></td>
 </tr>
