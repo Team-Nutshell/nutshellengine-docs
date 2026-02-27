@@ -300,8 +300,6 @@ Functions
 	  - Returns the state of a sound source.
 	* - :doc:`/types/Script/isSoundPlaying/index`
 	  - Checks if any sound source of a certain sound is playing.
-	* - :doc:`/types/Script/getSoundLength/index`
-	  - Returns the length of a sound.
 	* - :doc:`/types/Script/setSoundSourceTime/index`
 	  - Sets the current time of a sound source.
 	* - :doc:`/types/Script/getSoundSourceTime/index`
@@ -517,7 +515,6 @@ Functions
 	./stopSoundSource/index.rst
 	./getSoundSourceState/index.rst
 	./isSoundPlaying/index.rst
-	./getSoundLength/index.rst
 	./setSoundSourceTime/index.rst
 	./getSoundSourceTime/index.rst
 	./setSoundSourcePosition/index.rst
