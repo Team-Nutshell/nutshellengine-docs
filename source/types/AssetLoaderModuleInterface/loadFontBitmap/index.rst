@@ -3,14 +3,14 @@ loadFontBitmap
 
 :doc:`/types/AssetLoaderModuleInterface/index`::loadFontBitmap
 
-Loads a font from a file and returns a pointer to the loaded font.
+Loads a font from a file.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	virtual Font* loadFontBitmap(const std::string& filePath, float fontHeight) = 0;
+	virtual bool loadFontBitmap(const std::string& filePath, float fontHeight, Font& font) = 0;
 
 Parameters
 ----------
@@ -29,12 +29,16 @@ Parameters
 	* - fontHeight
 	  - float
 	  - Height of the font, in pt.
+	* - font
+	  - :doc:`/types/Font/index`&
+	  - The font to put the information in.
 
 Returns
 -------
 
-A pointer to a :doc:`/types/Font/index` containing information about the loaded font.
+``true`` if the font has been successfully loaded, else, if the font could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this font file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), returns ``false``.
 
-If the font could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this font file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), the returned pointer is **nullptr**.
+Notes
+-----
 
 A bitmap font does not scale well, but is more precise than SDF fonts when the text is small.

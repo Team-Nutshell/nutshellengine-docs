@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual Image loadImage(const std::string& filePath) = 0;
+	virtual bool loadImage(const std::string& filePath, Image& image) = 0;
 
 Parameters
 ----------
@@ -26,10 +26,11 @@ Parameters
 	* - filePath
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
+	* - image
+	  - :doc:`/types/Image/index`&
+	  - The image to put the information in.
 
 Returns
 -------
 
-An :doc:`/types/Image/index` containing information about the loaded image.
-
-If the image could not be loaded (for example: if the file does not exist, or the :doc:`/module/asset_loader_module/index` does not support this image file format), the returned :doc:`/types/Image/index` contains the structure's default information.
+``true`` if the image has been successfully loaded, else, if the image could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this image file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), returns ``false``.

@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual Model loadModel(const std::string& filePath) = 0;
+	virtual bool loadModel(const std::string& filePath, Model& model) = 0;
 
 Parameters
 ----------
@@ -26,10 +26,11 @@ Parameters
 	* - filePath
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
+	* - model
+	  - :doc:`/types/Model/index`&
+	  - The model to put the information in.
 
 Returns
 -------
 
-A :doc:`/types/Model/index` containing information about the loaded model.
-
-If the model could not be loaded (for example: if the file does not exist, or the :doc:`/module/asset_loader_module/index` does not support this model file format), the returned :doc:`/types/Model/index` contains the structure's default information.
+``true`` if the model has been successfully loaded, else, if the model could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this model file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), returns ``false``.
