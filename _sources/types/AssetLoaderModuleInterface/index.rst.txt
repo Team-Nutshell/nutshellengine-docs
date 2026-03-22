@@ -38,9 +38,9 @@ Functions
 	* - :doc:`/types/AssetLoaderModuleInterface/loadImage/index`
 	  - Loads an image from a file.
 	* - :doc:`/types/AssetLoaderModuleInterface/loadFontBitmap/index`
-	  - Loads a bitmap font from a file and returns a pointer to the loaded font.
+	  - Loads a bitmap font from a file.
 	* - :doc:`/types/AssetLoaderModuleInterface/loadFontSDF/index`
-	  - Loads a SDF font from a file and returns a pointer to the loaded font.
+	  - Loads a SDF font from a file.
 
 .. toctree::
 	:hidden:

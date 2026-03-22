@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual Model loadMaterial(const std::string& filePath) = 0;
+	virtual bool loadMaterial(const std::string& filePath, Material& material) = 0;
 
 Parameters
 ----------
@@ -26,10 +26,11 @@ Parameters
 	* - filePath
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
+	* - material
+	  - :doc:`/types/Material/index`&
+	  - The material to put the information in.
 
 Returns
 -------
 
-A :doc:`/types/Material/index` containing information about the loaded material.
-
-If the material could not be loaded (for example: if the file does not exist, or the :doc:`/module/asset_loader_module/index` does not support this material file format), the returned :doc:`/types/Material/index` contains the structure's default information.
+``true`` if the material has been successfully loaded, else, if the material could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this material file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), returns ``false``.

@@ -3,14 +3,14 @@ loadFontSDF
 
 :doc:`/types/AssetLoaderModuleInterface/index`::loadFontSDF
 
-Loads a font from a file and returns a pointer to the loaded font.
+Loads a font from a file.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	virtual Font* loadFontSDF(const std::string& filePath) = 0;
+	virtual bool loadFontSDF(const std::string& filePath, Font& font) = 0;
 
 Parameters
 ----------
@@ -26,12 +26,16 @@ Parameters
 	* - filePath
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
+	* - font
+	  - :doc:`/types/Font/index`&
+	  - The font to put the information in.
 
 Returns
 -------
 
-A pointer to a :doc:`/types/Font/index` containing information about the loaded font.
+``true`` if the font has been successfully loaded, else, if the font could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this font file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), returns ``false``.
 
-If the font could not be loaded (for example: if the file does not exist, or the :doc:`/asset_manager/index` or :doc:`/module/asset_loader_module/index` does not support this font file format (including the case where there is no :doc:`/module/asset_loader_module/index`)), the returned pointer is **nullptr**.
+Notes
+-----
 
-A SDF font scales well, but is less precise than Bitmap fonts when the text is small.
+A SDF font scales well, but is less precise than bitmap fonts when the text is small.
