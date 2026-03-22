@@ -27,7 +27,7 @@ Parameters
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
 	* - material
-	  - :doc:`/types/Material/index`&
+	  - :doc:`/types/Material/index`\&
 	  - The material to put the information in.
 
 Returns

@@ -27,7 +27,7 @@ Parameters
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
 	* - sound
-	  - :doc:`/types/Sound/index`&
+	  - :doc:`/types/Sound/index`\&
 	  - The sound to put the information in.
 
 Returns

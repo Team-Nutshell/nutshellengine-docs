@@ -27,7 +27,7 @@ Parameters
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
 	* - model
-	  - :doc:`/types/Model/index`&
+	  - :doc:`/types/Model/index`\&
 	  - The model to put the information in.
 
 Returns

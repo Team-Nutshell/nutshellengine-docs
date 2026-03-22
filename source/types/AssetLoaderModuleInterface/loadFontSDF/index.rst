@@ -27,7 +27,7 @@ Parameters
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
 	* - font
-	  - :doc:`/types/Font/index`&
+	  - :doc:`/types/Font/index`\&
 	  - The font to put the information in.
 
 Returns

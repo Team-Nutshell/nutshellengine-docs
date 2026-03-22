@@ -27,7 +27,7 @@ Parameters
 	  - const `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_\&
 	  - Path to the file to load.
 	* - image
-	  - :doc:`/types/Image/index`&
+	  - :doc:`/types/Image/index`\&
 	  - The image to put the information in.
 
 Returns

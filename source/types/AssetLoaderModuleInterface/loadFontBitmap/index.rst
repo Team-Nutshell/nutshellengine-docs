@@ -30,7 +30,7 @@ Parameters
 	  - float
 	  - Height of the font, in pt.
 	* - font
-	  - :doc:`/types/Font/index`&
+	  - :doc:`/types/Font/index`\&
 	  - The font to put the information in.
 
 Returns
