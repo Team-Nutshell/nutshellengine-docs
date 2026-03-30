@@ -18,6 +18,8 @@ NutshellEngine
 
 	./asset_manager/index.rst
 
+	./fragment_shader/index.rst
+
 	./frame_limiter/index.rst
 
 	./job_system/index.rst

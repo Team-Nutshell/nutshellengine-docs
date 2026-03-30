@@ -18,6 +18,9 @@ Variables
 	* - material
 	  - :doc:`/types/Material/index`
 	  - The :doc:`/types/Material/index` to use.
+	* - fragmentShader
+	  - `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_
+	  - The custom `/types/fragment_shader/index` to use. If empty, the graphics module's default fragment shader will be used.
 
 Notes
 -----
@@ -57,3 +60,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - String
 			  - The path to the material.
 			  - Any path to a material.
+			* - fragmentShaderPath
+			  - String
+			  - The path to the fragment shader.
+			  - Any path to a fragment shader.
