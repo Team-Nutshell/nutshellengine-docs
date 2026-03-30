@@ -1291,43 +1291,55 @@
 <td><p>uint</p></td>
 <td><p>The number of directional lights in the scene.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_directionalLight(i)</p></td>
+<tr class="row-even"><td><p>NtshEngn_directionalLight(uint i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
-<td><p>The <a href="#id1"><span class="problematic" id="id2">*</span></a>i*th directional light.</p></td>
+<td><p>The <a href="#id1"><span class="problematic" id="id2">``</span></a>i``th directional light.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_pointLightCount</p></td>
+<tr class="row-odd"><td><p>NtshEngn_directionalLightShadows(uint i, vec p)</p></td>
+<td><p>float</p></td>
+<td><p>A value between 0.0 and 1.0 determining how much the position <code class="docutils literal notranslate"><span class="pre">p</span></code> is in the shadows of the <a href="#id3"><span class="problematic" id="id4">``</span></a>i``th directional light. 0.0 means completely in shadows, 1.0 means not in shadows.</p></td>
+</tr>
+<tr class="row-even"><td><p>NtshEngn_pointLightCount</p></td>
 <td><p>uint</p></td>
 <td><p>The number of point lights in the scene.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_pointLight(i)</p></td>
+<tr class="row-odd"><td><p>NtshEngn_pointLight(uint i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
-<td><p>The <a href="#id3"><span class="problematic" id="id4">*</span></a>i*th point light.</p></td>
+<td><p>The <a href="#id5"><span class="problematic" id="id6">``</span></a>i``th point light.</p></td>
+</tr>
+<tr class="row-even"><td><p>NtshEngn_pointLightShadows(uint i, vec p)</p></td>
+<td><p>float</p></td>
+<td><p>A value between 0.0 and 1.0 determining how much the position <code class="docutils literal notranslate"><span class="pre">p</span></code> is in the shadows of the <a href="#id7"><span class="problematic" id="id8">``</span></a>i``th point light. 0.0 means completely in shadows, 1.0 means not in shadows.</p></td>
 </tr>
 <tr class="row-odd"><td><p>NtshEngn_spotLightCount</p></td>
 <td><p>uint</p></td>
 <td><p>The number of spot lights in the scene.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_spotLight(i)</p></td>
+<tr class="row-even"><td><p>NtshEngn_spotLight(uint i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
-<td><p>The <a href="#id5"><span class="problematic" id="id6">*</span></a>i*th spot light.</p></td>
+<td><p>The <a href="#id9"><span class="problematic" id="id10">*</span></a>i*th spot light.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_ambientLightCount</p></td>
+<tr class="row-odd"><td><p>NtshEngn_spotLightShadows(uint i, vec p)</p></td>
+<td><p>float</p></td>
+<td><p>A value between 0.0 and 1.0 determining how much the position <code class="docutils literal notranslate"><span class="pre">p</span></code> is in the shadows of the <a href="#id11"><span class="problematic" id="id12">``</span></a>i``th spot light. 0.0 means completely in shadows, 1.0 means not in shadows.</p></td>
+</tr>
+<tr class="row-even"><td><p>NtshEngn_ambientLightCount</p></td>
 <td><p>uint</p></td>
 <td><p>The number of ambient lights in the scene.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_ambientLight(i)</p></td>
+<tr class="row-odd"><td><p>NtshEngn_ambientLight(i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
-<td><p>The <a href="#id7"><span class="problematic" id="id8">*</span></a>i*th ambient light.</p></td>
+<td><p>The <a href="#id13"><span class="problematic" id="id14">*</span></a>i*th ambient light.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_time</p></td>
+<tr class="row-even"><td><p>NtshEngn_time</p></td>
 <td><p>float</p></td>
 <td><p>The time since the application’s launch, in <strong>seconds</strong>.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_cameraPosition</p></td>
+<tr class="row-odd"><td><p>NtshEngn_cameraPosition</p></td>
 <td><p>vec3</p></td>
 <td><p>The camera’s position, in <strong>world-space</strong>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_useReversedDepth</p></td>
+<tr class="row-even"><td><p>NtshEngn_useReversedDepth</p></td>
 <td><p>bool</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the graphics module uses reversed depth (<em>1</em> is close, <em>0</em> is far), else, <code class="docutils literal notranslate"><span class="pre">false</span></code> (<em>0</em> is close, <em>1</em> is far).</p></td>
 </tr>
