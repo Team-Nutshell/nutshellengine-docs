@@ -101,8 +101,8 @@ Inputs
 	  - bool
 	  - ``true`` if the graphics module uses reversed depth (*1* is close, *0* is far), else, ``false`` (*0* is close, *1* is far).
 
-Inputs
-------
+Outputs
+-------
 
 .. list-table::
 	:width: 100%
