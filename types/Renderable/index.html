@@ -113,6 +113,11 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../asset_manager/index.html">Asset Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../fragment_shader/index.html">Fragment Shader</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../fragment_shader/index.html#inputs">Inputs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../fragment_shader/index.html#id9">Inputs</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../frame_limiter/index.html">Frame Limiter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../job_system/index.html">Job System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../networking/index.html">Networking</a></li>
@@ -1221,6 +1226,10 @@
 <td><p><a class="reference internal" href="../Material/index.html"><span class="doc">Material</span></a></p></td>
 <td><p>The <a class="reference internal" href="../Material/index.html"><span class="doc">Material</span></a> to use.</p></td>
 </tr>
+<tr class="row-even"><td><p>fragmentShader</p></td>
+<td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/string/basic_string">std::string</a></p></td>
+<td><p>The custom <cite>/types/fragment_shader/index</cite> to use. If empty, the graphics module’s default fragment shader will be used.</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -1262,6 +1271,11 @@
 <td><p>String</p></td>
 <td><p>The path to the material.</p></td>
 <td><p>Any path to a material.</p></td>
+</tr>
+<tr class="row-odd"><td><p>fragmentShaderPath</p></td>
+<td><p>String</p></td>
+<td><p>The path to the fragment shader.</p></td>
+<td><p>Any path to a fragment shader.</p></td>
 </tr>
 </tbody>
 </table>
