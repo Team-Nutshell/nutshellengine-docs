@@ -37,22 +37,22 @@ Inputs
 	* - NtshEngn_tbn
 	  - mat3
 	  - The fragment's Tangent-Bitangent-Normal matrix.
-	* - NtshEngn_diffuseTextureSampler
+	* - NtshEngn_diffuseTexture
 	  - sampler2D
 	  - The object's material's diffuse texture.
-	* - NtshEngn_normalTextureSampler
+	* - NtshEngn_normalTexture
 	  - sampler2D
 	  - The object's material's normal texture.
-	* - NtshEngn_metalnessTextureSampler
+	* - NtshEngn_metalnessTexture
 	  - sampler2D
 	  - The object's material's metalness texture.
-	* - NtshEngn_roughnessTextureSampler
+	* - NtshEngn_roughnessTexture
 	  - sampler2D
 	  - The object's material's roughness texture.
-	* - NtshEngn_occlusionTextureSampler
+	* - NtshEngn_occlusionTexture
 	  - sampler2D
 	  - The object's material's occlusion texture.
-	* - NtshEngn_emissiveTextureSampler
+	* - NtshEngn_emissiveTexture
 	  - sampler2D
 	  - The object's material's emissive texture.
 	* - NtshEngn_emissiveFactor
