@@ -22,7 +22,7 @@ Variables
 	  - :doc:`/types/Math/index`::vec2
 	  - The vertex's texture coordinates.
 	* - color
-	  - :doc:`/types/Math/index`::vec3
+	  - :doc:`/types/Math/index`::vec4
 	  - The vertex's color.
 	* - tangent
 	  - :doc:`/types/Math/index`::vec4

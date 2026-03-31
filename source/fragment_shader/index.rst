@@ -32,7 +32,7 @@ Inputs
 	  - vec2
 	  - The fragment's texture coordinates.
 	* - NtshEngn_color
-	  - vec3
+	  - vec4
 	  - The fragment's color from vertex colors.
 	* - NtshEngn_tbn
 	  - mat3
