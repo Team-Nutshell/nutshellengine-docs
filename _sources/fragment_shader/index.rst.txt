@@ -31,6 +31,9 @@ Inputs
 	* - NtshEngn_uv
 	  - vec2
 	  - The fragment's texture coordinates.
+	* - NtshEngn_color
+	  - vec3
+	  - The fragment's color from vertex colors.
 	* - NtshEngn_tbn
 	  - mat3
 	  - The fragment's Tangent-Bitangent-Normal matrix.
