@@ -21,9 +21,17 @@ Variables
 	* - fragmentShader
 	  - `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_
 	  - The custom `/types/fragment_shader/index` to use. If empty, the graphics module's default fragment shader will be used.
+	* - isVisible
+	  - bool
+	  - Specifies if the :doc:`/entity_component_system/entity/index` is visible.
+	* - castsShadows
+	  - bool
+	  - Specifies if the :doc:`/entity_component_system/entity/index` casts shadows.
 
 Notes
 -----
+
+The :doc:`/entity_component_system/entity/index` will still cast shadows if ``castsShadows`` is ``true`` and ``isVisible`` is ``false``.
 
 JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 
@@ -64,3 +72,11 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - String
 			  - The path to the fragment shader.
 			  - Any path to a fragment shader.
+			* - isVisible
+			  - Boolean
+			  - Specifies if the :doc:`/entity_component_system/entity/index` is visible.
+			  - Any boolean (``true`` or ``false``).
+			* - castsShadows
+			  - Boolean
+			  - Specifies if the :doc:`/entity_component_system/entity/index` casts shadows.
+			  - Any boolean (``true`` or ``false``).

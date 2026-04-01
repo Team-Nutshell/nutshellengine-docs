@@ -1230,11 +1230,20 @@
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/string/basic_string">std::string</a></p></td>
 <td><p>The custom <cite>/types/fragment_shader/index</cite> to use. If empty, the graphics module’s default fragment shader will be used.</p></td>
 </tr>
+<tr class="row-odd"><td><p>isVisible</p></td>
+<td><p>bool</p></td>
+<td><p>Specifies if the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is visible.</p></td>
+</tr>
+<tr class="row-even"><td><p>castsShadows</p></td>
+<td><p>bool</p></td>
+<td><p>Specifies if the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> casts shadows.</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
+<p>The <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> will still cast shadows if <code class="docutils literal notranslate"><span class="pre">castsShadows</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code> and <code class="docutils literal notranslate"><span class="pre">isVisible</span></code> is <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 <p>JSON for the <a class="reference internal" href="../../file_formats/ntsn/index.html"><span class="doc">.ntsn - Scene</span></a> scene file format:</p>
 <table class="code-table docutils align-default" style="width: 100%">
 <thead>
@@ -1276,6 +1285,16 @@
 <td><p>String</p></td>
 <td><p>The path to the fragment shader.</p></td>
 <td><p>Any path to a fragment shader.</p></td>
+</tr>
+<tr class="row-even"><td><p>isVisible</p></td>
+<td><p>Boolean</p></td>
+<td><p>Specifies if the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> is visible.</p></td>
+<td><p>Any boolean (<code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code>).</p></td>
+</tr>
+<tr class="row-odd"><td><p>castsShadows</p></td>
+<td><p>Boolean</p></td>
+<td><p>Specifies if the <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> casts shadows.</p></td>
+<td><p>Any boolean (<code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code>).</p></td>
 </tr>
 </tbody>
 </table>
