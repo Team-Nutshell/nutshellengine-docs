@@ -1,7 +1,7 @@
-setSoundSourceTime
-==================
+setSoundSourceCurrentTime
+=========================
 
-:doc:`/types/Script/index`::setSoundSourceTime
+:doc:`/types/Script/index`::setSoundSourceCurrentTime
 
 Sets the current time of a sound source.
 
@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	void setSoundSourceTime(SoundSourceID soundSourceID, float newTime);
+	void setSoundSourceCurrentTime(SoundSourceID soundSourceID, float newTime);
 
 Parameters
 ----------
