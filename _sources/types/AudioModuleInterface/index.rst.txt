@@ -30,9 +30,9 @@ Functions
 	  - Returns the state of a sound source.
 	* - :doc:`/types/AudioModuleInterface/isSoundPlaying/index`
 	  - Checks if any sound source of a certain sound is playing.
-	* - :doc:`/types/AudioModuleInterface/setSoundSourceTime/index`
+	* - :doc:`/types/AudioModuleInterface/setSoundSourceCurrentTime/index`
 	  - Sets the current time of a sound source.
-	* - :doc:`/types/AudioModuleInterface/getSoundSourceTime/index`
+	* - :doc:`/types/AudioModuleInterface/getSoundSourceCurrentTime/index`
 	  - Returns the current time of a sound source.
 	* - :doc:`/types/AudioModuleInterface/setSoundSourcePosition/index`
 	  - Sets the position of a sound source.

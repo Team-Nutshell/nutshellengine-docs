@@ -1,7 +1,7 @@
-getSoundSourceTime
-==================
+getSoundSourceCurrentTime
+=========================
 
-:doc:`/types/Sound/index`::getSoundSourceTime
+:doc:`/types/AudioModuleInterface/index`::getSoundSourceCurrentTime
 
 Returns the current time of a sound source.
 
@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	float getSoundSourceTime(SoundSourceID soundSourceID);
+	virtual float getSoundSourceCurrentTime(SoundSourceID soundSourceID) = 0;
 
 Parameters
 ----------

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>setSoundSourceTime &mdash; NutshellEngine 0.2.6 documentation</title>
+  <title>getSoundSourceCurrentTime &mdash; NutshellEngine 0.2.6 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=11b553de" />
@@ -19,9 +19,7 @@
       <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="getSoundSourceTime" href="../getSoundSourceTime/index.html" />
-    <link rel="prev" title="isSoundPlaying" href="../isSoundPlaying/index.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,7 +42,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../starting/index.html">Starting with NutshellEngine</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../starting/index.html#as-a-game-developer">As a game developer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../starting/index.html#if-you-don-t-use-windows-or-linux">If you don’t use Windows or Linux</a></li>
@@ -133,7 +131,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../file_formats/ntsn/index.html">.ntsn - Scene</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Types</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Types</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../AnchorPoint/index.html">AnchorPoint</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../AnchorPoint/index.html#declaration">Declaration</a></li>
 </ul>
@@ -251,8 +249,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/stopSoundSource/index.html">stopSoundSource</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getSoundSourceState/index.html">getSoundSourceState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/isSoundPlaying/index.html">isSoundPlaying</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setSoundSourceTime/index.html">setSoundSourceTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getSoundSourceTime/index.html">getSoundSourceTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setSoundSourcePosition/index.html">setSoundSourcePosition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/getSoundSourcePosition/index.html">getSoundSourcePosition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../AudioModuleInterface/setSoundSourceGain/index.html">setSoundSourceGain</a></li>
@@ -836,9 +832,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Script</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html">Script</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#variables">Variables</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../index.html#functions">Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../init/index.html">init</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../update/index.html">update</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../destroy/index.html">destroy</a></li>
@@ -952,8 +948,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../stopSoundSource/index.html">stopSoundSource</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../getSoundSourceState/index.html">getSoundSourceState</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../isSoundPlaying/index.html">isSoundPlaying</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">setSoundSourceTime</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../getSoundSourceTime/index.html">getSoundSourceTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../setSoundSourcePosition/index.html">setSoundSourcePosition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../getSoundSourcePosition/index.html">getSoundSourcePosition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../setSoundSourceGain/index.html">setSoundSourceGain</a></li>
@@ -1195,11 +1189,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../index.html">Types</a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Script</a></li>
-      <li class="breadcrumb-item active">setSoundSourceTime</li>
+      <li class="breadcrumb-item active">getSoundSourceCurrentTime</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/types/Script/setSoundSourceTime/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/types/Script/getSoundSourceCurrentTime/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -1207,13 +1199,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="setsoundsourcetime">
-<h1>setSoundSourceTime<a class="headerlink" href="#setsoundsourcetime" title="Link to this heading"></a></h1>
-<p><a class="reference internal" href="../index.html"><span class="doc">Script</span></a>::setSoundSourceTime</p>
-<p>Sets the current time of a sound source.</p>
+  <section id="getsoundsourcecurrenttime">
+<h1>getSoundSourceCurrentTime<a class="headerlink" href="#getsoundsourcecurrenttime" title="Link to this heading"></a></h1>
+<p><a class="reference internal" href="../../Sound/index.html"><span class="doc">Sound</span></a>::getSoundSourceCurrentTime</p>
+<p>Returns the current time of a sound source.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">setSoundSourceTime</span><span class="p">(</span><span class="n">SoundSourceID</span><span class="w"> </span><span class="n">soundSourceID</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">newTime</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="nf">getSoundSourceCurrentTime</span><span class="p">(</span><span class="n">SoundSourceID</span><span class="w"> </span><span class="n">soundSourceID</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
@@ -1229,28 +1221,21 @@
 <tbody>
 <tr class="row-even"><td><p>soundSourceID</p></td>
 <td><p><a class="reference internal" href="../../SoundSourceID/index.html"><span class="doc">SoundSourceID</span></a></p></td>
-<td><p>The sound source to change the gain of.</p></td>
-</tr>
-<tr class="row-odd"><td><p>newTime</p></td>
-<td><p>float</p></td>
-<td><p>The new current time of the sound source, <strong>in seconds</strong>.</p></td>
+<td><p>The sound source to get the current time of.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
-<p>None.</p>
+<p>The current time of the sound source, <strong>in seconds</strong>.</p>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../isSoundPlaying/index.html" class="btn btn-neutral float-left" title="isSoundPlaying" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../getSoundSourceTime/index.html" class="btn btn-neutral float-right" title="getSoundSourceTime" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
