@@ -109,6 +109,12 @@ Inputs
 	* - NtshEngn_cameraPosition
 	  - vec3
 	  - The camera's position, in **world-space**.
+	* - NtshEngn_width
+	  - uint
+	  - The framebuffer's width.
+	* - NtshEngn_height
+	  - uint
+	  - The framebuffer's height.
 	* - NtshEngn_useReversedDepth
 	  - bool
 	  - ``true`` if the graphics module uses reversed depth (*1* is close, *0* is far), else, ``false`` (*0* is close, *1* is far).
