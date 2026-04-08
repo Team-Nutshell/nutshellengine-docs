@@ -1,7 +1,7 @@
-exist
-=====
+contains
+========
 
-:doc:`/types/Bimap/index`::exist
+:doc:`/types/Bimap/index`::contains
 
 Declaration
 -----------
@@ -9,7 +9,7 @@ Declaration
 .. code-block:: cpp
 
 	template <typename T>
-	bool exist(const T& key) const;
+	bool contains(const T& key) const;
 
 Parameters
 ----------
@@ -29,7 +29,7 @@ Parameters
 Returns
 -------
 
-``true`` if the key exists in the Bimap, else, returns ``false``.
+``true`` if the key is contained in the Bimap, else, returns ``false``.
 
 ====
 
@@ -59,4 +59,4 @@ Parameters
 Returns
 -------
 
-``true`` if the key exists in the Bimap, else, returns ``false``.
+``true`` if the key is contained in the Bimap, else, returns ``false``.
