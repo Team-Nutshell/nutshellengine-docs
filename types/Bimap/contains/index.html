@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>exist &mdash; NutshellEngine 0.2.6 documentation</title>
+  <title>contains &mdash; NutshellEngine 0.2.6 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=11b553de" />
@@ -20,8 +20,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="insert_or_assign" href="../insert_or_assign/index.html" />
-    <link rel="prev" title="erase" href="../erase/index.html" /> 
+    <link rel="next" title="erase" href="../erase/index.html" />
+    <link rel="prev" title="Bimap" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -267,8 +267,8 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Bimap</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html#functions">Functions</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">contains</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../erase/index.html">erase</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">exist</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../insert_or_assign/index.html">insert_or_assign</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operator_brackets/index.html">operator[]</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../size/index.html">size</a></li>
@@ -1193,9 +1193,9 @@
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Types</a></li>
           <li class="breadcrumb-item"><a href="../index.html">Bimap</a></li>
-      <li class="breadcrumb-item active">exist</li>
+      <li class="breadcrumb-item active">contains</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/types/Bimap/exist/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/types/Bimap/contains/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -1203,13 +1203,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="exist">
-<h1>exist<a class="headerlink" href="#exist" title="Link to this heading"></a></h1>
-<p><a class="reference internal" href="../index.html"><span class="doc">Bimap</span></a>::exist</p>
+  <section id="contains">
+<h1>contains<a class="headerlink" href="#contains" title="Link to this heading"></a></h1>
+<p><a class="reference internal" href="../index.html"><span class="doc">Bimap</span></a>::contains</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
-<span class="kt">bool</span><span class="w"> </span><span class="n">exist</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">contains</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -1232,7 +1232,7 @@
 </section>
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the key exists in the Bimap, else, returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the key is contained in the Bimap, else, returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 </section>
 <hr class="docutils" />
 <section id="id1">
@@ -1261,7 +1261,7 @@
 </section>
 <section id="id3">
 <h2>Returns<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the key exists in the Bimap, else, returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the key is contained in the Bimap, else, returns <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 </section>
 </section>
 
@@ -1269,8 +1269,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../erase/index.html" class="btn btn-neutral float-left" title="erase" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../insert_or_assign/index.html" class="btn btn-neutral float-right" title="insert_or_assign" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Bimap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../erase/index.html" class="btn btn-neutral float-right" title="erase" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

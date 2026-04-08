@@ -34,3 +34,8 @@ Returns
 -------
 
 None.
+
+Notes
+-----
+
+If ``newTime`` is greater than the current's :doc:`/types/Sound/index`'s ``length``, the sound stops, unless ``soundSourceID`` is looping.

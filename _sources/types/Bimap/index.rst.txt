@@ -17,8 +17,8 @@ Functions
 	  - Description
 	* - :doc:`/types/Bimap/insert_or_assign/index`
 	  - Inserts an element into the Bimap, according to a key. If the data already exists, its value changes.
-	* - :doc:`/types/Bimap/exist/index`
-	  - Checks if an element already exists.
+	* - :doc:`/types/Bimap/contains/index`
+	  - Checks if an element is already in the map.
 	* - :doc:`/types/Bimap/erase/index`
 	  - Erases an element from the map.
 	* - :doc:`/types/Bimap/operator_brackets/index`
@@ -29,8 +29,8 @@ Functions
 .. toctree::
 	:hidden:
 
+	./contains/index.rst
 	./erase/index.rst
-	./exist/index.rst
 	./insert_or_assign/index.rst
 	./operator_brackets/index.rst
 	./size/index.rst
