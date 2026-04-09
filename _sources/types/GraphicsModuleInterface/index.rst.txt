@@ -20,14 +20,22 @@ Functions
 	  - Sets the color of the background.
 	* - :doc:`/types/GraphicsModuleInterface/playAnimation/index`
 	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/resumeAnimation/index`
+	  - Resumes an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/GraphicsModuleInterface/pauseAnimation/index`
 	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/GraphicsModuleInterface/stopAnimation/index`
 	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/types/GraphicsModuleInterface/setAnimationCurrentTime/index`
-	  - Sets the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/GraphicsModuleInterface/isAnimationPlaying/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
+	* - :doc:`/types/GraphicsModuleInterface/setAnimationCurrentTime/index`
+	  - Sets the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/getAnimationCurrentTime/index`
+	  - Returns the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/setAnimationSpeed/index`
+	  - Sets the speed of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/GraphicsModuleInterface/getAnimationSpeed/index`
+	  - Returns the speed of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/GraphicsModuleInterface/emitParticles/index`
 	  - Emits particles described by a :doc:`/types/ParticleEmitter/index`.
 	* - :doc:`/types/GraphicsModuleInterface/destroyParticles/index`
@@ -47,10 +55,14 @@ Functions
 	./load/index.rst
 	./setBackgroundColor/index.rst
 	./playAnimation/index.rst
+	./resumeAnimation/index.rst
 	./pauseAnimation/index.rst
 	./stopAnimation/index.rst
-	./setAnimationCurrentTime/index.rst
 	./isAnimationPlaying/index.rst
+	./setAnimationCurrentTime/index.rst
+	./getAnimationCurrentTime/index.rst
+	./setAnimationSpeed/index.rst
+	./getAnimationSpeed/index.rst
 	./emitParticles/index.rst
 	./destroyParticles/index.rst
 	./drawUIText/index.rst

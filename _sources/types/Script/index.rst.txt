@@ -326,14 +326,22 @@ Functions
 	  - Returns the master gain.
 	* - :doc:`/types/Script/playAnimation/index`
 	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/resumeAnimation/index`
+	  - Resumes an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/pauseAnimation/index`
 	  - Pauses an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/stopAnimation/index`
 	  - Stops an :doc:`/types/Animation/index` of an :doc:`/entity_component_system/entity/index`.
-	* - :doc:`/types/Script/setAnimationCurrentTime/index`
-	  - Sets the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/isAnimationPlaying/index`
 	  - Checks if an :doc:`/entity_component_system/entity/index` is currently playing a certain :doc:`/types/Animation/index`.
+	* - :doc:`/types/Script/setAnimationCurrentTime/index`
+	  - Sets the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/getAnimationCurrentTime/index`
+	  - Returns the current playing time of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/setAnimationSpeed/index`
+	  - Sets the speed of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
+	* - :doc:`/types/Script/getAnimationSpeed/index`
+	  - Returns the speed of an :doc:`/types/Animation/index` played by an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/drawUIText/index`
 	  - Draws text on the User Interface.
 	* - :doc:`/types/Script/drawUILine/index`
@@ -535,10 +543,14 @@ Functions
 	./getConstantForces/index.rst
 
 	./playAnimation/index.rst
+	./resumeAnimation/index.rst
 	./pauseAnimation/index.rst
 	./stopAnimation/index.rst
-	./setAnimationCurrentTime/index.rst
 	./isAnimationPlaying/index.rst
+	./setAnimationCurrentTime/index.rst
+	./getAnimationCurrentTime/index.rst
+	./setAnimationSpeed/index.rst
+	./getAnimationSpeed/index.rst
 
 	./drawUIText/index.rst
 	./drawUILine/index.rst

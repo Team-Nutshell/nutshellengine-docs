@@ -512,10 +512,14 @@
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/load/index.html">load</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/setBackgroundColor/index.html">setBackgroundColor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/resumeAnimation/index.html">resumeAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/pauseAnimation/index.html">pauseAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/stopAnimation/index.html">stopAnimation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/setAnimationCurrentTime/index.html">setAnimationCurrentTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/isAnimationPlaying/index.html">isAnimationPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/setAnimationCurrentTime/index.html">setAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/getAnimationCurrentTime/index.html">getAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/setAnimationSpeed/index.html">setAnimationSpeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/getAnimationSpeed/index.html">getAnimationSpeed</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/emitParticles/index.html">emitParticles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/destroyParticles/index.html">destroyParticles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../GraphicsModuleInterface/drawUIText/index.html">drawUIText</a></li>
@@ -966,10 +970,14 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/setConstantForces/index.html">setConstantForces</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getConstantForces/index.html">getConstantForces</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/resumeAnimation/index.html">resumeAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/pauseAnimation/index.html">pauseAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/stopAnimation/index.html">stopAnimation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../Script/setAnimationCurrentTime/index.html">setAnimationCurrentTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/isAnimationPlaying/index.html">isAnimationPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/setAnimationCurrentTime/index.html">setAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getAnimationCurrentTime/index.html">getAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/setAnimationSpeed/index.html">setAnimationSpeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/getAnimationSpeed/index.html">getAnimationSpeed</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/drawUIText/index.html">drawUIText</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/drawUILine/index.html">drawUILine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/drawUIRectangle/index.html">drawUIRectangle</a></li>
@@ -1218,9 +1226,9 @@
 <td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a>&lt;<a class="reference internal" href="../Joint/index.html"><span class="doc">Joint</span></a>&gt;</p></td>
 <td><p>The skin’s joints.</p></td>
 </tr>
-<tr class="row-odd"><td><p>rootJoint</p></td>
-<td><p>uint32_t</p></td>
-<td><p>The skin’s root <a class="reference internal" href="../Joint/index.html"><span class="doc">Joint</span></a>, starting the joint hierarchy and indexed in <code class="docutils literal notranslate"><span class="pre">joints</span></code>.</p></td>
+<tr class="row-odd"><td><p>rootJoints</p></td>
+<td><p><a class="reference external" href="https://en.cppreference.com/w/cpp/container/vector">std::vector</a>&lt;uint32_t&gt;</p></td>
+<td><p>The skin’s root <a class="reference internal" href="../Joint/index.html"><span class="doc">Joints</span></a>, starting joint hierarchies and indexed in <code class="docutils literal notranslate"><span class="pre">joints</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td><p>baseMatrix</p></td>
 <td><p><a class="reference internal" href="../Math/index.html"><span class="doc">Math</span></a>::mat4</p></td>

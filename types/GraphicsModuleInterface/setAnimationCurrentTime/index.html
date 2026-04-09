@@ -20,8 +20,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="isAnimationPlaying" href="../isAnimationPlaying/index.html" />
-    <link rel="prev" title="stopAnimation" href="../stopAnimation/index.html" /> 
+    <link rel="next" title="getAnimationCurrentTime" href="../getAnimationCurrentTime/index.html" />
+    <link rel="prev" title="isAnimationPlaying" href="../isAnimationPlaying/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -512,10 +512,14 @@
 <li class="toctree-l4"><a class="reference internal" href="../load/index.html">load</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../setBackgroundColor/index.html">setBackgroundColor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../resumeAnimation/index.html">resumeAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pauseAnimation/index.html">pauseAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../stopAnimation/index.html">stopAnimation</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">setAnimationCurrentTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../isAnimationPlaying/index.html">isAnimationPlaying</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">setAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getAnimationCurrentTime/index.html">getAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../setAnimationSpeed/index.html">setAnimationSpeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getAnimationSpeed/index.html">getAnimationSpeed</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../emitParticles/index.html">emitParticles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../destroyParticles/index.html">destroyParticles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../drawUIText/index.html">drawUIText</a></li>
@@ -966,10 +970,14 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Script/setConstantForces/index.html">setConstantForces</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getConstantForces/index.html">getConstantForces</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/playAnimation/index.html">playAnimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/resumeAnimation/index.html">resumeAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/pauseAnimation/index.html">pauseAnimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/stopAnimation/index.html">stopAnimation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../Script/setAnimationCurrentTime/index.html">setAnimationCurrentTime</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/isAnimationPlaying/index.html">isAnimationPlaying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/setAnimationCurrentTime/index.html">setAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/getAnimationCurrentTime/index.html">getAnimationCurrentTime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/setAnimationSpeed/index.html">setAnimationSpeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/getAnimationSpeed/index.html">getAnimationSpeed</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/drawUIText/index.html">drawUIText</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/drawUILine/index.html">drawUILine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/drawUIRectangle/index.html">drawUIRectangle</a></li>
@@ -1209,7 +1217,7 @@
 <p>Sets the current playing time of an <a class="reference internal" href="../../Animation/index.html"><span class="doc">Animation</span></a> played by an <a class="reference internal" href="../../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAnimationCurrentTime</span><span class="p">(</span><span class="n">Entity</span><span class="w"> </span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">time</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setAnimationCurrentTime</span><span class="p">(</span><span class="n">Entity</span><span class="w"> </span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">newTime</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -1227,7 +1235,7 @@
 <td><p><a class="reference internal" href="../../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a></p></td>
 <td><p>The <a class="reference internal" href="../../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a> the <a class="reference internal" href="../../Animation/index.html"><span class="doc">Animation</span></a> is played on. It must have a <a class="reference internal" href="../../Renderable/index.html"><span class="doc">Renderable</span></a> <a class="reference internal" href="../../Component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>time</p></td>
+<tr class="row-odd"><td><p>newTime</p></td>
 <td><p>float</p></td>
 <td><p>The time to set the current <a class="reference internal" href="../../Animation/index.html"><span class="doc">Animation</span></a> to.</p></td>
 </tr>
@@ -1240,7 +1248,7 @@
 </section>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
-<p>If <code class="docutils literal notranslate"><span class="pre">time</span></code> is greater than the current’s <a class="reference internal" href="../../Animation/index.html"><span class="doc">Animation</span></a>’s <code class="docutils literal notranslate"><span class="pre">duration</span></code>, the animation stops.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">newTime</span></code> is greater than the current’s <a class="reference internal" href="../../Animation/index.html"><span class="doc">Animation</span></a>’s <code class="docutils literal notranslate"><span class="pre">duration</span></code>, the animation stops, unless the animation is looping.</p>
 </section>
 </section>
 
@@ -1248,8 +1256,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../stopAnimation/index.html" class="btn btn-neutral float-left" title="stopAnimation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../isAnimationPlaying/index.html" class="btn btn-neutral float-right" title="isAnimationPlaying" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../isAnimationPlaying/index.html" class="btn btn-neutral float-left" title="isAnimationPlaying" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../getAnimationCurrentTime/index.html" class="btn btn-neutral float-right" title="getAnimationCurrentTime" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
