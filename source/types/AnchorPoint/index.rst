@@ -18,3 +18,8 @@ Declaration
 		RightCenter,
 		Unknown
 	};
+
+Notes
+-----
+
+.. image:: /assets/anchor_point.png
