@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void setAnimationCurrentTime(Entity entity, float time) = 0;
+	virtual void setAnimationCurrentTime(Entity entity, float newTime) = 0;
 
 Parameters
 ----------
@@ -26,7 +26,7 @@ Parameters
 	* - entity
 	  - :doc:`/entity_component_system/entity/index`
 	  - The :doc:`/entity_component_system/entity/index` the :doc:`/types/Animation/index` is played on. It must have a :doc:`/types/Renderable/index` :doc:`/types/Component/index`.
-	* - time
+	* - newTime
 	  - float
 	  - The time to set the current :doc:`/types/Animation/index` to.
 
@@ -38,4 +38,4 @@ None.
 Notes
 -----
 
-If ``time`` is greater than the current's :doc:`/types/Animation/index`'s ``duration``, the animation stops.
+If ``newTime`` is greater than the current's :doc:`/types/Animation/index`'s ``duration``, the animation stops, unless the animation is looping.
