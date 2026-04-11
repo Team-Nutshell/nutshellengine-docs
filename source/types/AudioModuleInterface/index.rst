@@ -54,6 +54,10 @@ Functions
 	  - Sets the master gain.
 	* - :doc:`/types/AudioModuleInterface/getMasterGain/index`
 	  - Returns the master gain.
+	* - :doc:`/types/AudioModuleInterface/startAudioInputCapture/index`
+	  - Starts audio input capture.
+	* - :doc:`/types/AudioModuleInterface/stopAudioInputCapture/index`
+	  - Ends audio input capture.
 
 .. toctree::
 	:hidden:
@@ -78,3 +82,5 @@ Functions
 	./isSoundSourceLooping/index.rst
 	./setMasterGain/index.rst
 	./getMasterGain/index.rst
+	./startAudioInputCapture/index.rst
+	./stopAudioInputCapture/index.rst

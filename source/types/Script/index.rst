@@ -324,6 +324,10 @@ Functions
 	  - Sets the master gain.
 	* - :doc:`/types/Script/getMasterGain/index`
 	  - Returns the master gain.
+	* - :doc:`/types/Script/startAudioInputCapture/index`
+	  - Starts audio input capture.
+	* - :doc:`/types/Script/stopAudioInputCapture/index`
+	  - Ends audio input capture.
 	* - :doc:`/types/Script/playAnimation/index`
 	  - Plays an :doc:`/types/Animation/index` on an :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/resumeAnimation/index`
@@ -535,6 +539,8 @@ Functions
 	./isSoundSourceLooping/index.rst
 	./setMasterGain/index.rst
 	./getMasterGain/index.rst
+	./startAudioInputCapture/index.rst
+	./stopAudioInputCapture/index.rst
 
 	./intersect/index.rst
 	./raycast/index.rst
