@@ -378,6 +378,10 @@ Functions related to audio.
 	  - Sets the master gain.
 	* - :doc:`/types/Script/getMasterGain/index`
 	  - Returns the master gain.
+	* - :doc:`/types/Script/startAudioInputCapture/index`
+	  - Starts audio input capture.
+	* - :doc:`/types/Script/stopAudioInputCapture/index`
+	  - Ends audio input capture.
 
 Animation
 ---------
