@@ -39,7 +39,7 @@ Parameters
 Returns
 -------
 
-An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of an `std::pair <https://en.cppreference.com/w/cpp/utility/pair>` of :doc:`/entity_component_system/entity/index` and :doc:`/types/RaycastInformation/index` containing information about the hit :doc:`Entities </entity_component_system/entity/index>`.
+An `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_ of an `std::pair <https://en.cppreference.com/w/cpp/utility/pair>`_ of :doc:`/entity_component_system/entity/index` and :doc:`/types/RaycastInformation/index` containing information about the hit :doc:`Entities </entity_component_system/entity/index>`.
 
 The returned list is sorted from the closest to the furthest object. ``RaycastInformation::hasIntersected`` will always be ``true``.
 
