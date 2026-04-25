@@ -57,7 +57,7 @@ Inputs
 	  - The object's material's emissive texture.
 	* - NtshEngn_emissiveFactor
 	  - float
-	  - The object's material's metalness factor.
+	  - The object's material's emissive factor.
 	* - NtshEngn_alphaCutoff
 	  - float
 	  - The object's material's alpha cutoff.
@@ -75,34 +75,34 @@ Inputs
 	  - The number of directional lights in the scene.
 	* - NtshEngn_directionalLight(uint i)
 	  - :doc:`/types/Light/index`
-	  - The ``i``th directional light.
+	  - The ``i`` th directional light.
 	* - NtshEngn_directionalLightShadows(uint i, vec p)
 	  - float
-	  - A value between 0.0 and 1.0 determining how much the position ``p`` is in the shadows of the ``i``th directional light. 0.0 means completely in shadows, 1.0 means not in shadows.
+	  - A value between 0.0 and 1.0 determining how much the position ``p`` is in the shadows of the ``i`` th directional light. 0.0 means completely in shadows, 1.0 means not in shadows.
 	* - NtshEngn_pointLightCount
 	  - uint
 	  - The number of point lights in the scene.
 	* - NtshEngn_pointLight(uint i)
 	  - :doc:`/types/Light/index`
-	  - The ``i``th point light.
+	  - The ``i`` th point light.
 	* - NtshEngn_pointLightShadows(uint i, vec p)
 	  - float
-	  - A value between 0.0 and 1.0 determining how much the position ``p`` is in the shadows of the ``i``th point light. 0.0 means completely in shadows, 1.0 means not in shadows.
+	  - A value between 0.0 and 1.0 determining how much the position ``p`` is in the shadows of the ``i`` th point light. 0.0 means completely in shadows, 1.0 means not in shadows.
 	* - NtshEngn_spotLightCount
 	  - uint
 	  - The number of spot lights in the scene.
 	* - NtshEngn_spotLight(uint i)
 	  - :doc:`/types/Light/index`
-	  - The *i*th spot light.
+	  - The ``i`` th spot light.
 	* - NtshEngn_spotLightShadows(uint i, vec p)
 	  - float
-	  - A value between 0.0 and 1.0 determining how much the position ``p`` is in the shadows of the ``i``th spot light. 0.0 means completely in shadows, 1.0 means not in shadows.
+	  - A value between 0.0 and 1.0 determining how much the position ``p`` is in the shadows of the ``i`` th spot light. 0.0 means completely in shadows, 1.0 means not in shadows.
 	* - NtshEngn_ambientLightCount
 	  - uint
 	  - The number of ambient lights in the scene.
 	* - NtshEngn_ambientLight(i)
 	  - :doc:`/types/Light/index`
-	  - The *i*th ambient light.
+	  - The ``i`` th ambient light.
 	* - NtshEngn_time
 	  - float
 	  - The time since the application's launch, in **seconds**.
