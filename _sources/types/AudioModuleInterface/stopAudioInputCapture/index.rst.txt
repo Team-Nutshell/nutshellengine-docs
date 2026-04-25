@@ -20,7 +20,7 @@ None.
 Returns
 -------
 
-The :doc:`/types/SoundID` of the captured sound.
+The :doc:`/types/SoundID/index` of the captured sound.
 
 Notes
 -----
