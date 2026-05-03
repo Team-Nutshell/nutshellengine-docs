@@ -3,7 +3,7 @@ free
 
 :doc:`/types/IDPool/index`::free
 
-Gets a unique identifier.
+Frees a unique identifier.
 
 Declaration
 -----------
