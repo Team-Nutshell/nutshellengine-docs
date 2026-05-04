@@ -22,6 +22,10 @@
 	  - String
 	  - The main window's icon path.
 	  - A path to an image.
+	* - windowSize
+	  - Array of Number
+	  - The main window's size (width and height).
+	  - Any array of 2 numbers.
 	* - maxFPS
 	  - Number
 	  - The maximum number of frames per second.
