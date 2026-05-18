@@ -70,8 +70,8 @@ Functions
 	./stopSoundSource/index.rst
 	./getSoundSourceState/index.rst
 	./isSoundPlaying/index.rst
-	./setSoundSourceTime/index.rst
-	./getSoundSourceTime/index.rst
+	./setSoundSourceCurrentTime/index.rst
+	./getSoundSourceCurrentTime/index.rst
 	./setSoundSourcePosition/index.rst
 	./getSoundSourcePosition/index.rst
 	./setSoundSourceGain/index.rst

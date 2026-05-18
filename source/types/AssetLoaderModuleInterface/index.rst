@@ -3,21 +3,6 @@ AssetLoaderModuleInterface
 
 *Inherits* :doc:`/types/ModuleInterface/index`.
 
-Variables
----------
-
-.. list-table::
-	:width: 100%
-	:header-rows: 1
-	:class: code-table
-
-	* - Name
-	  - Type
-	  - Description
-	* - assetManager
-	  - :doc:`/types/AssetManagerInterface/index`\*
-	  - Memory address to the :doc:`/asset_manager/index`.
-
 Functions
 ---------
 
