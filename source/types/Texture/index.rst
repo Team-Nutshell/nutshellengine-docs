@@ -13,7 +13,7 @@ Variables
 	  - Type
 	  - Description
 	* - image
-	  - :doc:`/types/Image/index`\*
+	  - :doc:`/types/ImageID/index`
 	  - The texture's image.
 	* - imageSampler
 	  - :doc:`/types/ImageSampler/index`
