@@ -30,8 +30,8 @@ Variables
 	* - speedRange
 	  - `std::array <https://en.cppreference.com/w/cpp/container/array>`_\<float, 2>
 	  - The range of speed, per particle.
-	* - image
-	  - :doc:`/types/Image/index`\*
+	* - texture
+	  - :doc:`/types/Texture/index`
 	  - The texture of the particles.
 	* - colorRange
 	  - `std::array <https://en.cppreference.com/w/cpp/container/array>`_\<:doc:`/types/Math/index`::vec4, 2>
