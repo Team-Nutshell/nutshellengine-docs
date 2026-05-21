@@ -33,6 +33,12 @@ Variables
 	* - borderColor
 	  - :doc:`/types/ImageSamplerBorderColor/index`
 	  - The sampler's border color if one of the address mode is ``ClampToBorder``.
-	* - anisotropyLevel
+	* - minLod
 	  - float
-	  - The anisotropy level.
+	  - The minimum level of detail.
+	* - maxLod
+	  - float
+	  - The maximum level of detail.
+	* - maxAnisotropy
+	  - float
+	  - The maximum anisotropy.

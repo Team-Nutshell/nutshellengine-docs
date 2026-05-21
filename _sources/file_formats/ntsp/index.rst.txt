@@ -73,7 +73,15 @@
 		 - "FloatOpaqueWhite"
 		 - "IntOpaqueWhite"
 		 - "Unknown"
-	* - anisotropyLevel
+	* - minLod
 	  - Number
-	  - The anisotropy level.
+	  - The minimum level of detail.
+	  - Any number.
+	* - maxLod
+	  - Number
+	  - The maximum level of detail.
+	  - Any number.
+	* - maxAnisotropy
+	  - Number
+	  - The maximum anisotropy.
 	  - Any number.
