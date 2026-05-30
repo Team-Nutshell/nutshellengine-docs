@@ -20,7 +20,7 @@ Variables
 	  - The :doc:`/types/Material/index` to use.
 	* - fragmentShader
 	  - `std::string <https://en.cppreference.com/w/cpp/string/basic_string>`_
-	  - The custom `/fragment_shader/index` to use. If empty, the graphics module's default fragment shader will be used.
+	  - The custom :doc:`/fragment_shader/index` to use. If empty, the graphics module's default fragment shader will be used.
 	* - isVisible
 	  - bool
 	  - Specifies if the :doc:`/entity_component_system/entity/index` is visible.
