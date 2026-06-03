@@ -1,7 +1,7 @@
 getNumThreads
 =============
 
-:doc:`/types/JobSystem/index`::getNumThreads
+:doc:`/types/JobSystemInterface/index`::getNumThreads
 
 Returns the number of threads.
 

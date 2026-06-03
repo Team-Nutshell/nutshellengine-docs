@@ -519,13 +519,13 @@ Functions related to networking.
 	* - Name
 	  - Description
 	* - :doc:`/types/Script/createServerSocket/index`
-	  - Creates a :doc:`/types/ServerSocket/index`.
+	  - Creates a :doc:`server socket </types/ServerSocketInterface/index>`.
 	* - :doc:`/types/Script/createClientSocket/index`
-	  - Creates a :doc:`/types/ClientSocket/index`.
+	  - Creates a :doc:`client socket </types/ClientSocketInterface/index>`.
 	* - :doc:`/types/Script/closeServerSocket/index`
-	  - Closes a :doc:`/types/ServerSocket/index`.
+	  - Closes a :doc:`server socket </types/ServerSocketInterface/index>`.
 	* - :doc:`/types/Script/closeClientSocket/index`
-	  - Closes a :doc:`/types/ClientSocket/index`.
+	  - Closes a :doc:`client socket </types/ClientSocketInterface/index>`.
 
 Scripting
 ---------

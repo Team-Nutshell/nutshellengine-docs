@@ -1,7 +1,7 @@
 dispatch
 ========
 
-:doc:`/types/JobSystem/index`::dispatch
+:doc:`/types/JobSystemInterface/index`::dispatch
 
 Launches a job to be executed by multiple worker threads.
 

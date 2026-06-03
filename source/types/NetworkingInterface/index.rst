@@ -12,13 +12,13 @@ Functions
 	* - Name
 	  - Description
 	* - :doc:`/types/NetworkingInterface/createServerSocket/index`
-	  - Creates a :doc:`/types/ServerSocket/index`.
+	  - Creates a :doc:`server socket </types/ServerSocketInterface/index>`.
 	* - :doc:`/types/NetworkingInterface/createClientSocket/index`
-	  - Creates a :doc:`/types/ClientSocket/index`.
+	  - Creates a :doc:`client socket </types/ClientSocketInterface/index>`.
 	* - :doc:`/types/NetworkingInterface/closeServerSocket/index`
-	  - Closes a :doc:`/types/ServerSocket/index`.
+	  - Closes a :doc:`server socket </types/ServerSocketInterface/index>`.
 	* - :doc:`/types/NetworkingInterface/closeClientSocket/index`
-	  - Closes a :doc:`/types/ClientSocket/index`.
+	  - Closes a :doc:`client socket </types/ClientSocketInterface/index>`.
 
 .. toctree::
 	:hidden:

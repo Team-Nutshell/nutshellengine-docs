@@ -3,7 +3,7 @@ closeServerSocket
 
 :doc:`/types/NetworkingInterface/index`::closeServerSocket
 
-Closes a :doc:`/types/ServerSocket/index`.
+Closes a :doc:`server socket </types/ServerSocketInterface/index>`.
 
 Declaration
 -----------
@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - serverSocket
 	  - :doc:`/types/ServerSocketInterface/index`\*
-	  - The memory address to the :doc:`/types/ServerSocket/index` to close.
+	  - The memory address to the :doc:`server socket </types/ServerSocketInterface/index>` to close.
 
 Returns
 -------

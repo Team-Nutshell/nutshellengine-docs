@@ -3,14 +3,14 @@ createServerSocket
 
 :doc:`/types/Script/index`::createServerSocket
 
-Creates a :doc:`/types/ServerSocket/index`.
+Creates a :doc:`server socket </types/ServerSocketInterface/index>`.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	ServerSocket* createServerSocket(uint16_t port, NetworkType networkType = NetworkType::UDP);
+	ServerSocketInterface* createServerSocket(uint16_t port, NetworkType networkType = NetworkType::UDP);
 
 Parameters
 ----------
@@ -33,4 +33,4 @@ Parameters
 Returns
 -------
 
-The memory address to a :doc:`/types/ServerSocket/index`.
+The memory address to a :doc:`server socket </types/ServerSocketInterface/index>`.

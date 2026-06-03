@@ -38,7 +38,7 @@ Variables
 	  - Memory address to the :doc:`/types/CommandLine/index`.
 	* - profiler
 	  - :doc:`/types/ProfilerInterface/index`\*
-	  - Memory address to the :doc:`/types/Profiler/index`.
+	  - Memory address to the profiler.
 
 Functions
 ---------

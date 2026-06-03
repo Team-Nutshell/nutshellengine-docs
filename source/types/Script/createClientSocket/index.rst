@@ -3,14 +3,14 @@ createClientSocket
 
 :doc:`/types/Script/index`::createClientSocket
 
-Creates a :doc:`/types/ClientSocket/index`.
+Creates a :doc:`client socket </types/ClientSocketInterface/index>`.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	ClientSocket* createClientSocket(NetworkType networkType = NetworkType::UDP);
+	ClientSocketInterface* createClientSocket(NetworkType networkType = NetworkType::UDP);
 
 Parameters
 ----------
@@ -30,4 +30,4 @@ Parameters
 Returns
 -------
 
-The memory address to a :doc:`/types/ClientSocket/index`.
+The memory address to a :doc:`client socket </types/ClientSocketInterface/index>`.

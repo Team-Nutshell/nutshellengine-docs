@@ -3,7 +3,7 @@ createClientSocket
 
 :doc:`/types/NetworkingInterface/index`::createClientSocket
 
-Creates a :doc:`/types/ClientSocket/index`.
+Creates a :doc:`client socket </types/ClientSocketInterface/index>`.
 
 Declaration
 -----------
@@ -30,4 +30,4 @@ Parameters
 Returns
 -------
 
-The memory address to a :doc:`/types/ClientSocket/index`.
+The memory address to a :doc:`client socket </types/ClientSocketInterface/index>`.

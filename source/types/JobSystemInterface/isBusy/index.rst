@@ -1,7 +1,7 @@
 isBusy
 ======
 
-:doc:`/types/JobSystem/index`::isBusy
+:doc:`/types/JobSystemInterface/index`::isBusy
 
 Checks if any worker thread is still executing a job.
 

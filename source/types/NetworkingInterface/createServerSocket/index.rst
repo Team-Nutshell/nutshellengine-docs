@@ -3,7 +3,7 @@ createServerSocket
 
 :doc:`/types/NetworkingInterface/index`::createServerSocket
 
-Creates a :doc:`/types/ServerSocket/index`.
+Creates a :doc:`server socket </types/ServerSocketInterface/index>`.
 
 Declaration
 -----------
@@ -33,4 +33,4 @@ Parameters
 Returns
 -------
 
-The memory address to a :doc:`/types/ServerSocket/index`.
+The memory address to a :doc:`server socket </types/ServerSocketInterface/index>`.
