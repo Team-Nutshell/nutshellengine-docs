@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void playAnimation(Entity entity, uint32_t animationIndex, bool looping) = 0;
+	virtual void playAnimation(Entity entity, Animation* animation, bool looping) = 0;
 
 Parameters
 ----------
@@ -26,9 +26,9 @@ Parameters
 	* - entity
 	  - :doc:`/entity_component_system/entity/index`
 	  - The :doc:`/entity_component_system/entity/index` to play the :doc:`/types/Animation/index` of. It must have a :doc:`/types/Renderable/index` :doc:`/types/Component/index`.
-	* - animationIndex
-	  - uint32_t
-	  - The animation to play, indexed on ``entity``\'s :doc:`/types/Renderable/index`'s ``model``'s :doc:`/types/Animation/index` list.
+	* - animation
+	  - :doc:`/types/Animation/index`\*
+	  - The animation to play.
 	* - looping
 	  - bool
 	  - Whether the animation is looping or not.

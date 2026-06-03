@@ -29,6 +29,8 @@ Functions
 	  - Returns the file's extension.
 	* - :doc:`/types/File/directory/index`
 	  - Returns the directory the file is into.
+	* - :doc:`/types/File/normalize/index`
+	  - Returns the normalized form of a path.
 
 .. toctree::
 	:hidden:
@@ -41,3 +43,4 @@ Functions
 	./filename/index.rst
 	./extension/index.rst
 	./directory/index.rst
+	./normalize/index.rst
