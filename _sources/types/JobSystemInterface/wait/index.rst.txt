@@ -1,7 +1,7 @@
 wait
 ====
 
-:doc:`/types/JobSystem/index`::wait
+:doc:`/types/JobSystemInterface/index`::wait
 
 Waits for all worker threads to finish their jobs.
 

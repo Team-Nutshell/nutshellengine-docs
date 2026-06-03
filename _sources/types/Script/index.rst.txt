@@ -383,13 +383,13 @@ Functions
 	* - :doc:`/types/Script/getNumThreads/index`
 	  - Returns the number of threads.
 	* - :doc:`/types/Script/createServerSocket/index`
-	  - Creates a :doc:`/types/ServerSocket/index`.
+	  - Creates a :doc:`server socket </types/ServerSocketInterface/index>`.
 	* - :doc:`/types/Script/createClientSocket/index`
-	  - Creates a :doc:`/types/ClientSocket/index`.
+	  - Creates a :doc:`client socket </types/ClientSocketInterface/index>`.
 	* - :doc:`/types/Script/closeServerSocket/index`
-	  - Closes a :doc:`/types/ServerSocket/index`.
+	  - Closes a :doc:`server socket </types/ServerSocketInterface/index>`.
 	* - :doc:`/types/Script/closeClientSocket/index`
-	  - Closes a :doc:`/types/ClientSocket/index`.
+	  - Closes a :doc:`client socket </types/ClientSocketInterface/index>`.
 	* - :doc:`/types/Script/createScript/index`
 	  - Creates a new :doc:`/types/Script/index` for a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index`.
 	* - :doc:`/types/Script/startProfiling/index`

@@ -3,14 +3,14 @@ closeClientSocket
 
 :doc:`/types/Script/index`::closeClientSocket
 
-Closes a :doc:`/types/ClientSocket/index`.
+Closes a :doc:`client socket </types/ClientSocketInterface/index>`.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	void closeClientSocket(ClientSocket* clientSocket);
+	void closeClientSocket(ClientSocketInterface* clientSocket);
 
 Parameters
 ----------
@@ -24,8 +24,8 @@ Parameters
 	  - Type
 	  - Description
 	* - clientSocket
-	  - :doc:`/types/ClientSocket/index`\*
-	  - The memory address to the :doc:`/types/ClientSocket/index` to close.
+	  - :doc:`/types/ClientSocketInterface/index`\*
+	  - The memory address to the :doc:`client socket </types/ClientSocketInterface/index>` to close.
 
 Returns
 -------

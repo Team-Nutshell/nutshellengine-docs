@@ -3,7 +3,7 @@ closeClientSocket
 
 :doc:`/types/NetworkingInterface/index`::closeClientSocket
 
-Closes a :doc:`/types/ClientSocket/index`.
+Closes a :doc:`client socket </types/ClientSocketInterface/index>`.
 
 Declaration
 -----------
@@ -25,7 +25,7 @@ Parameters
 	  - Description
 	* - clientSocket
 	  - :doc:`/types/ClientSocketInterface/index`\*
-	  - The memory address to the :doc:`/types/ClientSocket/index` to close.
+	  - The memory address to the :doc:`client socket </types/ClientSocketInterface/index>` to close.
 
 Returns
 -------

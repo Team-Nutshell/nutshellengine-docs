@@ -1,7 +1,7 @@
 execute
 =======
 
-:doc:`/types/JobSystem/index`::execute
+:doc:`/types/JobSystemInterface/index`::execute
 
 Launches a job to be executed by a worker thread.
 

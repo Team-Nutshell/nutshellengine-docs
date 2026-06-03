@@ -3,14 +3,14 @@ closeServerSocket
 
 :doc:`/types/Script/index`::closeServerSocket
 
-Closes a :doc:`/types/ServerSocket/index`.
+Closes a :doc:`server socket </types/ServerSocketInterface/index>`.
 
 Declaration
 -----------
 
 .. code-block:: cpp
 
-	void closeServerSocket(ServerSocket* serverSocket);
+	void closeServerSocket(ServerSocketInterface* serverSocket);
 
 Parameters
 ----------
@@ -24,8 +24,8 @@ Parameters
 	  - Type
 	  - Description
 	* - serverSocket
-	  - :doc:`/types/ServerSocket/index`\*
-	  - The memory address to the :doc:`/types/ServerSocket/index` to close.
+	  - :doc:`/types/ServerSocketInterface/index`\*
+	  - The memory address to the :doc:`server socket </types/ServerSocketInterface/index>` to close.
 
 Returns
 -------
