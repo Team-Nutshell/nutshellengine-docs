@@ -84,6 +84,8 @@ Functions
 	  - Returns the model associated with the name.
 	* - :doc:`/types/Script/getModelName/index`
 	  - Returns the name of the model.
+	* - :doc:`/types/Script/getModelNames/index`
+	  - Returns the names of all models.
 	* - :doc:`/types/Script/createMaterial/index`
 	  - Creates an empty material and returns its pointer.
 	* - :doc:`/types/Script/loadMaterial/index`
@@ -94,6 +96,8 @@ Functions
 	  - Returns the material associated with the name.
 	* - :doc:`/types/Script/getMaterialName/index`
 	  - Returns the name of the material.
+	* - :doc:`/types/Script/getMaterialNames/index`
+	  - Returns the names of all materials.
 	* - :doc:`/types/Script/createImage/index`
 	  - Creates an empty image and returns its pointer.
 	* - :doc:`/types/Script/loadImage/index`
@@ -106,6 +110,8 @@ Functions
 	  - Returns the image associated with the name.
 	* - :doc:`/types/Script/getImageName/index`
 	  - Returns the name of the image.
+	* - :doc:`/types/Script/getImageNames/index`
+	  - Returns the names of all images.
 	* - :doc:`/types/Script/createFont/index`
 	  - Creates an empty font and returns its pointer.
 	* - :doc:`/types/Script/loadFontBitmap/index`
@@ -120,6 +126,8 @@ Functions
 	  - Returns the font associated with the name.
 	* - :doc:`/types/Script/getFontName/index`
 	  - Returns the name of the font.
+	* - :doc:`/types/Script/getFontNames/index`
+	  - Returns the names of all fonts.
 	* - :doc:`/types/Script/createSound/index`
 	  - Creates an empty sound and returns its pointer.
 	* - :doc:`/types/Script/loadSound/index`
@@ -132,6 +140,14 @@ Functions
 	  - Returns the sound associated with the name.
 	* - :doc:`/types/Script/getSoundName/index`
 	  - Returns the name of the sound.
+	* - :doc:`/types/Script/getSoundNames/index`
+	  - Returns the names of all sounds.
+	* - :doc:`/types/Script/findAnimationByName/index`
+	  - Returns the animation associated with the name.
+	* - :doc:`/types/Script/getAnimationName/index`
+	  - Returns the name of the animation.
+	* - :doc:`/types/Script/getAnimationNames/index`
+	  - Returns the names of all animations.
 	* - :doc:`/types/Script/goToScene/index`
 	  - Loads a scene from a file.
 	* - :doc:`/types/Script/getCurrentScenePath/index`
@@ -446,17 +462,20 @@ Functions
 	./destroyModel/index.rst
 	./findModelByName/index.rst
 	./getModelName/index.rst
+	./getModelNames/index.rst
 	./createMaterial/index.rst
 	./loadMaterial/index.rst
 	./destroyMaterial/index.rst
 	./findMaterialByName/index.rst
 	./getMaterialName/index.rst
+	./getMaterialNames/index.rst
 	./createImage/index.rst
 	./loadImage/index.rst
 	./getImageID/index.rst
 	./destroyImage/index.rst
 	./findImageByName/index.rst
 	./getImageName/index.rst
+	./getImageNames/index.rst
 	./createFont/index.rst
 	./loadFontBitmap/index.rst
 	./loadFontSDF/index.rst
@@ -464,12 +483,19 @@ Functions
 	./destroyFont/index.rst
 	./findFontByName/index.rst
 	./getFontName/index.rst
+	./getFontNames/index.rst
 	./createSound/index.rst
 	./loadSound/index.rst
 	./getSoundID/index.rst
 	./destroySound/index.rst
 	./findSoundByName/index.rst
 	./getSoundName/index.rst
+	./getSoundNames/index.rst
+	./createAnimation/index.rst
+	./destroyAnimation/index.rst
+	./findAnimationByName/index.rst
+	./getAnimationName/index.rst
+	./getAnimationNames/index.rst
 
 	./getKeyState/index.rst
 	./getMouseButtonState/index.rst

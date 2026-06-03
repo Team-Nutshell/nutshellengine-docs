@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual bool isAnimationPlaying(Entity entity, uint32_t animationIndex) = 0;
+	virtual bool isAnimationPlaying(Entity entity, Animation* animation) = 0;
 
 Parameters
 ----------
@@ -26,9 +26,9 @@ Parameters
 	* - entity
 	  - :doc:`/entity_component_system/entity/index`
 	  - The :doc:`/entity_component_system/entity/index` to check the :doc:`/types/Animation/index`'s status of. It must have a :doc:`/types/Renderable/index` :doc:`/types/Component/index`.
-	* - animationIndex
-	  - uint32_t
-	  - The animation to check the status of, indexed on ``entity``\'s :doc:`/types/Renderable/index`'s ``model``'s :doc:`/types/Animation/index` list.
+	* - animation
+	  - :doc:`/types/Animation/index`\*
+	  - The animation to check the status of.
 
 Returns
 -------

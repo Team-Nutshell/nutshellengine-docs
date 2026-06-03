@@ -12,6 +12,9 @@ Variables
 	* - Name
 	  - Type
 	  - Description
+	* - model
+	  - :doc:`/types/Model/index`\*
+	  - The mesh's original model.
 	* - vertices
 	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/Vertex/index`>
 	  - The mesh's vertices.
@@ -21,9 +24,6 @@ Variables
 	* - skin
 	  - :doc:`/types/Skin/index`
 	  - The mesh's :doc:`/types/Skin/index` for animation.
-	* - animations
-	  - `std::vector <https://en.cppreference.com/w/cpp/container/vector>`_\<:doc:`/types/Animation/index`>
-	  - The mesh's animations.
 	* - topology
 	  - :doc:`/types/MeshTopology/index`
 	  - The mesh's topology.

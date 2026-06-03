@@ -34,6 +34,8 @@ Functions
 	  - Creates an empty sound and returns its pointer.
 	* - :doc:`/types/AssetManagerInterface/loadSound/index`
 	  - Loads a sound from a file and returns a pointer to the loaded sound.
+	* - :doc:`/types/AssetManagerInterface/createAnimation/index`
+	  - Creates an empty animation and returns its pointer.
 	* - :doc:`/types/AssetManagerInterface/destroyModel/index`
 	  - Destroys a model.
 	* - :doc:`/types/AssetManagerInterface/destroyMaterial/index`
@@ -44,26 +46,44 @@ Functions
 	  - Destroys a font.
 	* - :doc:`/types/AssetManagerInterface/destroySound/index`
 	  - Destroys a sound.
+	* - :doc:`/types/AssetManagerInterface/destroyAnimation/index`
+	  - Destroys an animation.
 	* - :doc:`/types/AssetManagerInterface/findModelByName/index`
 	  - Returns the model associated with the name.
 	* - :doc:`/types/AssetManagerInterface/getModelName/index`
 	  - Returns the name of the model.
+	* - :doc:`/types/AssetManagerInterface/getModelNames/index`
+	  - Returns the names of all models.
 	* - :doc:`/types/AssetManagerInterface/findMaterialByName/index`
 	  - Returns the material associated with the name.
 	* - :doc:`/types/AssetManagerInterface/getMaterialName/index`
 	  - Returns the name of the material.
+	* - :doc:`/types/AssetManagerInterface/getMaterialNames/index`
+	  - Returns the names of all materials.
 	* - :doc:`/types/AssetManagerInterface/findImageByName/index`
 	  - Returns the image associated with the name.
 	* - :doc:`/types/AssetManagerInterface/getImageName/index`
 	  - Returns the name of the image.
+	* - :doc:`/types/AssetManagerInterface/getImageNames/index`
+	  - Returns the names of all images.
 	* - :doc:`/types/AssetManagerInterface/findFontByName/index`
 	  - Returns the font associated with the name.
 	* - :doc:`/types/AssetManagerInterface/getFontName/index`
 	  - Returns the name of the font.
+	* - :doc:`/types/AssetManagerInterface/getFontNames/index`
+	  - Returns the names of all fonts.
 	* - :doc:`/types/AssetManagerInterface/findSoundByName/index`
 	  - Returns the sound associated with the name.
 	* - :doc:`/types/AssetManagerInterface/getSoundName/index`
 	  - Returns the name of the sound.
+	* - :doc:`/types/AssetManagerInterface/getSoundNames/index`
+	  - Returns the names of all sounds.
+	* - :doc:`/types/AssetManagerInterface/findAnimationByName/index`
+	  - Returns the animation associated with the name.
+	* - :doc:`/types/AssetManagerInterface/getAnimationName/index`
+	  - Returns the name of the animation.
+	* - :doc:`/types/AssetManagerInterface/getAnimationNames/index`
+	  - Returns the names of all animations.
 	* - :doc:`/types/AssetManagerInterface/calculateTangents/index`
 	  - Calculate a :doc:`/types/Mesh/index`'s tangents.
 	* - :doc:`/types/AssetManagerInterface/calculateAABB/index`
@@ -83,20 +103,30 @@ Functions
 	./loadFontSDF/index.rst
 	./createSound/index.rst
 	./loadSound/index.rst
+	./createAnimation/index.rst
 	./destroyModel/index.rst
 	./destroyMaterial/index.rst
 	./destroyImage/index.rst
 	./destroyFont/index.rst
 	./destroySound/index.rst
+	./destroyAnimation/index.rst
 	./findModelByName/index.rst
 	./getModelName/index.rst
+	./getModelNames/index.rst
 	./findMaterialByName/index.rst
 	./getMaterialName/index.rst
+	./getMaterialNames/index.rst
 	./findImageByName/index.rst
 	./getImageName/index.rst
+	./getImageNames/index.rst
 	./findFontByName/index.rst
 	./getFontName/index.rst
+	./getFontNames/index.rst
 	./findSoundByName/index.rst
 	./getSoundName/index.rst
+	./getSoundNames/index.rst
+	./findAnimationByName/index.rst
+	./getAnimationName/index.rst
+	./getAnimationNames/index.rst
 	./calculateTangents/index.rst
 	./calculateAABB/index.rst

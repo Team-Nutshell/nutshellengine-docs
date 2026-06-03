@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual uint32_t getPlayingAnimation(Entity entity) = 0;
+	virtual Animation* getPlayingAnimation(Entity entity) = 0;
 
 Parameters
 ----------
@@ -30,4 +30,4 @@ Parameters
 Returns
 -------
 
-The index of the currently playing animation. If no animation is playing, returns ``0xFFFFFFFF``.
+A pointer to the currently playing :doc:`/types/Animation/index`. If no animation is playing, returns ``0xFFFFFFFF``.
