@@ -16,9 +16,12 @@ Functions
 	  - Loads a scene from a file.
 	* - :doc:`/types/SceneManagerInterface/getCurrentScenePath/index`
 	  - Returns the current scene's path.
+	* - :doc:`/types/SceneManagerInterface/createEntitiesFromScene/index`
+	  - Creates Entities from a scene file.
 
 .. toctree::
 	:hidden:
 
 	./goToScene/index.rst
 	./getCurrentScenePath/index.rst
+	./createEntitiesFromScene/index.rst

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>getType &mdash; NutshellEngine 0.3.0 documentation</title>
+  <title>createEntitiesFromScene &mdash; NutshellEngine 0.3.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=11b553de" />
@@ -20,8 +20,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="ColliderShapeType" href="../../ColliderShapeType/index.html" />
-    <link rel="prev" title="ColliderShape" href="../index.html" /> 
+    <link rel="next" title="Script" href="../../Script/index.html" />
+    <link rel="prev" title="getCurrentScenePath" href="../getCurrentScenePath/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -314,18 +314,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../ColliderCapsule/index.html#notes">Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">ColliderShape</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../index.html#declaration">Declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../index.html#functions">Functions</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../index.html#notes">Notes</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">getType</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../ColliderShapeType/index.html">ColliderShapeType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ColliderShapeType/index.html#declaration">Declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ColliderShapeType/index.html#notes">Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ColliderShape/index.html">ColliderShape</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ColliderShape/index.html#declaration">Declaration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ColliderShape/index.html#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ColliderSphere/index.html">ColliderSphere</a><ul>
@@ -745,10 +736,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../Rigidbody/index.html#notes">Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../SceneManagerInterface/index.html">SceneManagerInterface</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../SceneManagerInterface/index.html#functions">Functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../SceneManagerInterface/goToScene/index.html">goToScene</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../SceneManagerInterface/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">SceneManagerInterface</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#functions">Functions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../goToScene/index.html">goToScene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">createEntitiesFromScene</a></li>
 </ul>
 </li>
 </ul>
@@ -762,6 +754,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getCommandLine/index.html">getCommandLine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/goToScene/index.html">goToScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/createEntitiesFromScene/index.html">createEntitiesFromScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/createEntity/index.html">createEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/destroyEntity/index.html">destroyEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/destroyAllEntities/index.html">destroyAllEntities</a></li>
@@ -1126,10 +1119,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Types</a></li>
-          <li class="breadcrumb-item"><a href="../index.html">ColliderShape</a></li>
-      <li class="breadcrumb-item active">getType</li>
+          <li class="breadcrumb-item"><a href="../index.html">SceneManagerInterface</a></li>
+      <li class="breadcrumb-item active">createEntitiesFromScene</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/types/ColliderShape/getType/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/types/SceneManagerInterface/createEntitiesFromScene/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -1137,23 +1130,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="gettype">
-<h1>getType<a class="headerlink" href="#gettype" title="Link to this heading"></a></h1>
-<p><a class="reference internal" href="../index.html"><span class="doc">ColliderShape</span></a>::getType</p>
-<p>Returns the <code class="docutils literal notranslate"><span class="pre">type</span></code> of the collider.</p>
+  <section id="createentitiesfromscene">
+<h1>createEntitiesFromScene<a class="headerlink" href="#createentitiesfromscene" title="Link to this heading"></a></h1>
+<p><a class="reference internal" href="../index.html"><span class="doc">SceneManagerInterface</span></a>::createEntitiesFromScene</p>
+<p>Creates Entities from a scene file.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">ColliderShapeType</span><span class="w"> </span><span class="nf">getType</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">createEntitiesFromScene</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">filePath</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
 <section id="parameters">
 <h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
-<p>None.</p>
+<table class="code-table docutils align-default" style="width: 100%">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>filePath</p></td>
+<td><p>const <a class="reference external" href="https://en.cppreference.com/w/cpp/string/basic_string">std::string</a>&amp;</p></td>
+<td><p>Path to the scene to create the Entities from.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
-<p>The ColliderShape’s <a class="reference internal" href="../../ColliderShapeType/index.html"><span class="doc">ColliderShapeType</span></a>.</p>
+<p>None.</p>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
+<p>Contrary to <a class="reference internal" href="../goToScene/index.html"><span class="doc">goToScene</span></a>, this function does not destroy all non-persistent Entities currently present.</p>
 </section>
 </section>
 
@@ -1161,8 +1171,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="ColliderShape" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../ColliderShapeType/index.html" class="btn btn-neutral float-right" title="ColliderShapeType" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../getCurrentScenePath/index.html" class="btn btn-neutral float-left" title="getCurrentScenePath" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../Script/index.html" class="btn btn-neutral float-right" title="Script" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

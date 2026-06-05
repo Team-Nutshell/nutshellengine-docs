@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	RaycastInformation raycast(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, const ColliderShape* shape, float tMin = 0.0001f, float tMax = 1000000.0f);
+	RaycastInformation raycast(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, const ColliderShape& collider, float tMin = 0.0001f, float tMax = 1000000.0f);
 
 Parameters
 ----------
@@ -29,9 +29,9 @@ Parameters
 	* - rayDirection
 	  - const :doc:`/types/Math/index`::vec3&
 	  - The direction of the ray.
-	* - shape
-	  - const :doc:`/types/ColliderShape/index`\*
-	  - The shape to test the ray intersection on.
+	* - collider
+	  - const :doc:`/types/ColliderShape/index`\&
+	  - The collider to test the ray intersection on.
 	* - tMin
 	  - float
 	  - The minimum distance to check.
@@ -42,4 +42,4 @@ Parameters
 Returns
 -------
 
-A :doc:`/types/RaycastInformation/index` containing information about the intersection. If there is no intersection between the ray and the shape, ``RaycastInformation::hasIntersected`` will be ``false``.
+A :doc:`/types/RaycastInformation/index` containing information about the intersection. If there is no intersection between the ray and the collider, ``RaycastInformation::hasIntersected`` will be ``false``.

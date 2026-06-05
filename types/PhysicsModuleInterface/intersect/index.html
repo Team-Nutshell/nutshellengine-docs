@@ -316,16 +316,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ColliderShape/index.html">ColliderShape</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../ColliderShape/index.html#declaration">Declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ColliderShape/index.html#functions">Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ColliderShape/index.html#notes">Notes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../ColliderShape/getType/index.html">getType</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../ColliderShapeType/index.html">ColliderShapeType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ColliderShapeType/index.html#declaration">Declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ColliderShapeType/index.html#notes">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ColliderShape/index.html#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ColliderSphere/index.html">ColliderSphere</a><ul>
@@ -749,6 +740,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../SceneManagerInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../SceneManagerInterface/goToScene/index.html">goToScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../SceneManagerInterface/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../SceneManagerInterface/createEntitiesFromScene/index.html">createEntitiesFromScene</a></li>
 </ul>
 </li>
 </ul>
@@ -762,6 +754,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getCommandLine/index.html">getCommandLine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/goToScene/index.html">goToScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Script/createEntitiesFromScene/index.html">createEntitiesFromScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/createEntity/index.html">createEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/destroyEntity/index.html">destroyEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../Script/destroyAllEntities/index.html">destroyAllEntities</a></li>
@@ -1143,7 +1136,7 @@
 <p>Returns information about the intersection of two <a class="reference internal" href="../../ColliderShape/index.html"><span class="doc">ColliderShapes</span></a>.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="n">IntersectionInformation</span><span class="w"> </span><span class="nf">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ColliderShape</span><span class="o">*</span><span class="w"> </span><span class="n">shape1</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ColliderShape</span><span class="o">*</span><span class="w"> </span><span class="n">shape2</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">virtual</span><span class="w"> </span><span class="n">IntersectionInformation</span><span class="w"> </span><span class="nf">intersect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ColliderShape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">collider1</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ColliderShape</span><span class="o">&amp;</span><span class="w"> </span><span class="n">collider2</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>
@@ -1157,20 +1150,20 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>shape1</p></td>
-<td><p>const <a class="reference internal" href="../../ColliderShape/index.html"><span class="doc">ColliderShape</span></a>*</p></td>
-<td><p>The first shape.</p></td>
+<tr class="row-even"><td><p>collider1</p></td>
+<td><p>const <a class="reference internal" href="../../ColliderShape/index.html"><span class="doc">ColliderShape</span></a>&amp;</p></td>
+<td><p>The first collider.</p></td>
 </tr>
-<tr class="row-odd"><td><p>shape2</p></td>
-<td><p>const <a class="reference internal" href="../../ColliderShape/index.html"><span class="doc">ColliderShape</span></a>*</p></td>
-<td><p>The second shape.</p></td>
+<tr class="row-odd"><td><p>collider2</p></td>
+<td><p>const <a class="reference internal" href="../../ColliderShape/index.html"><span class="doc">ColliderShape</span></a>&amp;</p></td>
+<td><p>The second collider.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
-<p>An <a class="reference internal" href="../../IntersectionInformation/index.html"><span class="doc">IntersectionInformation</span></a> containing information about the intersection between <code class="docutils literal notranslate"><span class="pre">shape1</span></code> and <code class="docutils literal notranslate"><span class="pre">shape2</span></code>. If there is no intersection between these two shapes, <code class="docutils literal notranslate"><span class="pre">IntersectionInformation::hasIntersected</span></code> will be <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+<p>An <a class="reference internal" href="../../IntersectionInformation/index.html"><span class="doc">IntersectionInformation</span></a> containing information about the intersection between <code class="docutils literal notranslate"><span class="pre">collider1</span></code> and <code class="docutils literal notranslate"><span class="pre">collider2</span></code>. If there is no intersection between these two colliders, <code class="docutils literal notranslate"><span class="pre">IntersectionInformation::hasIntersected</span></code> will be <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 </section>
 </section>
 

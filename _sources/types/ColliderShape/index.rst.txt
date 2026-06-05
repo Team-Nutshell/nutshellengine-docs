@@ -4,25 +4,11 @@ ColliderShape
 Declaration
 -----------
 
-Functions
----------
+.. code-block:: cpp
 
-.. list-table::
-	:width: 100%
-	:header-rows: 1
-	:class: code-table
-
-	* - Name
-	  - Description
-	* - :doc:`/types/ColliderShape/getType/index`
-	  - Returns the ``type`` of the collider.
+	typedef std::variant<ColliderBox, ColliderSphere, ColliderCapsule> ColliderShape;
 
 Notes
 -----
 
-ColliderShape contains a :doc:`/types/ColliderShapeType/index` to differentiate the different shape types.
-
-.. toctree:: 
-	:hidden:
-
-	./getType/index.rst
+Being a `std::variant <https://en.cppreference.com/cpp/utility/variant>`_, it is possible to check if it contains a :doc:`/types/ColliderBox/index`, :doc:`/types/ColliderSphere/index` or a :doc:`/types/ColliderCapsule/index` by using `std::holds_alternative <https://en.cppreference.com/cpp/utility/variant/holds_alternative>`_ (for example: ``std::holds_alternative<ColliderBox>(collider)`` will return ``true`` if the ColliderShape contains a ColliderBox) and get the real collider with `std::get <https://en.cppreference.com/cpp/utility/tuple/get>`_ (for example: ``ColliderBox& box = std::get<ColliderBox>(collider)``).

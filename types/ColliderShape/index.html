@@ -20,7 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="getType" href="getType/index.html" />
+    <link rel="next" title="ColliderSphere" href="../ColliderSphere/index.html" />
     <link rel="prev" title="ColliderCapsule" href="../ColliderCapsule/index.html" /> 
 </head>
 
@@ -316,16 +316,7 @@
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ColliderShape</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#declaration">Declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="getType/index.html">getType</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../ColliderShapeType/index.html">ColliderShapeType</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../ColliderShapeType/index.html#declaration">Declaration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ColliderShapeType/index.html#notes">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../ColliderSphere/index.html">ColliderSphere</a><ul>
@@ -749,6 +740,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../SceneManagerInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../SceneManagerInterface/goToScene/index.html">goToScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../SceneManagerInterface/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../SceneManagerInterface/createEntitiesFromScene/index.html">createEntitiesFromScene</a></li>
 </ul>
 </li>
 </ul>
@@ -762,6 +754,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../Script/getCommandLine/index.html">getCommandLine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/goToScene/index.html">goToScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/getCurrentScenePath/index.html">getCurrentScenePath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Script/createEntitiesFromScene/index.html">createEntitiesFromScene</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/createEntity/index.html">createEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/destroyEntity/index.html">destroyEntity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../Script/destroyAllEntities/index.html">destroyAllEntities</a></li>
@@ -1140,27 +1133,13 @@
 <h1>ColliderShape<a class="headerlink" href="#collidershape" title="Link to this heading"></a></h1>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-</section>
-<section id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
-<table class="code-table docutils align-default" style="width: 100%">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="getType/index.html"><span class="doc">getType</span></a></p></td>
-<td><p>Returns the <code class="docutils literal notranslate"><span class="pre">type</span></code> of the collider.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="n">ColliderBox</span><span class="p">,</span><span class="w"> </span><span class="n">ColliderSphere</span><span class="p">,</span><span class="w"> </span><span class="n">ColliderCapsule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ColliderShape</span><span class="p">;</span>
+</pre></div>
+</div>
 </section>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
-<p>ColliderShape contains a <a class="reference internal" href="../ColliderShapeType/index.html"><span class="doc">ColliderShapeType</span></a> to differentiate the different shape types.</p>
-<div class="toctree-wrapper compound">
-</div>
+<p>Being a <a class="reference external" href="https://en.cppreference.com/cpp/utility/variant">std::variant</a>, it is possible to check if it contains a <a class="reference internal" href="../ColliderBox/index.html"><span class="doc">ColliderBox</span></a>, <a class="reference internal" href="../ColliderSphere/index.html"><span class="doc">ColliderSphere</span></a> or a <a class="reference internal" href="../ColliderCapsule/index.html"><span class="doc">ColliderCapsule</span></a> by using <a class="reference external" href="https://en.cppreference.com/cpp/utility/variant/holds_alternative">std::holds_alternative</a> (for example: <code class="docutils literal notranslate"><span class="pre">std::holds_alternative&lt;ColliderBox&gt;(collider)</span></code> will return <code class="docutils literal notranslate"><span class="pre">true</span></code> if the ColliderShape contains a ColliderBox) and get the real collider with <a class="reference external" href="https://en.cppreference.com/cpp/utility/tuple/get">std::get</a> (for example: <code class="docutils literal notranslate"><span class="pre">ColliderBox&amp;</span> <span class="pre">box</span> <span class="pre">=</span> <span class="pre">std::get&lt;ColliderBox&gt;(collider)</span></code>).</p>
 </section>
 </section>
 
@@ -1169,7 +1148,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../ColliderCapsule/index.html" class="btn btn-neutral float-left" title="ColliderCapsule" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="getType/index.html" class="btn btn-neutral float-right" title="getType" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../ColliderSphere/index.html" class="btn btn-neutral float-right" title="ColliderSphere" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
