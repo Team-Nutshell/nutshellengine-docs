@@ -161,6 +161,8 @@ Functions
 	  - Loads a scene from a file.
 	* - :doc:`/types/Script/getCurrentScenePath/index`
 	  - Returns the current scene's path.
+	* - :doc:`/types/Script/createEntitiesFromScene/index`
+	  - Creates Entities from a scene file.
 	* - :doc:`/types/Script/createEntity/index`
 	  - Creates a new :doc:`/entity_component_system/entity/index`.
 	* - :doc:`/types/Script/destroyEntity/index`
@@ -441,6 +443,7 @@ Functions
 
 	./goToScene/index.rst
 	./getCurrentScenePath/index.rst
+	./createEntitiesFromScene/index.rst
 
 	./createEntity/index.rst
 	./destroyEntity/index.rst
