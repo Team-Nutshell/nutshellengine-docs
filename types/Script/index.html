@@ -337,13 +337,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../CollisionInfo/index.html#variables">Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../CommandLine/index.html">CommandLine</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../CommandLine/index.html#functions">Functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../CommandLine/get/index.html">get</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../CommandLineInterface/index.html">CommandLineInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../CommandLineInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../CommandLineInterface/get/index.html">get</a></li>
@@ -964,6 +957,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../ScriptManagerInterface/index.html">ScriptManagerInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ScriptManagerInterface/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../ScriptManagerInterface/createScript/index.html">createScript</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ScriptManagerInterface/destroyScript/index.html">destroyScript</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ServerSocketInterface/index.html">ServerSocketInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ServerSocketInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../ServerSocketInterface/sendDataToClient/index.html">sendDataToClient</a></li>
@@ -1173,6 +1174,14 @@
 <td><p><a class="reference internal" href="../PlatformModuleInterface/index.html"><span class="doc">PlatformModuleInterface</span></a>*</p></td>
 <td><p>Memory address to the <a class="reference internal" href="../../module/platform_module/index.html"><span class="doc">Platform Module</span></a>.</p></td>
 </tr>
+<tr class="row-even"><td><p>scriptManagerInterface</p></td>
+<td><p><a class="reference internal" href="../ScriptManagerInterface/index.html"><span class="doc">ScriptManagerInterface</span></a>*</p></td>
+<td><p>Memory address to the script manager.</p></td>
+</tr>
+<tr class="row-odd"><td><p>commandLine</p></td>
+<td><p><a class="reference internal" href="../CommandLineInterface/index.html"><span class="doc">CommandLineInterface</span></a>*</p></td>
+<td><p>Memory address to the command line.</p></td>
+</tr>
 <tr class="row-even"><td><p>ecs</p></td>
 <td><p><a class="reference internal" href="../ECSInterface/index.html"><span class="doc">ECSInterface</span></a>*</p></td>
 <td><p>Memory address to the <a class="reference internal" href="../../entity_component_system/index.html"><span class="doc">Entity-Component-System</span></a>.</p></td>
@@ -1189,11 +1198,15 @@
 <td><p><a class="reference internal" href="../JobSystemInterface/index.html"><span class="doc">JobSystemInterface</span></a>*</p></td>
 <td><p>Memory address to the <a class="reference internal" href="../../job_system/index.html"><span class="doc">Job System</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p>networking</p></td>
+<tr class="row-even"><td><p>profiler</p></td>
+<td><p><a class="reference internal" href="../ProfilerInterface/index.html"><span class="doc">ProfilerInterface</span></a>*</p></td>
+<td><p>Memory address to the profiler.</p></td>
+</tr>
+<tr class="row-odd"><td><p>networking</p></td>
 <td><p><a class="reference internal" href="../NetworkingInterface/index.html"><span class="doc">NetworkingInterface</span></a>*</p></td>
 <td><p>Memory address to the <a class="reference internal" href="../../networking/index.html"><span class="doc">Networking</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>sceneManager</p></td>
+<tr class="row-even"><td><p>sceneManager</p></td>
 <td><p><a class="reference internal" href="../SceneManagerInterface/index.html"><span class="doc">SceneManagerInterface</span></a>*</p></td>
 <td><p>Memory address to the manager of <a class="reference internal" href="../../scene/index.html"><span class="doc">Scenes</span></a>.</p></td>
 </tr>

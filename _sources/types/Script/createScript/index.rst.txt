@@ -21,7 +21,7 @@ None.
 Returns
 -------
 
-None.
+A script of type ``T`` derived from :doc:`/types/Script/index`.
 
 Notes
 -----

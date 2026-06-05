@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CommandLine &mdash; NutshellEngine 0.3.0 documentation</title>
+  <title>ScriptManagerInterface &mdash; NutshellEngine 0.3.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=11b553de" />
@@ -20,8 +20,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="get" href="get/index.html" />
-    <link rel="prev" title="CollisionInfo" href="../CollisionInfo/index.html" /> 
+    <link rel="next" title="createScript" href="createScript/index.html" />
+    <link rel="prev" title="onCollisionExit" href="../ScriptBase/onCollisionExit/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -335,13 +335,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../CollisionInfo/index.html">CollisionInfo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../CollisionInfo/index.html#variables">Variables</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">CommandLine</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="get/index.html">get</a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../CommandLineInterface/index.html">CommandLineInterface</a><ul>
@@ -964,6 +957,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ScriptManagerInterface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="createScript/index.html">createScript</a></li>
+<li class="toctree-l4"><a class="reference internal" href="destroyScript/index.html">destroyScript</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../ServerSocketInterface/index.html">ServerSocketInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ServerSocketInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../ServerSocketInterface/sendDataToClient/index.html">sendDataToClient</a></li>
@@ -1125,9 +1126,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Types</a></li>
-      <li class="breadcrumb-item active">CommandLine</li>
+      <li class="breadcrumb-item active">ScriptManagerInterface</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/types/CommandLine/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/types/ScriptManagerInterface/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -1135,8 +1136,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="commandline">
-<h1>CommandLine<a class="headerlink" href="#commandline" title="Link to this heading"></a></h1>
+  <section id="scriptmanagerinterface">
+<h1>ScriptManagerInterface<a class="headerlink" href="#scriptmanagerinterface" title="Link to this heading"></a></h1>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
 <table class="code-table docutils align-default" style="width: 100%">
@@ -1150,8 +1151,11 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="get/index.html"><span class="doc">get</span></a></p></td>
-<td><p>Returns the parsed command line.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="createScript/index.html"><span class="doc">createScript</span></a></p></td>
+<td><p>Creates a new <a class="reference internal" href="../Script/index.html"><span class="doc">Script</span></a> for a <a class="reference internal" href="../Scriptable/index.html"><span class="doc">Scriptable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="destroyScript/index.html"><span class="doc">destroyScript</span></a></p></td>
+<td><p>Destroys a <a class="reference internal" href="../Script/index.html"><span class="doc">Script</span></a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1164,8 +1168,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../CollisionInfo/index.html" class="btn btn-neutral float-left" title="CollisionInfo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="get/index.html" class="btn btn-neutral float-right" title="get" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../ScriptBase/onCollisionExit/index.html" class="btn btn-neutral float-left" title="onCollisionExit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="createScript/index.html" class="btn btn-neutral float-right" title="createScript" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

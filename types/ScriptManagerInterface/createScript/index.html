@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>get &mdash; NutshellEngine 0.3.0 documentation</title>
+  <title>createScript &mdash; NutshellEngine 0.3.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=11b553de" />
@@ -20,8 +20,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="CommandLineInterface" href="../../CommandLineInterface/index.html" />
-    <link rel="prev" title="CommandLine" href="../index.html" /> 
+    <link rel="next" title="destroyScript" href="../destroyScript/index.html" />
+    <link rel="prev" title="ScriptManagerInterface" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -335,13 +335,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../CollisionInfo/index.html">CollisionInfo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../CollisionInfo/index.html#variables">Variables</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">CommandLine</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="../index.html#functions">Functions</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">get</a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../CommandLineInterface/index.html">CommandLineInterface</a><ul>
@@ -964,6 +957,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">ScriptManagerInterface</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html#functions">Functions</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">createScript</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../destroyScript/index.html">destroyScript</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../ServerSocketInterface/index.html">ServerSocketInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../ServerSocketInterface/index.html#functions">Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../ServerSocketInterface/sendDataToClient/index.html">sendDataToClient</a></li>
@@ -1125,10 +1126,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Types</a></li>
-          <li class="breadcrumb-item"><a href="../index.html">CommandLine</a></li>
-      <li class="breadcrumb-item active">get</li>
+          <li class="breadcrumb-item"><a href="../index.html">ScriptManagerInterface</a></li>
+      <li class="breadcrumb-item active">createScript</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/types/CommandLine/get/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/types/ScriptManagerInterface/createScript/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -1136,13 +1137,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="get">
-<h1>get<a class="headerlink" href="#get" title="Link to this heading"></a></h1>
-<p><a class="reference internal" href="../index.html"><span class="doc">CommandLine</span></a>::get</p>
-<p>Returns the parsed command line.</p>
+  <section id="createscript">
+<h1>createScript<a class="headerlink" href="#createscript" title="Link to this heading"></a></h1>
+<p><a class="reference internal" href="../index.html"><span class="doc">ScriptManagerInterface</span></a>::createScript</p>
+<p>Creates a new <a class="reference internal" href="../../Script/index.html"><span class="doc">Script</span></a> for a <a class="reference internal" href="../../Scriptable/index.html"><span class="doc">Scriptable</span></a> <a class="reference internal" href="../../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p>
 <section id="declaration">
 <h2>Declaration<a class="headerlink" href="#declaration" title="Link to this heading"></a></h2>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">get</span><span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">T</span><span class="o">*</span><span class="w"> </span><span class="n">createScript</span><span class="p">();</span>
 </pre></div>
 </div>
 </section>
@@ -1152,33 +1154,11 @@
 </section>
 <section id="returns">
 <h2>Returns<a class="headerlink" href="#returns" title="Link to this heading"></a></h2>
-<p>The parsed command line used to launch the application.</p>
-<p>The keys of the <a class="reference external" href="https://en.cppreference.com/w/cpp/container/unordered_map">std::unordered_map</a> are the arguments starting with “-”, with the values being everything that follows.</p>
-<p>For example:
-./NutshellEngine -test1 a b -test2 c</p>
-<p>Will return:</p>
-<table class="code-table docutils align-default" style="width: 100%">
-<colgroup>
-<col style="width: 30.0%" />
-<col style="width: 70.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Key</p></th>
-<th class="head"><p>Values</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>./NutshellEngine</p></td>
-<td><p><em>Empty</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>-test1</p></td>
-<td><p>a b</p></td>
-</tr>
-<tr class="row-even"><td><p>-test2</p></td>
-<td><p>c</p></td>
-</tr>
-</tbody>
-</table>
+<p>A script of type <code class="docutils literal notranslate"><span class="pre">T</span></code> derived from <a class="reference internal" href="../../Script/index.html"><span class="doc">Script</span></a>.</p>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
+<p>The type of the <a class="reference internal" href="../../Script/index.html"><span class="doc">Script</span></a> to create must be passed as a template.</p>
 </section>
 </section>
 
@@ -1186,8 +1166,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="CommandLine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../CommandLineInterface/index.html" class="btn btn-neutral float-right" title="CommandLineInterface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="ScriptManagerInterface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../destroyScript/index.html" class="btn btn-neutral float-right" title="destroyScript" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
