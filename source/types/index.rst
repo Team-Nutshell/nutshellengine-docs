@@ -23,7 +23,6 @@ Types
 	./ColliderBox/index.rst
 	./ColliderCapsule/index.rst
 	./ColliderShape/index.rst
-	./ColliderShapeType/index.rst
 	./ColliderSphere/index.rst
 	./CollisionInfo/index.rst
 	./CommandLineInterface/index.rst

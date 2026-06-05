@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual IntersectionInformation intersect(const ColliderShape* shape1, const ColliderShape* shape2) = 0;
+	virtual IntersectionInformation intersect(const ColliderShape& collider1, const ColliderShape& collider2) = 0;
 
 Parameters
 ----------
@@ -23,14 +23,14 @@ Parameters
 	* - Name
 	  - Type
 	  - Description
-	* - shape1
-	  - const :doc:`/types/ColliderShape/index`\*
-	  - The first shape.
-	* - shape2
-	  - const :doc:`/types/ColliderShape/index`\*
-	  - The second shape.
+	* - collider1
+	  - const :doc:`/types/ColliderShape/index`\&
+	  - The first collider.
+	* - collider2
+	  - const :doc:`/types/ColliderShape/index`\&
+	  - The second collider.
 
 Returns
 -------
 
-An :doc:`/types/IntersectionInformation/index` containing information about the intersection between ``shape1`` and ``shape2``. If there is no intersection between these two shapes, ``IntersectionInformation::hasIntersected`` will be ``false``.
+An :doc:`/types/IntersectionInformation/index` containing information about the intersection between ``collider1`` and ``collider2``. If there is no intersection between these two colliders, ``IntersectionInformation::hasIntersected`` will be ``false``.

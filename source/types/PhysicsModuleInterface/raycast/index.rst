@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual RaycastInformation raycast(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, float tMin, float tMax, const ColliderShape* shape) = 0;
+	virtual RaycastInformation raycast(const Math::vec3& rayOrigin, const Math::vec3& rayDirection, float tMin, float tMax, const ColliderShape& collider) = 0;
 
 Parameters
 ----------
@@ -35,11 +35,11 @@ Parameters
 	* - tMax
 	  - float
 	  - The maximum distance to check.
-	* - shape
-	  - const :doc:`/types/ColliderShape/index`\*
-	  - The shape to test the ray intersection on.
+	* - collider
+	  - const :doc:`/types/ColliderShape/index`\&
+	  - The collider to test the ray intersection on.
 
 Returns
 -------
 
-A :doc:`/types/RaycastInformation/index` containing information about the intersection. If there is no intersection between the ray and the shape, ``RaycastInformation::hasIntersected`` will be ``false``.
+A :doc:`/types/RaycastInformation/index` containing information about the intersection. If there is no intersection between the ray and the collider, ``RaycastInformation::hasIntersected`` will be ``false``.

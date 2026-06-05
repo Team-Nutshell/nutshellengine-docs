@@ -13,13 +13,11 @@ Variables
 	  - Type
 	  - Description
 	* - collider
-	  - `std::unique_ptr <https://en.cppreference.com/w/cpp/memory/unique_ptr>`_\<:doc:`/types/ColliderShape/index`>
+	  - :doc:`/types/ColliderShape/index`
 	  - The collider's properties.
 
 Notes
 -----
-
-The Collidable contains a :doc:`/types/ColliderShape/index` structure, which defines its :doc:`/types/ColliderShapeType/index` and properties.
 
 JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 
@@ -46,7 +44,7 @@ JSON for the :doc:`/file_formats/ntsn/index` scene file format:
 			  - Possible values
 			* - type
 			  - String
-			  - The :doc:`/types/ColliderShapeType/index`.
+			  - The type of collider.
 			  -  
 				 - "Box"
 				 - "Sphere"
