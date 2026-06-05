@@ -34,6 +34,12 @@ Variables
 	* - platformModule
 	  - :doc:`/types/PlatformModuleInterface/index`\*
 	  - Memory address to the :doc:`/module/platform_module/index`.
+	* - scriptManagerInterface
+	  - :doc:`/types/ScriptManagerInterface/index`\*
+	  - Memory address to the script manager.
+	* - commandLine
+	  - :doc:`/types/CommandLineInterface/index`\*
+	  - Memory address to the command line.
 	* - ecs
 	  - :doc:`/types/ECSInterface/index`\*
 	  - Memory address to the :doc:`/entity_component_system/index`.
@@ -46,6 +52,9 @@ Variables
 	* - jobSystem
 	  - :doc:`/types/JobSystemInterface/index`\*
 	  - Memory address to the :doc:`/job_system/index`.
+	* - profiler
+	  - :doc:`/types/ProfilerInterface/index`\*
+	  - Memory address to the profiler.
 	* - networking
 	  - :doc:`/types/NetworkingInterface/index`\*
 	  - Memory address to the :doc:`/networking/index`.

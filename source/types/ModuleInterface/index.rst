@@ -35,7 +35,7 @@ Variables
 	  - Memory address to the :doc:`/job_system/index`.
 	* - commandLine
 	  - :doc:`/types/CommandLineInterface/index`\*
-	  - Memory address to the :doc:`/types/CommandLine/index`.
+	  - Memory address to the command line.
 	* - profiler
 	  - :doc:`/types/ProfilerInterface/index`\*
 	  - Memory address to the profiler.

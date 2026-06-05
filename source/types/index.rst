@@ -26,7 +26,6 @@ Types
 	./ColliderShapeType/index.rst
 	./ColliderSphere/index.rst
 	./CollisionInfo/index.rst
-	./CommandLine/index.rst
 	./CommandLineInterface/index.rst
 	./Component/index.rst
 	./ConnectedClient/index.rst
@@ -92,6 +91,7 @@ Types
 	./Script/index.rst
 	./Scriptable/index.rst
 	./ScriptBase/index.rst
+	./ScriptManagerInterface/index.rst
 	./ServerSocketInterface/index.rst
 	./Skin/index.rst
 	./Socket/index.rst

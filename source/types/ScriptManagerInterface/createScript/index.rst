@@ -1,7 +1,7 @@
 createScript
 ============
 
-:doc:`/types/Script/index`::createScript
+:doc:`/types/ScriptManagerInterface/index`::createScript
 
 Creates a new :doc:`/types/Script/index` for a :doc:`/types/Scriptable/index` :doc:`/entity_component_system/component/index`.
 
