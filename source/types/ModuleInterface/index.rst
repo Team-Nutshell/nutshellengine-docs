@@ -57,11 +57,11 @@ Functions
 	  - Returns the :doc:`/module/index`'s :doc:`/types/ModuleType/index`.
 	* - :doc:`/types/ModuleInterface/getName/index`
 	  - Returns the :doc:`/module/index`'s name.
-	* - :doc:`/types/SystemModuleInterface/init/index`
+	* - :doc:`/types/ModuleInterface/init/index`
 	  - Initialization function executed once, at program's launch.
-	* - :doc:`/types/SystemModuleInterface/update/index`
+	* - :doc:`/types/ModuleInterface/update/index`
 	  - Update function executed once per frame.
-	* - :doc:`/types/SystemModuleInterface/destroy/index`
+	* - :doc:`/types/ModuleInterface/destroy/index`
 	  - Destruction function executed once, at program's end.
 
 Notes
