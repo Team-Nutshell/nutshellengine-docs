@@ -151,6 +151,10 @@ Functions
 	  - Returns the name of the sound.
 	* - :doc:`/types/Script/getSoundNames/index`
 	  - Returns the names of all sounds.
+	* - :doc:`/types/Script/createAnimation/index`
+	  - Creates an empty animation and returns its pointer.
+	* - :doc:`/types/Script/destroyAnimation/index`
+	  - Destroys a animation.
 	* - :doc:`/types/Script/findAnimationByName/index`
 	  - Returns the animation associated with the name.
 	* - :doc:`/types/Script/getAnimationName/index`
