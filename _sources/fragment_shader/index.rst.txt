@@ -34,9 +34,6 @@ Inputs
 	* - NtshEngn_color
 	  - vec4
 	  - The fragment's color from vertex colors.
-	* - NtshEngn_tbn
-	  - mat3
-	  - The fragment's Tangent-Bitangent-Normal matrix.
 	* - NtshEngn_diffuseTexture
 	  - sampler2D
 	  - The object's material's diffuse texture.
@@ -109,6 +106,15 @@ Inputs
 	* - NtshEngn_cameraPosition
 	  - vec3
 	  - The camera's position, in **world-space**.
+	* - NtshEngn_cameraType
+	  - 
+	  - The camera's type, either ``NTSHENGN_CAMERA_TYPE_PERSPECTIVE`` or ``NTSHENGN_CAMERA_TYPE_ORTHOGRAPHIC``.
+	* - NtshEngn_cameraView
+	  - mat4
+	  - The camera's view matrix.
+	* - NtshEngn_cameraProjection
+	  - mat4
+	  - The camera's projection matrix.
 	* - NtshEngn_width
 	  - uint
 	  - The framebuffer's width.

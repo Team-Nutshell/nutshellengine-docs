@@ -1166,105 +1166,113 @@
 <td><p>vec4</p></td>
 <td><p>The fragment’s color from vertex colors.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_tbn</p></td>
-<td><p>mat3</p></td>
-<td><p>The fragment’s Tangent-Bitangent-Normal matrix.</p></td>
-</tr>
-<tr class="row-odd"><td><p>NtshEngn_diffuseTexture</p></td>
+<tr class="row-even"><td><p>NtshEngn_diffuseTexture</p></td>
 <td><p>sampler2D</p></td>
 <td><p>The object’s material’s diffuse texture.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_normalTexture</p></td>
+<tr class="row-odd"><td><p>NtshEngn_normalTexture</p></td>
 <td><p>sampler2D</p></td>
 <td><p>The object’s material’s normal texture.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_metalnessTexture</p></td>
+<tr class="row-even"><td><p>NtshEngn_metalnessTexture</p></td>
 <td><p>sampler2D</p></td>
 <td><p>The object’s material’s metalness texture.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_roughnessTexture</p></td>
+<tr class="row-odd"><td><p>NtshEngn_roughnessTexture</p></td>
 <td><p>sampler2D</p></td>
 <td><p>The object’s material’s roughness texture.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_occlusionTexture</p></td>
+<tr class="row-even"><td><p>NtshEngn_occlusionTexture</p></td>
 <td><p>sampler2D</p></td>
 <td><p>The object’s material’s occlusion texture.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_emissiveTexture</p></td>
+<tr class="row-odd"><td><p>NtshEngn_emissiveTexture</p></td>
 <td><p>sampler2D</p></td>
 <td><p>The object’s material’s emissive texture.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_emissiveFactor</p></td>
+<tr class="row-even"><td><p>NtshEngn_emissiveFactor</p></td>
 <td><p>float</p></td>
 <td><p>The object’s material’s emissive factor.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_alphaCutoff</p></td>
+<tr class="row-odd"><td><p>NtshEngn_alphaCutoff</p></td>
 <td><p>float</p></td>
 <td><p>The object’s material’s alpha cutoff.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_scaleUV</p></td>
+<tr class="row-even"><td><p>NtshEngn_scaleUV</p></td>
 <td><p>vec2</p></td>
 <td><p>The object’s material’s UV scale.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_offsetUV</p></td>
+<tr class="row-odd"><td><p>NtshEngn_offsetUV</p></td>
 <td><p>vec2</p></td>
 <td><p>The object’s material’s UV offset.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_useTriplanarMapping</p></td>
+<tr class="row-even"><td><p>NtshEngn_useTriplanarMapping</p></td>
 <td><p>bool</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the object’s material uses triplanar mapping, else, <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_directionalLightCount</p></td>
+<tr class="row-odd"><td><p>NtshEngn_directionalLightCount</p></td>
 <td><p>uint</p></td>
 <td><p>The number of directional lights in the scene.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_directionalLight(uint i)</p></td>
+<tr class="row-even"><td><p>NtshEngn_directionalLight(uint i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
 <td><p>The <code class="docutils literal notranslate"><span class="pre">i</span></code> th directional light.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_directionalLightShadows(uint i, vec p)</p></td>
+<tr class="row-odd"><td><p>NtshEngn_directionalLightShadows(uint i, vec p)</p></td>
 <td><p>float</p></td>
 <td><p>A value between 0.0 and 1.0 determining how much the position <code class="docutils literal notranslate"><span class="pre">p</span></code> is in the shadows of the <code class="docutils literal notranslate"><span class="pre">i</span></code> th directional light. 0.0 means completely in shadows, 1.0 means not in shadows.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_pointLightCount</p></td>
+<tr class="row-even"><td><p>NtshEngn_pointLightCount</p></td>
 <td><p>uint</p></td>
 <td><p>The number of point lights in the scene.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_pointLight(uint i)</p></td>
+<tr class="row-odd"><td><p>NtshEngn_pointLight(uint i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
 <td><p>The <code class="docutils literal notranslate"><span class="pre">i</span></code> th point light.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_pointLightShadows(uint i, vec p)</p></td>
+<tr class="row-even"><td><p>NtshEngn_pointLightShadows(uint i, vec p)</p></td>
 <td><p>float</p></td>
 <td><p>A value between 0.0 and 1.0 determining how much the position <code class="docutils literal notranslate"><span class="pre">p</span></code> is in the shadows of the <code class="docutils literal notranslate"><span class="pre">i</span></code> th point light. 0.0 means completely in shadows, 1.0 means not in shadows.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_spotLightCount</p></td>
+<tr class="row-odd"><td><p>NtshEngn_spotLightCount</p></td>
 <td><p>uint</p></td>
 <td><p>The number of spot lights in the scene.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_spotLight(uint i)</p></td>
+<tr class="row-even"><td><p>NtshEngn_spotLight(uint i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
 <td><p>The <code class="docutils literal notranslate"><span class="pre">i</span></code> th spot light.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_spotLightShadows(uint i, vec p)</p></td>
+<tr class="row-odd"><td><p>NtshEngn_spotLightShadows(uint i, vec p)</p></td>
 <td><p>float</p></td>
 <td><p>A value between 0.0 and 1.0 determining how much the position <code class="docutils literal notranslate"><span class="pre">p</span></code> is in the shadows of the <code class="docutils literal notranslate"><span class="pre">i</span></code> th spot light. 0.0 means completely in shadows, 1.0 means not in shadows.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_ambientLightCount</p></td>
+<tr class="row-even"><td><p>NtshEngn_ambientLightCount</p></td>
 <td><p>uint</p></td>
 <td><p>The number of ambient lights in the scene.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_ambientLight(i)</p></td>
+<tr class="row-odd"><td><p>NtshEngn_ambientLight(i)</p></td>
 <td><p><a class="reference internal" href="../types/Light/index.html"><span class="doc">Light</span></a></p></td>
 <td><p>The <code class="docutils literal notranslate"><span class="pre">i</span></code> th ambient light.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NtshEngn_time</p></td>
+<tr class="row-even"><td><p>NtshEngn_time</p></td>
 <td><p>float</p></td>
 <td><p>The time since the application’s launch, in <strong>seconds</strong>.</p></td>
 </tr>
-<tr class="row-even"><td><p>NtshEngn_cameraPosition</p></td>
+<tr class="row-odd"><td><p>NtshEngn_cameraPosition</p></td>
 <td><p>vec3</p></td>
 <td><p>The camera’s position, in <strong>world-space</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p>NtshEngn_cameraType</p></td>
+<td></td>
+<td><p>The camera’s type, either <code class="docutils literal notranslate"><span class="pre">NTSHENGN_CAMERA_TYPE_PERSPECTIVE</span></code> or <code class="docutils literal notranslate"><span class="pre">NTSHENGN_CAMERA_TYPE_ORTHOGRAPHIC</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>NtshEngn_cameraView</p></td>
+<td><p>mat4</p></td>
+<td><p>The camera’s view matrix.</p></td>
+</tr>
+<tr class="row-even"><td><p>NtshEngn_cameraProjection</p></td>
+<td><p>mat4</p></td>
+<td><p>The camera’s projection matrix.</p></td>
 </tr>
 <tr class="row-odd"><td><p>NtshEngn_width</p></td>
 <td><p>uint</p></td>
