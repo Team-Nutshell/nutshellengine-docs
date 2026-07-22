@@ -21,6 +21,12 @@ Variables
 	* - height
 	  - float
 	  - The pixel height of the font.
+	* - topLeft
+	  - :doc:`/types/Math/index`::vec2
+	  - The top left of the global glyphs' bounding box.
+	* - bottomRight
+	  - :doc:`/types/Math/index`::vec2
+	  - The bottom right of the global glyphs' bounding box.
 	* - glyphs
 	  - `std::unordered_map <https://en.cppreference.com/w/cpp/container/unordered_map>`_\<char, :doc:`/types/FontGlyph/index`>
 	  - A map containing information about each glyph.
