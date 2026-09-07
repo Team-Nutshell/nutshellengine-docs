@@ -10,7 +10,7 @@ Declaration
 
 .. code-block:: cpp
 
-	virtual void physicsUpdate(float dt) {
+	virtual void physicsUpdate(float dt);
 
 Parameters
 ----------

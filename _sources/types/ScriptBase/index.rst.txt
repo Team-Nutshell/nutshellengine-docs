@@ -12,6 +12,8 @@ Functions
 
 	* - Name
 	  - Description
+	* - :doc:`/types/ScriptBase/lateUpdate/index`
+	  - Is executed each frame, after the potential `PhysicsModule <https://github.com/Team-Nutshell/NutshellEngine-PhysicsModule/tree/main>`_ update.
 	* - :doc:`/types/ScriptBase/onSceneEnter/index`
 	  - Is executed after a new scene is loaded.
 	* - :doc:`/types/ScriptBase/onSceneExit/index`
@@ -28,6 +30,7 @@ Functions
 .. toctree::
 	:hidden:
 
+	./lateUpdate/index.rst
 	./onSceneEnter/index.rst
 	./onSceneExit/index.rst
 	./physicsUpdate/index.rst

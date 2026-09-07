@@ -20,7 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="onSceneEnter" href="onSceneEnter/index.html" />
+    <link rel="next" title="lateUpdate" href="lateUpdate/index.html" />
     <link rel="prev" title="Scriptable" href="../Scriptable/index.html" /> 
 </head>
 
@@ -940,6 +940,7 @@
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ScriptBase</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lateUpdate/index.html">lateUpdate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="onSceneEnter/index.html">onSceneEnter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="onSceneExit/index.html">onSceneExit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="physicsUpdate/index.html">physicsUpdate</a></li>
@@ -1144,22 +1145,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="onSceneEnter/index.html"><span class="doc">onSceneEnter</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="lateUpdate/index.html"><span class="doc">lateUpdate</span></a></p></td>
+<td><p>Is executed each frame, after the potential <a class="reference external" href="https://github.com/Team-Nutshell/NutshellEngine-PhysicsModule/tree/main">PhysicsModule</a> update.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="onSceneEnter/index.html"><span class="doc">onSceneEnter</span></a></p></td>
 <td><p>Is executed after a new scene is loaded.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="onSceneExit/index.html"><span class="doc">onSceneExit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="onSceneExit/index.html"><span class="doc">onSceneExit</span></a></p></td>
 <td><p>Is executed before a new scene is loaded.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="physicsUpdate/index.html"><span class="doc">physicsUpdate</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="physicsUpdate/index.html"><span class="doc">physicsUpdate</span></a></p></td>
 <td><p>Is executed each time the <a class="reference internal" href="../../module/physics_module/index.html"><span class="doc">Physics Module</span></a> does a physics iteration.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="onCollisionEnter/index.html"><span class="doc">onCollisionEnter</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="onCollisionEnter/index.html"><span class="doc">onCollisionEnter</span></a></p></td>
 <td><p>Is executed the frame an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> collides with another’s <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="onCollisionStill/index.html"><span class="doc">onCollisionStill</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="onCollisionStill/index.html"><span class="doc">onCollisionStill</span></a></p></td>
 <td><p>Is executed during the time an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> collides with another’s <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="onCollisionExit/index.html"><span class="doc">onCollisionExit</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="onCollisionExit/index.html"><span class="doc">onCollisionExit</span></a></p></td>
 <td><p>Is executed the frame an <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a> stops colliding with another’s <a class="reference internal" href="../../entity_component_system/entity/index.html"><span class="doc">Entity</span></a>’s <a class="reference internal" href="../Collidable/index.html"><span class="doc">Collidable</span></a> <a class="reference internal" href="../../entity_component_system/component/index.html"><span class="doc">Component</span></a>.</p></td>
 </tr>
 </tbody>
@@ -1174,7 +1178,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../Scriptable/index.html" class="btn btn-neutral float-left" title="Scriptable" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="onSceneEnter/index.html" class="btn btn-neutral float-right" title="onSceneEnter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="lateUpdate/index.html" class="btn btn-neutral float-right" title="lateUpdate" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

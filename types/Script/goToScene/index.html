@@ -940,6 +940,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../ScriptBase/index.html">ScriptBase</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../ScriptBase/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ScriptBase/lateUpdate/index.html">lateUpdate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../ScriptBase/onSceneEnter/index.html">onSceneEnter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../ScriptBase/onSceneExit/index.html">onSceneExit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../ScriptBase/physicsUpdate/index.html">physicsUpdate</a></li>
@@ -1165,7 +1166,7 @@
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
 <p>Changing scene will destroy all non-persistent Entities, potentially including the Entity calling this function.</p>
 <p>If this is the case, the rest of the script must not reference any function or variable belonging to this Entity. It is safer to return right after calling this function:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">goToScene</span><span class="p">(</span><span class="s">&quot;assets/scenes/scene.ntsn&quot;</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">goToScene</span><span class="p">(</span><span class="s">"assets/scenes/scene.ntsn"</span><span class="p">);</span>
 <span class="k">return</span><span class="p">;</span>
 </pre></div>
 </div>
