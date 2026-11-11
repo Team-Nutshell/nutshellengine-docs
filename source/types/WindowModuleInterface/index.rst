@@ -104,6 +104,8 @@ Functions
 	  - Returns the height of the main monitor.
 	* - :doc:`/types/WindowModuleInterface/getMonitorDisplayScaling/index`
 	  - Returns the display scaling of the main monitor.
+	* - :doc:`/types/WindowModuleInterface/getDisplayProtocol/index`
+	  - Returns the display protocol.
 	* - :doc:`/types/WindowModuleInterface/getWindowNativeHandle/index`
 	  - Returns the native handle of the window.
 	* - :doc:`/types/WindowModuleInterface/getWindowNativeAdditionalInformation/index`
@@ -158,5 +160,6 @@ Functions
 	./getMonitorHeight/index.rst
 	./getMonitorRefreshRate/index.rst
 	./getMonitorDisplayScaling/index.rst
+	./getDisplayProtocol/index.rst
 	./getWindowNativeHandle/index.rst
 	./getWindowNativeAdditionalInformation/index.rst
