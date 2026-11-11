@@ -31,6 +31,7 @@ Types
 	./ConnectedClientID/index.rst
 	./ConnectedServer/index.rst
 	./CoordinateType/index.rst
+	./DisplayProtocol/index.rst
 	./ECS/index.rst
 	./ECSInterface/index.rst
 	./Entity/index.rst
